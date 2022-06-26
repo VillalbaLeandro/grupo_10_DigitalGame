@@ -7,10 +7,11 @@ La venta de los productos se efectúa desde la página, mediante la apertura de 
 La empresa tiene objetivo satisfacer las necesidades del cliente, ofreciendo  la mejor experiencia en el sitio, los mejores precios con ofertas y promociones. Pero sobre todo una experiencia fácil, dinámica y practica en el sitio web.
 
 ## Páginas de Referencia:
-https://nextgames.com.ar/Buscar/playstation%205 ->  ideas de la web.
+https://nextgames.com.ar/Buscar/playstation%205 ->  idea de la web.
 https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/2659/posts/26768/image/Shella%20-%20Multipurpose%20Shopify%20theme.jpg -> estructura
-https://www.shutterstock.com/es/search/dg+logos -> logo
-
+https://www.3djuegos.com/25965/spider-man/ -> descripciones de los juegos
+https://juegosdigitalesargentina.com/categorias/juegos-ps4-pack/60 -> estructura de la web
+https://juegosdigitalesargentina.com/categorias/juegos-ps4-pack/60 -> estructura de la web
 
 <!-- - https://www.dvino.com.ar  -> filtros y categorías
 - https://www.varietalvinoteca.com.ar -> animaciones de página principal
