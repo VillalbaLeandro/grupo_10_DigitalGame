@@ -1,0 +1,23 @@
+{
+  "name": "digitalgames",
+  "version": "1.0.0",
+  "description": "**DigitalGame** es un sitio web dedicado a la venta y distribución de productos relacionados al mundo gaming (videojuegos, consolas y accesorios).",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VillalbaLeandro/grupo_10_DigitalGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VillalbaLeandro/grupo_10_DigitalGame/issues"
+  },
+  "homepage": "https://github.com/VillalbaLeandro/grupo_10_DigitalGame#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
