@@ -3,6 +3,9 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    position: relative;
+}
 header{
     background: #ebebeb;
     display: flex;
@@ -11,4 +14,84 @@ header{
     top: 0;
     left: 0;
     right: 0;
+}
+
+
+.logo-tablet-desktop{
+    display: none;
+}
+
+.mobile-burguer-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.menu-burguer i{
+    position: relative;
+    left: 6px;
+    top: -8.5px;
+    color: #5e5e5e;
+}
+
+.mobile-burguer-img-container img{
+    width: 55%;
+    position: relative;
+    left: 49px;
+    margin-bottom: 5px;
+
+}
+.carrito{
+    position: absolute;
+    left: 244px;
+    top: 38.5px;
+    color: #5e5e5e;
+}
+.icon-user{
+    position: absolute;
+    left: 285px;
+    top: 38px;
+    color: #5e5e5e;
+}
+.search-button-container{
+    display: flex;
+    justify-content: flex-start;
+
+}
+.search-container{
+    display: flex;
+    position: relative;
+}
+
+.search-container input{
+    width: 220px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    height: 22px;
+    padding: 5px;
+}
+.search-container input::placeholder{
+    font-size: 11px;
+}
+.search-container button{
+    position: absolute;
+    left: 197px;
+    top: 3px;
+    background: none;
+    border: none;
+    color: #756f6f;
+}
+
+
+
+.menu-container{
+    display: none;
+}
+
+
+ 
+
+.banner img{
+    width: 100%;
 }
