@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Falta Tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
 
     <!-- Estilos Propios -->
-    <link href="/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- Titulo -->
     <title>Digital Game</title>
@@ -21,23 +25,23 @@
     <!-----------------HEADER-------------------->
     <header>
         <!-- Menu Principal -->
-        <div class="logo-container">
+        
+        <div class="logo-bar-container">
             <!-- Logo (Digital Game) -->
-            <div class="logo-bar-container">
-                <div class="logo">
-                    <img src="image/logo-digital-games.png" alt="logo">
-                </div>
+            <div class="logo">
+                <img src="image/logo-digital-games.png" alt="logo">
+            </div>
 
-                <!-- Contenedor Barra de Busqueda -->
-                <div class="search-button-container">
-                    <!-- Barra de Busqueda -->
-                    <div class="search-container">
-                        <input type="text" placeholder="BUSCAR">
-                        <button><i class="fas fa-search"></i></button>
-                    </div>
+            <!-- Contenedor Barra de Busqueda -->
+            <div class="search-button-container">
+                <!-- Barra de Busqueda -->
+                <div class="search-container">
+                    <input type="text" placeholder="BUSCAR...">
+                    <button><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
+
 
         <!-- Menu Hamburgesa -->
         <div class="burguer-container">
@@ -49,19 +53,20 @@
         <!-- Lista De Opciones -->
         <div class="menu-container">
             <ul>
-                <li>Categorias </li>
-                <li>Marcas </li>
-                <li>Otros </li>
-                <li>Precios </li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
             </ul>
             <ul>
-                <li><a href="/register">REGISTRO
-                <li><a href="/login">INICIO DE SESION
-                <li><a href="#">CARRITO <!-- Poner imagen carrito de compras -->
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
             </ul>
+
         </div>
     </header>
-<!-----------------FIN HEADER-------------------->
+    <!-----------------FIN HEADER-------------------->
 
     <!-- Banner -->
     <section class="banner">

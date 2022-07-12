@@ -1,0 +1,14 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    background: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+}

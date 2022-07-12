@@ -5,46 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Estilos Propios -->
-    <link href="/css/style.css" rel="stylesheet">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
 
-    <!-- Titulo -->
-    <title>Digital Game</title>
+    <!-- linkeo css  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>DG Register</title>
 </head>
 
-<main>
-    <form action="/" method="GET"></form>
+<body>
+    <main>
+        <!-- formulario register -->
 
-    <div>
-        <label>Ingresa tus datos</label>
-    </div>
+        <div class="formulario-container">
+            <form action="/">
 
-    <label for="nombre">Nombres: </label>
-    <input type="text" name="nombre" id="nombre">
+                <div class="titulo-register-conteiner">
+                    <label class="Titulo-register">Ingresa tus datos</label><br>
+                </div>
 
-    <label for="apellido">Apellidos: </label>
-    <input type="text" name="apellido" id="apellido">
+                <label class="titulos-boxs" for="name">Nombre y apellido:</label><br>
+                <input class="text-boxs" type="text" name="nombre-apellido" id="name"
+                    placeholder="Ej. Florencio Perez"><br>
 
-    <label for="usuario">Nombre de usuario: </label>
-    <input type="text" name="usuario" id="usuario">
+                <label class="titulos-boxs" for="usser">Nombre usuario</label><br>
+                <input class="text-boxs" type="text" name="usser" id="usser" placeholder="Ej. Florperez56"><br>
 
-    <label for="mail">Email: </label>
-    <input type="text" name="mail" id="mail">
+                <label class="titulos-boxs" for="fechaNac">Fecha de nacimiento:</label><br>
+                <input class="text-boxs" type="date" name="fechaNac" id="fechaNac"><br>
 
-    <label for="contraseña">Contraseña: </label>
-    <input type="pass" name="contraseña" id="contraseña">
+                <label class="titulos-boxs" for="domicilio">Domicilio:</label>
+                <input class="text-boxs" type="text" name="domicilio" id="domicilio" placeholder="Ej. Cabred 1900"><br>
 
-    <label for="repetir">Repetir Contraseña: </label>
-    <input type="pass" name="confirmar" id="confirmar">
+                <label class="titulos-boxs" for="img-usser">Seleccione una imagen para su perfil:</label><br>
+                <div class="file-select">
+                    <input class="file" type="file" name="img-usser" accept=".jpg, .png">
+                </div>
 
-    <label for="cumpleaños">Fecha de nacimiento: </label>
-    <input type="date" name="cumpleaños" id="cumpleaños">
+                <label class="titulos-boxs" for="pass">Ingrese una contraseña:</label>
+                <input class="text-boxs" type="password" name="pass" id="pass">
 
-    <br>
-    <button type="submit">Finalizar Registro</button>
-    </br>
-</main>
+                <label class="titulos-boxs" for="pass-repeat">Confirme la contraseña:</label>
+                <input class="text-boxs" type="password" name="pass-repeat" id="pass-repeat">
 
+                <div class="buttons">
+                    <!-- button limpiar o borrar formulario -->
+                    <input class="button-reset" type="reset" name="reset" id="reset">
+
+                    <!-- button enviar -->
+                    <input class="button-submit" type="submit" name="submit" id="submit-and-go-to-home">
+                </div>
+
+                <div class="redirec-login">
+                    <div>
+                        <label">Ya tienes una cuenta?</label>
+                    </div>
+                    <a class="link-inicia-sesion" href="/login">Inicia sesión</a>
+                </div>
+            </form>
+        </div>
+    </main>
 </body>
+
 </html>

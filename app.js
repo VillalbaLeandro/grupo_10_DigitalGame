@@ -6,12 +6,13 @@ app.use(express.static(path.resolve(__dirname, "./public")));
 app.use(express.urlencoded());
 
 app.get ("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "./views/home.html"))
+    res.sendFile(path.join(__dirname, "/views/home.html"))
 });
 
 app.get ("/register", (req, res) => {
-    res.sendFile(path.join(__dirname, "./views/register.html"))
+    res.sendFile(path.join(__dirname, "/views/register.html"))
 });
+
 
 app.listen(3040, () => {
     console.log( "Levantando un servidor con Express en: http://localhost:3040")
