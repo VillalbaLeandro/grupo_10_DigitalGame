@@ -28,8 +28,8 @@ img {
 
 .logo-container img {
     width: 86%;
-}
 
+}
 .navbar-iconCart-iconUser {
     display: flex;
     justify-content: space-between;
@@ -323,6 +323,11 @@ main section h3 {
 
     .logo-container {
         width: 40%;
+        transition: width 450ms;
+    }
+
+    .logo-container:hover{
+    width: 45%;
     }
 
     .logo-container img {
@@ -367,7 +372,11 @@ main section h3 {
         text-decoration: none;
         color: #64bee4;
         font-weight: 700;
-
+        transition: color 450ms, font-size 1s;
+    }
+    .menu-contenedor-breackpoint a:hover{
+        color: white;
+        font-size: 14px;
     }
    
     .icon-cart-responsive {
@@ -394,7 +403,7 @@ main section h3 {
         border-radius: 4px;
         font-size: 83%;
         box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
-
+        
     }
 
     .cart-register-login-breackpoint {
