@@ -7,6 +7,8 @@
 body {
     font-family: "Roboto";
     margin-top: 26%;
+    background-color: #ebebeb;
+
 }
 
 header {
@@ -16,6 +18,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 
@@ -93,7 +96,7 @@ img {
 
 .cart-icon-conteiner i,
 .login-icon-container {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 button {
@@ -111,7 +114,7 @@ button .icon {
 
 .menu-contenedor-breackpoint {
     display: none;
-    
+
 }
 
 .menu-container {
@@ -119,7 +122,9 @@ button .icon {
 }
 
 
-/* INICIO MAIN   */
+/* INICIO MAIN .....................................................   */
+
+
 .atajos {
     display: flex;
     flex-direction: column;
@@ -129,7 +134,7 @@ button .icon {
 main .atajo {
     width: 80%;
     background-color: #CCCCCC;
-    margin: 10px;
+    margin: 7px;
     padding: 4px;
     text-align: center;
     border-radius: 3px;
@@ -153,6 +158,133 @@ main .atajo {
 
 .atajos:hover button {
     color: white;
+}
+
+.menu-lateral-categorias-cards-conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-latearal-categorias-container {
+    display: none;
+}
+
+.products {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.img-product-container {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.price {
+    font-size: 18px;
+    width: 30%;
+    font-weight: 700;
+    color: #666666;
+
+}
+
+.consolas-compatibles,
+.main-card-categoria {
+    color: #666666;
+    margin-bottom: 3px;
+}
+
+.discount {
+    display: none;
+    width: 70%;
+
+}
+
+.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description {
+    color: #666;
+}
+
+.description {
+    display: none;
+    margin-top: 20px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+
+main section article i,
+.discount {
+    color: #39b54a;
+}
+
+main section article i {
+
+    /* display: block; */
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    display: none;
+}
+
+
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+.card-container {
+    margin-bottom: 32px;
+    box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
+}
+
+.main-article {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.button-add-cart-container {
+    display: flex;
+    width: 32%;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.button-add-cart-container button {
+    order: none;
+    background: #50B868;
+    padding: 4px 6px;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
 }
 
 
@@ -232,7 +364,7 @@ main .atajo {
         font-weight: 700;
 
     }
-
+   
     .icon-cart-responsive {
         margin-right: 15px;
     }
@@ -256,11 +388,62 @@ main .atajo {
         padding: 5px;
         border-radius: 4px;
         font-size: 83%;
-        box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.38);
+        box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
 
     }
 
     .cart-register-login-breackpoint {
         display: flex;
     }
+
+    .products-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-container {
+        width: 45%;
+        margin: 20px auto
+    }
+
+    .menu-latearal-categorias-container {
+        display: block;
+        background-color: #756f6f;
+        padding: 6px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: 3px solid #017bae;
+        box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
+        margin-top: 20px;
+        max-width: 135px;
+        color: #64bee4;;
+              
+    }
+    .menu-latearal-categorias-container p{
+        color: #017bae;
+
+    }
+
+    ul li {
+        list-style: none;
+        padding: 0%;
+
+    }
+}
+
+
+
+@media (min-width: 1024px){
+
+    .card-container {
+        width: 22%;
+        margin: 20px auto
+    }
+
+    .rivals-img{
+        height: 175px;
+    }
+
+
+
 }
