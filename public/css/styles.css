@@ -414,7 +414,12 @@ main section h3 {
 
     .card-container {
         width: 45%;
-        margin: 20px auto
+        margin: 20px auto;
+        transition: width 1s;
+    }
+    .card-container:hover{
+        
+
     }
 
     .menu-latearal-categorias-container {
