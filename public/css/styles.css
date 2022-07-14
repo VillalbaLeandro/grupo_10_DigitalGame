@@ -168,12 +168,17 @@ main .atajo {
 .menu-latearal-categorias-container {
     display: none;
 }
+.products-container {
+    display: flex;
+    justify-content: center;
+}
 
 .products {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
 }
 
 .img-product-container {
@@ -396,10 +401,7 @@ main section h3 {
         display: flex;
     }
 
-    .products-container {
-        display: flex;
-        justify-content: center;
-    }
+   
 
     .card-container {
         width: 45%;
@@ -408,7 +410,7 @@ main section h3 {
 
     .menu-latearal-categorias-container {
         display: block;
-        background-color: #756f6f;
+        background-color: #c0c0c0;
         padding: 6px;
         font-size: 14px;
         border-radius: 4px;
@@ -416,10 +418,19 @@ main section h3 {
         box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
         margin-top: 20px;
         max-width: 135px;
-        color: #64bee4;;
+        color: white
               
     }
     .menu-latearal-categorias-container p{
+        color: white
+
+    }
+    .menu-latearal-categorias-container a{
+        text-decoration: none;
+        color: white;
+        transition: color 300ms;
+    }
+    .menu-latearal-categorias-container a:hover{
         color: #017bae;
 
     }
@@ -444,6 +455,11 @@ main section h3 {
         height: 175px;
     }
 
-
+    .main-article{
+        font-size: 70%;
+    }
+    .main-article button{
+        font-size: 70%;
+    }
 
 }
