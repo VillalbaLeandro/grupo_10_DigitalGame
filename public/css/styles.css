@@ -1,97 +1,266 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-body{
-    position: relative;
+
+body {
+    font-family: "Roboto";
+    margin-top: 26%;
 }
-header{
-    background: #ebebeb;
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
+
+header {
+    position: fixed;
+    background: #CCCCCC;
+    padding: 7px 14px 2px 4px;
     top: 0;
     left: 0;
     right: 0;
 }
 
 
-.logo-tablet-desktop{
-    display: none;
+img {
+    width: 100%;
 }
 
-.mobile-burguer-img-container{
+.logo-container img {
+    width: 86%;
+}
+
+.navbar-iconCart-iconUser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carIcon-loginIcon-container {
+    display: flex;
+    align-items: baseline;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.burguer-logo-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-.menu-burguer i{
-    position: relative;
-    left: 6px;
-    top: -8.5px;
-    color: #5e5e5e;
 }
 
-.mobile-burguer-img-container img{
-    width: 55%;
-    position: relative;
-    left: 49px;
-    margin-bottom: 5px;
+.burger-container {
+    width: 21%;
+    margin-left: 2%;
+
 
 }
-.carrito{
-    position: absolute;
-    left: 244px;
-    top: 38.5px;
-    color: #5e5e5e;
+
+.burger-container .icon {
+    font-size: 6vw;
+
 }
-.icon-user{
-    position: absolute;
-    left: 285px;
-    top: 38px;
-    color: #5e5e5e;
-}
-.search-button-container{
+
+.search-container {
+    width: 80%;
     display: flex;
-    justify-content: flex-start;
 
 }
-.search-container{
-    display: flex;
-    position: relative;
+
+.search-nav {
+    border: none;
+    border-radius: 22px;
+    width: 85%;
+    margin: 12px 12px 15px 20px;
+    height: 37px;
+    padding-left: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+
+
 }
 
-.search-container input{
-    width: 220px;
-    border: none;
-    border-radius: 10px;
-    position: relative;
-    height: 22px;
-    padding: 5px;
+.search-nav::placeholder {
+    color: #a5a5a5;
+    font-size: 100%;
 }
-.search-container input::placeholder{
-    font-size: 11px;
-}
-.search-container button{
-    position: absolute;
-    left: 197px;
-    top: 3px;
-    background: none;
-    border: none;
+
+.icon {
+    font-size: 20px;
     color: #756f6f;
+    margin: 0px 10px;
+    transition: color 1s;
 }
 
+.login-icon-container:hover {
+    color: #017bae
+}
 
+.cart-icon-conteiner i,
+.login-icon-container {
+    font-size: 25px;
+}
 
-.menu-container{
+button {
+    border: none;
+    background: none;
+    position: relative;
+
+}
+
+button .icon {
+    position: absolute;
+    left: -59px;
+    top: 5px;
+}
+
+.menu-contenedor-breackpoint {
+    display: none;
+    
+}
+
+.menu-container {
     display: none;
 }
 
 
- 
+/* INICIO MAIN   */
+.atajos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.banner img{
-    width: 100%;
+main .atajo {
+    width: 80%;
+    background-color: #CCCCCC;
+    margin: 10px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+
+    transition: background-color 300ms, width 450ms;
+}
+
+.atajos button {
+    font-size: 14px;
+    color: #017bae;
+    font-weight: 700;
+    transition: color 300ms;
+
+}
+
+.atajo:hover {
+    background-color: #017bae;
+    width: 90%
+}
+
+.atajos:hover button {
+    color: white;
+}
+
+
+/* BREACKPONIT 600PX */
+
+
+@media (min-width: 600px) {
+    body {
+        margin-top: 129px;
+    }
+
+}
+
+
+
+/* BREAKPOINT 768PX */
+
+
+
+@media (min-width: 768px) {
+
+    .burger-container {
+        display: none;
+    }
+
+
+    .carIcon-loginIcon-container {
+        display: none;
+    }
+
+
+    .logo-container {
+        width: 40%;
+    }
+
+    .logo-container img {
+        width: 165%;
+        margin-left: 68px;
+    }
+
+    .search-container {
+        width: 103%;
+        display: flex;
+    }
+
+    .search-nav {
+        height: 31px;
+    }
+
+    button .icon {
+        top: 2px;
+    }
+
+    .logo-burger-cartShop-loginButton-conainer {
+        display: flex;
+    }
+
+    .navbar-iconCart-iconUser {
+        width: 208%;
+    }
+
+    .atajos {
+        display: none;
+    }
+
+    .menu-contenedor-breackpoint {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 10px 24px 10px;
+    }
+
+    .menu-contenedor-breackpoint a {
+
+        text-decoration: none;
+        color: #64bee4;
+        font-weight: 700;
+
+    }
+
+    .icon-cart-responsive {
+        margin-right: 15px;
+    }
+
+    .menu-atajos p {
+        color: #64bee4;
+        font-weight: 700;
+
+    }
+
+    .links-breackpoint {
+        text-decoration: underline;
+    }
+
+    .menu-atajos {
+        display: flex;
+        justify-content: space-around;
+        background: #666666;
+        width: 98%;
+        height: 30px;
+        padding: 5px;
+        border-radius: 4px;
+        font-size: 83%;
+        box-shadow: 10px 10px 23px -1px rgba(0,0,0,0.38);
+
+    }
+
+    .cart-register-login-breackpoint {
+        display: flex;
+    }
 }

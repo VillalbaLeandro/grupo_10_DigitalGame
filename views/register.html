@@ -17,68 +17,70 @@
     <title>DG Register</title>
 </head>
 
-<body>
-      <!-----------------HEADER-------------------->
-      <header>
-        <!-- Menu Principal -->
-        <div class="burger-logo-bar-menu-container">
-              <!-- Menu Hamburgesa y img y el img de desktop en display none-->
-            <div class="logo-burger-container">
-              
-                <div class="mobile-burguer-img-container">
-                    <div class="menu-burguer">
-                        <i class="fas fa-bars"></i>
-                    <img src="image/logo-nombre.png" alt="logo">
+<body class="body-register">
+ <!-----------------HEADER-------------------->
+ <header>
+
+    <div class="header-conteiner-2">
+        <div class="logo-burger-cartShop-loginButton-conainer">
+
+            <div class="burguer-logo-container">
+                <!-- menu hamburguesa -->
+                <div class="burger-container">
+                    <i class="fas fa-bars icon"></i>
+                </div>
+
+                <!-- logo con nombre  -->
+                <div class="logo-container">
+                   <a href="/"> <img src="image/logo-nombre.png" alt="logo digital games"></a>
+                </div>
+            </div>
+            <div class="navbar-iconCart-iconUser">
+                <!-- nav search icon button -->
+                <form class="search-container">
+                    <!-- placeholder es el texto que se muestra dentro de la barra de search -->
+                    <input class="input-search search-nav" type="text" placeholder="  Buscar productos, marcas...">
+                    <div class="button-conteiner">
+                        <!-- boton de busqueda  -->
+                        <button><i class="fas fa-search icon"></i></button>
+                    </div>
+                </form>
+
+                <!-- iconos carrito y login -->
+                <div class="carIcon-loginIcon-container">
+                    <div class="cart-icon-conteiner">
+                        <i class="fas fa-shopping-cart icon"></i>
+                    </div>
+                    <div class="login-icon-container icon">
+                        <a href="/login"> <i class="fas fa-user"></i></a>
                     </div>
                 </div>
-                <!-- logo carrito -->
-                <div class="carrito">
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-                <!-- Logo user  -->
-                <div class="icon-user">
-                    <i class="fas fa-user"></i>
-                </div>
-                <!-- Logo (Digital Game) -->
-                <div class="logo-tablet-desktop">
-                    <!-- <img src="image/logo-digital-games.png" alt="logo"> -->
-                    <img src="image/logo-nombre.png" alt="logo">
-
-                </div>
-            </div>
-            <!-- Contenedor Barra de Busqueda, Boton y menu hamburguesa -->
-            <div class="search-button-container">
-
-                <!-- Barra de Busqueda -->
-                <div class="search-container">
-                    <input type="text" placeholder="Buscar...">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
             </div>
         </div>
+    </div>
+    <!-- Lista De Opciones -->
+    <div class="menu-contenedor-breackpoint">
+        <div class="menu-atajos">
+            <a href="/">HOME</a>
+            
+            <a href="#">CATEGORIAS</a>
+            <a href="#">OFERTAS</a>
 
+            <a href="#">NUEVOS LANZAMIENTOS</a>
+            <a href="#">MAS DESCARGADOS</a>
+            <div class="cart-register-login-breackpoint">
+                <a href="#"><i class="fas fa-shopping-cart icon-cart-responsive"></i></a>
+                <p><br> </p>
+                <a class="links-breackpoint" href="/register">REGISTRATE</a>
+                <p>/</p>
+                <a class="links-breackpoint" href="/login">INICIA SESION</a>
 
-
-
-
-
-        <!-- Lista De Opciones -->
-        <div class="menu-container">
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></li>
-                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
+            </div>
 
         </div>
-    </header>
-    <!-----------------FIN HEADER-------------------->
+    </div>
+</header>
+<!-----------------FIN HEADER-------------------->
 
     <main>
         <!-- formulario register -->

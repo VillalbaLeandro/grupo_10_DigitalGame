@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-login{
+    margin-top: 30%;
+}
+
 .formulario-container {
     width: 90%;
     margin: auto;
@@ -8,6 +18,7 @@
     padding: 26px;
     margin-top: 10%;
     box-shadow: 7px 9px 13px -1px rgba(0,0,0,0.46);
+    max-width: 400px;
 }
 .box-text {
     width: 100%;   
@@ -49,4 +60,10 @@ form div {
 }
 .No-tienes-cuenta a:hover {
 color: white
+}
+
+@media (min-width: 768px){
+    .body-login{
+        margin-top: 12%;
+        }   
 }

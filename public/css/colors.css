@@ -1,6 +1,10 @@
-:root {
-    --azul: #03264C;
+:root{
     --grisOscuro: #666;
     --grisClaro: #ebebeb;
+    --backgroundHeaderGris: #CCCCCC;
     --blanco: #fff;
+    --azul: #017bae;
+    --iconsColor: #756f6f;
+    --textosEnCeleste: #64bee4;
+    --grisOscuroMenuBreackPoint: #666666;
 }

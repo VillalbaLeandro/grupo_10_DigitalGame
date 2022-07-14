@@ -6,6 +6,9 @@
 }
 
 /* REGISTER----------------------------------- */
+.body-register{
+margin-top: 30%;
+}
 
 .formulario-container{
     width: 90%;
@@ -69,7 +72,8 @@ main input:hover{
 }
 .buttons input{
     width: 30%;
-    font-size: 8px;
+    font-size: 12px;
+
     border-radius: 7px;
     height: 22px;
     background: #017bae;
@@ -100,38 +104,8 @@ div a:hover{
 
 
 
-
-
-/* boton para cargar imagen  */
-/* .file-select {
-    position: relative;
-    display: inline-block;
-  }
-
-  .file-select::before {
-    background-color: #5678EF;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3px;
-    content: 'Seleccionar'; 
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-
-  .file-select input[type="file"] {
-    opacity: 0;
-    width: 200px;
-    height: 32px;
-    display: inline-block;
-  }
-
-  #src-file1::before {
-    content: 'Seleccionar Archivo 1';
-  } */
-
-  /* fin css boton agregar imagen */
+@media (min-width: 768px){
+    .body-register{
+        margin-top: 12%;
+        }   
+}
