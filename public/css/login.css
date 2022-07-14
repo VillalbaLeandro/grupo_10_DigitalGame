@@ -1,0 +1,52 @@
+.formulario-container {
+    width: 90%;
+    margin: auto;
+    background-color: #666;
+    font-family: "Roboto";
+    color: white ;
+    border-radius: 4px;
+    padding: 26px;
+    margin-top: 10%;
+    box-shadow: 7px 9px 13px -1px rgba(0,0,0,0.46);
+}
+.box-text {
+    width: 100%;   
+    height: 29px;
+    border-radius: 4px;
+    padding: 4px;
+    border: 2px solid #017bae;
+    background: #3a3636;
+
+}
+.box-text::placeholder{
+   color: #ebebeb;
+}
+
+form div {
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+
+}
+.No-tienes-cuenta {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.boton-inicio-sesion{
+    width: 100%;
+    height: 33px;
+    background-color: #017bae;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+.No-tienes-cuenta a {
+    color: #5b9db9;
+    font-weight: 700;
+}
+.No-tienes-cuenta a:hover {
+color: white
+}

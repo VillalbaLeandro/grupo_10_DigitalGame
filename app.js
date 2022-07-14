@@ -17,3 +17,7 @@ app.get ("/register", (req, res) => {
 app.listen(3040, () => {
     console.log( "Levantando un servidor con Express en: http://localhost:3040")
 });
+
+app.get ("/login", (req, res) => {
+    res.sendFile(path.join(__dirname, "/views/login.html"))
+});

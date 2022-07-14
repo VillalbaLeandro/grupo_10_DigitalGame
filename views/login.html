@@ -6,29 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Estilos Propios -->
-    <link href="/css/style.css" rel="stylesheet">
 
-    <!-- Titulo -->
-    <title>Digital Game</title>
+    <!-- Falta Tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
+
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="/css/login.css">
+
+
+    <title>Document</title>
 </head>
 
 <body>
+    <!-----------------HEADER-------------------->
+    <header>
+        <!-- Menu Principal -->
+        <div class="burger-logo-bar-menu-container">
+            <!-- Menu Hamburgesa y img y el img de desktop en display none-->
+            <div class="logo-burger-container">
+
+                <div class="mobile-burguer-img-container">
+                    <div class="menu-burguer">
+                        <i class="fas fa-bars"></i>
+                        <img src="image/logo-nombre.png" alt="logo">
+                    </div>
+                </div>
+                <!-- logo carrito -->
+                <div class="carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <!-- Logo user  -->
+                <div class="icon-user">
+                    <i class="fas fa-user"></i>
+                </div>
+                <!-- Logo (Digital Game) -->
+                <div class="logo-tablet-desktop">
+                    <!-- <img src="image/logo-digital-games.png" alt="logo"> -->
+                    <img src="image/logo-nombre.png" alt="logo">
+
+                </div>
+            </div>
+            <!-- Contenedor Barra de Busqueda, Boton y menu hamburguesa -->
+            <div class="search-button-container">
+
+                <!-- Barra de Busqueda -->
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Lista De Opciones -->
+        <div class="menu-container">
+            <ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+
+        </div>
+    </header>
     <main>
-            <form action="/" method="GET"></form>
+        <div class="formulario-container">
+            <form action="/" method="GET">
+                <div>
+                    <label>Ingrese nombre de usuario y contraseña</label><br>
 
-            <label>Perfil</label>
+                </div>
+                <div>
+                    <input class="box-text" type="text" name="nombre-de-usuario" id="nombre-de-usuario"
+                        placeholder="Usuario"><br>
 
-            <label for="usuario"></label>
-            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                </div>
+                <div>
+                    <input class="box-text" type="password" name="password" id="password" placeholder="Contraseña"><br>
 
-            <label for="contraseña"></label>
-            <input type="pass" name="contraseña" id="contraseña" placeholder="Contraseña">
+                </div>
+                <div >
+                    <button class="boton-inicio-sesion" type="submit">Iniciar Sesion</button><br>
 
-            <input type="checkbox" value="recordarme" name="recordarme" id="recordarme">
-            <label for="recordarme">Recordarme</label>
+                </div>
+                <div class="No-tienes-cuenta">
+                    <div>
+                        <label>No tienes una cuenta?</label>
 
-            <button type="submit"> Iniciar Sesión </button>
+                    </div>
+
+                    <a href="/register">Registrate</a>
+
+                </div>
+
+            </form>
+        </div>
     </main>
 </body>
 
