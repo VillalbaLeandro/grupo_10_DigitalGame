@@ -27,7 +27,8 @@ app.get ("/register", (req, res) => {
 });
 /******************FIN RUTAS********************/
 
+const port = process.env.PORT || 3000;
 
-app.listen(3040, () => {
-    console.log( "Levantando un servidor con Express en: http://localhost:3040")
+app.listen(port, () => {
+    console.log( "Servidor inciado en: http://localhost:" + port)
 });
