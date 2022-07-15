@@ -27,10 +27,6 @@ app.get ("/register", (req, res) => {
 });
 /******************FIN RUTAS********************/
 
-// app de prueba
-app.get ("/home2", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/home2.html"))
-});
 
 app.listen(3040, () => {
     console.log( "Levantando un servidor con Express en: http://localhost:3040")
