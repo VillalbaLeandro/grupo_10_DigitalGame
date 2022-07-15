@@ -7,13 +7,13 @@
 body {
     font-family: "Roboto";
     margin-top: 26%;
-    background-color: #ebebeb;
+    background-color: var(--grisClaro);
 
 }
 
 header {
     position: fixed;
-    background: #CCCCCC;
+    background: var(--backgroundHeaderGris);
     padding: 7px 14px 2px 4px;
     top: 0;
     left: 0;
@@ -30,6 +30,7 @@ img {
     width: 86%;
 
 }
+
 .navbar-iconCart-iconUser {
     display: flex;
     justify-content: space-between;
@@ -168,6 +169,7 @@ main .atajo {
 .menu-latearal-categorias-container {
     display: none;
 }
+
 .products-container {
     display: flex;
     justify-content: center;
@@ -262,7 +264,7 @@ main section h3 {
 
 .card-container {
     margin-bottom: 32px;
-    box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
+    box-shadow: 7px 7px 6px -5px rgba(0, 0, 0, 0.22);
 }
 
 .main-article {
@@ -289,7 +291,6 @@ main section h3 {
     padding: 4px 6px;
     color: white;
     border-radius: 3px;
-    box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
 }
 
 
@@ -326,8 +327,8 @@ main section h3 {
         transition: width 450ms;
     }
 
-    .logo-container:hover{
-    width: 45%;
+    .logo-container:hover {
+        width: 45%;
     }
 
     .logo-container img {
@@ -372,13 +373,14 @@ main section h3 {
         text-decoration: none;
         color: #64bee4;
         font-weight: 700;
-        transition: color 450ms, font-size 1s;
+        transition: color 450ms, transform 600ms;
     }
-    .menu-contenedor-breackpoint a:hover{
+
+    .menu-contenedor-breackpoint a:hover {
         color: white;
-        font-size: 14px;
+        transform: scale(1.1);
     }
-   
+
     .icon-cart-responsive {
         margin-right: 15px;
     }
@@ -403,49 +405,61 @@ main section h3 {
         border-radius: 4px;
         font-size: 83%;
         box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
-        
+
     }
 
     .cart-register-login-breackpoint {
         display: flex;
     }
 
-   
+
 
     .card-container {
         width: 45%;
         margin: 20px auto;
-        transition: width 1s;
+        transition: transform 400ms;
     }
-    .card-container:hover{
-        
+
+    .card-container:hover {
+        transform: scale(1.1);
+
+
 
     }
 
     .menu-latearal-categorias-container {
         display: block;
-        background-color: #c0c0c0;
+        background-color: #666666;
+        border-radius: 2px;
         padding: 6px;
         font-size: 14px;
-        border-radius: 4px;
-        border: 3px solid #017bae;
         box-shadow: 10px 10px 23px -1px rgba(0, 0, 0, 0.38);
         margin-top: 20px;
         max-width: 135px;
-        color: white
-              
     }
-    .menu-latearal-categorias-container p{
-        color: white
+
+    .menu-latearal-categorias-container a {
+        text-decoration: none;
+        transition: all 300ms;
+    }
+
+    .menu-latearal-categorias-container a:hover {
+        color:#64bee4;
+        
 
     }
-    .menu-latearal-categorias-container a{
-        text-decoration: none;
-        color: white;
-        transition: color 300ms;
+
+   
+
+    .titulo-menu-lateral {
+        font-size: 12px;
+        font-weight: 800;
+        color:#64bee4;
     }
-    .menu-latearal-categorias-container a:hover{
-        color: #017bae;
+    .menu-latearal-categorias-container a{
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
 
     }
 
@@ -454,25 +468,27 @@ main section h3 {
         padding: 0%;
 
     }
+
 }
 
 
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
     .card-container {
         width: 22%;
         margin: 20px auto
     }
 
-    .rivals-img{
+    .rivals-img {
         height: 175px;
     }
 
-    .main-article{
+    .main-article {
         font-size: 70%;
     }
-    .main-article button{
+
+    .main-article button {
         font-size: 70%;
     }
 
