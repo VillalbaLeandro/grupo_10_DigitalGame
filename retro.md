@@ -13,6 +13,7 @@ Para las proximas etapas los que venimos un poco atrasados esperamos estar al di
 
 * Compartir ideas.
 * Trabajo en equipo.
+* Trabajar con ramas. 
 
 ## Continuar haciendo
 
