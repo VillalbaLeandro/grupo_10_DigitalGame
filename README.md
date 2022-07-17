@@ -45,7 +45,8 @@ https://juegosdigitalesargentina.com/categorias/juegos-ps4-pack/60 -> estructura
 Uguccioni, Luis.
 Vilalba, Leandro: 
     Hola me presento, soy Leandro, me dicen lean o leo. Soy de Posadas, Misiones. Tengo conocimientos en Photoshop y CorelDraw. Actualmente estoy cursando primer año en programacion y analistas de sistemas en la Esc. Normal superior Nº10 de mi ciudad.
-Vidiri, Tomas.
+Vidiri, Tomas;
+Hola soy Tomas, vivo en Tigre, Buenos Aires. actualmente soy comerciante tengo una tienda de alimento y accesorios para mascotas ("@lahuellapetshop"), estoy dando mis primeros pasos en el mundo de la programacion.
 Albarracín, Marcela.
     Hola soy Laura Marcela Albarracin, me gusta que me digan Marcela, soy de Bucaramanga, Colombia. Actualemnte estudio Ingenieria de sistemas, trabajo en la parte adminitrativa de una fabrica de ropa para bebe. Complemento mis estudios haciendo este curso.
 Mengues, nicolas. 
