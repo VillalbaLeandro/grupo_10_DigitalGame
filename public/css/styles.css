@@ -159,11 +159,14 @@ main .atajo {
 
 .atajos:hover button {
     color: white;
+    
 }
 
 .menu-lateral-categorias-cards-conteiner {
     display: flex;
     justify-content: center;
+
+    align-items: flex-start;
 }
 
 .menu-latearal-categorias-container {
@@ -292,6 +295,38 @@ main section h3 {
     color: white;
     border-radius: 3px;
 }
+
+/* -------------footer----------------- */
+
+footer{
+    background: var(--backgroundHeaderGris);
+    border-top: 8px solid var(--azul);
+    padding: 7px;
+    margin-top: 40px;
+}
+
+.footer-conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes-container{
+    width: 20%;
+}
+.logo-container-footer{
+    width: 20%;
+}
+
+.logo-footer{
+    width: 100%;
+    margin: 0;
+}
+.politicas-privacidad{
+    width: 20%;
+    text-align: center;
+}
+
 
 
 /* BREACKPONIT 600PX */
