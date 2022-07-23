@@ -11,11 +11,10 @@ body {
 
 }
 
-.background-opacity0 {}
 
 header {
     position: fixed;
-    background: rgba(196, 196, 196, .7);
+    background: rgb(173 173 173 / 70%);
     padding: 7px 14px 2px 4px;
     top: 0;
     left: 0;
@@ -42,7 +41,6 @@ img {
 .carIcon-loginIcon-container {
     display: flex;
     align-items: baseline;
-    width: 20%;
     justify-content: space-between;
 }
 
@@ -88,7 +86,7 @@ img {
 
 .icon {
     font-size: 20px;
-    color: #756f6f;
+    color: #323232;
     margin: 0px 10px;
     transition: color 1s;
 }
@@ -97,10 +95,6 @@ img {
     color: #017bae
 }
 
-.cart-icon-conteiner i,
-.login-icon-container {
-    font-size: 18px;
-}
 
 button {
     border: none;
@@ -126,7 +120,7 @@ button .icon {
 
 .barra-division-mobile {
     width: 100vw;
-    background: var(--grisOscuro);
+    background: #323232;
     height: 8px;
     margin: auto;
     position: absolute;
@@ -427,62 +421,73 @@ footer {
     .atajos {
         display: none;
     }
-    .guion-registrate{
+
+    .guion-registrate {
         margin: 0px 6px;
     }
+
     .menu-contenedor-breackpoint {
         display: flex;
-        width: 100vw;
-    }
-
-    .menu-contenedor-breackpoint a {
-
-        text-decoration: none;
-        color: #64bee4;
-        font-weight: 700;
-        transition: color 450ms, transform 1s, padding 450ms, border-bottom 1s, background-color 1s;
-    }
-
-    .menu-contenedor-breackpoint a:hover {
-        color: white;
-        /* transform: scale(1.1); */
-        padding-bottom: 4px;
-        background-color: #545252;
-        padding: 7px 12px;
-    }
-
-    
-    .menu-atajos p {
-        color: #64bee4;
-        font-weight: 700;
-
-    }
-    
-    .links-breackpoint {
-        text-decoration: underline;
-    }
-
-    .menu-atajos {
-        display: flex;
-        justify-content: space-around;
-        background: #666666;
-        height: 30px;
+        justify-content: space-between;
+        background: #323232;
+        height: 46px;
         padding: 5px;
-        font-size: 83%;
-        box-shadow: 0px 5px 8px 0px rgba(15, 19, 41, 0.54);
+        font-size: 63%;
+        box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
         width: 100%;
         align-items: center;
 
     }
 
+    .menu-contenedor-breackpoint a {
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 450ms, transform 1s, padding 450ms, border-bottom 1s, background-color 450ms;
+    }
+
+    .menu-atajos {
+        width: 74%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+     .guion, .cart-register-login-breackpoint a {
+        color: #64bee4;
+       
+        font-weight: 700;
+        transition: color 450ms;
+    }
+    .cart-register-login-breackpoint a:hover{
+        color: white;
+    }
+
+    .menu-atajos a {
+        color: #323232;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.10);
+        border-radius: 2px;
+        margin: 0px 2px;
+
+
+    }
+    .menu-atajos a:hover{
+        background: rgba(255, 255, 255, 0.20); ;
+        color: #64bee4;
+    }
+    .links-breackpoint {
+        text-decoration: underline;
+    }
+
     .cart-register-login-breackpoint {
+
+        margin: 0 14px;
         width: 22%;
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
 
 
 
@@ -561,5 +566,13 @@ footer {
     .main-article button {
         font-size: 70%;
     }
+    .menu-contenedor-breackpoint {
+        
+        font-size: 83%;
+       
 
+    }
+    .menu-atajos {
+        width: 74%;
+    }
 }
