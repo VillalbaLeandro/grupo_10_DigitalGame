@@ -27,6 +27,11 @@ img {
     width: 100%;
 }
 
+.logo-container {
+    text-align: center;
+
+}
+
 .logo-container img {
     width: 86%;
 
@@ -51,7 +56,6 @@ img {
 
 .burger-container {
     width: 21%;
-    margin-left: 2%;
 
 
 }
@@ -326,21 +330,57 @@ footer {
 
 .logo-container-footer {
     width: 20%;
-}
-
-.logo-footer {
-    width: 100%;
-    margin: 0;
-}
-
-.politicas-privacidad {
-    width: 20%;
     text-align: center;
 }
 
-.politicas-privacidad h2 {
+.logo-footer {
+    width: 60%;
+    margin: 0;
+}
+
+.logos-redes {
+    text-align: center;
+}
+
+.footer-conteiner i {
     font-size: 60%;
 }
+
+.politicas-privacidad h2,
+.correo-telefono h2 {
+    font-size: 39%;
+    text-align: center;
+}
+
+/* prueba menu desplegable  */
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 450ms;
+}
+
+.menu__item {
+    background: #323232;
+    color: #ebebeb;
+
+}
+
+.submenu li a {
+    background: none;
+    color: white;
+    padding: 4px;
+}
+
+.submenu form {
+    background: #323232;
+}
+
+.button-filter-search {
+    border: 1px solid black;
+    border-radius: 3px;
+    background: #dedede;
+}
+
 
 
 @media (min-width: 425px) {
@@ -451,13 +491,15 @@ footer {
         justify-content: flex-start;
     }
 
-     .guion, .cart-register-login-breackpoint a {
+    .guion,
+    .cart-register-login-breackpoint a {
         color: #64bee4;
-       
+
         font-weight: 700;
         transition: color 450ms;
     }
-    .cart-register-login-breackpoint a:hover{
+
+    .cart-register-login-breackpoint a:hover {
         color: white;
     }
 
@@ -470,12 +512,35 @@ footer {
 
 
     }
-    .menu-atajos a:hover{
-        background: rgba(255, 255, 255, 0.20); ;
+
+    .menu-atajos a:hover {
+        background: rgba(255, 255, 255, 0.20);
+        ;
         color: #64bee4;
     }
+
     .links-breackpoint {
         text-decoration: underline;
+    }
+
+    .menu-contenedor-breackpoint-ofertas {
+        display: flex;
+        justify-content: space-between;
+        background: #2b4e7e;
+        height: 46px;
+        padding: 5px;
+        font-size: 63%;
+        box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
+        width: 100%;
+        align-items: center;
+        border-radius: 33px;
+
+    }
+
+    .menu-contenedor-breackpoint-ofertas a {
+        text-decoration: none;
+        font-weight: 700;
+        transition: color 450ms, transform 1s, padding 450ms, border-bottom 1s, background-color 450ms;
     }
 
     .cart-register-login-breackpoint {
@@ -544,6 +609,44 @@ footer {
 
     }
 
+    .politicas-privacidad h2,
+    .politicas-privacidad i,
+    .correo-telefono h2 {
+        font-size: 60%;
+    }
+
+    /* pruebas menu desplegable */
+
+    .menu {
+        display: flex;
+
+    }
+
+    .container-submenu {
+        position: relative;
+    }
+
+    .submenu {
+        position: absolute;
+        top: 30px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .submenu li {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+    }
+
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+
 }
 
 
@@ -566,12 +669,14 @@ footer {
     .main-article button {
         font-size: 70%;
     }
+
     .menu-contenedor-breackpoint {
-        
+
         font-size: 83%;
-       
+
 
     }
+
     .menu-atajos {
         width: 74%;
     }

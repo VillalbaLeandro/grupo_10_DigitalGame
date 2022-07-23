@@ -15,6 +15,7 @@
     <!-- Estilos Propios -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/public/css/nav-bar.css">
     <link rel="icon" href="image/logo-digital-games.ico">
 
     <!-- Titulo -->
@@ -66,16 +67,57 @@
         <!-- Lista De Opciones -->
         <div class="menu-contenedor-breackpoint">
             <div class="menu-atajos">
-                <a href="/">HOME</a>
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu__item button"><a href="/" class="menu__link">HOME</a></li>
+                    <li class="menu__item container-submenu" >
+                        <a href="#" class="menu__link submenu-btn button cat">CATEGORIAS <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu" id="menu">
+                            <li class="menu__item"><a href="" class="menu__link">Acción</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Arcade</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Carreras</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Deportes</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Disparos</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Estrategia</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item container-submenu" >
+                        <a href="#" class="menu__link submenu-btn button cat">COMPATIBLES CON <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu" id="menu">
+                            <li class="menu__item"><a href="" class="menu__link">PS2</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">PS4</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">PS5</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">XBOX 360</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">XBOX ONE</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">NINTENDO SWITCH</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item container-submenu">
+                        <a href="" class="menu__link">FILTRAR<i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                                <form action="/">
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Novedades">Novedades <br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Ofertas">Ofertas <br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Envio Gratis">Envio Gratis<br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Cuotas sin interes">Cuotas sin interes <br>
+                                </form>
+                                <div class="button-filter-container">
+                                    <a href=""><button class="button-filter-search" type="submit">FILTRAR</button></a>
+                                </div>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+
+                <!-- <a href="/">HOME</a>
                 <a href="#">CATEGORIAS <i class="fas fa-caret-down"></i></a>
-                <a href="#">FILTRAR <i class="fas fa-caret-down"></i></a>
                 <a href="#">OFERTAS</a>
 
                 <a href="#">NUEVOS LANZAMIENTOS</a>
-                <a href="#">MAS DESCARGADOS</a>
-               
-
-
+                <a href="#">MAS DESCARGADOS</a> -->
+            </span>
             </div>
            
             <div class="cart-register-login-breackpoint">
@@ -87,7 +129,8 @@
 
             </div>
         </div>
-
+        <link rel="stylesheet" href="/menu.js">
+        <script src="/menu.js"></script>
         <div class="barra-division-mobile"></div>
 
     </header>
@@ -99,6 +142,18 @@
     </section>
 
     <main>
+        <div class="menu-contenedor-breackpoint-ofertas menu-ofertas">
+            <div class="menu-atajos">
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class=" button"><a href="" class="menu__link">OFERTAS</a></li>
+                    <li class=" button"><a href="" class="menu__link">NUEVOS LANZAMIENTOS</a></li>
+                    <li class=" button"><a href="" class="menu__link">MAS DESCARGADOS</a></li>
+                </ul>
+            </nav>
+            </span>
+            </div>
+        </div>
 <!-- 
         menu mobile
         <form action="/" method="GET">
@@ -274,13 +329,16 @@
         <div class="footer-conteiner">
             <div class="redes-container">
                 <div class="logos-redes">
-
+                   <a href=""> <i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
                 </div>
 
                 <div class="correo-telefono">
+                    <h2>digital-games@gmail.com</h2>
+                    <h2>Tel.:(0800)22 22 - 4578</h2>
                     
                 </div>
-                <img src="/image/redes.jpg" alt="">
 
             </div>
             <div class="logo-container-footer">
