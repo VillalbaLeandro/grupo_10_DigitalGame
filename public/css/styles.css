@@ -36,6 +36,11 @@ img {
     width: 86%;
 
 }
+ul li{
+    text-decoration: none;
+    padding: 0;
+    list-style: none;
+}
 
 .navbar-iconCart-iconUser {
     display: flex;
@@ -277,6 +282,41 @@ main section article i {
 main section h3 {
     margin: 20px 0px;
 }
+.menu-contenedor-breackpoint-ofertas {
+    display: flex;
+    justify-content: center;
+    background: #2b4e7e;
+    height: 46px;
+    box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
+    align-items: center;
+
+}
+
+.menu-contenedor-breackpoint-ofertas a {
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 450ms, transform 1s, padding 450ms, border-bottom 1s, background-color 450ms;
+}
+
+.menu-atajos-ofertas {
+    width: 100%;
+}
+
+.menu-atajos-ofertas ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+
+.menu-atajos-ofertas ul a {
+    color: #bababa;
+    transition: all 450ms;
+}
+.menu-atajos-ofertas ul a:hover {
+    color: white;
+    background-color: #325e9b;
+    padding: 10px;
+}
 
 .card-container {
     margin-bottom: 32px;
@@ -343,7 +383,7 @@ footer {
 }
 
 .footer-conteiner i {
-    font-size: 60%;
+    font-size: 136%;
 }
 
 .politicas-privacidad h2,
@@ -486,10 +526,13 @@ footer {
     }
 
     .menu-atajos {
-        width: 74%;
         display: flex;
         justify-content: flex-start;
     }
+    .menu-atajos-ofertas ul {
+        font-size: 15px;
+    }
+   
 
     .guion,
     .cart-register-login-breackpoint a {
@@ -504,7 +547,7 @@ footer {
     }
 
     .menu-atajos a {
-        color: #323232;
+        color: #bababa;
         padding: 10px;
         background: rgba(255, 255, 255, 0.10);
         border-radius: 2px;
@@ -523,26 +566,7 @@ footer {
         text-decoration: underline;
     }
 
-    .menu-contenedor-breackpoint-ofertas {
-        display: flex;
-        justify-content: space-between;
-        background: #2b4e7e;
-        height: 46px;
-        padding: 5px;
-        font-size: 63%;
-        box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
-        width: 100%;
-        align-items: center;
-        border-radius: 33px;
-
-    }
-
-    .menu-contenedor-breackpoint-ofertas a {
-        text-decoration: none;
-        font-weight: 700;
-        transition: color 450ms, transform 1s, padding 450ms, border-bottom 1s, background-color 450ms;
-    }
-
+   
     .cart-register-login-breackpoint {
 
         margin: 0 14px;
