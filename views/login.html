@@ -27,7 +27,6 @@
 <body class="body-login">
     <!-----------------HEADER-------------------->
     <header>
-
         <div class="header-conteiner-2">
             <div class="logo-burger-cartShop-loginButton-conainer">
 
@@ -39,7 +38,7 @@
 
                     <!-- logo con nombre  -->
                     <div class="logo-container">
-                        <a href="/"> <img src="image/logo-nombre.png" alt="logo digital games"></a>
+                        <a href="/"> <img src="image/logo-texto-oscuro.png" alt="logo digital games"></a>
                     </div>
                 </div>
                 <div class="navbar-iconCart-iconUser">
@@ -56,7 +55,7 @@
                     <!-- iconos carrito y login -->
                     <div class="carIcon-loginIcon-container">
                         <div class="cart-icon-conteiner">
-                            <a href="/#"><i class="fas fa-shopping-cart icon"></i></a>
+                            <a href="#"><i class="fas fa-shopping-cart icon"></i></a>
                         </div>
                         <div class="login-icon-container icon">
                             <a href="/login"> <i class="fas fa-user"></i></a>
@@ -68,24 +67,63 @@
         <!-- Lista De Opciones -->
         <div class="menu-contenedor-breackpoint">
             <div class="menu-atajos">
-                <a href="/">HOME</a>
-
-                <a href="#">CATEGORIAS</a>
-                <a href="#">OFERTAS</a>
-
-                <a href="#">NUEVOS LANZAMIENTOS</a>
-                <a href="#">MAS DESCARGADOS</a>
-                <div class="cart-register-login-breackpoint">
-                    <a href="/carrito"><i class="fas fa-shopping-cart icon-cart-responsive"></i></a>
-                    <p><br> </p>
-                    <a class="links-breackpoint" href="/register">REGISTRATE</a>
-                    <p>/</p>
-                    <a class="links-breackpoint" href="/login">INICIA SESION</a>
-
-                </div>
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li class="menu__item button"><a href="/" class="menu__link">HOME</a></li>
+                    <li class="menu__item container-submenu" >
+                        <a href="#" class="menu__link submenu-btn button cat">CATEGORIAS  <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu" id="menu">
+                            <li class="menu__item"><a href="" class="menu__link">Acción</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Arcade</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Carreras</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Deportes</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Disparos</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Estrategia</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item container-submenu" >
+                        <a href="#" class="menu__link submenu-btn button cat">COMPATIBLES CON  <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu" id="menu">
+                            <li class="menu__item"><a href="" class="menu__link">PS2</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">PS4</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">PS5</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">XBOX 360</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">XBOX ONE</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">NINTENDO SWITCH</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item container-submenu">
+                        <a href="" class="menu__link">FILTRAR  <i class="fas fa-caret-down"></i></a>
+                        <ul class="submenu">
+                                <form action="/">
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Novedades">Novedades <br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Ofertas">Ofertas <br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Envio Gratis">Envio Gratis<br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Cuotas sin interes">Cuotas sin interes <br>
+                                </form>
+                                <div class="button-filter-container">
+                                    <a href=""><button class="button-filter-search" type="submit">FILTRAR</button></a>
+                                </div>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </nav>
+            </span>
+            </div>
+           
+            <div class="cart-register-login-breackpoint">
+                <a href="/carrito"><i class="fas fa-shopping-cart icon-cart-responsive"></i></a>
+                <p><br> </p>
+                <a class="links-breackpoint" href="/register">REGISTRATE</a>
+                <p class="guion">-</p>
+                <a class="links-breackpoint" href="/login">INICIA SESION</a>
 
             </div>
         </div>
+        <link rel="stylesheet" href="/menu.js">
+        <script src="/menu.js"></script>
+        <div class="barra-division-mobile"></div>
 
     </header>
     <!-----------------FIN HEADER-------------------->
@@ -122,6 +160,29 @@
             </form>
         </div>
     </main>
+         <!-- section footer -->
+         <footer>
+            <div class="footer-conteiner">
+                <div class="redes-container">
+                    <div class="logos-redes">
+                        <a href=""> <i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="correo-telefono">
+                        <h2>digital-games@gmail.com</h2>
+                        <h2>Tel.:(0800)22 22 - 4578</h2>
+                    </div>
+                </div>
+                <div class="logo-container-footer">
+                    <img class="logo-footer" src="/image/logo-digital-games.png" alt="">
+                </div>
+                <div class="politicas-privacidad">
+                    <h2>Politicas de privacidad</h2>
+                    <h2>Todos los derechos reservados</h2>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>

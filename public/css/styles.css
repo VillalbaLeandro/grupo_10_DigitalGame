@@ -173,56 +173,6 @@ button .icon {
     
 }
 
-.atajos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-main .atajo {
-    width: 80%;
-    background-color: #CCCCCC;
-    margin: 7px;
-    padding: 4px;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
-
-    transition: background-color 300ms, width 450ms;
-}
-
-.atajos button {
-    font-size: 14px;
-    color: #017bae;
-    font-weight: 700;
-    transition: color 450ms, border-bottom 1s;
-
-}
-
-.atajos:hover button {
-    color: white;
-    border-bottom: solid 1px white;
-}
-
-.atajo:hover {
-    background-color: #017bae;
-    width: 90%
-}
-
-
-
-.menu-lateral-categorias-cards-conteiner {
-    display: flex;
-    justify-content: center;
-
-    align-items: flex-start;
-}
-
-.menu-latearal-categorias-container {
-    display: none;
-}
-
 .products-container {
     display: flex;
     justify-content: flex-end;
@@ -642,21 +592,6 @@ footer {
     .menu-latearal-categorias-container a:hover {
         color: #64bee4;
 
-
-    }
-
-
-
-    .titulo-menu-lateral {
-        font-size: 12px;
-        font-weight: 800;
-        color: #64bee4;
-    }
-
-    .menu-latearal-categorias-container a {
-        font-size: 14px;
-        font-weight: 500;
-        color: white;
 
     }
 
