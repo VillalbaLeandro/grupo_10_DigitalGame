@@ -105,7 +105,18 @@ div a:hover{
 
 
 @media (min-width: 768px){
+    .main-register{
+        margin-bottom: 50px;
+    }
     .body-register{
-        margin-top: 21%;
+        margin-top: 18%;
         }   
+}
+
+@media(min-width: 1024px) {
+    .body-register{
+        margin-top: 13%;
+        }   
+    
+    
 }

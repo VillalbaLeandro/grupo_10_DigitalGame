@@ -443,7 +443,7 @@ footer {
     background: var(--backgroundHeaderGris);
     border-top: 8px solid var(--azul);
     padding: 7px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .footer-conteiner {

@@ -10,15 +10,14 @@
 
 .formulario-container {
     width: 90%;
-    margin: auto;
     background-color: #666;
     font-family: "Roboto";
     color: white ;
     border-radius: 4px;
     padding: 26px;
-    margin-top: 10%;
     box-shadow: 7px 9px 13px -1px rgba(0,0,0,0.46);
     max-width: 400px;
+    margin: 153px auto 40px auto;
     
 }
 .box-text {
@@ -65,6 +64,18 @@ color: white
 
 @media (min-width: 768px){
     .body-login{
-        margin-top: 22%;
-        }   
+        margin-top: 18%;
+        } 
+        .formulario-container {
+            width: 90%;
+            background-color: #666;
+            font-family: "Roboto";
+            color: white ;
+            border-radius: 4px;
+            padding: 26px;
+            box-shadow: 7px 9px 13px -1px rgba(0,0,0,0.46);
+            max-width: 400px;
+            margin: 153px auto 65px auto;
+            
+        }  
 }
