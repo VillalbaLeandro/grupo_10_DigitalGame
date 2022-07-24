@@ -36,7 +36,8 @@ img {
     width: 86%;
 
 }
-ul li{
+
+ul li {
     text-decoration: none;
     padding: 0;
     list-style: none;
@@ -141,36 +142,58 @@ button .icon {
 
 
 /* slider carrete de imagenes auto */
-.slider-frame{
+.slider-frame {
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 
-.slider-frame ul{
+.slider-frame ul {
     display: flex;
     width: 400%;
-    animation: slide 16s infinite alternate ease-in-out;   
+    animation: slide 16s infinite alternate ease-in-out;
 
 }
-.slider-frame img{
+
+.slider-frame img {
     width: 100%;
 }
+
 @keyframes slide {
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
+    0% {
+        margin-left: 0%;
+    }
 
-    25%{margin-left: -100%;}
-    50%{margin-left: -100%;}
+    20% {
+        margin-left: 0%;
+    }
 
-    55%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-    
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
+    25% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    55% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 
 
-    
+
 }
 
 .products-container {
@@ -191,6 +214,41 @@ button .icon {
     display: flex;
     justify-content: center;
     padding: 3%;
+    position: relative;
+}
+.name-game{
+    font-size: 100%;
+    text-align: center;
+    background: #CCCCCC;
+    align-items: center;
+    color: #504a4a;
+    margin: 0px 25px;
+    font-family: "Staatliches";
+}
+
+.envios-gratis {
+    position: absolute;
+    background-color: #fa5215;
+    color: #323232;
+    font-size: 109%;
+    left: 58%;
+    top: 87%;
+    font-weight: 400;
+    padding: 1px 7px;
+    box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
+}
+.etiqueta-off{
+    position: absolute;
+    background-color: #af0f0f;
+    color: white;
+    font-size: 122%;
+    left: 71%;
+    top: 7%;
+    font-weight: 700;
+    padding: 1px 7px;
+    transform: rotate(31deg);
+    box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
+
 }
 
 .price {
@@ -265,6 +323,7 @@ main section article i {
 main section h3 {
     margin: 20px 0px;
 }
+
 .menu-contenedor-breackpoint-ofertas {
     display: flex;
     justify-content: center;
@@ -295,6 +354,7 @@ main section h3 {
     color: #bababa;
     transition: all 450ms;
 }
+
 .menu-atajos-ofertas ul a:hover {
     color: white;
     background-color: #325e9b;
@@ -318,19 +378,64 @@ main section h3 {
 
 .button-add-cart-container {
     display: flex;
-    width: 32%;
-    justify-content: flex-end;
-    position: relative;
-
+    width: 50%;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
-.button-add-cart-container button {
-    order: none;
+.ver-mas {
+    margin-bottom: 5px;
+    background: #017bae;
+    padding: 4px 6px;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: transform 350ms;
+}
+
+.ver-mas:hover,
+.add-to-car:hover {
+    transform: scale(1.15);
+}
+
+.add-to-car {
     background: #50B868;
     padding: 4px 6px;
     color: white;
     border-radius: 3px;
+    position: relative;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: transform 350ms;
 }
+
+/* .icon-ver-mas, .icon-add-to-cart{
+    font-weight: 900;
+    border: none;
+    color: white;
+} */
+/* .icon-ver-mas{
+    background:#017bae;
+    padding: 4px 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: -33px;
+    top: 0;
+    font-size: 100%;
+    height: 24px;
+}
+.icon-add-to-cart{
+    background: #50B868;
+    padding: 4px 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: -33px;
+    top: 0;
+    font-size: 100%;
+    height: 24px;
+} */
 
 /* -------------footer----------------- */
 
@@ -468,6 +573,9 @@ footer {
     .search-nav {
         height: 31px;
     }
+    .envios-gratis{
+        left: 53%;
+    }
 
     button .icon {
         top: 2px;
@@ -488,7 +596,7 @@ footer {
     .guion-registrate {
         margin: 0px 6px;
     }
-   
+
     .menu-contenedor-breackpoint {
         display: flex;
         justify-content: space-between;
@@ -512,10 +620,11 @@ footer {
         display: flex;
         justify-content: flex-start;
     }
+
     .menu-atajos-ofertas ul {
         font-size: 15px;
     }
-   
+
 
     .guion,
     .cart-register-login-breackpoint a {
@@ -549,7 +658,7 @@ footer {
         text-decoration: underline;
     }
 
-   
+
     .cart-register-login-breackpoint {
 
         margin: 0 14px;
@@ -645,11 +754,17 @@ footer {
 
 @media (min-width: 1024px) {
 
+    .envios-gratis {
+        font-size: 70%;
+        left: 59%;
+    }
+    .etiqueta-off{
+        font-size: 75%;
+    }
     .card-container {
         width: 22%;
         margin: 20px auto
     }
-
     .rivals-img {
         height: 175px;
     }
