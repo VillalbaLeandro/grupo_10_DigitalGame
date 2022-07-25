@@ -15,7 +15,7 @@
     <!-- Estilos Propios -->
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/colors.css">
-
+    <link rel="stylesheet" href="/css/carrito.css">
 
     <link rel="icon" href="image/logo-digital-games.ico">
 
@@ -24,10 +24,10 @@
 
 </head>
 
-<body>
+<body class="body-cart">
 
-     <!-----------------HEADER-------------------->
-     <header>
+    <!-----------------HEADER-------------------->
+    <header>
         <div class="header-conteiner-2">
             <div class="logo-burger-cartShop-loginButton-conainer">
 
@@ -68,51 +68,57 @@
         <!-- Lista De Opciones -->
         <div class="menu-contenedor-breackpoint">
             <div class="menu-atajos">
-            <nav class="main-nav">
-                <ul class="menu">
-                    <li class="menu__item button"><a href="/" class="menu__link">HOME</a></li>
-                    <li class="menu__item container-submenu" >
-                        <a href="#" class="menu__link submenu-btn button cat">CATEGORIAS  <i class="fas fa-caret-down"></i></a>
-                        <ul class="submenu" id="menu">
-                            <li class="menu__item"><a href="" class="menu__link">Acción</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Arcade</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Carreras</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Deportes</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Disparos</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Estrategia</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item container-submenu" >
-                        <a href="#" class="menu__link submenu-btn button cat">COMPATIBLES CON  <i class="fas fa-caret-down"></i></a>
-                        <ul class="submenu" id="menu">
-                            <li class="menu__item"><a href="" class="menu__link">PS2</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">PS4</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">PS5</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">XBOX 360</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">XBOX ONE</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">NINTENDO SWITCH</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item container-submenu">
-                        <a href="" class="menu__link">FILTRAR  <i class="fas fa-caret-down"></i></a>
-                        <ul class="submenu">
+                <nav class="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item button"><a href="/" class="menu__link">HOME</a></li>
+                        <li class="menu__item container-submenu">
+                            <a href="#" class="menu__link submenu-btn button cat">CATEGORIAS <i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="submenu" id="menu">
+                                <li class="menu__item"><a href="" class="menu__link">Acción</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Arcade</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Carreras</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Deportes</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Disparos</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Estrategia</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item container-submenu">
+                            <a href="#" class="menu__link submenu-btn button cat">COMPATIBLES CON <i
+                                    class="fas fa-caret-down"></i></a>
+                            <ul class="submenu" id="menu">
+                                <li class="menu__item"><a href="" class="menu__link">PS2</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">PS4</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">PS5</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">XBOX 360</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">XBOX ONE</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">NINTENDO SWITCH</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item container-submenu">
+                            <a href="" class="menu__link">FILTRAR <i class="fas fa-caret-down"></i></a>
+                            <ul class="submenu">
                                 <form action="/">
-                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Novedades">Novedades <br>
-                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Ofertas">Ofertas <br>
-                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Envio Gratis">Envio Gratis<br>
-                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Cuotas sin interes">Cuotas sin interes <br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros"
+                                        value="Novedades">Novedades <br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Ofertas">Ofertas
+                                    <br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros"
+                                        value="Envio Gratis">Envio Gratis<br>
+                                    <input class="menu__link" type="checkbox" name="cat-otros"
+                                        value="Cuotas sin interes">Cuotas sin interes <br>
                                 </form>
                                 <div class="button-filter-container">
                                     <a href=""><button class="button-filter-search" type="submit">FILTRAR</button></a>
                                 </div>
-                        </ul>
-                    </li>
-                    
-                </ul>
-            </nav>
-            </span>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                </span>
             </div>
-           
+
             <div class="cart-register-login-breackpoint">
                 <a href="/carrito"><i class="fas fa-shopping-cart icon-cart-responsive"></i></a>
                 <p><br> </p>
@@ -122,120 +128,94 @@
 
             </div>
         </div>
-        <link rel="stylesheet" href="/menu.js">
-        <script src="/menu.js"></script>
+
         <div class="barra-division-mobile"></div>
 
     </header>
     <!-----------------FIN HEADER-------------------->
 
     <!-- Carrito de compras -->
-    <main>
+    <main class="main-carrito">
         <!-- Contenedor Titulo -->
         <div class="Titulo">
             <section class="contenedor-titulo">
-                <h3 class="titulo-carro">Carrito</h3>
+                <h3 class="titulo-carrito">Mi Carrito</h3>
             </section>
             <!-- Contenedor de articulos -->
             <section>
                 <!-- Call of Duty -->
-                <article class="Producto">
+                <article class="card-product-cartshop">
                     <div class="contenedor-imagen">
                         <img src="/image/products/call-of-duty.jpg" alt="imagen" class="imagen">
                     </div>
-                    <!-- Descripcion -->
-                    <div class="contenedor-informacio-producto">
+                    <div class="main-cartshop">
+                        <!-- Descripcion -->
                         <div class="contenedor-descripcion">
                             <h4 class="nombre">CALL OF DUTY
                             </h4>
                         </div>
-                        <!-- Precio -->
-                        <div class="contenedor-precio">
-                            <p class="precio-producto">$6.770</p>
+                        <div class="cant-precios-container">
+                            <!-- Cantidad de articulos -->
+                            <div class="contenedor-cantidad">
+                                <label for="cantidad"></label>
+                                <input type="number" id="tentacles" name="cantidad" min="1" max="50">
+                            </div>
+                            <!-- Precio -->
+                            <div class="contenedor-precio">
+                                <p class="total">Total</p>
+                                <p class="precio-producto">$6.770</p>
+                                <!-- Contenedor Basura -->
+                                <button><i class="fas fa-trash-alt icon-trash"></i></button>
+                            </div>
                         </div>
-                        <!-- Cantidad de articulos -->
-                        <div class="contenedor-cantidad">
-                            <input type="number" class="cantidad" value="1">
-                        </div>
-                    </div>
-                    <!-- Contenedor Basura -->
-                    <div class="contenedor-basura ">
-                        <i class="fa-solid fa-trash"></i>
                     </div>
                 </article>
-
-                <!-- Fifa 2022 -->
-                <article class="Producto 2">
+                <!-- SPIDERMAN -->
+                <article class="card-product-cartshop">
                     <div class="contenedor-imagen">
-                        <img src="/image/products/fifa-2022.jpg" alt="imagen" class="imagen">
+                        <img src="/image/products/SPIDERMAN.jpg" alt="imagen" class="imagen">
                     </div>
-                    <!-- Descripcion -->
-                    <div class="contenedor-informacio-producto">
+                    <div class="main-cartshop">
+                        <!-- Descripcion -->
                         <div class="contenedor-descripcion">
-                            <h4 class="nombre">FIFA 2022
-                            </h4>
+                            <h4 class="nombre">SPIDER-MAN</h4>
                         </div>
-                        <!-- Precio -->
-                        <div class="contenedor-precio">
-                            <p class="precio-producto">$2.450</p>
+                        <div class="cant-precios-container">
+                            <!-- Cantidad de articulos -->
+                            <div class="contenedor-cantidad">
+                                <label for="cantidad"></label>
+                                <input type="number" id="tentacles" name="cantidad" min="1" max="50">
+                            </div>
+                            <!-- Precio -->
+                            <div class="contenedor-precio">
+                                <p class="total">Total</p>
+                                <p class="precio-producto">$9.735</p>
+                                <!-- Contenedor Basura -->
+                                <button><i class="fas fa-trash-alt icon-trash"></i></button>
+                            </div>
                         </div>
-                        <!-- Cantidad de articulos -->
-                        <div class="contenedor-cantidad">
-                            <input type="number" class="cantidad" value="1">
-                        </div>
-                    </div>
-                    <!-- Contenedor Basura -->
-                    <div class="contenedor-basura ">
-                        <i class="fa-solid fa-trash"></i>
                     </div>
                 </article>
 
-                <!-- Horizon -->
-                <article class="Producto 2">
-                    <div class="contenedor-imagen">
-                        <img src="/image/products/horizon.jpg" alt="imagen" class="imagen">
-                    </div>
-                    <!-- Descripcion -->
-                    <div class="contenedor-informacio-producto">
-                        <div class="contenedor-descripcion">
-                            <h4 class="nombre">Horizon Zero Dawn
-                            </h4>
-                        </div>
-                         <!-- Precio -->
-                        <div class="contenedor-precio">
-                            <p class="precio-producto">$5.199</p>
-                        </div>
-                          <!-- Cantidad de articulos -->
-                        <div class="contenedor-cantidad">
-                        <input type="number" class="cantidad" value="1">
-                        </div>
-                    </div>
-                    <!-- Contenedor Basura -->
-                    <div class="contenedor-basura ">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </article>
-
-                <!-- Subtotal -->
-                  <div class="contenedor-subtotal">
-                    <p id="total-pedido">Subtotal:</p>
-                    <p class="precio" id="precio-total">$14.419</p>
-                </div>
                 <!-- Contenedot Total -->
                 <div class="contenedor-total-pedido">
-                    <p id="total-pedido">Total:</p>
-                    <p class="precio" id="precio-total">$14.419</p>
+                    <div class="tota-precio-final">
+                        <p class="total">Total</p>
+                        <p class="precio" id="precio-total">$16.505</p>
+                    </div>
+                    <!-- Contenedor Botones -->
+                    <div class="contenedor-botones">
+                        <a href="/" class="boton-pago ">Continuar compra</a>
+                        <a href="/" class="ver-mas-produc">ver mas productos</a>
+                    </div>
+
                 </div>
-                <!-- Contenedor Botones -->
-                <div class="contenedor-botones">
-                    <a href="/" class="continuar-compra">Continuar con la compra</a>
-                    <a href="#" class="boton-pago">Proceder al pago</a>
-                </div>
+
             </section>
         </div>
     </main>
-      <!-- section footer -->
-      <footer>
+    <!-- section footer -->
+    <footer>
         <div class="footer-conteiner">
             <div class="redes-container">
                 <div class="logos-redes">

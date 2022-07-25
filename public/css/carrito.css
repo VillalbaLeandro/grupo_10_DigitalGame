@@ -1,0 +1,126 @@
+.titulo-carrito{
+    background: #323232;
+    padding: 2px;
+    color: #ebebeb;
+    BORDER-RADIUS: 3px;
+    margin-bottom: 16px;
+    box-shadow: 0px 5px 8px 0px rgba(15, 19, 41, 0.54);
+    font-size: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+.body-cart{
+    margin-top: 131px;
+}
+.contenedor-imagen{
+    width: 17%;
+}
+.contenedor-imagen img{
+    padding: 7px;
+}
+.card-product-cartshop{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    margin: 10px 0px 2px;
+}
+.main-cartshop{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.contenedor-precio{
+    display: flex;
+    position: relative;
+    align-items: baseline;
+}
+.contenedor-precio .icon-trash{
+    border: none;
+    background: none;
+    color: red;
+    position:absolute;
+    left: -1px;
+    top: -18px;
+}
+.cant-precios-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%
+}
+.contenedor-descripcion{
+    margin: 10px 0px;
+}
+.total{
+    margin-right: 11px;
+    font-size: 71%;
+    color: #666666;
+}
+.contenedor-total-pedido{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #cccccc;
+    background: white;
+    padding: 8px;
+}
+
+.contenedor-total-pedido .total{
+    font-size: 100%;
+    color: #666666;
+}
+.tota-precio-final{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-botones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton-pago {
+    background: #0771b8;
+    width: 92%;
+    text-align: center;
+    padding: 11px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    margin: 8px 0px;
+}
+.ver-mas-produc{
+    background: #07b830;
+    width: 60%;
+    text-align: center;
+    padding: 7px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    
+
+}
+
+@media (min-width:768px) {
+    .main-cartshop{
+        flex-direction: row;
+    }
+    .contenedor-imagen{
+        width: 9%;
+        margin-left: 17px;
+    }
+ 
+    .cant-precios-container{
+        display: flex;
+        justify-content: flex-end;
+        width: 68%;
+        align-content: center;
+        margin: 10px;
+        
+    }
+    .contenedor-cantidad{
+        margin-right: 46px;
+    }
+    .card-product-cartshop{
+        padding: 7px;
+    }
+}
