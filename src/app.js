@@ -7,25 +7,22 @@ app.use(express.urlencoded());
 
 /****************REQUIRE MODULES************************** */
 const rutasProductos = require ("./routes/products.js")
-
+const rutasIndex = require("./routes/index.js")
+const rutasLogin = require("./routes/login.js")
+const rutasRegister = require("./routes/register.js")
+const rutasProductsCar= require("./routes/productsCart.js")
 /******************RUTAS********************/
-app.get ("/productCart", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/productCart.html"))
-});
 
-app.get ("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/index.html"))
-});
+app.get ("/", rutasIndex );
 
-app.get ("/login", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/login.html"))
-});
+app.get ("/login", rutasLogin );
 
 app.get ("/productDetail", rutasProductos );
 
-app.get ("/register", (req, res) => {
-    res.sendFile(path.join(__dirname, "/views/register.html"))
-});
+app.get ("/register", rutasRegister);
+
+app.get ("/productCart", rutasProductsCar);
+
 
 
 /******************FIN RUTAS********************/
