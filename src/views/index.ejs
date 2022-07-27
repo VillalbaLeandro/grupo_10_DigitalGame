@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("./partials/head") %>
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <%- include ("./partials/header") %>
+
+            <!-- Banner -->
+            <section class="banner">
+                <div class="slider-frame">
+                    <ul>
+                        <li><img src="image/sliders/slider1.jpg" alt="image need for speed"></li>
+                        <li><img src="image/sliders/slider2.jpg" alt="call of duty"></li>
+                        <li><img src="image/sliders/slider3.jpg" alt="fifa 22"></li>
+                        <li><img src="image/sliders/slider4.jpg" alt="super mario bross"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <main>
+                <div class="menu-contenedor-breackpoint-ofertas menu-ofertas">
+                    <div class="menu-atajos-ofertas">
+                        <nav class="main-nav">
+                            <ul class="menu">
+                                <li class=" button"><a href="" class="menu__link">OFERTAS</a></li>
+                                <li class=" button"><a href="" class="menu__link">NUEVOS LANZAMIENTOS</a></li>
+                                <li class=" button"><a href="" class="menu__link">MAS DESCARGADOS</a></li>
+                            </ul>
+                        </nav>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- SECCION PRODUCTOS O CARDS -->
+                <section class="products-container">
+                    <div class="products">
+                        <!-- card call of duty -->
+                        <article class="card-container"><a href="/productDetail">
+                                <div class="img-product-container">
+                                    <img src="image/products/call-of-duty.jpg" alt="call of duty" class="product_img">
+                                    <h2 class="etiqueta-off">50% OFF</h2>
+                                    <h2 class="envios-gratis">ENVIO GRATIS</h2>
+                                    <h2></h2>
+
+                                </div>
+                            </a>
+                            <h2 class="name-game">CALL OF DUTY</h2>
+                            <div class="main-article">
+                                <div>
+                                    <!-- <i class="fas fa-truck"></i> -->
+                                    <p class="discount">40% off</p>
+                                    <p class="consolas-compatibles">PS4/PS5</p>
+                                    <p class="main-card-categoria">Disparos</p>
+                                    <p class="price">$6.770</p>
+                                    <h4 class="description">Call of Duty</h4>
+                                </div>
+                                <div class="button-add-cart-container">
+                                    <a href="/productDetail"><button class="ver-mas" type="submit">
+                                            <!-- <i class="fas fa-plus-square icon-ver-mas"></i> -->Ver detalles del
+                                            producto
+                                        </button></a>
+                                    <a href="/productCart"><button class="add-to-car" type="submit">
+                                            <!--<i class="fas fa-cart-plus icon-add-to-cart"></i> -->Add to Cart
+                                        </button></a>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- card fifa 22 -->
+                        <article class="card-container"><a href="/productDetail">
+                                <div class="img-product-container">
+                                    <img src="image/products/fifa-2022.jpg" alt="fifa 22" class="product_img">
+                                </div>
+                            </a>
+                            <div class="main-article">
+                                <div>
+                                    <!-- <i class="fas fa-truck"></i> -->
+                                    <p class="discount">40% off</p>
+                                    <p class="consolas-compatibles">PS4/PS5/XBOX</p>
+                                    <p class="main-card-categoria">Deportes</p>
+                                    <p class="price">$2.450</p>
+                                    <h4 class="description">FIFA 2022</h4>
+                                </div>
+                                <div class="button-add-cart-container">
+                                    <button type="submit">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- card horizon  -->
+                        <article class="card-container"><a href="/productDetail">
+                                <div class="img-product-container">
+                                    <img src="image/products/horizon.jpg" alt="horizon" class="product_img">
+                                </div>
+                            </a>
+                            <div class="main-article">
+                                <div>
+                                    <!-- <i class="fas fa-truck"></i> -->
+                                    <p class="discount">40% off</p>
+                                    <p class="consolas-compatibles">PS4/PS5</p>
+                                    <p class="main-card-categoria">Aventura</p>
+                                    <p class="price">$5.199</p>
+                                    <h4 class="description">HORIZON</h4>
+                                </div>
+                                <div class="button-add-cart-container">
+                                    <button type="submit">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- card spdierman  -->
+                        <article class="card-container"><a href="/productDetail">
+                                <div class="img-product-container">
+                                    <img src="image/products/SPIDERMAN.jpg" alt="spiderman-mile-morales"
+                                        class="product_img">
+                                </div>
+                            </a>
+                            <div class="main-article">
+                                <div>
+                                    <!-- <i class="fas fa-truck"></i> -->
+                                    <p class="discount">40% off</p>
+                                    <p class="consolas-compatibles">PS4/PS5/XBOX</p>
+                                    <p class="main-card-categoria">Aventura</p>
+                                    <p class="price">$9.770</p>
+                                    <h4 class="description">Spiderman mile morales</h4>
+                                </div>
+                                <div class="button-add-cart-container">
+                                    <button type="submit">Add to Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                </section>
+            </main>
+
+            <!-- FOOTER -->
+            <%- include ("./partials/footer") %>
+
+    </body>
+
+</html>

@@ -2,7 +2,7 @@ const path = require("path")
 const productosController = {
     listado:()=>{},
     detalle: (req, res) => {
-        res.sendFile(path.join(__dirname, "../views/products/productDetail.html"))
+        res.render(path.join(__dirname, "../views/products/productDetail.ejs"))
     },
     crear: ()=>{},
     editar: ()=>{}
