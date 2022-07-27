@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/register.css">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
+
+            <main class="main-register">
+                <!-- formulario Create -->
+
+                <div class="formulario-container">
+                    <form action="/">
+
+                        <div class="titulo-register-conteiner">
+                            <label class="Titulo-register">Agregar Producto</label><br>
+                        </div>
+
+                        <label class="titulos-boxs" for="name">Nombre del producto:</label><br>
+                        <input class="text-boxs" type="text" name="nombre-producto" id="name"
+                            placeholder="Ej. FIFA 22"><br>
+
+                        <label class="titulos-boxs" for="usser">Descripcion de producto</label><br>
+                        <input class="text-boxs" type="text" name="Descripcion" id="Descripcion" placeholder="Ej. Descripcion"><br>
+
+                        
+                        <label class="titulos-boxs" for="img-usser">Seleccione una imagen para su producto:</label><br>
+                        <div class="file-select">
+                            <input class="file" type="file" name="img-usser" accept=".jpg, .png">
+                        </div>
+
+                        <label class="titulos-boxs" for="createCategoria">Categoria:</label><br>
+                        <div>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Novedades">Accion<br>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Ofertas">Arcade<br>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Carreras<br>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Cuotas sin interes">Deportes<br>
+                        </div>
+                        <div>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Disparos<br>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Cuotas sin interes">Estrategia<br>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Aventura<br>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Cuotas sin interes">De Rol<br>
+                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Terror<br>
+                        </div>
+
+                        <label class="titulos-boxs" for="compatibilidad">Compatibles con:</label><br>
+                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">PS3<br>
+                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Cuotas sin interes">PS4<br>
+                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">PS5<br>
+                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Cuotas sin interes">XBOX ONE<br>
+                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">XBOX 360<br>
+                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">NINTENDO SWITCH<br>
+
+                        <label class="titulos-boxs" for="priceProduct">Precio:</label>
+                        <input class="text-boxs" type="text" name="priceProduct" id="priceProduct" placeholder="5000"><br>
+
+                        <div class="buttons">
+                            <!-- button limpiar o borrar formulario -->
+                            <input class="button-reset" type="reset" name="reset" id="reset">
+
+                            <!-- button agregar producto -->
+                            <a href="/"><button class="button-submit"type="submit" name="buttonAgregar" id="buttonAgregar">Agregar</button></a>
+                        </div>
+
+                    </form>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
+
+    </body>
+
+</html>
