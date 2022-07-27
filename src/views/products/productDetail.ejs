@@ -1,240 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Tipografia -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-
-    <!-- icons -->
-    <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
-
-    <!-- Estilos Propios -->
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/colors.css">
+<!-- HEAD -->
+<%- include ("../partials/head") %>
     <link rel="stylesheet" href="/css/productDetail.css">
-
-
-
     <link rel="icon" href="image/logo-digital-games.ico">
+    </head>
 
-    <!-- Titulo -->
-    <title>Digital Game</title>
-</head>
+    <body>
 
-<body>
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
 
-    <!-----------------HEADER-------------------->
-    <header>
-        <div class="header-conteiner-2">
-            <div class="logo-burger-cartShop-loginButton-conainer">
-
-                <div class="burguer-logo-container">
-                    <!-- menu hamburguesa -->
-                    <div class="burger-container">
-                        <i class="fas fa-bars icon"></i>
-                    </div>
-
-                    <!-- logo con nombre  -->
-                    <div class="logo-container">
-                        <a href="/"> <img src="image/logo-texto-oscuro.png" alt="logo digital games"></a>
-                    </div>
-                </div>
-                <div class="navbar-iconCart-iconUser">
-                    <!-- nav search icon button -->
-                    <form class="search-container">
-                        <!-- placeholder es el texto que se muestra dentro de la barra de search -->
-                        <input class="input-search search-nav" type="text" placeholder="  Buscar productos, marcas...">
-                        <div class="button-conteiner">
-                            <!-- boton de busqueda  -->
-                            <button><i class="fas fa-search icon"></i></button>
+            <main>
+                <!-- Contenedor Titulo -->
+                <section class="contenedor-titulo">
+                    <h2 class="titulo-carrito">SOBRE EL JUEGO</h2>
+                </section>
+                <!-- Call of Duty -->
+                <article class="Producto">
+                    <!-- Imagen Juego -->
+                    <div class="imagen-titulo-caract-container">
+                        <div class="contenedor-imagen">
+                            <img src="/image/products/call-of-duty.jpg" alt="imagen" class="imagen">
                         </div>
-                    </form>
-
-                    <!-- iconos carrito y login -->
-                    <div class="carIcon-loginIcon-container">
-                        <div class="cart-icon-conteiner">
-                            <a href="/productCart"><i class="fas fa-shopping-cart icon"></i></a>
-                        </div>
-                        <div class="login-icon-container icon">
-                            <a href="/login"> <i class="fas fa-user"></i></a>
+                        <!-- Titulo -->
+                        <div class="titulo-caracteristicas-conteiner">
+                            <div class="titulo-detalle-product">
+                                <h3>Call of Duty Modern Warfare</h3>
+                            </div>
+                            <!-- Caracteristicas -->
+                            <div class="contenedor-caracteristicas">
+                                <h2>Tambien para:</h2>
+                                <p class="consolas">Ps4, PS5, XBOX, NINTENDO SWITCH</p>
+                                <h2>Género:</h2>
+                                <p class="genero">Disparos en primera persona</p>
+                                <h2>Modo de juego:</h2>
+                                <p class="jugadores">Un jugador, multijugador y cooperativo</p>
+                                <h2>Idioma:</h2>
+                                <p class="idioma"> en español y voces en español</p>
+                                <h2>Lanzamiento:</h2>
+                                <p class="lanzamiento"> 15 de septiembre de 2017</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Lista De Opciones -->
-        <div class="menu-contenedor-breackpoint">
-            <div class="menu-atajos">
-                <nav class="main-nav">
-                    <ul class="menu">
-                        <li class="menu__item button"><a href="/" class="menu__link">HOME</a></li>
-                        <li class="menu__item container-submenu">
-                            <a href="#" class="menu__link submenu-btn button cat">CATEGORIAS <i
-                                    class="fas fa-caret-down"></i></a>
-                            <ul class="submenu" id="menu">
-                                <li class="menu__item"><a href="" class="menu__link">Acción</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Arcade</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Carreras</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Deportes</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Disparos</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Estrategia</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__item container-submenu">
-                            <a href="#" class="menu__link submenu-btn button cat">COMPATIBLES CON <i
-                                    class="fas fa-caret-down"></i></a>
-                            <ul class="submenu" id="menu">
-                                <li class="menu__item"><a href="" class="menu__link">PS2</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">PS4</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">PS5</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">XBOX 360</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">XBOX ONE</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">NINTENDO SWITCH</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu__item container-submenu">
-                            <a href="" class="menu__link">FILTRAR <i class="fas fa-caret-down"></i></a>
-                            <ul class="submenu">
-                                <form action="/">
-                                    <input class="menu__link" type="checkbox" name="cat-otros"
-                                        value="Novedades">Novedades <br>
-                                    <input class="menu__link" type="checkbox" name="cat-otros" value="Ofertas">Ofertas
-                                    <br>
-                                    <input class="menu__link" type="checkbox" name="cat-otros"
-                                        value="Envio Gratis">Envio Gratis<br>
-                                    <input class="menu__link" type="checkbox" name="cat-otros"
-                                        value="Cuotas sin interes">Cuotas sin interes <br>
-                                </form>
-                                <div class="button-filter-container">
-                                    <a href=""><button class="button-filter-search" type="submit">FILTRAR</button></a>
-                                </div>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </nav>
-                </span>
-            </div>
-
-            <div class="cart-register-login-breackpoint">
-                <a href="/productCart"><i class="fas fa-shopping-cart icon-cart-responsive"></i></a>
-                <p><br> </p>
-                <a class="links-breackpoint" href="/register">REGISTRATE</a>
-                <p class="guion">-</p>
-                <a class="links-breackpoint" href="/login">INICIA SESION</a>
-
-            </div>
-        </div>
-        <div class="barra-division-mobile"></div>
-
-    </header>
-    <!-----------------FIN HEADER-------------------->
-
-    <main>
-        <!-- Contenedor Titulo -->
-        <section class="contenedor-titulo">
-            <h2 class="titulo-carrito">SOBRE EL JUEGO</h2>
-        </section>
-        <!-- Call of Duty -->
-        <article class="Producto">
-            <!-- Imagen Juego -->
-            <div class="imagen-titulo-caract-container">
-                <div class="contenedor-imagen">
-                    <img src="/image/products/call-of-duty.jpg" alt="imagen" class="imagen">
-                </div>
-                <!-- Titulo -->
-                <div class="titulo-caracteristicas-conteiner">
-                    <div class="titulo-detalle-product">
-                        <h3>Call of Duty Modern Warfare</h3>
+                    <!-- Botones -->
+                    <div class="botones-product-detail">
+                        <!-- boton volver -->
+                        <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
+                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
+                        <!-- boton agregar al carrito -->
+                        <a class="carrito" href="/productCart"><button type="submit">Add to cart</button></a>
                     </div>
-                    <!-- Caracteristicas -->
-                    <div class="contenedor-caracteristicas">
-                        <h2>Tambien para:</h2>
-                        <p class="consolas">Ps4, PS5, XBOX, NINTENDO SWITCH</p>
-                        <h2>Género:</h2>
-                        <p class="genero">Disparos en primera persona</p>
-                        <h2>Modo de juego:</h2>
-                        <p class="jugadores">Un jugador, multijugador y cooperativo</p>
-                        <h2>Idioma:</h2>
-                        <p class="idioma"> en español y voces en español</p>
-                        <h2>Lanzamiento:</h2>
-                        <p class="lanzamiento"> 15 de septiembre de 2017</p>
+                    <div class="description-product-detal-container">
+                        <!-- Descripcion -->
+                        <h2>Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado
+                            por
+                            Infinity Ward y publicado por Activision. Es el decimosexto juego de la saga Call of Duty y
+                            es
+                            un reinicio de la serie Modern Warfare. Fue lanzado el 25 de octubre de 2019.</h2>
                     </div>
-                </div>
-            </div>
-            <!-- Botones -->
-            <div class="botones-product-detail">
-                <!-- boton volver -->
-                <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
-                <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
-                <!-- boton agregar al carrito -->
-                <a class="carrito" href="/productCart"><button type="submit">Add to cart</button></a>
-            </div>
-            <div class="description-product-detal-container">
-                <!-- Descripcion -->
-                <h2>Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado por
-                    Infinity Ward y publicado por Activision. Es el decimosexto juego de la saga Call of Duty y es
-                    un reinicio de la serie Modern Warfare. Fue lanzado el 25 de octubre de 2019.</h2>
-            </div>
-            <!-- Contenedor Fotos -->
-            <section class="contenedor-titulo">
-                <h2 class="titulo-carrito">CAPTURAS</h2>
-            </section>
-            <div class="capturas-detail">
-                <img src="/image/productDetail/call-of-duty/call-of-duty-mw.jpg" alt="imgagen" class="imagen">
-                <img src="/image/productDetail/call-of-duty/call-of-duty-mw2.jpg" alt="imgagen" class="imagen">
-                <img src="/image/productDetail/call-of-duty/call-of-duty-mw3.jpg" alt="imgagen" class="imagen">
-                <img src="/image/productDetail/call-of-duty/call-of-duty-mw4.jpg" alt="imgagen" class="imagen">
-                
-            </div>
-            <div class="videoDetail-conteiner">
-                <iframe src="https://www.youtube.com/embed/r72GP1PIZa0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-            <!-- Botones -->
-            <div class="botones-product-detail">
-                <!-- boton volver -->
-                <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
-                <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
-                <!-- boton agregar al carrito -->
-                <a class="carrito" href="/productCart"><button type="submit">Add to cart</button></a>
-            </div>
-        </article>
+                    <!-- Contenedor Fotos -->
+                    <section class="contenedor-titulo">
+                        <h2 class="titulo-carrito">CAPTURAS</h2>
+                    </section>
+                    <div class="capturas-detail">
+                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw.jpg" alt="imgagen" class="imagen">
+                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw2.jpg" alt="imgagen" class="imagen">
+                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw3.jpg" alt="imgagen" class="imagen">
+                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw4.jpg" alt="imgagen" class="imagen">
+
+                    </div>
+                    <div class="videoDetail-conteiner">
+                        <iframe src="https://www.youtube.com/embed/r72GP1PIZa0" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- Botones -->
+                    <div class="botones-product-detail">
+                        <!-- boton volver -->
+                        <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
+                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
+                        <!-- boton agregar al carrito -->
+                        <a class="carrito" href="/productCart"><button type="submit">Add to cart</button></a>
+                    </div>
+                </article>
 
 
 
 
-    </main>
-    <!-- section footer -->
-    <footer>
-        <div class="footer-conteiner">
-            <div class="redes-container">
-                <div class="logos-redes">
-                    <a href=""> <i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                </div>
-                <div class="correo-telefono">
-                    <h2>digital-games@gmail.com</h2>
-                    <h2>Tel.:(0800)22 22 - 4578</h2>
-                </div>
-            </div>
-            <div class="logo-container-footer">
-                <img class="logo-footer" src="/image/logo-digital-games.png" alt="">
-            </div>
-            <div class="politicas-privacidad">
-                <h2>Politicas de privacidad</h2>
-                <h2>Todos los derechos reservados</h2>
-            </div>
-        </div>
-    </footer>
+            </main>
 
-</body>
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
+
+    </body>
 
 </html>
