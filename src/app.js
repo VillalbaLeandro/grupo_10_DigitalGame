@@ -29,6 +29,10 @@ app.get ("/productCart", rutasProductsCar);
 app.get ("/createProduct", (req, res) => {
     res.render(path.join(__dirname, "./views/admin/createProduct"))
 })
+
+app.get ("/editProduct", (req, res) => {
+    res.render(path.join(__dirname, "./views/admin/editProduct"))
+})
 /******************FIN RUTAS********************/
 
 const port = process.env.PORT || 3000;
