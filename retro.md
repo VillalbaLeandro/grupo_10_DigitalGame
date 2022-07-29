@@ -31,3 +31,35 @@ Para las proximas etapas los que venimos un poco atrasados esperamos estar al di
 * Procastinar.
 * Push a ultimo momento. 
  
+# Retrospectiva 
+Digital Game - Sprint 3
+
+De a poco fuimos armando un buen grupo de trabajo, donde todos estan dispuestos a dar una mano cuando el otro necesita ayuda, hay buena comunicacion y ganas de aprender.
+Para las proximas etapas los que venimos un poco atrasados esperamos estar al dia y colaborar mas en las tareas.
+ 
+## Comenzar a hacer
+
+* División de Tareas.
+* Reuniones por Zoom mas frecuentes, para poder resfrescar la informacion viste e incluida en el trabajo.
+
+## Hacer mas
+
+* Compartir ideas.
+* Trabajo en equipo.
+* Reparticion de tareas. 
+
+## Continuar haciendo
+
+* Comunicación continua.
+* incentivar al grupo.
+* Clima de confianza y respeto.
+
+## Hacer menos
+
+* FALTA ESTO
+
+## Dejar de hacer
+
+* Que solo trabaje uno. 
+* Dejar cosas para ultimo momento.  
+ 
