@@ -33,9 +33,6 @@ Para las proximas etapas los que venimos un poco atrasados esperamos estar al di
  
 # Retrospectiva 
 Digital Game - Sprint 3
-
-De a poco fuimos armando un buen grupo de trabajo, donde todos estan dispuestos a dar una mano cuando el otro necesita ayuda, hay buena comunicacion y ganas de aprender.
-Para las proximas etapas los que venimos un poco atrasados esperamos estar al dia y colaborar mas en las tareas.
  
 ## Comenzar a hacer
 
@@ -46,7 +43,9 @@ Para las proximas etapas los que venimos un poco atrasados esperamos estar al di
 
 * Compartir ideas.
 * Trabajo en equipo.
-* Reparticion de tareas. 
+* Reparticion de tareas.
+* Dejar al dia el playground.
+* Comprometerse mas en el proyecto. 
 
 ## Continuar haciendo
 
@@ -56,10 +55,10 @@ Para las proximas etapas los que venimos un poco atrasados esperamos estar al di
 
 ## Hacer menos
 
-* FALTA ESTO
+* Cambios de ultima hora
 
 ## Dejar de hacer
 
-* Que solo trabaje uno. 
+* Dejar de poner horarios y dias randoms en las reuniones
 * Dejar cosas para ultimo momento.  
  
