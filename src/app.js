@@ -33,7 +33,7 @@ app.get ("/createProduct", rutasCreateProduct);
 app.get ("/editProduct", rutasEditProduct);
 /******************FIN RUTAS********************/
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4040;
 app.listen(port, () => {
     console.log( "Servidor inciado en: http://localhost:" + port)
 });
