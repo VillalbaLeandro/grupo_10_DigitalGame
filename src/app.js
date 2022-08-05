@@ -22,17 +22,17 @@ app.get ("/", rutasIndex );
 
 app.get ("/login", rutasLogin );
 
-app.get ("/products/:id?", rutasProductos )
+app.get ("/products", rutasProductos )
 
-// app.get ("/productDetail", rutasProductos );
+app.get ("/productDetail", rutasProductos );
 
 app.get ("/register", rutasRegister);
 
-// app.get ("/productCart", rutasProductsCar);
+app.get ("/productCart", rutasProductsCar);
 
-// app.get ("/createProduct", rutasCreateProduct);
+app.get ("/createProduct", rutasCreateProduct);
 
-// app.get ("/editProduct", rutasEditProduct);
+app.get ("/editProduct", rutasEditProduct);
 /******************FIN RUTAS********************/
 
 const port = process.env.PORT || 4040;
