@@ -20,13 +20,15 @@ const rutasEditProduct= require("./routes/editProduct.js");
 /******************RUTAS********************/
 app.get ("/", rutasIndex );
 
+app.get ("/products/productDetail", rutasProductos )
+
+// app.get ("/products", rutasProductos )
+
 app.get ("/login", rutasLogin );
 
-app.get ("/products", rutasProductos )
+app.get ("/register", rutasRegister);
 
 app.get ("/productDetail", rutasProductos );
-
-app.get ("/register", rutasRegister);
 
 app.get ("/productCart", rutasProductsCar);
 
