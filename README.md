@@ -7,6 +7,7 @@ La venta de los productos se efectúa desde la página, mediante la apertura de 
 La empresa tiene objetivo satisfacer las necesidades del cliente, ofreciendo  la mejor experiencia en el sitio, los mejores precios con ofertas y promociones. Pero sobre todo una experiencia fácil, dinámica y practica en el sitio web.
 
 Nuestra audiencia objetivo en mayoria son jovenes, pero abarca un gran rango de edades. Principalmente buscamos jugadores, existen tantos tipos de jugadores como tipos de juegos existentes, pero nos enfocamos en 3 tipos:
+    
     -   Casual: es aquel jugador con un interés esporádico a los videojuegos y no dedica
         tiempo ni compromiso en los mismos. Por lo general juegan a intervalos,
         prefiriendo juegos que pueda interrumpir sin comprometer el avance del mismo,
