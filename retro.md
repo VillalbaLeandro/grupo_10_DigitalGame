@@ -32,6 +32,7 @@ Para las proximas etapas los que venimos un poco atrasados esperamos estar al di
 * Push a ultimo momento. 
  
 # Retrospectiva 
+
 Digital Game - Sprint 3
  
 ## Comenzar a hacer
@@ -51,6 +52,36 @@ Digital Game - Sprint 3
 
 * Comunicación continua.
 * incentivar al grupo.
+* Clima de confianza y respeto.
+
+## Hacer menos
+
+* Cambios de ultima hora
+
+## Dejar de hacer
+
+* Dejar de poner horarios y dias randoms en las reuniones
+* Dejar cosas para ultimo momento.  
+
+Digital Game - Sprint 4
+ 
+## Comenzar a hacer
+
+* División de Tareas.
+* Reuniones por Zoom mas frecuentes, para poder resfrescar la informacion viste e incluida en el trabajo.
+* Dejar al dia el playground.
+* Trabajo en equipo.
+* Compartir ideas.
+* Reparticion de tareas.
+* Comprometerse mas en el proyecto. 
+
+## Hacer mas
+
+* Comunicación continua.
+* incentivar al grupo.
+
+## Continuar haciendo
+
 * Clima de confianza y respeto.
 
 ## Hacer menos
