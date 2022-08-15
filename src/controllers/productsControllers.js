@@ -2,16 +2,16 @@ const path = require("path");
 const productosController = {
     listado:()=>{},
     detalle: (req, res) => {
-        res.render(path.join(__dirname, "../views/products/productDetail.ejs"));
+        res.render("products/productDetail");
     },
     crear: (req, res) => {
-        res.render(path.join(__dirname, "../views/admin/createProduct.ejs"));
+        res.render("admin/createProduct.ejs");
     },
     editar: (req, res) => {
-        res.render(path.join(__dirname, "../views/admin/editProduct.ejs"));
+        res.render("admin/editProduct.ejs");
     },
     carrito: (req, res) => {
-        res.render(path.join(__dirname, "../views/products/productCart.ejs"));
+        res.render("products/productCart");
     }
 
 

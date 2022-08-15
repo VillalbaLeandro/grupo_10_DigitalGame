@@ -92,4 +92,5 @@ Digital Game - Sprint 4
 
 * Dejar de poner horarios y dias randoms en las reuniones
 * Dejar cosas para ultimo momento.  
+* Dejar de avisar a ultima hora que no pudimos realizar nuestra parte de la tarea
  
