@@ -22,25 +22,25 @@
                     <!-- Imagen Juego -->
                     <div class="imagen-titulo-caract-container">
                         <div class="contenedor-imagen">
-                            <img src="/image/products/call-of-duty.jpg" alt="imagen" class="imagen">
+                            <img src="<%= product.img %>" alt="imagen <%= product.name %> " class="imagen">
                         </div>
                         <!-- Titulo -->
                         <div class="titulo-caracteristicas-conteiner">
                             <div class="titulo-detalle-product">
-                                <h3>Call of Duty Modern Warfare</h3>
+                                <h3><%= product.fullName %> </h3>
                             </div>
                             <!-- Caracteristicas -->
                             <div class="contenedor-caracteristicas">
                                 <h2>Tambien para:</h2>
-                                <p class="consolas">Ps4, PS5, XBOX, NINTENDO SWITCH</p>
+                                <p class="consolas"><%= product.compatibility %> </p>
                                 <h2>Género:</h2>
-                                <p class="genero">Disparos en primera persona</p>
+                                <p class="genero"><%= product.gender %> </p>
                                 <h2>Modo de juego:</h2>
-                                <p class="jugadores">Un jugador, multijugador y cooperativo</p>
+                                <p class="jugadores"><%= product.players %> </p>
                                 <h2>Idioma:</h2>
-                                <p class="idioma"> en español y voces en español</p>
+                                <p class="idioma"> <%= product.language %> </p>
                                 <h2>Lanzamiento:</h2>
-                                <p class="lanzamiento"> 15 de septiembre de 2017</p>
+                                <p class="lanzamiento"> <%=  product.releaseData  %></p>
                             </div>
                         </div>
                     </div>
@@ -54,25 +54,21 @@
                     </div>
                     <div class="description-product-detal-container">
                         <!-- Descripcion -->
-                        <h2>Call of Duty: Modern Warfare es un videojuego de disparos en primera persona desarrollado
-                            por
-                            Infinity Ward y publicado por Activision. Es el decimosexto juego de la saga Call of Duty y
-                            es
-                            un reinicio de la serie Modern Warfare. Fue lanzado el 25 de octubre de 2019.</h2>
+                        <h2><%= product.description %> </h2>
                     </div>
                     <!-- Contenedor Fotos -->
                     <section class="contenedor-titulo">
                         <h2 class="titulo-carrito">CAPTURAS</h2>
                     </section>
                     <div class="capturas-detail">
-                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw.jpg" alt="imgagen" class="imagen">
-                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw2.jpg" alt="imgagen" class="imagen">
-                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw3.jpg" alt="imgagen" class="imagen">
-                        <img src="/image/productDetail/call-of-duty/call-of-duty-mw4.jpg" alt="imgagen" class="imagen">
+                        <img src="<%= product.capture1 %> " alt="imagen <%= product.name %>" class="imagen">
+                        <img src="<%= product.capture2 %> " alt="imagen <%= product.name %>" class="imagen">
+                        <img src="<%= product.capture3 %> " alt="imagen <%= product.name %>" class="imagen">
+                        <img src="<%= product.capture4 %> " alt="imagen <%= product.name %>" class="imagen">
 
                     </div>
                     <div class="videoDetail-conteiner">
-                        <iframe src="https://www.youtube.com/embed/r72GP1PIZa0" title="YouTube video player"
+                        <iframe src="<%= product.video %> " title="YouTube video player"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>

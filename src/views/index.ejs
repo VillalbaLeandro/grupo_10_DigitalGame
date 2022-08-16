@@ -39,57 +39,34 @@
                 <!-- SECCION PRODUCTOS O CARDS -->
                 <section class="products-container">
                     <div class="products">
-                        <!-- card call of duty -->
-                        <article class="card-container"><a href="products/productDetail">
+                        <!-- cards -->
+                        <% products.forEach(element => { %>                         
+                        <article class="card-container"><a href="products/<%= element.id  %>/productDetail">
                                 <div class="img-product-container">
-                                    <img src="image/products/call-of-duty.jpg" alt="call of duty" class="product_img">
-                                    <h2 class="etiqueta-off">50% OFF</h2>
-                                    <h2 class="envios-gratis">ENVIO GRATIS</h2>
-                                    <h2></h2>
-
+                                    <img src="<%= element.img %>" alt="img <%= element.name  %>" class="product_img">
+                                    <% if (element.discount!=0) { %>
+                                        <h2 class="etiqueta-off"><%= element.discount  %> OFF</h2>
+                                    <% } %>
+                                    <% if (!element.freeShipping) { %>
+                                        <h2 class="envios-gratis">ENVIO GRATIS</h2>
+                                    <% } %>
                                 </div>
                             </a>
-                            <h2 class="name-game">CALL OF DUTY</h2>
+                            <h2 class="name-game"><%= element.name  %></h2>
                             <div class="main-article">
                                 <div>
-                                    <!-- <i class="fas fa-truck"></i> -->
-                                    <p class="discount">40% off</p>
-                                    <p class="consolas-compatibles">PS4/PS5</p>
-                                    <p class="main-card-categoria">Disparos</p>
-                                    <p class="price">$6.770</p>
-                                    <h4 class="description">Call of Duty</h4>
+                                    <p class="consolas-compatibles"><%= element.compatibility %></p>
+                                    <p class="main-card-categoria"><%= element.gender %></p>
+                                    <p class="price">$<%= element.price %></p>
                                 </div>
                                 <div class="button-add-cart-container">
-                                    <a href="/products/productDetail"><button class="ver-mas" type="submit">
-                                            <!-- <i class="fas fa-plus-square icon-ver-mas"></i> -->Ver detalles del
-                                            producto
-                                        </button></a>
-                                    <a href="/products/productCart"><button class="add-to-car" type="submit">
-                                            <!--<i class="fas fa-cart-plus icon-add-to-cart"></i> -->Add to Cart
-                                        </button></a>
+                                    <a href="products/<%= element.id  %>/productDetail"><button class="ver-mas" type="submit"> Ver detalles del producto </button></a>
+                                    <a href="/products/productCart"><button class="add-to-car" type="submit"> Add to Cart </button></a>
                                 </div>
                             </div>
                         </article>
-                        <!-- card fifa 22 -->
-                        <article class="card-container"><a href="/productDetail">
-                                <div class="img-product-container">
-                                    <img src="image/products/fifa-2022.jpg" alt="fifa 22" class="product_img">
-                                </div>
-                            </a>
-                            <div class="main-article">
-                                <div>
-                                    <!-- <i class="fas fa-truck"></i> -->
-                                    <p class="discount">40% off</p>
-                                    <p class="consolas-compatibles">PS4/PS5/XBOX</p>
-                                    <p class="main-card-categoria">Deportes</p>
-                                    <p class="price">$2.450</p>
-                                    <h4 class="description">FIFA 2022</h4>
-                                </div>
-                                <div class="button-add-cart-container">
-                                    <button type="submit">Add to Cart</button>
-                                </div>
-                            </div>
-                        </article>
+                        <% }) %> 
+            
                         <!-- card horizon  -->
                         <article class="card-container"><a href="/productDetail">
                                 <div class="img-product-container">
