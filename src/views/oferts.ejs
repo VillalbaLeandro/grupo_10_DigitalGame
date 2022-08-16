@@ -36,11 +36,11 @@
                     </div>
                 </div>
 
-                <!-- SECCION PRODUCTOS O CARDS -->
-                <section class="products-container">
+                  <!-- SECCION PRODUCTOS O CARDS -->
+                  <section class="products-container">
                     <div class="products">
                         <!-- cards -->
-                        <% products.forEach(element=> { %>
+                        <% inSale.forEach(element=> { %>
                             <article class="card-container"><a href="products/<%= element.id  %>/productDetail">
                                     <div class="img-product-container">
                                         <img src="<%= element.img %>" alt="img <%= element.name  %>"

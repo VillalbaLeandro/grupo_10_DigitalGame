@@ -14,8 +14,11 @@ const mainControllers={
     },
     register: (req, res) => {
         res.render(path.join(__dirname, "../views/users/register.ejs"))
-
-    }
+    },
+    ofertas: (req, res) => {
+		const inSale = products.filter(product => product.categori=== "in-sale")
+		res.render("oferts", { inSale});
+	},
 }
 
 module.exports= mainControllers;
