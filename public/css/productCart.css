@@ -26,6 +26,9 @@ a{
     border-bottom: 1px solid #cccccc;
     margin: 10px 0px 2px;
 }
+.main-carrito{
+    height: 71vh;
+}
 .main-cartshop{
     display: flex;
     flex-direction: column;

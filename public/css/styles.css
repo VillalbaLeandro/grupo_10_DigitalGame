@@ -6,7 +6,7 @@
 
 body {
     font-family: "Roboto";
-    margin-top: 33%;
+    margin-top: 29%;
     background-color: var(--grisClaro);
 
 }
@@ -216,13 +216,14 @@ button .icon {
     justify-content: center;
     padding: 3%;
     position: relative;
-    
+
 }
 
-.img-product-container img{
+.img-product-container img {
     overflow: hidden;
 }
-.name-game{
+
+.name-game {
     font-size: 100%;
     text-align: center;
     background: #CCCCCC;
@@ -243,7 +244,8 @@ button .icon {
     padding: 1px 7px;
     box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
 }
-.etiqueta-off{
+
+.etiqueta-off {
     position: absolute;
     background-color: #af0f0f;
     color: white;
@@ -579,7 +581,8 @@ footer {
     .search-nav {
         height: 31px;
     }
-    .envios-gratis{
+
+    .envios-gratis {
         left: 53%;
     }
 
@@ -762,13 +765,16 @@ footer {
         font-size: 70%;
         left: 59%;
     }
-    .etiqueta-off{
+
+    .etiqueta-off {
         font-size: 75%;
     }
+
     .card-container {
         width: 22%;
         margin: 20px auto
     }
+
     .rivals-img {
         height: 175px;
     }
@@ -790,5 +796,11 @@ footer {
 
     .menu-atajos {
         width: 74%;
+    }
+}
+
+@media (min-width: 1920px) {
+    .slider-frame img {
+        width: 99.1vw;
     }
 }
