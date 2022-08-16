@@ -7,7 +7,10 @@
 
 /* REGISTER----------------------------------- */
 .body-register{
-margin-top: 30%;
+margin-top: 40%;
+}
+.main-register{
+    height: 72vh;
 }
 
 .formulario-container{
@@ -45,6 +48,7 @@ main input:hover{
     font-size: 11px;
     
 }
+
 .titulo-register-conteiner{
     display: flex;
     justify-content: center;
@@ -53,7 +57,10 @@ main input:hover{
     padding-bottom: 5px;
     font-family: sans-serif;
 }
-
+div .columns{
+    display: flex;
+    justify-content: space-evenly;
+}
 .titulos-boxs{
     font-size: 11px;
     color: #cfcbcb;

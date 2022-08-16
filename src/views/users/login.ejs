@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/login.css">
+    </head>
+
+    <body class="body-login">
+
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
+
+            <main class="main-login">
+                <!-- Formulario de inicio de sesion -->
+                <div class="formulario-container">
+                    <form action="/" method="GET">
+                        <div>
+                            <label>Ingrese nombre de usuario y contraseña</label><br>
+                        </div>
+                        <div>
+                            <input class="box-text" type="text" name="nombre-de-usuario" id="nombre-de-usuario"
+                                placeholder="Usuario">
+                        </div>
+                        <div>
+                            <input class="box-text" type="password" name="password" id="password"
+                                placeholder="Contraseña"><br>
+                        </div>
+                        <div class="checkbox">
+                            <div class="option-cb">
+                                <input type="checkbox" name="recordarme" value="recordarme" id="recordarme"
+                                    checked>Recordarme
+                            </div>
+                        </div>
+                        <div>
+                            <button class="boton-inicio-sesion" type="submit">Iniciar Sesion</button><br>
+                        </div>
+                        <div class="No-tienes-cuenta">
+                            <div>
+                                <label>¿No tienes una cuenta?</label>
+                            </div>
+                            <a href="/register">Registrate</a>
+                        </div>
+
+                    </form>
+                </div>
+            </main>
+            <!-- section footer -->
+            <footer>
+                <div class="footer-conteiner">
+                    <div class="redes-container">
+                        <div class="logos-redes">
+                            <a href=""> <i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="correo-telefono">
+                            <h2>digital-games@gmail.com</h2>
+                            <h2>Tel.:(0800)22 22 - 4578</h2>
+                        </div>
+                    </div>
+                    <div class="logo-container-footer">
+                        <img class="logo-footer" src="/image/logo-digital-games.png" alt="">
+                    </div>
+                    <div class="politicas-privacidad">
+                        <h2>Politicas de privacidad</h2>
+                        <h2>Todos los derechos reservados</h2>
+                    </div>
+                </div>
+            </footer>
+    </body>
+
+</html>

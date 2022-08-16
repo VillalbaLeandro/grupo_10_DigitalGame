@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/productDetail.css">
+    <link rel="icon" href="/image/logo-digital-games.ico">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
+
+            <main>
+                <!-- Contenedor Titulo -->
+                <section class="contenedor-titulo">
+                    <h2 class="titulo-carrito">SOBRE EL JUEGO</h2>
+                </section>
+                <!-- Call of Duty -->
+                <article class="Producto">
+                    <!-- Imagen Juego -->
+                    <div class="imagen-titulo-caract-container">
+                        <div class="contenedor-imagen">
+                            <img src="<%= product.img %>" alt="imagen <%= product.name %> " class="imagen">
+                        </div>
+                        <!-- Titulo -->
+                        <div class="titulo-caracteristicas-conteiner">
+                            <div class="titulo-detalle-product">
+                                <h3><%= product.fullName %> </h3>
+                            </div>
+                            <!-- Caracteristicas -->
+                            <div class="contenedor-caracteristicas">
+                                <h2>Tambien para:</h2>
+                                <p class="consolas"><%= product.compatibility %> </p>
+                                <h2>Género:</h2>
+                                <p class="genero"><%= product.gender %> </p>
+                                <h2>Modo de juego:</h2>
+                                <p class="jugadores"><%= product.players %> </p>
+                                <h2>Idioma:</h2>
+                                <p class="idioma"> <%= product.language %> </p>
+                                <h2>Lanzamiento:</h2>
+                                <p class="lanzamiento"> <%=  product.releaseData  %></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Botones -->
+                    <div class="botones-product-detail">
+                        <!-- boton volver -->
+                        <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
+                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
+                        <!-- boton agregar al carrito -->
+                        <a class="carrito" href="/products/productCart"><button type="submit">Add to cart</button></a>
+                    </div>
+                    <div class="description-product-detal-container">
+                        <!-- Descripcion -->
+                        <h2><%= product.description %> </h2>
+                    </div>
+                    <!-- Contenedor Fotos -->
+                    <section class="contenedor-titulo">
+                        <h2 class="titulo-carrito">CAPTURAS</h2>
+                    </section>
+                    <div class="capturas-detail">
+                        <img src="<%= product.capture1 %> " alt="imagen <%= product.name %>" class="imagen">
+                        <img src="<%= product.capture2 %> " alt="imagen <%= product.name %>" class="imagen">
+                        <img src="<%= product.capture3 %> " alt="imagen <%= product.name %>" class="imagen">
+                        <img src="<%= product.capture4 %> " alt="imagen <%= product.name %>" class="imagen">
+
+                    </div>
+                    <div class="videoDetail-conteiner">
+                        <iframe src="<%= product.video %> " title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <!-- Botones -->
+                    <div class="botones-product-detail">
+                        <!-- boton volver -->
+                        <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
+                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
+                        <!-- boton agregar al carrito -->
+                        <a class="carrito" href="/products/productCart"><button type="submit">Add to cart</button></a>
+                    </div>
+                </article>
+
+
+
+
+            </main>
+
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
+
+    </body>
+
+</html>

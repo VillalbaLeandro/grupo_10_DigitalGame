@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/register.css">
+    </head>
+
+    <body class="body-register">
+
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
+
+            <main class="main-register">
+                <!-- formulario register -->
+
+                <div class="formulario-container">
+                    <form action="/">
+
+                        <div class="titulo-register-conteiner">
+                            <label class="Titulo-register">Ingresa tus datos</label><br>
+                        </div>
+
+                        <label class="titulos-boxs" for="name">Nombre y apellido:</label><br>
+                        <input class="text-boxs" type="text" name="nombre-apellido" id="name"
+                            placeholder="Ej. Florencio Perez"><br>
+
+                        <label class="titulos-boxs" for="usser">Nombre usuario</label><br>
+                        <input class="text-boxs" type="text" name="usser" id="usser" placeholder="Ej. Florperez56"><br>
+
+                        <label class="titulos-boxs" for="fechaNac">Fecha de nacimiento:</label><br>
+                        <input class="text-boxs" type="date" name="fechaNac" id="fechaNac"><br>
+
+                        <label class="titulos-boxs" for="domicilio">Domicilio:</label>
+                        <input class="text-boxs" type="text" name="domicilio" id="domicilio"
+                            placeholder="Ej. Cabred 1900"><br>
+
+                        <label class="titulos-boxs" for="img-usser">Seleccione una imagen para su perfil:</label><br>
+                        <div class="file-select">
+                            <input class="file" type="file" name="img-usser" accept=".jpg, .png">
+                        </div>
+
+                        <label class="titulos-boxs" for="pass">Ingrese una contraseña:</label>
+                        <input class="text-boxs" type="password" name="pass" id="pass">
+
+                        <label class="titulos-boxs" for="pass-repeat">Confirme la contraseña:</label>
+                        <input class="text-boxs" type="password" name="pass-repeat" id="pass-repeat">
+
+                        <div class="buttons">
+                            <!-- button limpiar o borrar formulario -->
+                            <input class="button-reset" type="reset" name="reset" id="reset">
+
+                            <!-- button enviar -->
+                            <input class="button-submit" type="submit" name="submit" id="submit-and-go-to-home">
+                        </div>
+
+                        <div class="redirec-login">
+                            <div>
+                                <label">Ya tienes una cuenta?</label>
+                            </div>
+                            <a class="link-inicia-sesion" href="/login">Inicia sesión</a>
+
+                        </div>
+                    </form>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
+
+    </body>
+
+</html>
