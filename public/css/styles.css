@@ -216,6 +216,11 @@ button .icon {
     justify-content: center;
     padding: 3%;
     position: relative;
+    
+}
+
+.img-product-container img{
+    overflow: hidden;
 }
 .name-game{
     font-size: 100%;
