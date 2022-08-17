@@ -2182,57 +2182,5 @@
     "discount": 47,
     "freeShipping": false,
     "categori": "in"
-  },
-  {
-    "id": 101,
-    "compatibility": "PS3",
-    "gender": "Accion",
-    "players": "1 Jugador",
-    "price": "asdsadsa",
-    "language": "Español",
-    "releaseData": "2022-07-22",
-    "img": "saddsadasd",
-    "fullName": "sdasda",
-    "description": "",
-    "capture1": "",
-    "capture2": "",
-    "capture3": "",
-    "capture4": "",
-    "video": "",
-    "discount": "",
-    "freeShipping": "true",
-    "categori": ""
-  },
-  {
-    "id": 102,
-    "compatibility": [
-      "PS3",
-      "PS4",
-      "PS5",
-      "XBOX ONE",
-      "XBOX 360",
-      "NINTENDO"
-    ],
-    "gender": [
-      "Accion",
-      "Arcade",
-      "Deportes"
-    ],
-    "players": [
-      "1 Jugador",
-      "Multijugador"
-    ],
-    "price": "",
-    "releaseData": "2022-07-22",
-    "img": "",
-    "fullName": "",
-    "description": "",
-    "capture1": "",
-    "capture2": "",
-    "capture3": "",
-    "capture4": "",
-    "video": "",
-    "discount": "",
-    "categori": ""
   }
 ]

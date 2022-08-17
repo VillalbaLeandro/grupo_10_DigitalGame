@@ -15,57 +15,117 @@
                 <!-- formulario Create -->
 
                 <div class="formulario-container">
-                    <form action="/">
+                    <form action="/products/:id/editProduct?_method=PUT" method="POST">
 
                         <div class="titulo-register-conteiner">
-                            <label class="Titulo-register">Editar Producto</label><br>
+                            <label class="Titulo-register">Agregar Producto</label><br>
                         </div>
-
                         <label class="titulos-boxs" for="name">Nombre del producto:</label><br>
-                        <input class="text-boxs" type="text" name="nombre-producto" id="name"
-                            placeholder="Ej. FIFA 22"><br>
-
-                        <label class="titulos-boxs" for="usser">Descripcion de producto</label><br>
-                        <input class="text-boxs" type="text" name="Descripcion" id="Descripcion" placeholder="Ej. Descripcion"><br>
-
-                        
-                        <label class="titulos-boxs" for="img-usser">Seleccione una imagen para su producto:</label><br>
-                        <div class="file-select">
-                            <input class="file" type="file" name="img-usser" accept=".jpg, .png">
-                        </div>
-
-                        <label class="titulos-boxs" for="createCategoria">Categoria:</label><br>
-                        <div>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Novedades">Accion<br>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Ofertas">Arcade<br>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Carreras<br>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Cuotas sin interes">Deportes<br>
-                        </div>
-                        <div>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Disparos<br>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Cuotas sin interes">Estrategia<br>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Aventura<br>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Cuotas sin interes">De Rol<br>
-                        <input class="menu__link" type="checkbox" name="createCategoria" value="Envio Gratis">Terror<br>
-                        </div>
-
+                        <input class="text-boxs" type="text" name="name" id="name" value=" <%= product.name %>  "><br>
                         <label class="titulos-boxs" for="compatibilidad">Compatibles con:</label><br>
-                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">PS3<br>
-                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Cuotas sin interes">PS4<br>
-                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">PS5<br>
-                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Cuotas sin interes">XBOX ONE<br>
-                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">XBOX 360<br>
-                        <input class="menu__link" type="checkbox" name="compatibilidad" value="Envio Gratis">NINTENDO SWITCH<br>
 
-                        <label class="titulos-boxs" for="priceProduct">Precio:</label>
-                        <input class="text-boxs" type="text" name="priceProduct" id="priceProduct" placeholder="5000"><br>
+                        <div class="columns">
+                            <div>
+                                <input class="menu__link" type="checkbox" name="compatibility"
+                                    value="PS3">PS3<br>
+                                <input class="menu__link" type="checkbox" name="compatibility"
+                                    value="PS4">PS4<br>
+                                <input class="menu__link" type="checkbox" name="compatibility"
+                                    value="PS5">PS5<br>
+                            </div>
+                            <div>
+                                <input class="menu__link" type="checkbox" name="compatibility"
+                                    value="XBOX ONE">XBOX
+                                ONE<br>
+                                <input class="menu__link" type="checkbox" name="compatibility" value="XBOX 360">XBOX
+                                360<br>
+                                <input class="menu__link" type="checkbox" name="compatibility"
+                                    value="NINTENDO">NINTENDO
+                                SWITCH<br>
+                            </div>
+                        </div>
+                        <label class="titulos-boxs" for="gender">Genero:</label><br>
+                        <div class="columns">
+                            <div>
+
+                                <input class="menu__link" type="checkbox" name="gender" value="Accion">Accion<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="Arcade">Arcade<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="Carreras">Carreras<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="Deportes">Deportes<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="Disparos">Disparos<br>
+                            </div>
+                            <div>
+                                <input class="menu__link" type="checkbox" name="gender" value="Aventura">Aventura<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="De Rol">De Rol<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="MMORPG">MMORPG<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="Terror">Terror<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="Estrategia">Estrategia<br>
+                            </div>
+                        </div>
+                        <label class="titulos-boxs" for="players">Modos de Juego</label><br>
+
+                        <input class="menu__link" type="checkbox" name="players" value="1 Jugador">1 Jugador<br>
+                        <input class="menu__link" type="checkbox" name="players" value="Multijugador">Multijugador<br>
+                        <input class="menu__link" type="checkbox" name="players" value="Cooperativo">Cooperativo<br>
+                        <input class="menu__link" type="checkbox" name="players" value="Mundo Abierto">Mundo Abierto<br>
+
+                        <label class="titulos-boxs" for="price">Precio:</label>
+                        <input class="text-boxs" type="text" name="price" placeholder="sin $ y sin puntos ni comas"><br>
+
+                        <label class="titulos-boxs" for="language">Idioma</label><br>
+                        <input class="menu__link" type="checkbox" name="language" value="Español">Español<br>
+                        <input class="menu__link" type="checkbox" name="language" value="Ingles">Ingles<br>
+                        <input class="menu__link" type="checkbox" name="language" value="Otro">Otro<br>
+                        <input class="menu__link" type="checkbox" name="language" value="Multilenguaje">Multilenguaje<br>
+                        <br>
+
+                        <label class="titulos-boxs" for="releaseData">Fecha de lanzamiento</label>
+                        <input type="date" name="releaseData" value="2022-07-22" min="2018-01-01" max="2022-12-31"><br>
+
+                        <label class="titulos-boxs" for="img">Link imagen principal</label><br>
+                        <input class="text-boxs" type="text" name="img"
+                            placeholder="Ej. http://www.googleimag=323234234324"><br>
+
+                        <label class="titulos-boxs" for="fullName">Nombre completo del Juego</label><br>
+                        <input class="text-boxs" type="text" name="fullName"
+                            placeholder="Ej. Call of Duty Modern Warfare"><br>
+
+                        <label class="titulos-boxs" for="description">Descripcion de producto</label><br>
+                        <input class="text-boxs" type="text" name="description"
+                            placeholder="Ej. FIFA 22 es un videojuego desarrollado por EA Vancouve..."><br>
+
+                        <label class="titulos-boxs" for="capture1">capturas del juego 1/4</label><br>
+                        <input class="text-boxs" type="text" name="capture1"
+                            placeholder="Ej. http://www.googleimag=323234234324"><br>
+                        <label class="titulos-boxs" for="capture2">capturas del juego 2/4 </label><br>
+                        <input class="text-boxs" type="text" name="capture2"
+                            placeholder="Ej. http://www.googleimag=323234234324"><br>
+                        <label class="titulos-boxs" for="capture3">capturas del juego 3/4 </label><br>
+                        <input class="text-boxs" type="text" name="capture3"
+                            placeholder="Ej. http://www.googleimag=323234234324"><br>
+                        <label class="titulos-boxs" for="capture4">capturas del juego 4/4 </label><br>
+                        <input class="text-boxs" type="text" name="capture4"
+                            placeholder="Ej. http://www.googleimag=323234234324"><br>
+
+                        <label class="titulos-boxs" for="video">video gameplay o trailer del juego (link codigo de
+                            insercion)</label><br>
+                        <input class="text-boxs" type="text" name="video"
+                            placeholder="Ej. https://www.youtube.com/EMBED/vLj-27T-SEQ"><br>
+
+                        <label class="titulos-boxs" for="discount">Descuento</label><br>
+                        <input class="text-boxs" type="text" name="discount"
+                            placeholder="Ej. 40 (sin simbolo % ni puntos ni comas)"><br>
+
+                        <label class="titulos-boxs" for="freeShipping">Envios gratis</label><br>
+                        <input type="radio" name="freeShipping" value=true>Si
+                        <input type="radio" name="freeShipping" value=false>No
+
 
                         <div class="buttons">
-                            <!-- button limpiar o borrar formulario -->
                             <input class="button-reset" type="reset" name="reset" id="reset">
+                            <input class="button-reset" type="submit" value="Enviar">
 
-                            <!-- button agregar producto -->
-                            <a href="/"><button class="button-submit"type="submit" name="buttonAgregar" id="buttonAgregar">Agregar</button></a>
+                          
                         </div>
 
                     </form>

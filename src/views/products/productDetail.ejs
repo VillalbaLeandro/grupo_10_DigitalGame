@@ -47,6 +47,9 @@
                     <!-- Botones -->
                     <div class="botones-product-detail">
                         <!-- boton volver -->
+
+                        <form action="/<%= product.id %>/delete?_method=DELETE>"><button type="submit">Deleted</button></form>
+
                         <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
                         <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
                         <!-- boton agregar al carrito -->
@@ -61,6 +64,7 @@
                         <h2 class="titulo-carrito">CAPTURAS</h2>
                     </section>
                     <div class="capturas-detail">
+
                         <img src="<%= product.capture1 %> " alt="imagen <%= product.name %>" class="imagen">
                         <img src="<%= product.capture2 %> " alt="imagen <%= product.name %>" class="imagen">
                         <img src="<%= product.capture3 %> " alt="imagen <%= product.name %>" class="imagen">

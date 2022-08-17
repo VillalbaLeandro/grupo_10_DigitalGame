@@ -62,9 +62,57 @@ const productosController = {
     editar: (req, res) => {
         res.render("admin/editProduct.ejs");
     },
+    update: (req, res) => {
+
+        let id = req.params.id;
+        let productToEdit = products.find(product => {
+            return product.id == id;
+        });
+        let editProduct = {
+            id: products[products.length - 1].id + 1,
+            name: req.body.nombre,
+            compatibility: req.body.compatibility,
+            gender: req.body.gender,
+            players: req.body.players,
+            price: req.body.price,
+            language: req.body.language,
+            releaseData: req.body.releaseData,
+            img: req.body.img,
+            fullName: req.body.fullName,
+            description: req.body.description,
+            capture1: req.body.capture1,
+            capture2: req.body.capture2,
+            capture3: req.body.capture3,
+            capture4: req.body.capture4,
+            video: req.body.video,
+            discount: req.body.discount,
+            freeShipping: req.body.freeShipping,
+            categori: "",
+        }
+
+        products.forEach((product, index) => {
+            if (product.id == id) {
+                products[index] = editProduct;
+            }
+        });
+
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+
+        res.redirect("/")
+    },
     carrito: (req, res) => {
         res.render("products/productCart");
-    }
+    },
+    destroy: (req, res) => {
+
+        let id = req.params.id;
+		
+		let finalProducts = products.filter(product => product.id != id);
+		
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "));
+
+		res.redirect("/")	
+	}
 
 
 };
