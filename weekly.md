@@ -15,3 +15,6 @@ Lean villalba:
 primera semana: antes de comenzar a realizar cambios me puse al dia con el playground en el modulo de express para ir aclarando dudas de algunos puntos en particular.
 segunda semana: se corrigieron los href de las vistas para que cada boton rediriga a su respectiva ruta para vincular con los controllers.
 se modifico productsControllers agregando los demas metodos que se repetian en archivos por separados("Habia un archivo editProduct.js, createProducts.js") y todos se configuraron en un solo controller productsControllers.
+
+Ignacio Menguez: 
+primera semana: Dedicacion plena a ponerme al dia con el Playground 
