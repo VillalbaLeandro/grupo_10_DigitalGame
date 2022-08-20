@@ -6,7 +6,7 @@
 
 body {
     font-family: "Roboto";
-    margin-top: 29%;
+    margin-top: 74px;
     background-color: var(--grisClaro);
 
 }
@@ -21,12 +21,53 @@ header {
     right: 0;
     z-index: 10;
 }
+.header-mobile{
+    position: fixed;
+    background: rgb(31 29 29);
+    /* background: rgb(173 173 173); */
+    padding: 7px 14px 2px 4px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: 6px #323232 solid;
+}
 
+.header-mobile .icon{
+    font-size: 20px;
+    color: #878787;
+    margin: 0px 10px;
+    transition: color 1s;
+}
+.header-mobile .icon:visited{
+    color: #d8d6d6;
+}
+.header-conteiner-2{
+    display: none;
+}
+.search-container .icon{
+    color: #323232;
+}
+
+.logo-burger-cartShop-loginButton-conainer-mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.logo-burger-cartShop-loginButton-conainer-mobile img{
+    width: 71%;
+}
+.logo-container-mobile{
+    width: 16%;
+}
 
 img {
     width: 100%;
 }
-
+a{
+    text-decoration: none;
+}
 .logo-container {
     text-align: center;
 
@@ -81,9 +122,9 @@ ul li {
     border: none;
     border-radius: 22px;
     width: 85%;
-    margin: 12px 12px 15px 20px;
+    margin: 12px 12px 14px 6px;
     height: 37px;
-    padding-left: 8px;
+    padding-left: 11px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
 
 
@@ -156,7 +197,7 @@ button .icon {
 }
 
 .slider-frame img {
-    width: 100%;
+    width: 100vw;
 }
 
 @keyframes slide {
@@ -199,11 +240,11 @@ button .icon {
 
 .products-container {
     display: flex;
-    justify-content: flex-end;
-    margin-left: 15px;
+    justify-content: center;
 }
 
 .products {
+    max-width: 390px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -214,8 +255,9 @@ button .icon {
 .img-product-container {
     display: flex;
     justify-content: center;
-    padding: 3%;
+    padding: 9%;
     position: relative;
+    transition:  transform 3s;
 
 }
 
@@ -224,13 +266,14 @@ button .icon {
 }
 
 .name-game {
-    font-size: 100%;
+    font-size: 134%;
     text-align: center;
-    background: #CCCCCC;
+    background: #323232;
     align-items: center;
-    color: #504a4a;
+    color: #ebebeb;
     margin: 0px 25px;
     font-family: "Staatliches";
+
 }
 
 .envios-gratis {
@@ -260,17 +303,20 @@ button .icon {
 }
 
 .price {
-    font-size: 18px;
-    width: 30%;
+    font-size: 23px;
     font-weight: 700;
-    color: #666666;
+    color: #3e3e3e;
 
+}
+.consolas-compatibles{
+    font-weight: 700;
 }
 
 .consolas-compatibles,
 .main-card-categoria {
     color: #666666;
     margin-bottom: 3px;
+    font-size: 17px;
 }
 
 .discount {
@@ -375,20 +421,24 @@ main section h3 {
 }
 
 .main-article {
+    height: 23vh;
     width: 100%;
     display: flex;
-    align-items: flex-end;
     border-top: 1px solid #ebebeb;
     position: relative;
-    padding: 15px;
+    padding: 5px 15px 15px 28px;
+    flex-direction: column;
     justify-content: space-between;
+    transition: z-index 450ms, opacity 450ms;
 }
 
 .button-add-cart-container {
+    margin-bottom: 10px;
     display: flex;
-    width: 50%;
-    align-items: flex-end;
-    flex-direction: column;
+    height: 31px;
+    opacity: 1;
+    justify-content: center;
+    transition: opacity 450ms;
 }
 
 .ver-mas {
@@ -403,47 +453,16 @@ main section h3 {
     transition: transform 350ms;
 }
 
-.ver-mas:hover,
-.add-to-car:hover {
-    transform: scale(1.15);
-}
-
 .add-to-car {
-    background: #50B868;
-    padding: 4px 6px;
+    background: #323232;
+    padding: 7px 76px;
     color: white;
     border-radius: 3px;
     position: relative;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     cursor: pointer;
-    transition: transform 350ms;
+    transition: transform 350ms, opacity 450ms, z-index 450ms;
 }
-
-/* .icon-ver-mas, .icon-add-to-cart{
-    font-weight: 900;
-    border: none;
-    color: white;
-} */
-/* .icon-ver-mas{
-    background:#017bae;
-    padding: 4px 6px;
-    border-radius: 3px;
-    position: absolute;
-    left: -33px;
-    top: 0;
-    font-size: 100%;
-    height: 24px;
-}
-.icon-add-to-cart{
-    background: #50B868;
-    padding: 4px 6px;
-    border-radius: 3px;
-    position: absolute;
-    left: -33px;
-    top: 0;
-    font-size: 100%;
-    height: 24px;
-} */
 
 /* -------------footer----------------- */
 
@@ -545,7 +564,12 @@ footer {
     header {
         padding: 0%;
     }
-
+    .header-mobile{
+        display: none;
+    }
+    .header-conteiner-2{
+        display: block;
+    }
     .burger-container {
         display: none;
     }
@@ -592,6 +616,7 @@ footer {
 
     .logo-burger-cartShop-loginButton-conainer {
         display: flex;
+       
     }
 
     .navbar-iconCart-iconUser {
@@ -604,6 +629,15 @@ footer {
 
     .guion-registrate {
         margin: 0px 6px;
+    }
+
+    .products {
+        max-width: 718px;
+    }
+
+    .consolas-compatibles,
+    .main-card-categoria {
+        font-size: 18px;
     }
 
     .menu-contenedor-breackpoint {
@@ -684,12 +718,8 @@ footer {
     .card-container {
         width: 45%;
         margin: 20px auto;
-        transition: transform 400ms;
     }
 
-    .card-container:hover {
-        transform: scale(1.1);
-    }
 
     .menu-latearal-categorias-container {
         display: block;
@@ -761,6 +791,51 @@ footer {
 
 @media (min-width: 1024px) {
 
+    .products {
+        max-width: none;
+    }
+
+    .button-add-cart-container {
+        position: absolute;
+        width: 20.9%;
+        background: white;
+        opacity: 0;
+        transition: box-shadow 200ms, background 200ms, opacity 200ms;
+    }
+
+    .card-container:hover .button-add-cart-container {
+        opacity: 1;
+        box-shadow: 7px 7px 6px -5px rgb(0 0 0 / 22%);
+    }
+
+    .card-container:hover .img-product-container{
+        transform: scale(1.1);
+    }
+
+    .add-to-car {
+        padding: 7px 20px;
+        font-size: 0.6rem;
+    }
+
+    .name-game {
+        font-size: 90%;
+    }
+
+    .consolas-compatibles,
+    .main-card-categoria {
+        font-size: 109%;
+    }
+
+    .main-article {
+        height: 16vh;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+
+
     .envios-gratis {
         font-size: 70%;
         left: 59%;
@@ -783,9 +858,9 @@ footer {
         font-size: 70%;
     }
 
-    .main-article button {
+    /* .main-article button {
         font-size: 70%;
-    }
+    } */
 
     .menu-contenedor-breackpoint {
 
@@ -799,8 +874,10 @@ footer {
     }
 }
 
-@media (min-width: 1920px) {
+
+
+/* @media (min-width: 1920px) {
     .slider-frame img {
         width: 99.1vw;
     }
-}
+} */
