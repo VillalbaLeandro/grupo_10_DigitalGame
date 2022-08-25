@@ -22,7 +22,7 @@ const productosController = {
         const productsClone = products
         const newProduct = {
             id: products[products.length - 1].id + 1,
-            name: req.body.nombre,
+            name: req.body.name,
             compatibility: req.body.compatibility,
             gender: req.body.gender,
             players: req.body.players,
@@ -43,7 +43,7 @@ const productosController = {
         }
 
         productsClone.push(newProduct);
-        fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, "  "));
+        fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, " "));
         // // GUARDARLA   
         // // leer que cosas ya habia
         // let archivoProduct = fs.readFileSync("products.json", { encoding: "utf-8" });
