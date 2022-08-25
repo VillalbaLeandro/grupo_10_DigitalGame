@@ -6,7 +6,11 @@
 
 body {
     font-family: "Roboto";
+<<<<<<< HEAD
     margin-top: 74px;
+=======
+    margin-top: 29%;
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
     background-color: var(--grisClaro);
 
 }
@@ -257,7 +261,10 @@ button .icon {
     justify-content: center;
     padding: 9%;
     position: relative;
+<<<<<<< HEAD
     transition:  transform 3s;
+=======
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
 
 }
 
@@ -266,7 +273,11 @@ button .icon {
 }
 
 .name-game {
+<<<<<<< HEAD
     font-size: 134%;
+=======
+    font-size: 100%;
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
     text-align: center;
     background: #323232;
     align-items: center;
@@ -874,6 +885,7 @@ footer {
     }
 }
 
+<<<<<<< HEAD
 
 
 /* @media (min-width: 1920px) {
@@ -881,3 +893,10 @@ footer {
         width: 99.1vw;
     }
 } */
+=======
+@media (min-width: 1920px) {
+    .slider-frame img {
+        width: 99.1vw;
+    }
+}
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962

@@ -1,6 +1,9 @@
 const path = require("path");
 const fs = require('fs');
+<<<<<<< HEAD
 const { request } = require("express");
+=======
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -21,7 +24,11 @@ const productosController = {
 
         const productsClone = products
         const newProduct = {
+<<<<<<< HEAD
             id: products[products.length - 1].id + 1,
+=======
+            id: "",
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
             name: req.body.nombre,
             compatibility: req.body.compatibility,
             gender: req.body.gender,
@@ -43,7 +50,11 @@ const productosController = {
         }
 
         productsClone.push(newProduct);
+<<<<<<< HEAD
         fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, "  "));
+=======
+        fs.writeFileSync(JSON.stringify(productsClone, null, ""))
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
         // // GUARDARLA   
         // // leer que cosas ya habia
         // let archivoProduct = fs.readFileSync("products.json", { encoding: "utf-8" });
@@ -61,6 +72,7 @@ const productosController = {
         res.redirect("/");
     },
     editar: (req, res) => {
+<<<<<<< HEAD
         const product = products.find((product) => {return product.id === +req.params.id})
         res.render("admin/editProduct.ejs" , {product});
     },
@@ -117,6 +129,13 @@ const productosController = {
 
 		res.redirect("/")	
 	}
+=======
+        res.render("admin/editProduct.ejs");
+    },
+    carrito: (req, res) => {
+        res.render("products/productCart");
+    }
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
 
 
 };

@@ -54,12 +54,17 @@
                                                     <h2 class="envios-gratis">ENVIO GRATIS</h2>
                                                     <% } %>
                                     </div>
+<<<<<<< HEAD
                                 
+=======
+                                </a>
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
                                 <h2 class="name-game">
                                     <%= element.name %>
                                 </h2>
                                 <div class="main-article">
                                     <div>
+<<<<<<< HEAD
                                         <div>
                                             <p class="consolas-compatibles">
                                                 <%= element.compatibility %>
@@ -86,6 +91,23 @@
                                                 type="submit"> Ver detalles del producto </button></a> -->
                                     <a href="/products/productCart"><button class="add-to-car" type="submit"> Add to
                                             Cart </button></a>
+=======
+                                        <p class="consolas-compatibles">
+                                            <%= element.compatibility %>
+                                        </p>
+                                        <p class="main-card-categoria">
+                                            <%= element.gender %>
+                                        </p>
+                                        <p class="price"><%= element.price %>
+                                        </p>
+                                    </div>
+                                    <div class="button-add-cart-container">
+                                        <a href="products/<%= element.id  %>/productDetail"><button class="ver-mas"
+                                                type="submit"> Ver detalles del producto </button></a>
+                                        <a href="/products/productCart"><button class="add-to-car" type="submit"> Add to
+                                                Cart </button></a>
+                                    </div>
+>>>>>>> 6afcbd780bb063580c416ab8cd143cc1f55e4962
                                 </div>
                             </article>
                             <% }) %>
