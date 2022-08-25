@@ -236,6 +236,10 @@ button .icon {
 
 
 }
+.max-width-card{
+    height: 58.7vh;
+    display: flex;
+}
 
 
 .products-container {
@@ -258,6 +262,7 @@ button .icon {
     padding: 9%;
     position: relative;
     transition:  transform 3s;
+    align-items: center;
 
 }
 
