@@ -42,39 +42,51 @@
                         <!-- cards -->
                         <% products.forEach(element=> { %>
                             <article class="card-container"><a href="products/<%= element.id  %>/productDetail">
-                                    <div class="img-product-container">
-                                        <img src="<%= element.img %>" alt="img <%= element.name  %>"
-                                            class="product_img">
-                                        <% if (element.discount>0) { %>
-                                            <h2 class="etiqueta-off">
-                                                <%= element.discount %> OFF
-                                            </h2>
-                                            <% } %>
-                                                <% if (element.freeShipping) { %>
-                                                    <h2 class="envios-gratis">ENVIO GRATIS</h2>
-                                                    <% } %>
+                                    <div class="max-width-card">
+                                        <div class="img-product-container">
+                                            <img src="<%= element.img %>" alt="img <%= element.name  %>"
+                                                class="product_img">
+                                            <% if (element.discount>0) { %>
+                                                <h2 class="etiqueta-off">
+                                                    <%= element.discount %> OFF
+                                                </h2>
+                                                <% } %>
+                                                    <% if (element.freeShipping == true || element.freeShipping == "true" ) { %>
+                                                        <h2 class="envios-gratis">ENVIO GRATIS</h2>
+                                                        <% } %>
+                                        </div>
+                                    </div>
+                                    <h2 class="name-game">
+                                        <%= element.name %>
+                                    </h2>
+                                    <div class="main-article">
+                                        <div>
+                                            <div>
+                                                <p class="consolas-compatibles">
+                                                    <%= element.compatibility %>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <p class="main-card-categoria">
+                                                    <%= element.gender %>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="price">
+                                                <%= element.price %>
+                                            </p>
+                                        </div>
+
                                     </div>
                                 </a>
-                                <h2 class="name-game">
-                                    <%= element.name %>
-                                </h2>
-                                <div class="main-article">
-                                    <div>
-                                        <p class="consolas-compatibles">
-                                            <%= element.compatibility %>
-                                        </p>
-                                        <p class="main-card-categoria">
-                                            <%= element.gender %>
-                                        </p>
-                                        <p class="price"><%= element.price %>
-                                        </p>
-                                    </div>
-                                    <div class="button-add-cart-container">
-                                        <a href="products/<%= element.id  %>/productDetail"><button class="ver-mas"
-                                                type="submit"> Ver detalles del producto </button></a>
-                                        <a href="/products/productCart"><button class="add-to-car" type="submit"> Add to
-                                                Cart </button></a>
-                                    </div>
+
+
+                                <div class="button-add-cart-container">
+                                    <!-- <a href="products/<EJS= element.id  %>/productDetail"><button class="ver-mas"
+                                                type="submit"> Ver detalles del producto </button></a> -->
+                                    <a href="/products/productCart"><button class="add-to-car" type="submit"> Add to
+                                            Cart </button></a>
                                 </div>
                             </article>
                             <% }) %>

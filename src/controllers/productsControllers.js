@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require('fs');
+const { request } = require("express");
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -21,7 +22,7 @@ const productosController = {
         const productsClone = products
         const newProduct = {
             id: products[products.length - 1].id + 1,
-            name: req.body.nombre,
+            name: req.body.name,
             compatibility: req.body.compatibility,
             gender: req.body.gender,
             players: req.body.players,
@@ -42,7 +43,7 @@ const productosController = {
         }
 
         productsClone.push(newProduct);
-        fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, "  "));
+        fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, " "));
         // // GUARDARLA   
         // // leer que cosas ya habia
         // let archivoProduct = fs.readFileSync("products.json", { encoding: "utf-8" });
@@ -60,17 +61,20 @@ const productosController = {
         res.redirect("/");
     },
     editar: (req, res) => {
-        res.render("admin/editProduct.ejs");
+        const product = products.find((product) => {return product.id === +req.params.id})
+        res.render("admin/editProduct.ejs" , {product});
     },
     update: (req, res) => {
 
         let id = req.params.id;
         let productToEdit = products.find(product => {
-            return product.id == id;
+            return product.id === id;
         });
         let editProduct = {
-            id: products[products.length - 1].id + 1,
-            name: req.body.nombre,
+            // id: products[products.length - 1].id + 1,
+            // no se entiende la logica del id, el id deberia ser el mismo que recibimos como parametro
+            id: +req.params.id,
+            name: req.body.name,
             compatibility: req.body.compatibility,
             gender: req.body.gender,
             players: req.body.players,
@@ -104,12 +108,12 @@ const productosController = {
         res.render("products/productCart");
     },
     destroy: (req, res) => {
-
+        console.log ('entra al distroy')
         let id = req.params.id;
 		
 		let finalProducts = products.filter(product => product.id != id);
 		
-		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, " "));
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, '  '));
 
 		res.redirect("/")	
 	}
