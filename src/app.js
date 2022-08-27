@@ -15,10 +15,12 @@ app.use(methodOverride("_method"));
 const rutasProductos = require("./routes/products.js");
 const mainRoutes = require("./routes/main.js");
 
+/* MIDDLEWARE */
+const logMiddleware = require("./middleWares/logMiddleWare")
 
 /******************RUTAS********************/
 app.use("/", mainRoutes);
-
+app.use(logMiddleware)
 app.use("/products", rutasProductos);
 
 /******************FIN RUTAS********************/
