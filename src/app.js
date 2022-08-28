@@ -33,5 +33,5 @@ app.use((req, res, next) => {
 // ************************************************** //
 const port = process.env.PORT || 4040;
 app.listen(port, () => {
-    console.log("Servidor inciado en: http://localhost:" + port)
+console.log(`Servidor inciado en: http://localhost:${port}`)
 });

@@ -17,5 +17,12 @@
   "fullName": "Leandro villalba2",
   "password": "123456",
   "confirmPass": "123456"
+ },
+ {
+  "id": 4,
+  "email": "nachomenguez22@gmail.com",
+  "fullName": "ignacio menguez",
+  "password": "Racing2019",
+  "confirmPass": "Racing2019"
  }
 ]
