@@ -18,21 +18,28 @@ const mainControllers = {
         res.render(path.join(__dirname, "../views/users/register.ejs"));
     },
     store: (req, res) => {
-        const userClone= users;
-        const newUser = {
-            id: users[users.length - 1].id + 1,
-            email: req.body.email,
-            fullName: req.body.fullName,
-            password: req.body.password,
-            confirmPass: req.body.confirmPass,
-            imgUser: req.body.imgUser
-        };
         
-        userClone.push(newUser);
-        
-        fs.writeFileSync(usersFilePath, JSON.stringify(userClone, null, " "));
-        
-        res.redirect("/");
+
+        if(req.file){
+            const userClone= users;
+            const newUser = {
+                id: users[users.length - 1].id + 1,
+                email: req.body.email,
+                fullName: req.body.fullName,
+                password: req.body.password,
+                confirmPass: req.body.confirmPass,
+                imgUser: req.file.filename
+            };
+            
+            userClone.push(newUser);
+            
+            fs.writeFileSync(usersFilePath, JSON.stringify(userClone, null, " "));
+            
+            res.redirect("/");
+        } else{
+            res.redirect("/register");
+        }
+       
     },
     ofertas: (req, res) => {
         const inSale = products.filter(product => product.discount > 0);
