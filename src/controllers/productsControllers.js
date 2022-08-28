@@ -1,6 +1,5 @@
 const path = require("path");
 const fs = require('fs');
-const { request } = require("express");
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
