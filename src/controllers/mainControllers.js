@@ -11,6 +11,9 @@ const mainControllers = {
     home: (req, res) => {
         res.render("index", { products });
     },
+    list: (req, res)=>{
+        res.render("./users/usersList", {users})
+    },
     login: (req, res) => {
         res.render(path.join(__dirname, "../views/users/login.ejs"));
     },
@@ -20,7 +23,7 @@ const mainControllers = {
     store: (req, res) => {
         
 
-        if(req.file){
+        if(req.file){   //ac se puede realizar cualquer tipo de validacion como por ejemplo el zise
             const userClone= users;
             const newUser = {
                 id: users[users.length - 1].id + 1,
@@ -28,14 +31,14 @@ const mainControllers = {
                 fullName: req.body.fullName,
                 password: req.body.password,
                 confirmPass: req.body.confirmPass,
-                imgUser: req.file.filename
+                imgUser: req.file.filename  //filename es el nombre definido para guardar las imagenes
             };
             
             userClone.push(newUser);
             
             fs.writeFileSync(usersFilePath, JSON.stringify(userClone, null, " "));
             
-            res.redirect("/");
+            res.redirect("/usersList");
         } else{
             res.redirect("/register");
         }

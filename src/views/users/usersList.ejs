@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/usersList.css">
+    </head>
+
+    <body class="body-usersList">
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
+            <main>
+                <h2>Users</h2>
+                <div class="usersList-container">
+                    <% users.forEach(user=> { %>
+                        <div class="usersList">
+                            <div class="card-user-container">
+                                <div class="img-user-container">
+                                    <img src="/image/usersAvatar/<%= user.imgUser ? user.imgUser : "default.jpg"  %> " alt="imagen-UserDe-fault">
+                                </div>
+                                <div class="main-users-container">
+                                    <label class="dataUser" for=""> id: <%= user.id%>
+                                            <p class="dataUser"><%= user.email %> 
+                                            <p class="dataUser"><%= user.fullName %> 
+
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
+    </body>
+
+</html>
