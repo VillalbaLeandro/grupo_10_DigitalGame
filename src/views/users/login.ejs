@@ -11,15 +11,26 @@
         <!-- HEADER -->
         <%- include ("../partials/header") %>
 
+        <% if (typeof errors != "undefined") { %>
+            <p style="color: red;">ERROR</p>
+            <ul>
+                <% for (let i = 0; i < errors.lenght; i++) { %>
+                    <li>
+                        <%= errors[i].msg%> 
+                    </li>
+                <% } %> 
+            </ul>
+        <% } %> 
+
             <main class="main-login">
                 <!-- Formulario de inicio de sesion -->
                 <div class="formulario-container">
-                    <form action="/" method="GET">
+                    <form action="./login.ejs" method="POST">
                         <div>
                             <label>Ingrese nombre de usuario y contraseña</label><br>
                         </div>
                         <div>
-                            <input class="box-text" type="text" name="nombre-de-usuario" id="nombre-de-usuario"
+                            <input class="box-text" type="email" name="email" id="nombre-de-usuario"
                                 placeholder="Usuario">
                         </div>
                         <div>

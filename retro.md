@@ -93,4 +93,34 @@ Digital Game - Sprint 4
 * Dejar de poner horarios y dias randoms en las reuniones
 * Dejar cosas para ultimo momento.  
 * Dejar de avisar a ultima hora que no pudimos realizar nuestra parte de la tarea
+
+Digital Game - Sprint 5
  
+## Comenzar a hacer
+
+* División de Tareas.
+* Reuniones por Zoom mas frecuentes, para poder resfrescar la informacion viste e incluida en el trabajo.
+* Dejar al dia el playground.
+* Trabajo en equipo.
+* Compartir ideas.
+* Reparticion de tareas.
+* Comprometerse mas en el proyecto. 
+
+## Hacer mas
+
+* Comunicación continua.
+* incentivar al grupo.
+
+## Continuar haciendo
+
+* Clima de confianza y respeto.
+* Esfuerzo por entregar todo a tiempo y mantenernos al dia. 
+
+## Hacer menos
+
+* Cambios de ultima hora.
+
+## Dejar de hacer
+
+* Dejar de poner horarios y dias randoms en las reuniones.
+* Dejar cosas para ultimo momento. 

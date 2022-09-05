@@ -21,8 +21,6 @@ const mainControllers = {
         res.render(path.join(__dirname, "../views/users/register.ejs"));
     },
     store: (req, res) => {
-        
-
         if(req.file){   //ac se puede realizar cualquer tipo de validacion como por ejemplo el zise
             const userClone= users;
             const newUser = {
@@ -42,7 +40,6 @@ const mainControllers = {
         } else{
             res.redirect("/register");
         }
-       
     },
     ofertas: (req, res) => {
         const inSale = products.filter(product => product.discount > 0);
