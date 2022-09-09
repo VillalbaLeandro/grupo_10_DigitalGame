@@ -17,5 +17,13 @@
   "fullName": "Leandro villalba2",
   "password": "123456",
   "confirmPass": "123456"
+ },
+ {
+  "id": 4,
+  "email": "nachomenguez22@gmail.com",
+  "fullName": "ignacio menguez",
+  "password": "$2b$10$MWvnRS73icnXpCj/OIjtfuIthDUCRLKMzWcBj8exRgZrtMSFEpIwG",
+  "domicilio": "pablo abriata 1650",
+  "imgUser": "1662698027107_img_.jpg"
  }
 ]
