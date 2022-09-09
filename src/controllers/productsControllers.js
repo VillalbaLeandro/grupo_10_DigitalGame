@@ -107,7 +107,6 @@ const productosController = {
         res.render("products/productCart");
     },
     destroy: (req, res) => {
-        console.log ('entra al distroy')
         let id = req.params.id;
 		
 		let finalProducts = products.filter(product => product.id != id);

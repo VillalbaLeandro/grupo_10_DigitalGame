@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/login.css">
+    </head>
+
+    <body class="body-login">
+
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
+
+            <main>
+                <div class="container-profile">
+                        <div class="container-email">
+                            <h2>Hola <%= user.fullName %> </h2>
+                            <img src="/image/usersAvatar/<%= user.imgUser %>">
+                            <br>
+                            <br>
+                            <div class="alert alert-success"><%= user.email %> </div>
+                        </div>
+                        <a href="/logout"><button class="logout-button" type="submit">Cerrar Sesion</button></a>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
+
+    </body>
+
+</html>

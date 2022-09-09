@@ -87,7 +87,7 @@ const mainControllers = {
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
-            avatar: req.file.filename
+            imgUser: req.file.filename
         }
 
         let userCreated = user.create(userToCreate);
@@ -102,7 +102,7 @@ const mainControllers = {
     },
 
     profile: (req, res) => {
-        return res.render("/", {
+        return res.render("../views/users/profile", {
             user: req.session.userLogged
         });
     },

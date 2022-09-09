@@ -12,6 +12,8 @@ const userControllers = require("../models/user");
 
 //MIDDLEWARES
 const validations = require('../middlewares/validateRegisterMiddleware');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 //configuraciones para carga de archivos con multer
 const storage = multer.diskStorage({
@@ -32,9 +34,11 @@ const uploadFile = multer({ storage });
 //RUTAS POR GET
 router.get("/", mainControllers.home);
 router.get("/usersList", mainControllers.list);//LISTA DE USUARIOS
-router.get("/login", mainControllers.login);//FORMULARIO DE LOGIN
-router.get("/register", mainControllers.register);//FORMULARIO DE REGISTRO
+router.get("/login", guestMiddleware, mainControllers.login);//FORMULARIO DE LOGIN
+router.get("/register", guestMiddleware, mainControllers.register);//FORMULARIO DE REGISTRO
 router.get("/ofertas", mainControllers.ofertas);
+router.get("/profile", authMiddleware, mainControllers.profile);
+router.get("/logout", mainControllers.logout);
 
 //RUTAS POR POST
 router.post("/register", uploadFile.single("imgUser"), validations, mainControllers.store);//PROCESO DE REGISTRO
