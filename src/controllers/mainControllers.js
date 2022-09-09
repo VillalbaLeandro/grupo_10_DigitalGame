@@ -39,7 +39,7 @@ const mainControllers = {
 
                 return res.redirect("/");
             }
-            return res.render("../views/users/register.ejs", {
+            return res.render("../views/users/login.ejs", {
                 errors: {
                     email: {
                         msg: "Las credenciales son inválidas"
@@ -48,7 +48,7 @@ const mainControllers = {
             });
         }
 
-        return res.render("../views/users/login.ejs", {
+        return res.render("../views/users/register.ejs", {
             errors: {
                 email: {
                     msg: "No se encuentra este email en nuestra base de datos"

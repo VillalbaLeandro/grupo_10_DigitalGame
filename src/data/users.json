@@ -25,5 +25,13 @@
   "password": "$2b$10$MWvnRS73icnXpCj/OIjtfuIthDUCRLKMzWcBj8exRgZrtMSFEpIwG",
   "domicilio": "pablo abriata 1650",
   "imgUser": "1662698027107_img_.jpg"
+ },
+ {
+  "id": 5,
+  "email": "soligonzalez3025@gmail.com",
+  "fullName": "silvana gonzalez ",
+  "password": "$2b$10$NSTz8SLSYzYih129TzgbXORcKiw6UYZkpP5VMW75EIkRpuKb6t5QG",
+  "domicilio": "pablo abriata 1650",
+  "imgUser": "1662701359461_img_.jpg"
  }
 ]
