@@ -11,9 +11,9 @@ const mainControllers = require("../controllers/mainControllers");
 const userControllers = require("../models/user");
 
 //MIDDLEWARES
-const validations = require('../middlewares/validateRegisterMiddleware');
-const guestMiddleware = require('../middlewares/guestMiddleware');
-const authMiddleware = require('../middlewares/authMiddleware');
+const validations = require("../middlewares/validateRegisterMiddleware");
+const guestMiddleware = require("../middlewares/guestMiddleware");
+const authMiddleware = require("../middlewares/authMiddleware");
 
 //configuraciones para carga de archivos con multer
 const storage = multer.diskStorage({
