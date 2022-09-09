@@ -23,7 +23,7 @@
 
                     <div class="errors-email errors">
                         <label class="titulos-boxs" for="email" class="text-boxs">Email</label><br>
-                        <input class="text-boxs" type="text" name="email"><br>
+                        <input class="text-boxs" type="text" name="email" value="<%= locals.oldData ? oldData.email : null %>"><br>
 
                         <% if (locals.errors && errors.email) { %>
                             <div class="text-danger">
@@ -35,7 +35,7 @@
                     <div class="errors-fullName errors">
                         <label class="titulos-boxs" for="fullName">Nombre y apellido:</label><br>
                         <input class="text-boxs" type="text" name="fullName" id="name"
-                            placeholder="Ej. Florencio Perez"><br>
+                            placeholder="Ej. Florencio Perez" value="<%= locals.oldData ? oldData.fullName : null %>"><br>
 
                             <% if (locals.errors && errors.fullName) { %>
                                 <div class="text-danger">
@@ -69,7 +69,7 @@
                     <div class="errors-domicilio errors">
                         <label class="titulos-boxs" for="domicilio">Domicilio:</label>
                         <input class="text-boxs" type="text" name="domicilio" id="domicilio"
-                            placeholder="Ej. Cabred 1900"><br>
+                            placeholder="Ej. Cabred 1900" value="<%= locals.oldData ? oldData.domicilio : null %>"><br>
 
                             <% if (locals.errors && errors.domicilio) { %>
                                 <div class="text-danger">
