@@ -98,23 +98,23 @@ Digital Game - Sprint 5
  
 ## Comenzar a hacer
 
-* División de Tareas.
-* Reuniones por Zoom mas frecuentes, para poder resfrescar la informacion viste e incluida en el trabajo.
 * Dejar al dia el playground.
-* Trabajo en equipo.
 * Compartir ideas.
 * Reparticion de tareas.
 * Comprometerse mas en el proyecto. 
 
 ## Hacer mas
 
-* Comunicación continua.
+* Reuniones por Zoom mas frecuentes, para poder resfrescar la informacion viste e incluida en el trabajo.
 * incentivar al grupo.
 
 ## Continuar haciendo
 
+* Comunicación continua.
+* Trabajo en equipo.
 * Clima de confianza y respeto.
 * Esfuerzo por entregar todo a tiempo y mantenernos al dia. 
+* División de Tareas.
 
 ## Hacer menos
 

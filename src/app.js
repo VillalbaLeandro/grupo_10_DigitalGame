@@ -1,7 +1,10 @@
 const express = require("express");
+const app = express();
 const path = require("path");
 const methodOverride = require("method-override");
-const app = express();
+const session = require("express-session");
+const cookies = require("cookie-parser");
+
 
 
 app.set("view engine", "ejs");
@@ -10,6 +13,13 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.resolve(__dirname, "../public")));
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
+app.use(session({
+	secret: "Shhh, It's a secret",
+	resave: false,
+	saveUninitialized: false,
+}));
+app.use(cookies());
+
 
 /****************REQUIRE MODULES************************** */
 const rutasProductos = require("./routes/products.js");

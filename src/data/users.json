@@ -32,5 +32,14 @@
   "password": "123456",
   "confirmPass": "asdasdasd",
   "imgUser": "1661661238029_img_.jpg"
+ },
+ {
+  "email": "nachomenguez@icloud.com",
+  "fullName": "ignacio menguez",
+  "password": "$2b$10$lilI3lFjpdEdYrFazFFAaeL0HKzEu.QgxpSXU7Ot0jXK1eJUFtpMm",
+  "confirmPass": "12345678",
+  "domicilio": "pablo abriata 1650",
+  "submit": "Enviar",
+  "avatar": "1662681577525_img_.jpg"
  }
 ]

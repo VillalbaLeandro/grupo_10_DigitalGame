@@ -1,9 +1,17 @@
+//VARIABLES
 const express = require("express");
 const multer = require("multer");
 const path = require("path");
-const mainControllers = require("../controllers/mainControllers");
+const expressValidator = require("express-validator");
 
 const router = express.Router();
+
+//CONTROLLERS
+const mainControllers = require("../controllers/mainControllers");
+const userControllers = require("../models/user");
+
+//MIDDLEWARES
+const validations = require('../middlewares/validateRegisterMiddleware');
 
 //configuraciones para carga de archivos con multer
 const storage = multer.diskStorage({
@@ -21,14 +29,15 @@ const storage = multer.diskStorage({
 });
 const uploadFile = multer({ storage });
 
-
+//RUTAS POR GET
 router.get("/", mainControllers.home);
-router.get("/usersList", mainControllers.list);
-router.get("/login", mainControllers.login);
-router.get("/register", mainControllers.register);
-router.post("/register", uploadFile.single("imgUser"), mainControllers.store);
-
+router.get("/usersList", mainControllers.list);//LISTA DE USUARIOS
+router.get("/login", mainControllers.login);//FORMULARIO DE LOGIN
+router.get("/register", mainControllers.register);//FORMULARIO DE REGISTRO
 router.get("/ofertas", mainControllers.ofertas);
 
-
+//RUTAS POR POST
+router.post("/register", uploadFile.single("imgUser"), validations, mainControllers.store);//PROCESO DE REGISTRO
+router.post('/login', mainControllers.loginProcess);//PROCESO DE LOGIN
+ 
 module.exports = router;

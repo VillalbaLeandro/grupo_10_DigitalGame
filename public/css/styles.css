@@ -241,7 +241,9 @@ button .icon {
     display: flex;
 }
 
-
+.errors{
+    color: #af0f0f;
+}
 .products-container {
     display: flex;
     justify-content: center;
