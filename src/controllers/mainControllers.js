@@ -85,8 +85,12 @@ const mainControllers = {
         }
 
         let userToCreate = {
-            ...req.body,
+            id: users[users.length - 1].id + 1,
+            email: req.body.email,
+            fullName: req.body.fullName,
             password: bcryptjs.hashSync(req.body.password, 10),
+            confirmPass: req.body.confirmPass,
+            domicilio: req.body.domicilio,
             imgUser: req.file.filename
         }
 

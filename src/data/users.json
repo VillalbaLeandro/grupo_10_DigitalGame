@@ -17,29 +17,5 @@
   "fullName": "Leandro villalba2",
   "password": "123456",
   "confirmPass": "123456"
- },
- {
-  "id": 4,
-  "email": "nachomenguez22@gmail.com",
-  "fullName": "ignacio menguez",
-  "password": "Racing2019",
-  "confirmPass": "Racing2019"
- },
- {
-  "id": 5,
-  "email": "exemprary@gmail.com",
-  "fullName": "dsadasda",
-  "password": "123456",
-  "confirmPass": "asdasdasd",
-  "imgUser": "1661661238029_img_.jpg"
- },
- {
-  "email": "nachomenguez@icloud.com",
-  "fullName": "nacho",
-  "password": "$2b$10$i5qrLEK3ZSiLwNrlyv5U/O.1nhLEtPg/iD4IG8bNRbCJbT3fH3666",
-  "confirmPass": "12345678",
-  "domicilio": "pablo abriata 1650",
-  "submit": "Enviar",
-  "imgUser": "1662686902633_img_.jpg"
  }
 ]
