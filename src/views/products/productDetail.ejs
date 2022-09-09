@@ -27,20 +27,32 @@
                         <!-- Titulo -->
                         <div class="titulo-caracteristicas-conteiner">
                             <div class="titulo-detalle-product">
-                                <h3><%= product.fullName %> </h3>
+                                <h3>
+                                    <%= product.fullName %>
+                                </h3>
                             </div>
                             <!-- Caracteristicas -->
                             <div class="contenedor-caracteristicas">
                                 <h2>Tambien para:</h2>
-                                <p class="consolas"><%= product.compatibility %> </p>
+                                <p class="consolas">
+                                    <%= product.compatibility %>
+                                </p>
                                 <h2>Género:</h2>
-                                <p class="genero"><%= product.gender %> </p>
+                                <p class="genero">
+                                    <%= product.gender %>
+                                </p>
                                 <h2>Modo de juego:</h2>
-                                <p class="jugadores"><%= product.players %> </p>
+                                <p class="jugadores">
+                                    <%= product.players %>
+                                </p>
                                 <h2>Idioma:</h2>
-                                <p class="idioma"> <%= product.language %> </p>
+                                <p class="idioma">
+                                    <%= product.language %>
+                                </p>
                                 <h2>Lanzamiento:</h2>
-                                <p class="lanzamiento"> <%=  product.releaseData  %></p>
+                                <p class="lanzamiento">
+                                    <%= product.releaseData %>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -48,7 +60,8 @@
                     <div class="botones-product-detail">
                         <!-- boton volver -->
 
-                        <form action="/products/<%= product.id %>/delete?_method=DELETE"  method="POST"><button type="submit">Deleted</button></form>
+                        <form action="/products/<%= product.id %>/delete?_method=DELETE" method="POST"><button
+                                type="submit">Deleted</button></form>
 
                         <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
                         <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
@@ -57,7 +70,9 @@
                     </div>
                     <div class="description-product-detal-container">
                         <!-- Descripcion -->
-                        <h2><%= product.description %> </h2>
+                        <h2>
+                            <%= product.description %>
+                        </h2>
                     </div>
                     <!-- Contenedor Fotos -->
                     <section class="contenedor-titulo">
@@ -72,8 +87,7 @@
 
                     </div>
                     <div class="videoDetail-conteiner">
-                        <iframe src="<%= product.video %> " title="YouTube video player"
-                            frameborder="0"
+                        <iframe src="<%= product.video %> " title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>

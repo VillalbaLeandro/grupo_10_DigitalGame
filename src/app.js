@@ -37,11 +37,11 @@ app.use("/products", rutasProductos);
 
 // ************ERROR 404 NOTFOUND ******************* //
 app.use((req, res, next) => {
-    res.status(404).render("not-found");
-    next()
+	res.status(404).render("not-found");
+	next()
 });
 // ************************************************** //
 const port = process.env.PORT || 4040;
 app.listen(port, () => {
-console.log(`Servidor inciado en: http://localhost:${port}`)
+	console.log(`Servidor inciado en: http://localhost:${port}`)
 });

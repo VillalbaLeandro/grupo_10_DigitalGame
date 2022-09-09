@@ -1,32 +1,36 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body-login{
+.body-login {
     margin-top: 30%;
 }
-.main-login{
+
+.main-login {
     height: 70vh;
 }
+
 .formulario-container {
     width: 90%;
     background-color: #666;
     font-family: "Roboto";
-    color: white ;
+    color: white;
     border-radius: 4px;
     padding: 26px;
-    box-shadow: 7px 9px 13px -1px rgba(0,0,0,0.46);
+    box-shadow: 7px 9px 13px -1px rgba(0, 0, 0, 0.46);
     max-width: 400px;
     margin: 153px auto 40px auto;
-    
+
 }
-button .icon{
+
+button .icon {
     top: 22px !important;
 }
+
 .box-text {
-    width: 100%;   
+    width: 100%;
     height: 29px;
     border-radius: 4px;
     padding: 4px;
@@ -34,8 +38,9 @@ button .icon{
     background: #3a3636;
 
 }
-.box-text::placeholder{
-   color: #ebebeb;
+
+.box-text::placeholder {
+    color: #ebebeb;
 }
 
 form div {
@@ -44,12 +49,14 @@ form div {
     display: flex;
 
 }
+
 .No-tienes-cuenta {
     flex-direction: column;
     display: flex;
     align-items: center;
 }
-.boton-inicio-sesion{
+
+.boton-inicio-sesion {
     width: 100%;
     height: 33px;
     background-color: #017bae;
@@ -59,7 +66,8 @@ form div {
     font-size: 17px;
     font-weight: 700;
 }
-.logout-button{
+
+.logout-button {
     width: 100%;
     height: 33px;
     background-color: #017bae;
@@ -69,28 +77,31 @@ form div {
     font-size: 17px;
     font-weight: 700;
 }
+
 .No-tienes-cuenta a {
     color: #5b9db9;
     font-weight: 700;
 }
+
 .No-tienes-cuenta a:hover {
-color: white
+    color: white
 }
 
-@media (min-width: 768px){
-    .body-login{
+@media (min-width: 768px) {
+    .body-login {
         margin-top: 18%;
-        } 
-        .formulario-container {
-            width: 90%;
-            background-color: #666;
-            font-family: "Roboto";
-            color: white ;
-            border-radius: 4px;
-            padding: 26px;
-            box-shadow: 7px 9px 13px -1px rgba(0,0,0,0.46);
-            max-width: 400px;
-            margin: 153px auto 65px auto;
-            
-        }  
+    }
+
+    .formulario-container {
+        width: 90%;
+        background-color: #666;
+        font-family: "Roboto";
+        color: white;
+        border-radius: 4px;
+        padding: 26px;
+        box-shadow: 7px 9px 13px -1px rgba(0, 0, 0, 0.46);
+        max-width: 400px;
+        margin: 153px auto 65px auto;
+
+    }
 }

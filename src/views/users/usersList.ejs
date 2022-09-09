@@ -17,12 +17,15 @@
                         <div class="usersList">
                             <div class="card-user-container">
                                 <div class="img-user-container">
-                                    <img src="/image/usersAvatar/<%= user.imgUser ? user.imgUser : "default.jpg"  %>" alt="imagen-UserDe-fault">
+                                    <img src="/image/usersAvatar/<%= user.imgUser ? user.imgUser : " default.jpg" %>"
+                                    alt="imagen-UserDe-fault">
                                 </div>
                                 <div class="main-users-container">
                                     <label class="dataUser" for=""> id: <%= user.id%>
-                                            <p class="dataUser"><%= user.email %> 
-                                            <p class="dataUser"><%= user.fullName %> 
+                                            <p class="dataUser">
+                                                <%= user.email %>
+                                                    <p class="dataUser">
+                                                        <%= user.fullName %>
 
                                 </div>
                             </div>

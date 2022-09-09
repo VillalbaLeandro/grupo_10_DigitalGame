@@ -9,7 +9,7 @@ const User = {
         return JSON.parse(fs.readFileSync(this.fileName, "utf-8"));
     },//OBTIENE LA INFORMCION DEL USER
 
-    generateId: function (){
+    generateId: function () {
         let allUsers = this.findAll();
         let lastUser = allUsers.pop();
         if (lastUser) {
@@ -30,7 +30,7 @@ const User = {
 
     findByField: function (field, text) {
         let allUsers = this.findAll();
-        let userFound = allUsers.find(oneUser => oneUser[field]=== text);
+        let userFound = allUsers.find(oneUser => oneUser[field] === text);
         return userFound;
     },
 
@@ -41,15 +41,15 @@ const User = {
             ...userData
         }
         allUsers.push(userData),
-        fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, " "));
+            fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, " "));
         return true;
-    }, 
+    },
 
     delete: function (id) {
         let allUsers = this.findAll();
         let finalUsers = allUsers.filter(oneUser => oneUser.id !== id);
         allUsers.push(userData),
-        fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, " "));
+            fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, " "));
         return newUser;
     }
 }

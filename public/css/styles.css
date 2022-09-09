@@ -21,7 +21,8 @@ header {
     right: 0;
     z-index: 10;
 }
-.header-mobile{
+
+.header-mobile {
     position: fixed;
     background: rgb(31 29 29);
     /* background: rgb(173 173 173); */
@@ -33,41 +34,48 @@ header {
     border-bottom: 6px #323232 solid;
 }
 
-.header-mobile .icon{
+.header-mobile .icon {
     font-size: 20px;
     color: #878787;
     margin: 0px 10px;
     transition: color 1s;
 }
-.header-mobile .icon:visited{
+
+.header-mobile .icon:visited {
     color: #d8d6d6;
 }
-.header-conteiner-2{
+
+.header-conteiner-2 {
     display: none;
 }
-.search-container .icon{
+
+.search-container .icon {
     color: #323232;
 }
 
-.logo-burger-cartShop-loginButton-conainer-mobile{
+.logo-burger-cartShop-loginButton-conainer-mobile {
     display: flex;
     align-items: center;
     justify-content: space-around;
 
 }
-.logo-burger-cartShop-loginButton-conainer-mobile img{
+
+.logo-burger-cartShop-loginButton-conainer-mobile img {
     width: 71%;
 }
-.logo-container-mobile{
+
+.logo-container-mobile {
     width: 16%;
 }
 
 img {
     width: 100%;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .logo-container {
     text-align: center;
 
@@ -236,14 +244,16 @@ button .icon {
 
 
 }
-.max-width-card{
+
+.max-width-card {
     height: 58.7vh;
     display: flex;
 }
 
-.errors{
+.errors {
     color: #af0f0f;
 }
+
 .products-container {
     display: flex;
     justify-content: center;
@@ -263,7 +273,7 @@ button .icon {
     justify-content: center;
     padding: 9%;
     position: relative;
-    transition:  transform 3s;
+    transition: transform 3s;
     align-items: center;
 
 }
@@ -315,7 +325,8 @@ button .icon {
     color: #3e3e3e;
 
 }
-.consolas-compatibles{
+
+.consolas-compatibles {
     font-weight: 700;
 }
 
@@ -571,12 +582,15 @@ footer {
     header {
         padding: 0%;
     }
-    .header-mobile{
+
+    .header-mobile {
         display: none;
     }
-    .header-conteiner-2{
+
+    .header-conteiner-2 {
         display: block;
     }
+
     .burger-container {
         display: none;
     }
@@ -623,7 +637,7 @@ footer {
 
     .logo-burger-cartShop-loginButton-conainer {
         display: flex;
-       
+
     }
 
     .navbar-iconCart-iconUser {
@@ -815,7 +829,7 @@ footer {
         box-shadow: 7px 7px 6px -5px rgb(0 0 0 / 22%);
     }
 
-    .card-container:hover .img-product-container{
+    .card-container:hover .img-product-container {
         transform: scale(1.1);
     }
 

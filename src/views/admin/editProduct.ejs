@@ -15,8 +15,8 @@
                 <!-- formulario Create -->
 
                 <div class="formulario-container">
-                    <!-- <form action="/products/:id/editProduct?_method=PUT" method="POST"> --> 
-                        <!-- Marcela: lo cambiè porque necesitamos enviarle dinamicamente el id del producto a modificar -->
+                    <!-- <form action="/products/:id/editProduct?_method=PUT" method="POST"> -->
+                    <!-- Marcela: lo cambiè porque necesitamos enviarle dinamicamente el id del producto a modificar -->
                     <form action="/products/<%= product.id %>/editProduct?_method=PUT" method="POST">
 
                         <div class="titulo-register-conteiner">
@@ -80,7 +80,7 @@
 
                         <label class="titulos-boxs" for="releaseData">Fecha de lanzamiento</label>
                         <input type="date" name="releaseData" value="2022-07-22" min="2000-01-01" max="2022-12-31"><br>
-<!-- cambie el min una fecha mas antigua tenia 2018-01-01 -->
+                        <!-- cambie el min una fecha mas antigua tenia 2018-01-01 -->
 
                         <label class="titulos-boxs" for="img">Link imagen principal</label><br>
                         <input class="text-boxs" type="text" name="img"

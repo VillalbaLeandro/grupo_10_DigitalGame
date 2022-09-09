@@ -21,77 +21,80 @@
                             <label class="Titulo-register">Registrarme</label><br>
                         </div>
 
-                    <div class="errors-email errors">
-                        <label class="titulos-boxs" for="email" class="text-boxs">Email</label><br>
-                        <input class="text-boxs" type="text" name="email" value="<%= locals.oldData ? oldData.email : null %>"><br>
+                        <div class="errors-email errors">
+                            <label class="titulos-boxs" for="email" class="text-boxs">Email</label><br>
+                            <input class="text-boxs" type="text" name="email"
+                                value="<%= locals.oldData ? oldData.email : null %>"><br>
 
-                        <% if (locals.errors && errors.email) { %>
-                            <div class="text-danger">
-                                <%= errors.email.msg %>
-                            </div>
-                        <% } %>
-                    </div>
-                    
-                    <div class="errors-fullName errors">
-                        <label class="titulos-boxs" for="fullName">Nombre y apellido:</label><br>
-                        <input class="text-boxs" type="text" name="fullName" id="name"
-                            placeholder="Ej. Florencio Perez" value="<%= locals.oldData ? oldData.fullName : null %>"><br>
+                            <% if (locals.errors && errors.email) { %>
+                                <div class="text-danger">
+                                    <%= errors.email.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-fullName errors">
+                            <label class="titulos-boxs" for="fullName">Nombre y apellido:</label><br>
+                            <input class="text-boxs" type="text" name="fullName" id="name"
+                                placeholder="Ej. Florencio Perez"
+                                value="<%= locals.oldData ? oldData.fullName : null %>"><br>
 
                             <% if (locals.errors && errors.fullName) { %>
                                 <div class="text-danger">
-                                    <%= errors.fullName.msg %> 
+                                    <%= errors.fullName.msg %>
                                 </div>
-                            <% } %>
-                    </div>           
+                                <% } %>
+                        </div>
 
-                    <div class="errors-password errors">
-                        <label class="titulos-boxs" for="password">Ingrese una contraseña:</label>
-                        <input class="text-boxs" type="password" name="password" id="pass">
+                        <div class="errors-password errors">
+                            <label class="titulos-boxs" for="password">Ingrese una contraseña:</label>
+                            <input class="text-boxs" type="password" name="password" id="pass">
 
-                        <% if (locals.errors && errors.password) { %>
-                            <div class="text-danger">
-                                <%= errors.password.msg %>
-                            </div>
-                        <% } %>
-                    </div>            
+                            <% if (locals.errors && errors.password) { %>
+                                <div class="text-danger">
+                                    <%= errors.password.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
-                    <div class="errors-confirmPass errors">
-                        <label class="titulos-boxs" for="confirmPass">Confirme la contraseña:</label>
-                        <input class="text-boxs" type="password" name="confirmPass" id="pass-repeat">
+                        <div class="errors-confirmPass errors">
+                            <label class="titulos-boxs" for="confirmPass">Confirme la contraseña:</label>
+                            <input class="text-boxs" type="password" name="confirmPass" id="pass-repeat">
 
-                        <% if (locals.errors && errors.confirmPass) { %>
-                            <div class="text-danger">
-                                <%= errors.confirmPass.msg %>
-                            </div>
-                        <% } %>
-                    </div>
-                    
-                    <div class="errors-domicilio errors">
-                        <label class="titulos-boxs" for="domicilio">Domicilio:</label>
-                        <input class="text-boxs" type="text" name="domicilio" id="domicilio"
-                            placeholder="Ej. Cabred 1900" value="<%= locals.oldData ? oldData.domicilio : null %>"><br>
+                            <% if (locals.errors && errors.confirmPass) { %>
+                                <div class="text-danger">
+                                    <%= errors.confirmPass.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-domicilio errors">
+                            <label class="titulos-boxs" for="domicilio">Domicilio:</label>
+                            <input class="text-boxs" type="text" name="domicilio" id="domicilio"
+                                placeholder="Ej. Cabred 1900"
+                                value="<%= locals.oldData ? oldData.domicilio : null %>"><br>
 
                             <% if (locals.errors && errors.domicilio) { %>
                                 <div class="text-danger">
                                     <%= errors.domicilio.msg %>
                                 </div>
-                            <% } %>
-                    </div>            
-
-                    <div class="errors-imgUser errors">
-                        <label class="titulos-boxs" for="imgUser">Seleccione una imagen para su perfil:</label><br>
-                        <div class="file-select">
-                            <input class="file" type="file" name="imgUser" accept=".jpg, .png, .jpeg">
-                        
-                            <% if (locals.errors && errors.imgUser) { %>
-                                <div class="text-danger">
-                                    <%= errors.imgUser.msg %>
-                                </div>
-                            <% } %>
-
+                                <% } %>
                         </div>
-                    </div>
-                        
+
+                        <div class="errors-imgUser errors">
+                            <label class="titulos-boxs" for="imgUser">Seleccione una imagen para su perfil:</label><br>
+                            <div class="file-select">
+                                <input class="file" type="file" name="imgUser" accept=".jpg, .png, .jpeg">
+
+                                <% if (locals.errors && errors.imgUser) { %>
+                                    <div class="text-danger">
+                                        <%= errors.imgUser.msg %>
+                                    </div>
+                                    <% } %>
+
+                            </div>
+                        </div>
+
                         <div class="buttons">
                             <!-- button limpiar o borrar formulario -->
                             <input class="button-reset" type="reset" name="reset" id="reset">

@@ -12,6 +12,6 @@ router.get("/:id/editProduct", authMiddleware, productosController.editar); //Fo
 router.put("/:id/editProduct", authMiddleware, productosController.update); //Acción de edición (a donde se envía el formulario):
 router.get("/productCart", productosController.carrito);
 router.delete('/:id/delete', authMiddleware, productosController.destroy);  //Acción de borrado
-                                                        //Listado de productos
+//Listado de productos
 
-module.exports= router;
+module.exports = router;

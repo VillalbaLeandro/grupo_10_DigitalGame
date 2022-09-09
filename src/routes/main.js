@@ -23,8 +23,8 @@ const storage = multer.diskStorage({
     },
     //configurar el nombre del archivo 
     filename: (req, file, cb) => {
-            //con dateNow (Devuelve el número de milisegundos transcurridos 
-    //desde las 00:00:00 UTC del 1 de enero de 1970.) +  _img_ + 
+        //con dateNow (Devuelve el número de milisegundos transcurridos 
+        //desde las 00:00:00 UTC del 1 de enero de 1970.) +  _img_ + 
         cb(null, `${Date.now()}_img_${path.extname(file.originalname)}`)
     }
 
@@ -43,5 +43,5 @@ router.get("/logout", mainControllers.logout);
 //RUTAS POR POST
 router.post("/register", uploadFile.single("imgUser"), validations, mainControllers.store);//PROCESO DE REGISTRO
 router.post('/login', mainControllers.loginProcess);//PROCESO DE LOGIN
- 
+
 module.exports = router;

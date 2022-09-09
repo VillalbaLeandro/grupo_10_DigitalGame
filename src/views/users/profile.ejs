@@ -13,16 +13,19 @@
 
             <main>
                 <div class="container-profile">
-                        <div class="container-email">
-                            <h2>Hola <%= user.fullName %> </h2>
+                    <div class="container-email">
+                        <h2>Hola <%= user.fullName %>
+                        </h2>
                         <div class="img">
                             <img src="/image/usersAvatar/<%= user.imgUser %>">
                         </div>
-                            <br>
-                            <br>
-                            <div class="alert alert-success"><%= user.email %> </div>
+                        <br>
+                        <br>
+                        <div class="alert alert-success">
+                            <%= user.email %>
                         </div>
-                        <a href="/logout"><button class="logout-button" type="submit">Cerrar Sesion</button></a>
+                    </div>
+                    <a href="/logout"><button class="logout-button" type="submit">Cerrar Sesion</button></a>
                 </div>
             </main>
 

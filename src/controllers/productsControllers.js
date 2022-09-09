@@ -60,8 +60,8 @@ const productosController = {
         res.redirect("/");
     },
     editar: (req, res) => {
-        const product = products.find((product) => {return product.id === +req.params.id})
-        res.render("admin/editProduct.ejs" , {product});
+        const product = products.find((product) => { return product.id === +req.params.id })
+        res.render("admin/editProduct.ejs", { product });
     },
     update: (req, res) => {
 
@@ -108,13 +108,13 @@ const productosController = {
     },
     destroy: (req, res) => {
         let id = req.params.id;
-		
-		let finalProducts = products.filter(product => product.id != id);
-		
-		fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, '  '));
 
-		res.redirect("/")	
-	}
+        let finalProducts = products.filter(product => product.id != id);
+
+        fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, '  '));
+
+        res.redirect("/")
+    }
 
 
 };

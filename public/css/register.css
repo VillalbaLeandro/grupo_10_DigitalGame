@@ -1,19 +1,19 @@
-
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
 
 /* REGISTER----------------------------------- */
-.body-register{
-margin-top: 40%;
+.body-register {
+    margin-top: 40%;
 }
-.main-register{
+
+.main-register {
     height: 140vh;
 }
 
-.formulario-container{
+.formulario-container {
     width: 90%;
     background-color: #666;
     padding: 26px;
@@ -24,32 +24,34 @@ margin-top: 40%;
     color: white;
     max-width: 400px;
     box-shadow: 6px 5px 6px 0px rgb(0 0 0 / 37%)
- }
+}
 
-main input{
+main input {
     background-color: #252324;
     font-size: 12px;
     color: white;
     border: 2px solid #017bae;
-    
+
 
 }
-header input:hover{
+
+header input:hover {
     border: 2px solid rgb(233, 145, 51);
 
 }
-main input:hover{
+
+main input:hover {
     border: 2px solid black;
-    
+
 }
 
- ::placeholder{
+::placeholder {
     color: rgb(183, 183, 183);
     font-size: 11px;
-    
+
 }
 
-.titulo-register-conteiner{
+.titulo-register-conteiner {
     display: flex;
     justify-content: center;
     border-bottom: 3px white solid;
@@ -57,27 +59,32 @@ main input:hover{
     padding-bottom: 5px;
     font-family: sans-serif;
 }
-div .columns{
+
+div .columns {
     display: flex;
     justify-content: space-evenly;
 }
-.titulos-boxs{
+
+.titulos-boxs {
     font-size: 11px;
     color: #cfcbcb;
     font-weight: 500;
 }
-.text-boxs{
+
+.text-boxs {
     width: 100%;
     height: 29px;
     border-radius: 4px;
     padding: 8px;
 }
-.buttons{
+
+.buttons {
     display: flex;
     justify-content: space-around;
     margin: 7px;
 }
-.buttons input{
+
+.buttons input {
     width: 30%;
     font-size: 12px;
 
@@ -86,11 +93,11 @@ div .columns{
     background: #017bae;
 }
 
-.file-select .file{
+.file-select .file {
     width: 124px;
 }
 
-.redirec-login{
+.redirec-login {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,29 +108,31 @@ div .columns{
 
 }
 
-.redirec-login a{
+.redirec-login a {
     color: #5b9db9;
 }
-div a:hover{
+
+div a:hover {
     color: white;
-    
+
 }
 
 
 
-@media (min-width: 768px){
-    .main-register{
+@media (min-width: 768px) {
+    .main-register {
         margin-bottom: 50px;
     }
-    .body-register{
+
+    .body-register {
         margin-top: 18%;
-        }   
+    }
 }
 
 @media(min-width: 1024px) {
-    .body-register{
+    .body-register {
         margin-top: 13%;
-        }   
-    
-    
+    }
+
+
 }
