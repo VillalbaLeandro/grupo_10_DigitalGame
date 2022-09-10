@@ -92,6 +92,14 @@ div .columns {
     height: 22px;
     background: #017bae;
 }
+.button-submit {
+    width: 30%;
+    font-size: 12px;
+    color: white;
+    border-radius: 7px;
+    height: 22px;
+    background: #017bae;
+}
 
 .file-select .file {
     width: 124px;

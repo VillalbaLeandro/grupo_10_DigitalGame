@@ -3,10 +3,10 @@ const { body } = require("express-validator");
 
 const validateRegister = [
 	body("email")
-		.notEmpty().withMessage('Tienes que escribir un nombre').bail()
+		.notEmpty().withMessage("Tienes que escribir un correo electrónico").bail()
 		.isEmail().withMessage("Debes escribir un formato de correo válido"),
 	body("fullName")
-		.notEmpty().withMessage("Tienes que escribir un correo electrónico"),
+		.notEmpty().withMessage("Tienes que escribir un nombre"),
 	body("password").notEmpty().withMessage("Tienes que escribir una contraseña"),
 	body("confirmPass").notEmpty().withMessage("Tienes que confirmar tu contraseña"),
 	body("domicilio").notEmpty().withMessage("Tienes que escribir tu domicilio"),
