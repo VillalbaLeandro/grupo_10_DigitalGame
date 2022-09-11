@@ -187,6 +187,13 @@ button .icon {
     box-shadow: 0px 5px 8px 0px rgba(15, 19, 41, 0.54);
 }
 
+.filtrar{
+    padding: 10px;
+}
+.filtrar input{
+    margin: 5px;
+}
+
 /* INICIO MAIN .....................................................   */
 
 
@@ -218,7 +225,7 @@ button .icon {
     }
 
     25% {
-        margin-left: -100vh;
+        margin-left: -100vw;
     }
 
     50% {
@@ -245,10 +252,7 @@ button .icon {
 
 }
 
-.max-width-card {
-    height: 58.7vh;
-    display: flex;
-}
+
 
 .errors {
     color: #af0f0f;
@@ -269,6 +273,7 @@ button .icon {
 }
 
 .img-product-container {
+    /* height: 37vh; */
     display: flex;
     justify-content: center;
     padding: 9%;
@@ -279,6 +284,7 @@ button .icon {
 }
 
 .img-product-container img {
+    /* height: 53vh */
     overflow: hidden;
 }
 
@@ -294,22 +300,25 @@ button .icon {
 }
 
 .envios-gratis {
+    background: #2db742;
+    color: white;
+    font-weight: 600;
+
     position: absolute;
-    background-color: #fa5215;
-    color: #323232;
-    font-size: 109%;
+  
+    font-size: 98%;
     left: 58%;
     top: 87%;
-    font-weight: 400;
+ 
     padding: 1px 7px;
     box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
 }
 
 .etiqueta-off {
     position: absolute;
-    background-color: #af0f0f;
+    background-color: #f00000;
     color: white;
-    font-size: 122%;
+    font-size: 115%;
     left: 71%;
     top: 7%;
     font-weight: 700;
@@ -434,12 +443,14 @@ main section h3 {
 }
 
 .card-container {
+    width: auto;
+    max-width: 300px;
     margin-bottom: 32px;
     box-shadow: 7px 7px 6px -5px rgba(0, 0, 0, 0.22);
 }
 
 .main-article {
-    height: 23vh;
+    height: 146px;
     width: 100%;
     display: flex;
     border-top: 1px solid #ebebeb;
@@ -451,6 +462,7 @@ main section h3 {
 }
 
 .button-add-cart-container {
+    max-width: 300px;
     margin-bottom: 10px;
     display: flex;
     height: 31px;
@@ -472,7 +484,7 @@ main section h3 {
 }
 
 .add-to-car {
-    background: #323232;
+    background: #2b4e7e;;
     padding: 7px 76px;
     color: white;
     border-radius: 3px;
@@ -480,6 +492,7 @@ main section h3 {
     font-size: 0.8rem;
     cursor: pointer;
     transition: transform 350ms, opacity 450ms, z-index 450ms;
+    font-weight: 700;
 }
 
 /* -------------footer----------------- */
@@ -529,7 +542,7 @@ footer {
 .submenu {
     height: 0;
     overflow: hidden;
-    transition: all 450ms;
+    transition: all 300ms;
 }
 
 .menu__item {
@@ -548,12 +561,28 @@ footer {
     background: #323232;
 }
 
-.button-filter-search {
+/* .button-filter-search {
     border: 1px solid black;
     border-radius: 3px;
     background: #dedede;
+} */
+
+.button-filter-container{
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #868686;
+    border-radius: 3px;
+    background: #4e4e4e;
+}
+.button-filter-container:hover{
+    
+    background: #898383;
 }
 
+.button-filter-search{
+    font-weight: 500;
+    color: white;
+}
 
 
 @media (min-width: 425px) {
@@ -806,6 +835,10 @@ footer {
         visibility: visible;
     }
 
+    .button-filter-container{
+        padding: 0% !important;
+    }
+    
 }
 
 
@@ -844,12 +877,12 @@ footer {
 
     .consolas-compatibles,
     .main-card-categoria {
-        font-size: 109%;
+        font-size: 133%;
     }
 
-    .main-article {
-        height: 16vh;
-    }
+    /* .main-article {
+        height: 114px;
+    } */
 
     .price {
         font-size: 20px;
@@ -858,17 +891,17 @@ footer {
 
 
     .envios-gratis {
-        font-size: 70%;
+        font-size: 85%;
         left: 59%;
     }
 
     .etiqueta-off {
-        font-size: 75%;
+        font-size: 90%;
     }
 
     .card-container {
         width: 22%;
-        margin: 20px auto
+        margin: 20px 14px;
     }
 
     .rivals-img {
@@ -897,8 +930,13 @@ footer {
 
 
 
-/* @media (min-width: 1920px) {
-    .slider-frame img {
-        width: 99.1vw;
+@media (min-width: 1440px) {
+    .consolas-compatibles,
+    .main-card-categoria {
+        font-size: 140%;
     }
-} */
+    
+    .name-game {
+        font-size: 115%;
+    }
+}

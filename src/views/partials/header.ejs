@@ -111,7 +111,7 @@
                     <li class="menu__item container-submenu">
                         <a href="" class="menu__link">FILTRAR <i class="fas fa-caret-down"></i></a>
                         <ul class="submenu">
-                            <form action="/">
+                            <form class="filtrar" action="/">
                                 <input class="menu__link" type="checkbox" name="cat-otros" value="Novedades">Novedades
                                 <br>
                                 <input class="menu__link" type="checkbox" name="cat-otros" value="Ofertas">Ofertas
@@ -120,18 +120,21 @@
                                 Gratis<br>
                                 <input class="menu__link" type="checkbox" name="cat-otros"
                                     value="Cuotas sin interes">Cuotas sin interes <br>
+                                    <div class="button-filter-container">
+                                       <button class="button-filter-search" type="submit">FILTRAR</button>
+                                    </div>
                             </form>
-                            <div class="button-filter-container">
-                                <a href=""><button class="button-filter-search" type="submit">FILTRAR</button></a>
-                            </div>
                         </ul>
                     </li>
+                    <div class="button-create-product-container">
+                        <a href="/products/createProduct"><button class=" "> CREATE PRODUCT +</button> </a> 
+                     </div>
 
                 </ul>
             </nav>
             </span>
         </div>
-
+        
         <div class="cart-register-login-breackpoint">
             <a href="/products/productCart"><i class="fas fa-shopping-cart icon-cart-responsive"></i></a>
             <p><br> </p>

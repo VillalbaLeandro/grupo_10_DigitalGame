@@ -42,7 +42,12 @@ body {
     font-size: 13px;
     font-weight: 500;
 }
-
+.button-deleted{
+    background: red;
+    padding: 5px 25px;
+    border-radius: 3px;
+    color: white;
+}
 .botones-product-detail {
     text-align: center;
 }

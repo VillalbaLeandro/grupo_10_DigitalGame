@@ -42,13 +42,13 @@
                         <!-- cards -->
                         <% products.forEach(element=> { %>
                             <article class="card-container"><a href="products/<%= element.id  %>/productDetail">
-                                    <div class="max-width-card">
+                                    
                                         <div class="img-product-container">
                                             <img src="<%= element.img %>" alt="img <%= element.name  %>"
                                                 class="product_img">
                                             <% if (element.discount>0) { %>
                                                 <h2 class="etiqueta-off">
-                                                    <%= element.discount %> OFF
+                                                    <%= element.discount %>% OFF
                                                 </h2>
                                                 <% } %>
                                                     <% if (element.freeShipping==true || element.freeShipping=="true" )
@@ -56,7 +56,7 @@
                                                         <h2 class="envios-gratis">ENVIO GRATIS</h2>
                                                         <% } %>
                                         </div>
-                                    </div>
+                                    
                                     <h2 class="name-game">
                                         <%= element.name %>
                                     </h2>

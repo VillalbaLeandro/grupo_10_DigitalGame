@@ -10,7 +10,7 @@
 }
 
 .main-register {
-    height: 140vh;
+    height: 200%;
 }
 
 .formulario-container {
@@ -121,11 +121,12 @@ div a:hover {
 
 @media (min-width: 768px) {
     .main-register {
+        margin-top: 122px;
         margin-bottom: 50px;
     }
 
     .body-register {
-        margin-top: 18%;
+        margin-top: 120px !important;
     }
 }
 

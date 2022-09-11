@@ -61,7 +61,7 @@ const productosController = {
     },
     editar: (req, res) => {
         const product = products.find((product) => { return product.id === +req.params.id })
-        res.render("admin/editProduct.ejs", { product });
+        res.render("admin/editProduct.ejs",  { product });
     },
     update: (req, res) => {
 
