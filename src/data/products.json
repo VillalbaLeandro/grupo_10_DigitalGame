@@ -84,6 +84,30 @@
   "categori": null
  },
  {
+<<<<<<< HEAD
+=======
+  "id": 345453,
+  "name": "Janet",
+  "compatibility": "pretium iaculis diam erat",
+  "gender": "Adventure|Animation|Children",
+  "players": "Consumer Non-Durables",
+  "price": "$19325.88",
+  "language": "Spanish",
+  "releaseData": "10/17/2021",
+  "img": "/image/products/call-of-duty.jpg",
+  "fullName": "Guaifenesin",
+  "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem. Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+  "capture1": "http://dummyimage.com/1093x994.png/dddddd/000000",
+  "capture2": "http://dummyimage.com/935x1082.png/cc0000/ffffff",
+  "capture3": "http://dummyimage.com/1040x941.png/dddddd/000000",
+  "capture4": "http://dummyimage.com/1038x900.png/dddddd/000000",
+  "video": "http://dummyimage.com/947x926.png/cc0000/ffffff",
+  "discount": null,
+  "freeShipping": null,
+  "categori": null
+ },
+ {
+>>>>>>> 2dd85c4c0d63fdd4c594a0fea056760b0db5ce27
   "id": 4345345,
   "name": "Meris",
   "compatibility": "ligula suspendisse ornare consequat lectus",
@@ -2421,6 +2445,7 @@
  },
  {
   "id": 111,
+<<<<<<< HEAD
   "name": "Assassin's Creed: Origins",
   "compatibility": [
    "PS4 ",
@@ -2448,6 +2473,35 @@
   "video": "<iframe width=\"1280\" height=\"720\" src=\"https://www.youtube.com/embed/2DnxjpdJi5E\" title=\"Assassin's Creed Origins - Trailer de Lanzamiento I La Leyenda del Asesino\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
   "discount": "",
   "freeShipping": "false",
+=======
+  "name": "FIFA 22",
+  "compatibility": [
+   "PS4 ",
+   "PS5 ",
+   "XBOX ONE ",
+   "XBOX 360 ",
+   "NINTENDO "
+  ],
+  "gender": "Deportes ",
+  "players": [
+   "1 Jugador ",
+   "Multijugador ",
+   "Cooperativo "
+  ],
+  "price": "12000",
+  "language": "Multilenguaje ",
+  "releaseData": "2021-07-21",
+  "img": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/ficha/fifa_22-5479208.webp",
+  "fullName": "FIFA 22",
+  "description": "FIFA 22 es un videojuego de simulación de fútbol aún por presentar de EA Sports que llegará a las tiendas a finales del 2021 para PC y consolas. Aunque las ediciones de las consolas de la octava generación y PC son bastante continuistas, esta nueva entrega tiene como abanderada la tecnología Hypermotion, que permite lograr un comportamiento más realista de los jugadores dentro del campo y que es exclusiva de las versiones de nueva generación. Además, se han realizado cambios significativos en modalidades ya presentes como VOLTA (que prescinde del aspecto narrativo para ofrecer un arcade puro) o el modo carrera que ahora nos permite crear un club desde cero.  De nuevo, nos encontramos ante una edición cargada de contenidos como viene siendo habitual en la serie. FIFA 22 cuenta con casi la totalidad de licencias de los principales campeonatos y equipos del mundo, y eso incluye la UEFA Champions League en exclusiva tras la renovación del acuerdo con la UEFA por parte de la compaía norteamericana. Por último, FIFA 22 sigue vinculado a Ultimate Team, su exitoso y lucrativo modo de juego con cartas donde poder formar el equipo de tus sueños.",
+  "capture1": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527535.webp",
+  "capture2": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527538.webp",
+  "capture3": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527541.webp",
+  "capture4": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527553.webp",
+  "video": "https://www.youtube.com/results?search_query=fifa+22+trailer",
+  "discount": "30",
+  "freeShipping": "true",
+>>>>>>> 2dd85c4c0d63fdd4c594a0fea056760b0db5ce27
   "categori": ""
  }
 ]

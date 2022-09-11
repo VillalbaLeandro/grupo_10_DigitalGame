@@ -1,6 +1,7 @@
 [
  {
   "id": 1,
+<<<<<<< HEAD
   "email": "Merla",
   "fullName": "MacAree",
   "password": "mmacaree0@java.com",
@@ -20,11 +21,14 @@
  },
  {
   "id": 4,
+=======
+>>>>>>> 2dd85c4c0d63fdd4c594a0fea056760b0db5ce27
   "email": "nachomenguez22@gmail.com",
   "fullName": "ignacio menguez",
   "password": "$2b$10$MWvnRS73icnXpCj/OIjtfuIthDUCRLKMzWcBj8exRgZrtMSFEpIwG",
   "domicilio": "pablo abriata 1650",
   "imgUser": "1662698027107_img_.jpg"
+<<<<<<< HEAD
  },
  {
   "id": 5,
@@ -33,5 +37,7 @@
   "password": "$2b$10$wmCf1fkHw0aWuXY6jpqteubhJPFs1ZB/VIn5YBC8S/h2X2xMEPy8K",
   "domicilio": "kekekkekek",
   "imgUser": "1662862244350_img_.png"
+=======
+>>>>>>> 2dd85c4c0d63fdd4c594a0fea056760b0db5ce27
  }
 ]
