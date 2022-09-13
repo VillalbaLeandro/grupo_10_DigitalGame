@@ -320,8 +320,37 @@
  },
  {
   "id": 121,
-  "name": "GHOST",
+  "name": " GHOST  ",
   "compatibility": [
+   "PS4",
+   "PS5",
+   "XBOX ONE",
+   "XBOX 360",
+   "NINTENDO"
+  ],
+  "gender": [
+   "Accion",
+   "Aventura"
+  ],
+  "price": "12800",
+  "language": "Multilenguaje",
+  "releaseData": "2022-07-22",
+  "img": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/ficha/proyecto_sucker_punch-5215558.webp",
+  "fullName": "Ghost of Tsushima",
+  "description": "Ghost of Tsushima es un videojuego de acción y aventura en mundo abierto protagonizado por un samurai maltratado, luchando contra probabilidades abrumadoras durante la invasión a Japón del ejército mongol en el año 1274. Desarrollado en exclusiva para PS4 por Sucker Punch, autores de la serie inFAMOUS, Ghost of Tsushima garantiza hacer un buen trato de su narrativa así como las habilidades de tal mítica figura guerrera durante el Japón feudal, inspirándose para ello en grandes películas, con especial mención a Akira Kurosawa, así como en pinturas, carteles y otros juegos.  Sucker Punch asegura con Ghost of Tsushima su mayor apuesta hasta la fecha, un vasto entorno rico y lleno de sorpresas con hasta tres regiones distintas con más de cuarenta biomas y cientos de puntos de interés para recorrer atravesando bosques, terrenos pantanosos y paisajes montañosos helados con personajes profundos y lugares históricos, pero también con oponentes a los que desafiar en una experiencia de combate samurái que apuesta a dar una gran inmersión al usuario, con tiempo para el sigilo y el tiro con arco además de para usar la katana. Todo lo necesario para que Jin, protagonista de su historia, forje un nuevo camino para proteger a su gente y recuperar su hogar.  No es el único atractivo de la producción de PlayStation Studios, además de un Modo Foto realmente especial dada la ambientación y el mimo por el detalle de sus responsables, Ghost of Tsushima cuenta con Legends, un cooperativo para cuatro jugadores donde elegir entre cuatro clases (samurái, cazador, ronin o asesino) para participar en misiones o en un modo supervivencia de oleadas.",
+  "capture1": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271324.webp",
+  "capture2": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271336.webp",
+  "capture3": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271354.webp",
+  "capture4": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271357.webp",
+  "video": "https://www.youtube.com/embed/jT9edKarhc8",
+  "discount": "15",
+  "categori": ""
+ },
+ {
+  "id": 122,
+  "name": "DRAGON QUEST",
+  "compatibility": [
+   "PS3 ",
    "PS4 ",
    "PS5 ",
    "XBOX ONE ",
@@ -329,22 +358,23 @@
    "NINTENDO "
   ],
   "gender": [
-   "Accion ",
-   "Aventura "
+   "Aventura ",
+   "De Rol "
   ],
   "players": "1 Jugador ",
-  "price": "",
+  "price": "5000",
   "language": "Multilenguaje ",
-  "releaseData": "2020-07-17",
-  "img": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/ficha/proyecto_sucker_punch-5215558.webp",
-  "fullName": "Ghost of Tsushima",
-  "description": "Ghost of Tsushima es un videojuego de acción y aventura en mundo abierto protagonizado por un samurai maltratado, luchando contra probabilidades abrumadoras durante la invasión a Japón del ejército mongol en el año 1274. Desarrollado en exclusiva para PS4 por Sucker Punch, autores de la serie inFAMOUS, Ghost of Tsushima garantiza hacer un buen trato de su narrativa así como las habilidades de tal mítica figura guerrera durante el Japón feudal, inspirándose para ello en grandes películas, con especial mención a Akira Kurosawa, así como en pinturas, carteles y otros juegos.  Sucker Punch asegura con Ghost of Tsushima su mayor apuesta hasta la fecha, un vasto entorno rico y lleno de sorpresas con hasta tres regiones distintas con más de cuarenta biomas y cientos de puntos de interés para recorrer atravesando bosques, terrenos pantanosos y paisajes montañosos helados con personajes profundos y lugares históricos, pero también con oponentes a los que desafiar en una experiencia de combate samurái que apuesta a dar una gran inmersión al usuario, con tiempo para el sigilo y el tiro con arco además de para usar la katana. Todo lo necesario para que Jin, protagonista de su historia, forje un nuevo camino para proteger a su gente y recuperar su hogar.  No es el único atractivo de la producción de PlayStation Studios, además de un Modo Foto realmente especial dada la ambientación y el mimo por el detalle de sus responsables, Ghost of Tsushima cuenta con Legends, un cooperativo para cuatro jugadores donde elegir entre cuatro clases (samurái, cazador, ronin o asesino) para participar en misiones o en un modo supervivencia de oleadas.",
-  "capture1": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271327.webp",
-  "capture2": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271354.webp",
-  "capture3": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271357.webp",
-  "capture4": "https://i.3djuegos.com/juegos/15027/proyecto_sucker_punch/fotos/set/proyecto_sucker_punch-5271372.webp",
-  "video": "https://www.youtube.com/embed/jT9edKarhc8",
-  "discount": "5",
+  "releaseData": "2018-09-04",
+  "img": "https://i.3djuegos.com/juegos/11107/dragon_quest_xi/fotos/ficha/dragon_quest_xi-4729975.webp",
+  "fullName": "Dragon Quest XI",
+  "description": "Dragon Quest XI: Ecos de un Pasado Perdido es el undécimo episodio de una de las sagas de rol más míticas de Japón, Dragon Quest. El título permite jugar la misma historia en Nintendo 3DS, Nintendo Switch y PS4, y conmemora el 30 aniversario de la franquicia de Yuji Hori y Toriyama. En esta ocasión el JRPG está protagonizado por un joven de 16 años, que emprende un viaje para conocer la verdad sobre su destino en compañía de un variopinto grupo de personajes. Entre las principales novedades o diferencias entre Dragon Quest 11 y entregas precedentes, destacan sus grandes entornos y mejoras en el combate, Zone, que potencia a aliados y monstruos, y Link, que encadena ataques de héroes.",
+  "capture1": "https://i.3djuegos.com/juegos/11107/dragon_quest_xi/fotos/set/dragon_quest_xi-4649257.webp",
+  "capture2": "https://i.3djuegos.com/juegos/11107/dragon_quest_xi/fotos/set/dragon_quest_xi-4649260.webp",
+  "capture3": "https://i.3djuegos.com/juegos/11107/dragon_quest_xi/fotos/set/dragon_quest_xi-4649263.webp",
+  "capture4": "https://i.3djuegos.com/juegos/11107/dragon_quest_xi/fotos/set/dragon_quest_xi-4649266.webp",
+  "video": "https://www.youtube.com/embed/Bmy3IkNPZjE",
+  "discount": "",
+  "freeShipping": "true",
   "categori": ""
  }
 ]
