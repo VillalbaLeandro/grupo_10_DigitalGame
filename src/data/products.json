@@ -84,8 +84,6 @@
   "categori": null
  },
  {
-<<<<<<< HEAD
-=======
   "id": 345453,
   "name": "Janet",
   "compatibility": "pretium iaculis diam erat",
@@ -107,7 +105,6 @@
   "categori": null
  },
  {
->>>>>>> 2dd85c4c0d63fdd4c594a0fea056760b0db5ce27
   "id": 4345345,
   "name": "Meris",
   "compatibility": "ligula suspendisse ornare consequat lectus",
@@ -2442,66 +2439,5 @@
   "discount": "",
   "freeShipping": "true",
   "categori": ""
- },
- {
-  "id": 111,
-<<<<<<< HEAD
-  "name": "Assassin's Creed: Origins",
-  "compatibility": [
-   "PS4 ",
-   "XBOX ONE "
-  ],
-  "gender": [
-   "Accion ",
-   "Aventura ",
-   "MMORPG "
-  ],
-  "players": "1 Jugador ",
-  "price": "9499",
-  "language": [
-   "Español ",
-   "Ingles "
-  ],
-  "releaseData": "2019-10-27",
-  "img": "https://i.3djuegos.com/juegos/14364/assassin__039_s_creed__2017_/fotos/ficha/assassin__039_s_creed__2017_-3752533.webp",
-  "fullName": "Assassin's Creed: Origins",
-  "description": "Bayek (y su águila Senu) es el protagonista de Assassin's Creed: Origins, el regreso de la franquicia de acción en mundo abierto de Ubisoft tras su merecido descanso en el 2016. El videojuego ha sido desarrollado por el equipo tras el estupendo Assassin's Creed IV: Black Flag, y observa esta vez abundantes cambios jugables, con una experiencia jugable más centrada en la naturaleza y con un cuidado e histórico retrato del antiguo Egipto ambientado, exactamente, en el año 50 a.C, bajo el reinado de la emblemática Cleopatra, donde se tratará los orígenes de la Hermandad. La aventura garantiza entornos desérticos, fluviales con el río Nilo como lugar destacado, así como ciudades con abundantes templos, pirámides y monumentos como Menfis o Alejandría. Por supuesto tampoco faltan las figuras históricas que tanto han caracterizado a la saga de acción y aventuras: a la ya mencionada Cleopatra se unen también otros personajes como Julio César o el faraón Ptolomeo XIII, que protagonizan abundantes intrigas palaciegas de las que tomamos partido.  Assassins Creed Origins (ACO) ha contado con una labor de desarrollo de cuatro años, así como un camino donde ha ido sumando coqueteos con la progresión y los elementos roleros, así como aumentado las posibilidades de movimiento con la opción de bucear para encontrar algunos secretos de su modo historia, que se encontrarán bajo las aguas. Las opciones de combate, así mismo, crecen de igual forma puesto que además de las habituales alternativas cuerpo a cuerpo, el héroe Bayek (que no es el único protagonista) cuenta con un escudo y un arco para defenderse, y una mecánica de lucha completamente remozada. Para completar la propuesta de Assassins Creed Origins, también se dispone de caballos y camellos como medios de transporte, además de barcos, así como una naturaleza rica en otros animales como peligrosos leones, hipopótamos, elefantes o cocodrilos.",
-  "capture1": "https://i.3djuegos.com/juegos/14364/assassin__039_s_creed__2017_/fotos/set/assassin__039_s_creed__2017_-3873302.webp",
-  "capture2": "https://i.3djuegos.com/juegos/14364/assassin__039_s_creed__2017_/fotos/set/assassin__039_s_creed__2017_-3873316.webp",
-  "capture3": "https://www.3djuegos.com/juegos/imagenes/28119/0/assassins-creed-origins/#-img-3865417-28119-0-0",
-  "capture4": "https://www.3djuegos.com/juegos/imagenes/28119/0/assassins-creed-origins/#-img-3865423-28119-0-0",
-  "video": "<iframe width=\"1280\" height=\"720\" src=\"https://www.youtube.com/embed/2DnxjpdJi5E\" title=\"Assassin's Creed Origins - Trailer de Lanzamiento I La Leyenda del Asesino\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
-  "discount": "",
-  "freeShipping": "false",
-=======
-  "name": "FIFA 22",
-  "compatibility": [
-   "PS4 ",
-   "PS5 ",
-   "XBOX ONE ",
-   "XBOX 360 ",
-   "NINTENDO "
-  ],
-  "gender": "Deportes ",
-  "players": [
-   "1 Jugador ",
-   "Multijugador ",
-   "Cooperativo "
-  ],
-  "price": "12000",
-  "language": "Multilenguaje ",
-  "releaseData": "2021-07-21",
-  "img": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/ficha/fifa_22-5479208.webp",
-  "fullName": "FIFA 22",
-  "description": "FIFA 22 es un videojuego de simulación de fútbol aún por presentar de EA Sports que llegará a las tiendas a finales del 2021 para PC y consolas. Aunque las ediciones de las consolas de la octava generación y PC son bastante continuistas, esta nueva entrega tiene como abanderada la tecnología Hypermotion, que permite lograr un comportamiento más realista de los jugadores dentro del campo y que es exclusiva de las versiones de nueva generación. Además, se han realizado cambios significativos en modalidades ya presentes como VOLTA (que prescinde del aspecto narrativo para ofrecer un arcade puro) o el modo carrera que ahora nos permite crear un club desde cero.  De nuevo, nos encontramos ante una edición cargada de contenidos como viene siendo habitual en la serie. FIFA 22 cuenta con casi la totalidad de licencias de los principales campeonatos y equipos del mundo, y eso incluye la UEFA Champions League en exclusiva tras la renovación del acuerdo con la UEFA por parte de la compaía norteamericana. Por último, FIFA 22 sigue vinculado a Ultimate Team, su exitoso y lucrativo modo de juego con cartas donde poder formar el equipo de tus sueños.",
-  "capture1": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527535.webp",
-  "capture2": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527538.webp",
-  "capture3": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527541.webp",
-  "capture4": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527553.webp",
-  "video": "https://www.youtube.com/results?search_query=fifa+22+trailer",
-  "discount": "30",
-  "freeShipping": "true",
->>>>>>> 2dd85c4c0d63fdd4c594a0fea056760b0db5ce27
-  "categori": ""
- }
+ } 
 ]
