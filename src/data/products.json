@@ -1,260 +1,287 @@
 [
-  {
-    "id": 101,
-    "name": "FAR CRY 6",
-    "compatibility": [
-      "PS4",
-      "PS5",
-      "XBOX ONE"
-    ],
-    "gender": [
-      "Accion",
-      "Disparos",
-      "Aventura"
-    ],
-    "players": [
-      "1 Jugador",
-      "Cooperativo"
-    ],
-    "price": "12499",
-    "language": [
-      "Español",
-      "Ingles"
-    ],
-    "releaseData": "2021-10-07",
-    "img": "https://dixgamer.com/wp-content/uploads/2021/07/far-cry-6.jpg",
-    "fullName": "Far Cry 6",
-    "description": "Far Cry 6 es un videojuego de acción y disparos en mundo abierto protagonizado por Dani Rojas, un guerrillero local (a elegir entre hombre o mujer) de Yara que lucha por la liberación de su nación contra Antón Castillo —interpretado por Giancarlo Esposito, Gus Fring en la recordada Breaking Bad— y su hijo. Desarrollado por Ubisoft Toronto, Far Cry 6 ambienta su acción en Yara, un paraíso tropical detenido en el tiempo en el que el jugador ha de luchar contra las tropas de su tiránico gobernante a través a junglas, playas y Esperanza, la caótica capital de este ficticio país del Caribe, valiéndose para ello de armas improvisadas, vehículos y, una vez más, nuevos compañeros animales.  UbiSoft entrega al usuario un juego donde se mantiene parte de los pilares de la saga, invitando a recorrer una vasta y variada extensión de terreno con nuevas formas de transporte como caballos y tanques, sin olvidarnos de coches clásicos, deportivos, motos y quads, lanchas y embarcaciones, helicópteros y aviones, etc. La varieda",
-    "capture1": "https://areajugones.sport.es/wp-content/uploads/2020/07/far-cry-6-screenshot-1.jpg",
-    "capture2": "https://gamek.mediacdn.vn/133514250583805952/2021/10/7/photo-1-16336019135841694396223.jpeg",
-    "capture3": "https://www.gamingcoffee.com/wp-content/uploads/2020/07/fc1.jpg",
-    "capture4": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/10/far-cry-6-embargo-dia-6-octubre-2489267.jpg?itok=f9IvVSQR",
-    "video": "https://www.youtube.com/embed/fE0cBXPshZo",
-    "discount": "20",
-    "freeShipping": "false",
-    "categori": ""
-  },
-  {
-    "id": 111,
-    "name": "SPIDER-MAN",
-    "compatibility": [
-      "PS4 ",
-      "PS5 ",
-      "XBOX ONE ",
-      "XBOX 360 ",
-      "NINTENDO "
-    ],
-    "gender": [
-      "Accion ",
-      "Aventura "
-    ],
-    "players": "1 Jugador ",
-    "price": "20000",
-    "language": "Español ",
-    "releaseData": "2018-09-07",
-    "img": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/ficha/spiderman_ps4__nombre_provisional_-4004812.webp",
-    "fullName": "Spider-Man",
-    "description": "Spiderman protagoniza este videojuego de acción desarrollado por Insomniac Games, los autores de Resistance y Ratchet & Clank entre otros, en exclusiva para PS4. La historia de esta aventura es totalmente original y nos pone en el rol de un Peter Parker experimentado y maduro que debe lidiar con los problemas que suponen el tener que salvar Manhattan de los peores criminales o villanos y compatibilizarlo con su vida personal. De hecho, el trepamuros de Marvel se enfrenta a varios de sus peores enemigos, poniendo a pruebas las habilidades del alter-ego más acrobático de Parker.  En el espectacular Marvel's Spider-Man te esperan saltos, combos de combates, carreras y acrobacias aprovechando el uso de técnicas de Parkour y muchas, muchas telarañas gestionadas por un extenso y variado sistema de combos y habilidades que ofrecen gran libertad de movimientos y posibilidades. Spiderman en PlayStation 4 cuenta con intensa acción, pero también con mecánicas de sigilo y un apartado visual impactante y muy cinematográfico para crear unas cinemáticas de auténtico infarto. El lanzamiento del videojuego de Spiderman para PS4 tuvo lugar el 7 de septiembre de 2018.",
-    "capture1": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721085.webp",
-    "capture2": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721076.webp",
-    "capture3": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721079.webp",
-    "capture4": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721082.webp",
-    "video": "https://www.youtube.com/embed/4rKFkLeRF3Q",
-    "discount": "20",
-    "freeShipping": "false",
-    "categori": ""
-  },
-  {
-    "id": 113,
-    "name": "GOD OF WAR",
-    "compatibility": "PS4 ",
-    "gender": [
-      "Accion ",
-      "Aventura "
-    ],
-    "players": "1 Jugador ",
-    "price": "18000",
-    "language": "Español ",
-    "releaseData": "2018-04-20",
-    "img": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/ficha/god_of_war_ps4__nombre_temporal_-3754796.webp",
-    "fullName": "God of War",
-    "description": "Vídeojuego de la saga God of War que responde al escueto nombre de God of War, y que traslada su fórmula jugable desde la antigua Grecia de las aventuras de Kratos a una ambientación nórdica de lo más llamativa donde retorna su carismático protagonista en una historia de padre e hijo que promete recuperar una parte de la humanidad perdida del espartano gracias a la presencia de su vástago, de nombre Atreus, y que es parte capital de la campaña individual, como siempre, punto fundamental del atractivo de esta legendaria serie de hack and slash con contextos mitológicos tras de sí. De hecho, y tras el experimento del on-line de God of War Ascension, desde Sony se ha garantizado que en esta entrega no habrá elemento multijugador.  El título no pierde ni un ápice de la violencia que ha caracterizado a la IP hasta la fecha, y mezcla con enorme fluidez potentes secuencias de carácter cinemático con escenas puramente in-game caracterizadas por una visceralidad descomunal. Eso sí, en lugar de la cámara fija y el estilo Hack and Slash de entregas anteriores, en esta ocasión Sony Santa Monica apuesta por una perspectiva más propia del género de acción y aventuras y un planteamiento más abierto (sin llegar a ser un sandbox) para el debut de una de las franquicias estrella de la marca PlayStation en PS4.  Enorme expectación la que ha rodeado desde su anuncio al retorno del espartano más conocido de la historia de los videojuegos, con un vídeo de presentación que superó con facilidad las 15 millones de reproducciones en YouTube y con especial interés por parte de los aficionados a la hora de conocer cómo se adaptará Kratos a la mitología nórdica tras haberse barajado incluso el antiguo Egipto como posible ambientación. También levanta expectación el factor de las \"rutas alternativas\" de juego que desde los responsables de este título destinado en exclusiva a PlayStation 4 y PS4 Pro prometen para aderezar su modo historia. Firmado por el equipo del juego original casi en su totalidad, con contadas aunque notables excepciones como el creador de la franquicia David Jaffe, el respeto y el cariño por la marca están garantizados en este God of War.",
-    "capture1": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011886.webp",
-    "capture2": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011888.webp",
-    "capture3": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011890.webp",
-    "capture4": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011902.webp",
-    "video": "https://www.youtube.com/embed/K0u_kAWLJOA",
-    "discount": "50",
-    "freeShipping": "true",
-    "categori": ""
-  },
-  {
-    "id": 114,
-    "name": "SEKIRO",
-    "compatibility": [
-      "PS4 ",
-      "PS5 ",
-      "XBOX ONE ",
-      "XBOX 360 ",
-      "NINTENDO "
-    ],
-    "gender": [
-      "Accion ",
-      "Aventura "
-    ],
-    "players": "1 Jugador ",
-    "price": "28000",
-    "language": "Multilenguaje ",
-    "releaseData": "2019-03-22",
-    "img": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/ficha/shadows_die_twice-4816854.webp",
-    "fullName": "Sekiro: Shadows Die Twice",
-    "description": "Sekiro: Shadows Die Twice es un juego de acción y aventuras en tercera persona con elementos de rol con el inconfundible estilo del estudio responsable de Dark Souls y Bloodborne. Los autores de Dark Souls y Activision parecen recuperar del olvido la mítica serie Tenchu para adentrarnos en el mundo de finales de 1500, la era Sengoku en Japón; un periodo brutal y sangriento en constante conflicto entre la vida y la muerte.  From Software nos pone con Sekiro: Shadows Die Twice a los mandos de un guerrero de noble corazón, cuya misión es rescatar a su amo, un joven señor, al tiempo que busca la venganza sobre su archienemigo. En el papel de “Sekiro” o “el lobo de un solo brazo”, los jugadores descubrirán las distintas formas de enfrentarse en combate a los enemigos de forma estratégica en este título que reinterpreta la fórmula clásica de los Souls para desarrollar un combate inigualable acompañado de mecánicas de sigilo.",
-    "capture1": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823027.webp",
-    "capture2": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823030.webp",
-    "capture3": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823039.webp",
-    "capture4": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823057.webp",
-    "video": "https://www.youtube.com/embed/rXMX4YJ7Lks",
-    "discount": "15",
-    "freeShipping": "false",
-    "categori": ""
-  },
-  {
-    "id": 115,
-    "name": "UNCHARTED 4 ",
-    "compatibility": [
-      "PS4 ",
-      "PS5 ",
-      "XBOX ONE ",
-      "XBOX 360 ",
-      "NINTENDO "
-    ],
-    "gender": [
-      "Accion ",
-      "Disparos ",
-      "Aventura "
-    ],
-    "players": [
-      "1 Jugador ",
-      "Multijugador ",
-      "Cooperativo "
-    ],
-    "price": "15000",
-    "language": [
-      "Español ",
-      "Ingles "
-    ],
-    "releaseData": "2018-03-22",
-    "img": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/ficha/uncharted_4-4946893.webp",
-    "fullName": "Uncharted 4",
-    "description": "Uncharted 4: El Desenlace del Ladrón es un juego exclusivo de PS4 creado por Naughty Dog, y editado por Sony Interactive Entertainment. Un videojuego que viene a cerrar las aventuras del conocido buscador de tesoros tan conocido en consolas PlayStation. El título es una aventura de acción y exploración en tercera persona protagonizada por Nathan Drake, que en esta entrega de la saga se plantea un dilema existencial tras todas las hazañas vividas en los anteriores videojuegos. De hecho ahondamos en el pasado del héroe, puesto que a lo largo de la campaña conocemos a su hermano Sam Drake, una de las grandes novedades y un punto de mucha importancia a la hora de ahondar en la fascinante génesis de este auténtico Indiana Jones de las videoconsolas.  Acción, aventuras y plataformas con ritmo cinematográfico de manos de los creadores de The Last of Us y Crash Bandicoot, entre muchos otros, que eleva el listón de espectacularidad de los juegos anteriores con un sinfín de escenas de ritmo trepidante dispuestas a llevarnos al límite en tiroteos, acrobacias y secuencias de plataformas. En Uncharted 4: A Thief's End no faltan a su cita unos rompecabezas que ponen a prueba nuestra capacidad para \"darle al coco\", ni tampoco algunas ideas y mecánicas jugables nuevas como el hecho de que podemos escoger qué dice el héroe en algunos diálogos.  ¿El punto fuerte de Uncharted 4? El coqueteo de este episodio con el mundo abierto, con varios capítulos que nos dejan enormes cotas de libertad para recorrerlos y explorarlos a nuestro gusto, incluyendo el mano de vehículos como jeeps o lanchas motoras. Adicionalmente a su modo de juego individual, el principal reclamo del programa, Uncharted 4 tiene modo multijugador de carácter competitivo para hasta 10 jugadores, como algunas de las entregas anteriores, y participa en la Liga Oficial PlayStation.",
-    "capture1": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3573429.webp",
-    "capture2": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3379056.webp",
-    "capture3": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3379046.webp",
-    "capture4": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3379052.webp",
-    "video": "https://www.youtube.com/embed/hh5HV4iic1Y",
-    "discount": "40",
-    "freeShipping": "true",
-    "categori": ""
-  },
-  {
-    "id": 116,
-    "name": "FIFA 22",
-    "compatibility": [
-      "PS4 ",
-      "PS5 ",
-      "XBOX ONE ",
-      "XBOX 360 ",
-      "NINTENDO "
-    ],
-    "gender": "Deportes ",
-    "players": [
-      "1 Jugador ",
-      "Multijugador ",
-      "Cooperativo "
-    ],
-    "price": "25000",
-    "language": "Español ",
-    "releaseData": "2021-10-01",
-    "img": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/ficha/fifa_22-5479209.webp",
-    "fullName": "FIFA 22",
-    "description": "FIFA 22 es un videojuego de simulación de fútbol aún por presentar de EA Sports que llegará a las tiendas a finales del 2021 para PC y consolas. Aunque las ediciones de las consolas de la octava generación y PC son bastante continuistas, esta nueva entrega tiene como abanderada la tecnología Hypermotion, que permite lograr un comportamiento más realista de los jugadores dentro del campo y que es exclusiva de las versiones de nueva generación. Además, se han realizado cambios significativos en modalidades ya presentes como VOLTA (que prescinde del aspecto narrativo para ofrecer un arcade puro) o el modo carrera que ahora nos permite crear un club desde cero.  De nuevo, nos encontramos ante una edición cargada de contenidos como viene siendo habitual en la serie. FIFA 22 cuenta con casi la totalidad de licencias de los principales campeonatos y equipos del mundo, y eso incluye la UEFA Champions League en exclusiva tras la renovación del acuerdo con la UEFA por parte de la compaía norteamericana. Por último, FIFA 22 sigue vinculado a Ultimate Team, su exitoso y lucrativo modo de juego con cartas donde poder formar el equipo de tus sueños.",
-    "capture1": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527595.webp",
-    "capture2": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527553.webp",
-    "capture3": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527607.webp",
-    "capture4": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527541.webp",
-    "video": "https://www.youtube.com/embed/o1igaMv46SY",
-    "discount": "",
-    "freeShipping": "true",
-    "categori": ""
-  },
-  {
-    "id": 117,
-    "name": "TNMT",
-    "compatibility": [
-      "PS3 ",
-      "PS4 ",
-      "PS5 ",
-      "XBOX ONE ",
-      "XBOX 360 ",
-      "NINTENDO "
-    ],
-    "gender": [
-      "Accion ",
-      "Aventura ",
-      "De Rol "
-    ],
-    "players": [
-      "1 Jugador ",
-      "Multijugador ",
-      "Cooperativo "
-    ],
-    "price": "30000",
-    "language": [
-      "Español ",
-      "Ingles "
-    ],
-    "releaseData": "2022-08-30",
-    "img": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/ficha/teenage_mutant_ninja_turtles_the_cowabunga_collection-5710631.webp",
-    "fullName": "TNMT: The Cowabunga Collection",
-    "description": "Teenage Mutant Ninja Turtles: The Cowabunga Collection es un recopilatorio de Konami de varios clásicos arcade de las Tortugas Ninja de Nintendo Entertainment System, Super NES, Sega Mega Drive y Nintendo Gameboy. Desarrollado por Digital Eclipse, el pack incluye los juegos arcade de Cowabunga Collection (Teenage Mutant Ninja Turtles y Teenage Mutant Ninja Turtles: Turtles in Time), os juegos de 8 bits TMNT II: The Arcade Game, TMNT III: The Manhattan Project, y los de 16 bits TMNT IV: Turtles in Time, y The Hyperstone Heist. Incorpora además soporte multijugador.",
-    "capture1": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733969.webp",
-    "capture2": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733972.webp",
-    "capture3": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733975.webp",
-    "capture4": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733978.webp",
-    "video": "https://www.youtube.com/embed/R-78FD9xvc0",
-    "discount": "",
-    "freeShipping": "true",
-    "categori": ""
-  },
-  {
-    "id": 118,
-    "name": "THE LAST OF US ",
-    "compatibility": [
-      "PS3 ",
-      "PS4 ",
-      "PS5 "
-    ],
-    "gender": [
-      "Accion ",
-      "Aventura "
-    ],
-    "players": "1 Jugador ",
-    "price": "12350",
-    "language": [
-      "Español ",
-      "Ingles "
-    ],
-    "releaseData": "2020-06-19",
-    "img": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/ficha/the_last_of_us_2-4977782.webp",
-    "fullName": "The Last of Us 2",
-    "description": "The Last of Us 2 para PS4 es un videojuego de acción y aventuras, con elementos de supervivencia, enmarcado en un mundo postapocalíptico donde habitan unos seres infectados. Al igual que la primera parte, esta continuación o Part II de The Last of Us busca hacerse fuerte en mecánicas jugables como la exploración o el combate con un fuerte elemento táctico, no sólo plantando cara a los zombies y criaturas de pesadilla de su mundo de infectados, sino también ofreciendo resistencia a los humanos... Peores en algunos casos que las más infernales de las criaturas, y caracterizados por su crueldad.  Esta secuela de la premiada obra de Naughty Dog lanzada originalmente en 2013 para PS3 (y remasterizada posteriormente en PlayStation 4), promete una historia al nivel de sus personajes, de gran intensidad, desgarradora y emocional protagonizada por Ellie, aunque también hay partes jugables para Joel. Neil Druckmann, principal guionista del estudio creador de la serie Uncharted, ya ha prometido que la historia de The Last of Us: Part II girará alrededor del odio, en contraposición a un juego original donde la temática principal era el amor. The Last of Us 2 (TLoU2) es actualmente uno de los juegos más esperados de PS4 y PS4 Pro.  La campaña, protagonizada por Ellie, está llena de sorpresas que no te desvelaremos para evitar spoilers, pero puedes esperar muchos giros argumentales en una historia que puedes superar en unas 25-30 horas para conocer el desenlace de la primera parte. Uno de los videojuegos más recordados de PlayStation 3, que tiene secuela en PS4 y que tiene todavía a día de hoy a la espera su prometido apartado multijugador. El videojuego se alzó con el GOTY 2020 en los The Game Awards, y también fue elegido como el mejor título del año para los lectores de 3DJuegos.  El videojuego sigue mezclando los elementos de sigilo que tan bien funcionaron en la primera parte, y lo hace con un estilo todavía más cinematográfico para este The Last of Us: Parte 2. Con un planteamiento violentísimo y una manera de mezclar las cinemáticas con las partes jugables muy propia de Naughty Dog, padres de la saga Uncharted. El videojuego destaca, además, por algunos aspectos en los que brilla tradicionalmente el estudio norteamericano como, por ejemplo, la cuidada dirección artística, la poderosa banda sonora compuesta por el cinematográfico Gustavo Santaolalla o la potencia tecnológica y narrativa de la experiencia.",
-    "capture1": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5168892.webp",
-    "capture2": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5168895.webp",
-    "capture3": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5168904.webp",
-    "capture4": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5147615.webp",
-    "video": "https://www.youtube.com/embed/VSLSvEjDm5s",
-    "discount": "65",
-    "freeShipping": "true",
-    "categori": ""
-  }
+ {
+  "id": 101,
+  "name": "FAR CRY 6",
+  "compatibility": [
+   "PS4",
+   "PS5",
+   "XBOX ONE"
+  ],
+  "gender": [
+   "Accion",
+   "Disparos",
+   "Aventura"
+  ],
+  "players": [
+   "1 Jugador",
+   "Cooperativo"
+  ],
+  "price": "12499",
+  "language": [
+   "Español",
+   "Ingles"
+  ],
+  "releaseData": "2021-10-07",
+  "img": "https://dixgamer.com/wp-content/uploads/2021/07/far-cry-6.jpg",
+  "fullName": "Far Cry 6",
+  "description": "Far Cry 6 es un videojuego de acción y disparos en mundo abierto protagonizado por Dani Rojas, un guerrillero local (a elegir entre hombre o mujer) de Yara que lucha por la liberación de su nación contra Antón Castillo —interpretado por Giancarlo Esposito, Gus Fring en la recordada Breaking Bad— y su hijo. Desarrollado por Ubisoft Toronto, Far Cry 6 ambienta su acción en Yara, un paraíso tropical detenido en el tiempo en el que el jugador ha de luchar contra las tropas de su tiránico gobernante a través a junglas, playas y Esperanza, la caótica capital de este ficticio país del Caribe, valiéndose para ello de armas improvisadas, vehículos y, una vez más, nuevos compañeros animales.  UbiSoft entrega al usuario un juego donde se mantiene parte de los pilares de la saga, invitando a recorrer una vasta y variada extensión de terreno con nuevas formas de transporte como caballos y tanques, sin olvidarnos de coches clásicos, deportivos, motos y quads, lanchas y embarcaciones, helicópteros y aviones, etc. La varieda",
+  "capture1": "https://areajugones.sport.es/wp-content/uploads/2020/07/far-cry-6-screenshot-1.jpg",
+  "capture2": "https://gamek.mediacdn.vn/133514250583805952/2021/10/7/photo-1-16336019135841694396223.jpeg",
+  "capture3": "https://www.gamingcoffee.com/wp-content/uploads/2020/07/fc1.jpg",
+  "capture4": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/10/far-cry-6-embargo-dia-6-octubre-2489267.jpg?itok=f9IvVSQR",
+  "video": "https://www.youtube.com/embed/fE0cBXPshZo",
+  "discount": "20",
+  "freeShipping": "false",
+  "categori": ""
+ },
+ {
+  "id": 111,
+  "name": "SPIDER-MAN",
+  "compatibility": [
+   "PS4 ",
+   "PS5 ",
+   "XBOX ONE ",
+   "XBOX 360 ",
+   "NINTENDO "
+  ],
+  "gender": [
+   "Accion ",
+   "Aventura "
+  ],
+  "players": "1 Jugador ",
+  "price": "20000",
+  "language": "Español ",
+  "releaseData": "2018-09-07",
+  "img": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/ficha/spiderman_ps4__nombre_provisional_-4004812.webp",
+  "fullName": "Spider-Man",
+  "description": "Spiderman protagoniza este videojuego de acción desarrollado por Insomniac Games, los autores de Resistance y Ratchet & Clank entre otros, en exclusiva para PS4. La historia de esta aventura es totalmente original y nos pone en el rol de un Peter Parker experimentado y maduro que debe lidiar con los problemas que suponen el tener que salvar Manhattan de los peores criminales o villanos y compatibilizarlo con su vida personal. De hecho, el trepamuros de Marvel se enfrenta a varios de sus peores enemigos, poniendo a pruebas las habilidades del alter-ego más acrobático de Parker.  En el espectacular Marvel's Spider-Man te esperan saltos, combos de combates, carreras y acrobacias aprovechando el uso de técnicas de Parkour y muchas, muchas telarañas gestionadas por un extenso y variado sistema de combos y habilidades que ofrecen gran libertad de movimientos y posibilidades. Spiderman en PlayStation 4 cuenta con intensa acción, pero también con mecánicas de sigilo y un apartado visual impactante y muy cinematográfico para crear unas cinemáticas de auténtico infarto. El lanzamiento del videojuego de Spiderman para PS4 tuvo lugar el 7 de septiembre de 2018.",
+  "capture1": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721085.webp",
+  "capture2": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721076.webp",
+  "capture3": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721079.webp",
+  "capture4": "https://i.3djuegos.com/juegos/13417/spiderman_ps4__nombre_provisional_/fotos/set/spiderman_ps4__nombre_provisional_-5721082.webp",
+  "video": "https://www.youtube.com/embed/4rKFkLeRF3Q",
+  "discount": "20",
+  "freeShipping": "false",
+  "categori": ""
+ },
+ {
+  "id": 113,
+  "name": "GOD OF WAR",
+  "compatibility": "PS4 ",
+  "gender": [
+   "Accion ",
+   "Aventura "
+  ],
+  "players": "1 Jugador ",
+  "price": "18000",
+  "language": "Español ",
+  "releaseData": "2018-04-20",
+  "img": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/ficha/god_of_war_ps4__nombre_temporal_-3754796.webp",
+  "fullName": "God of War",
+  "description": "Vídeojuego de la saga God of War que responde al escueto nombre de God of War, y que traslada su fórmula jugable desde la antigua Grecia de las aventuras de Kratos a una ambientación nórdica de lo más llamativa donde retorna su carismático protagonista en una historia de padre e hijo que promete recuperar una parte de la humanidad perdida del espartano gracias a la presencia de su vástago, de nombre Atreus, y que es parte capital de la campaña individual, como siempre, punto fundamental del atractivo de esta legendaria serie de hack and slash con contextos mitológicos tras de sí. De hecho, y tras el experimento del on-line de God of War Ascension, desde Sony se ha garantizado que en esta entrega no habrá elemento multijugador.  El título no pierde ni un ápice de la violencia que ha caracterizado a la IP hasta la fecha, y mezcla con enorme fluidez potentes secuencias de carácter cinemático con escenas puramente in-game caracterizadas por una visceralidad descomunal. Eso sí, en lugar de la cámara fija y el estilo Hack and Slash de entregas anteriores, en esta ocasión Sony Santa Monica apuesta por una perspectiva más propia del género de acción y aventuras y un planteamiento más abierto (sin llegar a ser un sandbox) para el debut de una de las franquicias estrella de la marca PlayStation en PS4.  Enorme expectación la que ha rodeado desde su anuncio al retorno del espartano más conocido de la historia de los videojuegos, con un vídeo de presentación que superó con facilidad las 15 millones de reproducciones en YouTube y con especial interés por parte de los aficionados a la hora de conocer cómo se adaptará Kratos a la mitología nórdica tras haberse barajado incluso el antiguo Egipto como posible ambientación. También levanta expectación el factor de las \"rutas alternativas\" de juego que desde los responsables de este título destinado en exclusiva a PlayStation 4 y PS4 Pro prometen para aderezar su modo historia. Firmado por el equipo del juego original casi en su totalidad, con contadas aunque notables excepciones como el creador de la franquicia David Jaffe, el respeto y el cariño por la marca están garantizados en este God of War.",
+  "capture1": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011886.webp",
+  "capture2": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011888.webp",
+  "capture3": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011890.webp",
+  "capture4": "https://i.3djuegos.com/juegos/11552/god_of_war_ps4__nombre_temporal_/fotos/set/god_of_war_ps4__nombre_temporal_-4011902.webp",
+  "video": "https://www.youtube.com/embed/K0u_kAWLJOA",
+  "discount": "50",
+  "freeShipping": "true",
+  "categori": ""
+ },
+ {
+  "id": 114,
+  "name": "SEKIRO",
+  "compatibility": [
+   "PS4 ",
+   "PS5 ",
+   "XBOX ONE ",
+   "XBOX 360 ",
+   "NINTENDO "
+  ],
+  "gender": [
+   "Accion ",
+   "Aventura "
+  ],
+  "players": "1 Jugador ",
+  "price": "28000",
+  "language": "Multilenguaje ",
+  "releaseData": "2019-03-22",
+  "img": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/ficha/shadows_die_twice-4816854.webp",
+  "fullName": "Sekiro: Shadows Die Twice",
+  "description": "Sekiro: Shadows Die Twice es un juego de acción y aventuras en tercera persona con elementos de rol con el inconfundible estilo del estudio responsable de Dark Souls y Bloodborne. Los autores de Dark Souls y Activision parecen recuperar del olvido la mítica serie Tenchu para adentrarnos en el mundo de finales de 1500, la era Sengoku en Japón; un periodo brutal y sangriento en constante conflicto entre la vida y la muerte.  From Software nos pone con Sekiro: Shadows Die Twice a los mandos de un guerrero de noble corazón, cuya misión es rescatar a su amo, un joven señor, al tiempo que busca la venganza sobre su archienemigo. En el papel de “Sekiro” o “el lobo de un solo brazo”, los jugadores descubrirán las distintas formas de enfrentarse en combate a los enemigos de forma estratégica en este título que reinterpreta la fórmula clásica de los Souls para desarrollar un combate inigualable acompañado de mecánicas de sigilo.",
+  "capture1": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823027.webp",
+  "capture2": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823030.webp",
+  "capture3": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823039.webp",
+  "capture4": "https://i.3djuegos.com/juegos/15431/shadows_die_twice/fotos/set/shadows_die_twice-4823057.webp",
+  "video": "https://www.youtube.com/embed/rXMX4YJ7Lks",
+  "discount": "15",
+  "freeShipping": "false",
+  "categori": ""
+ },
+ {
+  "id": 115,
+  "name": "UNCHARTED 4 ",
+  "compatibility": [
+   "PS4 ",
+   "PS5 ",
+   "XBOX ONE ",
+   "XBOX 360 ",
+   "NINTENDO "
+  ],
+  "gender": [
+   "Accion ",
+   "Disparos ",
+   "Aventura "
+  ],
+  "players": [
+   "1 Jugador ",
+   "Multijugador ",
+   "Cooperativo "
+  ],
+  "price": "15000",
+  "language": [
+   "Español ",
+   "Ingles "
+  ],
+  "releaseData": "2018-03-22",
+  "img": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/ficha/uncharted_4-4946893.webp",
+  "fullName": "Uncharted 4",
+  "description": "Uncharted 4: El Desenlace del Ladrón es un juego exclusivo de PS4 creado por Naughty Dog, y editado por Sony Interactive Entertainment. Un videojuego que viene a cerrar las aventuras del conocido buscador de tesoros tan conocido en consolas PlayStation. El título es una aventura de acción y exploración en tercera persona protagonizada por Nathan Drake, que en esta entrega de la saga se plantea un dilema existencial tras todas las hazañas vividas en los anteriores videojuegos. De hecho ahondamos en el pasado del héroe, puesto que a lo largo de la campaña conocemos a su hermano Sam Drake, una de las grandes novedades y un punto de mucha importancia a la hora de ahondar en la fascinante génesis de este auténtico Indiana Jones de las videoconsolas.  Acción, aventuras y plataformas con ritmo cinematográfico de manos de los creadores de The Last of Us y Crash Bandicoot, entre muchos otros, que eleva el listón de espectacularidad de los juegos anteriores con un sinfín de escenas de ritmo trepidante dispuestas a llevarnos al límite en tiroteos, acrobacias y secuencias de plataformas. En Uncharted 4: A Thief's End no faltan a su cita unos rompecabezas que ponen a prueba nuestra capacidad para \"darle al coco\", ni tampoco algunas ideas y mecánicas jugables nuevas como el hecho de que podemos escoger qué dice el héroe en algunos diálogos.  ¿El punto fuerte de Uncharted 4? El coqueteo de este episodio con el mundo abierto, con varios capítulos que nos dejan enormes cotas de libertad para recorrerlos y explorarlos a nuestro gusto, incluyendo el mano de vehículos como jeeps o lanchas motoras. Adicionalmente a su modo de juego individual, el principal reclamo del programa, Uncharted 4 tiene modo multijugador de carácter competitivo para hasta 10 jugadores, como algunas de las entregas anteriores, y participa en la Liga Oficial PlayStation.",
+  "capture1": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3573429.webp",
+  "capture2": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3379056.webp",
+  "capture3": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3379046.webp",
+  "capture4": "https://i.3djuegos.com/juegos/8184/uncharted_4/fotos/set/uncharted_4-3379052.webp",
+  "video": "https://www.youtube.com/embed/hh5HV4iic1Y",
+  "discount": "40",
+  "freeShipping": "true",
+  "categori": ""
+ },
+ {
+  "id": 116,
+  "name": "FIFA 22",
+  "compatibility": [
+   "PS4 ",
+   "PS5 ",
+   "XBOX ONE ",
+   "XBOX 360 ",
+   "NINTENDO "
+  ],
+  "gender": "Deportes ",
+  "players": [
+   "1 Jugador ",
+   "Multijugador ",
+   "Cooperativo "
+  ],
+  "price": "25000",
+  "language": "Español ",
+  "releaseData": "2021-10-01",
+  "img": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/ficha/fifa_22-5479209.webp",
+  "fullName": "FIFA 22",
+  "description": "FIFA 22 es un videojuego de simulación de fútbol aún por presentar de EA Sports que llegará a las tiendas a finales del 2021 para PC y consolas. Aunque las ediciones de las consolas de la octava generación y PC son bastante continuistas, esta nueva entrega tiene como abanderada la tecnología Hypermotion, que permite lograr un comportamiento más realista de los jugadores dentro del campo y que es exclusiva de las versiones de nueva generación. Además, se han realizado cambios significativos en modalidades ya presentes como VOLTA (que prescinde del aspecto narrativo para ofrecer un arcade puro) o el modo carrera que ahora nos permite crear un club desde cero.  De nuevo, nos encontramos ante una edición cargada de contenidos como viene siendo habitual en la serie. FIFA 22 cuenta con casi la totalidad de licencias de los principales campeonatos y equipos del mundo, y eso incluye la UEFA Champions League en exclusiva tras la renovación del acuerdo con la UEFA por parte de la compaía norteamericana. Por último, FIFA 22 sigue vinculado a Ultimate Team, su exitoso y lucrativo modo de juego con cartas donde poder formar el equipo de tus sueños.",
+  "capture1": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527595.webp",
+  "capture2": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527553.webp",
+  "capture3": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527607.webp",
+  "capture4": "https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527541.webp",
+  "video": "https://www.youtube.com/embed/o1igaMv46SY",
+  "discount": "",
+  "freeShipping": "true",
+  "categori": ""
+ },
+ {
+  "id": 117,
+  "name": "TNMT",
+  "compatibility": [
+   "PS3 ",
+   "PS4 ",
+   "PS5 ",
+   "XBOX ONE ",
+   "XBOX 360 ",
+   "NINTENDO "
+  ],
+  "gender": [
+   "Accion ",
+   "Aventura ",
+   "De Rol "
+  ],
+  "players": [
+   "1 Jugador ",
+   "Multijugador ",
+   "Cooperativo "
+  ],
+  "price": "30000",
+  "language": [
+   "Español ",
+   "Ingles "
+  ],
+  "releaseData": "2022-08-30",
+  "img": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/ficha/teenage_mutant_ninja_turtles_the_cowabunga_collection-5710631.webp",
+  "fullName": "TNMT: The Cowabunga Collection",
+  "description": "Teenage Mutant Ninja Turtles: The Cowabunga Collection es un recopilatorio de Konami de varios clásicos arcade de las Tortugas Ninja de Nintendo Entertainment System, Super NES, Sega Mega Drive y Nintendo Gameboy. Desarrollado por Digital Eclipse, el pack incluye los juegos arcade de Cowabunga Collection (Teenage Mutant Ninja Turtles y Teenage Mutant Ninja Turtles: Turtles in Time), os juegos de 8 bits TMNT II: The Arcade Game, TMNT III: The Manhattan Project, y los de 16 bits TMNT IV: Turtles in Time, y The Hyperstone Heist. Incorpora además soporte multijugador.",
+  "capture1": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733969.webp",
+  "capture2": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733972.webp",
+  "capture3": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733975.webp",
+  "capture4": "https://i.3djuegos.com/juegos/18405/teenage_mutant_ninja_turtles_the_cowabunga_collection/fotos/set/teenage_mutant_ninja_turtles_the_cowabunga_collection-5733978.webp",
+  "video": "https://www.youtube.com/embed/R-78FD9xvc0",
+  "discount": "",
+  "freeShipping": "true",
+  "categori": ""
+ },
+ {
+  "id": 118,
+  "name": "THE LAST OF US ",
+  "compatibility": [
+   "PS3 ",
+   "PS4 ",
+   "PS5 "
+  ],
+  "gender": [
+   "Accion ",
+   "Aventura "
+  ],
+  "players": "1 Jugador ",
+  "price": "12350",
+  "language": [
+   "Español ",
+   "Ingles "
+  ],
+  "releaseData": "2020-06-19",
+  "img": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/ficha/the_last_of_us_2-4977782.webp",
+  "fullName": "The Last of Us 2",
+  "description": "The Last of Us 2 para PS4 es un videojuego de acción y aventuras, con elementos de supervivencia, enmarcado en un mundo postapocalíptico donde habitan unos seres infectados. Al igual que la primera parte, esta continuación o Part II de The Last of Us busca hacerse fuerte en mecánicas jugables como la exploración o el combate con un fuerte elemento táctico, no sólo plantando cara a los zombies y criaturas de pesadilla de su mundo de infectados, sino también ofreciendo resistencia a los humanos... Peores en algunos casos que las más infernales de las criaturas, y caracterizados por su crueldad.  Esta secuela de la premiada obra de Naughty Dog lanzada originalmente en 2013 para PS3 (y remasterizada posteriormente en PlayStation 4), promete una historia al nivel de sus personajes, de gran intensidad, desgarradora y emocional protagonizada por Ellie, aunque también hay partes jugables para Joel. Neil Druckmann, principal guionista del estudio creador de la serie Uncharted, ya ha prometido que la historia de The Last of Us: Part II girará alrededor del odio, en contraposición a un juego original donde la temática principal era el amor. The Last of Us 2 (TLoU2) es actualmente uno de los juegos más esperados de PS4 y PS4 Pro.  La campaña, protagonizada por Ellie, está llena de sorpresas que no te desvelaremos para evitar spoilers, pero puedes esperar muchos giros argumentales en una historia que puedes superar en unas 25-30 horas para conocer el desenlace de la primera parte. Uno de los videojuegos más recordados de PlayStation 3, que tiene secuela en PS4 y que tiene todavía a día de hoy a la espera su prometido apartado multijugador. El videojuego se alzó con el GOTY 2020 en los The Game Awards, y también fue elegido como el mejor título del año para los lectores de 3DJuegos.  El videojuego sigue mezclando los elementos de sigilo que tan bien funcionaron en la primera parte, y lo hace con un estilo todavía más cinematográfico para este The Last of Us: Parte 2. Con un planteamiento violentísimo y una manera de mezclar las cinemáticas con las partes jugables muy propia de Naughty Dog, padres de la saga Uncharted. El videojuego destaca, además, por algunos aspectos en los que brilla tradicionalmente el estudio norteamericano como, por ejemplo, la cuidada dirección artística, la poderosa banda sonora compuesta por el cinematográfico Gustavo Santaolalla o la potencia tecnológica y narrativa de la experiencia.",
+  "capture1": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5168892.webp",
+  "capture2": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5168895.webp",
+  "capture3": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5168904.webp",
+  "capture4": "https://i.3djuegos.com/juegos/14236/the_last_of_us_2/fotos/set/the_last_of_us_2-5147615.webp",
+  "video": "https://www.youtube.com/embed/VSLSvEjDm5s",
+  "discount": "65",
+  "freeShipping": "true",
+  "categori": ""
+ },
+ {
+  "id": 119,
+  "name": "13 SENTINELS",
+  "compatibility": [
+   "PS4 ",
+   "PS5 ",
+   "NINTENDO "
+  ],
+  "gender": [
+   "Accion ",
+   "Aventura "
+  ],
+  "players": "1 Jugador ",
+  "price": "19800",
+  "language": "Multilenguaje ",
+  "releaseData": "2020-09-22",
+  "img": "https://i.3djuegos.com/juegos/12413/13_sentinels_aegis_rim/fotos/ficha/13_sentinels_aegis_rim-5232600.webp",
+  "fullName": "13 Sentinels: Aegis Rim",
+  "description": "13 Sentinels: Aegis Rim es un videojuego de acción, aventura y ciencia ficción cargado de épica, protagonizado por 13 jóvenes estudiantes que se enfrentan a la amenaza de los kaijus a bordo de gigantescos robots de combate con un gran arsenal de armas, los Centinelas, y han de luchar por salvar el futuro de la humanidad.  Obra de Vanillaware, autores de los aclamados Odin Sphere y Dragon's Crown, 13 Sentinels: Aegis Rim ofrece una historia de giros y misterios constantes con la compañía de ese estilo artístico en 2D tan característico de la compañía, junto con unos combates de estrategia en 3D repletos de emoción a bordo de los mechas.",
+  "capture1": "https://i.3djuegos.com/juegos/12413/13_sentinels_aegis_rim/fotos/set/13_sentinels_aegis_rim-5232619.webp",
+  "capture2": "https://i.3djuegos.com/juegos/12413/13_sentinels_aegis_rim/fotos/set/13_sentinels_aegis_rim-5232634.webp",
+  "capture3": "https://i.3djuegos.com/juegos/12413/13_sentinels_aegis_rim/fotos/set/13_sentinels_aegis_rim-5232637.webp",
+  "capture4": "https://i.3djuegos.com/juegos/12413/13_sentinels_aegis_rim/fotos/set/13_sentinels_aegis_rim-5232640.webp",
+  "video": "https://www.youtube.com/embed/6KIGjyI5CDo",
+  "discount": "",
+  "categori": ""
+ }
 ]
