@@ -24,14 +24,44 @@ const productosController = {
     },
     store: (req, res) => {
 
-        // const productsClone = products
+
+        //prueba con JSON.stringify(req.body)
+        // const newProduct = {
+        //     name: req.body.name,
+        //     compatibilities: JSON.stringify(req.body.compatibilites, null, " I "),
+        //     gender: JSON.stringify(req.body.gender),
+        //     players: JSON.stringify(req.body.players),
+        //     price: req.body.price,
+        //     language: JSON.stringify(req.body.language),
+        //     releaseData: req.body.releaseData,
+        //     img: req.body.img,
+        //     fullName: req.body.fullName,
+        //     description: req.body.description,
+        //     capture1: req.body.capture1,
+        //     capture2: req.body.capture2,
+        //     capture3: req.body.capture3,
+        //     capture4: req.body.capture4,
+        //     video: req.body.video,
+        //     discount: req.body.discount,
+        //     freeShipping: req.body.freeShipping,
+        //     categori: "",
+        // }
+        // db.Product.create(newProduct)
+        //     .then(prductCreated => {
+        //         res.redirect("/");
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        //     })
+
+        // Prueba con String()
+
         const newProduct = {
             name: req.body.name,
-            compatibilities: req.body.compatibilites,
-            gender: req.body.gender,
-            players: req.body.players,
-            price: req.body.price,
-            language: req.body.language,
+            compatibilities: String(req.body.compatibilites),
+            gender: String(req.body.gender),
+            players: String(req.body.players),
+            price: String(req.body.comppriceatibilites),
             releaseData: req.body.releaseData,
             img: req.body.img,
             fullName: req.body.fullName,
@@ -46,12 +76,15 @@ const productosController = {
             categori: "",
         }
         db.Product.create(newProduct)
-        .then(prductCreated =>{
-            res.redirect("/");
-        })
-        .catch(error =>{
-            console.log(error)
-        })
+            .then(prductCreated => {
+                res.redirect("/");
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
+
+
         // productsClone.push(newProduct);
         // fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, " "));
         // // GUARDARLA   
@@ -72,7 +105,7 @@ const productosController = {
     },
     editar: (req, res) => {
         const product = products.find((product) => { return product.id === +req.params.id })
-        res.render("admin/editProduct.ejs",  { product });
+        res.render("admin/editProduct.ejs", { product });
     },
     update: (req, res) => {
 

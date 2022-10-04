@@ -1,1 +1,1 @@
-select name from products
+SELECT * FROM digitalgames.products;
