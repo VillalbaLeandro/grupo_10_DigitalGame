@@ -5,13 +5,29 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull:true
         },
-        name: dataTypes.STRING,
-        email: dataTypes.STRING,
-        fullName: dataTypes.STRING,
-        password: dataTypes.STRING,
-        confirmPass: dataTypes.STRING,
+        name: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        email: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        fullName: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        password: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        confirmPass: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
         
     };
 
