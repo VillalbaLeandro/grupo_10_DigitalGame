@@ -42,3 +42,11 @@ primer semana:
 segunda semana:
 - Configuracion para permitir guardar los datos en archivos JSON (leerlo y escribirlos).
 - Pequeñas correcciones y detalles en la creacion de la session (parte de nacho).
+
+Marcela Albarracin:
+Primera semana:
+-adelantar playground y clases sobre el tema
+-Se implemento el formulario de actualizar y su respectivo PUT
+Segunda semana:
+-Arreglar delete
+- Cargue productos a nuestra pagina
