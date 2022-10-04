@@ -24,11 +24,10 @@ const productosController = {
     },
     store: (req, res) => {
 
-        const productsClone = products
+        // const productsClone = products
         const newProduct = {
-            id: products[products.length - 1].id + 1,
             name: req.body.name,
-            compatibility: req.body.compatibility,
+            compatibilities: req.body.compatibilites,
             gender: req.body.gender,
             players: req.body.players,
             price: req.body.price,
@@ -46,9 +45,15 @@ const productosController = {
             freeShipping: req.body.freeShipping,
             categori: "",
         }
-
-        productsClone.push(newProduct);
-        fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, " "));
+        db.Product.create(newProduct)
+        .then(prductCreated =>{
+            res.redirect("/");
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+        // productsClone.push(newProduct);
+        // fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, " "));
         // // GUARDARLA   
         // // leer que cosas ya habia
         // let archivoProduct = fs.readFileSync("products.json", { encoding: "utf-8" });
@@ -63,7 +68,7 @@ const productosController = {
         // usuariosJson = JSON.stringify(product);
         // fs.writeFileSync("products.json", usuariosJson);
 
-        res.redirect("/");
+        // res.redirect("/");
     },
     editar: (req, res) => {
         const product = products.find((product) => { return product.id === +req.params.id })
@@ -80,7 +85,7 @@ const productosController = {
             // no se entiende la logica del id, el id deberia ser el mismo que recibimos como parametro
             id: +req.params.id,
             name: req.body.name,
-            compatibility: req.body.compatibility,
+            compatibilites: req.body.compatibilites,
             gender: req.body.gender,
             players: req.body.players,
             price: req.body.price,

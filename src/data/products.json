@@ -1,8 +1,8 @@
 [
   {
-    "id": 101,
+    "id": 1,
     "name": "FAR CRY 6",
-    "compatibility": [
+    "compatibilites": [
       "PS4",
       "PS5",
       "XBOX ONE"
@@ -37,7 +37,7 @@
   {
     "id": 111,
     "name": "SPIDER-MAN",
-    "compatibility": [
+    "compatibilites": [
       "PS4 ",
       "PS5 ",
       "XBOX ONE ",
@@ -67,7 +67,7 @@
   {
     "id": 113,
     "name": "GOD OF WAR",
-    "compatibility": "PS4 ",
+    "compatibilites": "PS4 ",
     "gender": [
       "Accion ",
       "Aventura "
@@ -91,7 +91,7 @@
   {
     "id": 114,
     "name": "SEKIRO",
-    "compatibility": [
+    "compatibilites": [
       "PS4 ",
       "PS5 ",
       "XBOX ONE ",
@@ -121,7 +121,7 @@
   {
     "id": 115,
     "name": "UNCHARTED 4 ",
-    "compatibility": [
+    "compatibilites": [
       "PS4 ",
       "PS5 ",
       "XBOX ONE ",
@@ -159,7 +159,7 @@
   {
     "id": 116,
     "name": "FIFA 22",
-    "compatibility": [
+    "compatibilites": [
       "PS4 ",
       "PS5 ",
       "XBOX ONE ",
@@ -190,7 +190,7 @@
   {
     "id": 117,
     "name": "TNMT",
-    "compatibility": [
+    "compatibilites": [
       "PS3 ",
       "PS4 ",
       "PS5 ",
@@ -229,7 +229,7 @@
   {
     "id": 118,
     "name": "THE LAST OF US ",
-    "compatibility": [
+    "compatibilites": [
       "PS3 ",
       "PS4 ",
       "PS5 "
@@ -260,7 +260,7 @@
   {
     "id": 119,
     "name": "13 SENTINELS",
-    "compatibility": [
+    "compatibilites": [
       "PS4 ",
       "PS5 ",
       "NINTENDO "
@@ -287,7 +287,7 @@
   {
     "id": 120,
     "name": "YAKUZA",
-    "compatibility": [
+    "compatibilites": [
       "PS4 ",
       "PS5 ",
       "XBOX ONE ",
@@ -321,7 +321,7 @@
   {
     "id": 121,
     "name": " GHOST  ",
-    "compatibility": [
+    "compatibilites": [
       "PS4",
       "PS5",
       "XBOX ONE",
@@ -349,7 +349,7 @@
   {
     "id": 122,
     "name": "DRAGON QUEST",
-    "compatibility": [
+    "compatibilites": [
       "PS3 ",
       "PS4 ",
       "PS5 ",

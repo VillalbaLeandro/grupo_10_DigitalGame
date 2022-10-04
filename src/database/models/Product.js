@@ -18,12 +18,14 @@ module.exports = (sequelize, dataTypes) => {
         discount: dataTypes.INTEGER,
         freeShipping: dataTypes.BOOLEAN,
         price: dataTypes.INTEGER,
-        capture1: DataTypes.STRING,
+        capture1: dataTypes.STRING,
         capture2: dataTypes.STRING,
-        capture3: DataTypes.STRING,
+        capture3: dataTypes.STRING,
         capture4: dataTypes.STRING,
-        video: dataTypes.STRING
-          
+        video: dataTypes.STRING,
+        compatibilities: dataTypes.STRING,
+        gender: dataTypes.STRING,
+        language: dataTypes.STRING
     };
 
     const config = {
