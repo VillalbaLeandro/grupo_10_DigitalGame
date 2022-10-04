@@ -5,10 +5,17 @@ module.exports = (sequelize, dataTypes) => {
         id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            allowNull: true
         },
-        amount: dataTypes.INTEGER,
-        total: dataTypes.INTEGER
+        amount: {
+            type: dataTypes.INTEGER,
+            allowNull: true
+        },
+        total: {
+            type: dataTypes.INTEGER,
+            allowNull: true
+        },
         
     };
 

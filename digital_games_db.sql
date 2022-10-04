@@ -54,7 +54,7 @@ DROP TABLE IF EXISTS `digitalgames`.`lenguages` ;
 
 CREATE TABLE IF NOT EXISTS `digitalgames`.`lenguages` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(200) NULL DEFAULT NULL,
+  `name` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
