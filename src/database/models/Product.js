@@ -9,23 +9,74 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        name: dataTypes.STRING,
-        players: dataTypes.STRING,
-        releaseData: dataTypes.STRING,
-        img: dataTypes.STRING,
-        fullName: dataTypes.STRING,
-        description: dataTypes.STRING,
-        discount: dataTypes.INTEGER,
-        freeShipping: dataTypes.BOOLEAN,
-        price: dataTypes.INTEGER,
-        capture1: dataTypes.STRING,
-        capture2: dataTypes.STRING,
-        capture3: dataTypes.STRING,
-        capture4: dataTypes.STRING,
-        video: dataTypes.STRING,
-        compatibilities: dataTypes.STRING,
-        gender: dataTypes.STRING,
-        language: dataTypes.STRING
+        name: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        players: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        releaseData: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        img: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        fullName: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        description: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        discount: {
+            type: dataTypes.INTEGER,
+            allowNull: true
+        },
+        freeShipping: {
+            type: dataTypes.BOOLEAN,
+            allowNull: true
+        },
+        price: {
+            type: dataTypes.INTEGER,
+            allowNull: true
+        },
+        capture1: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        capture2: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        capture3: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        capture4: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        video: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        compatibilities: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        gender: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
+        language: {
+            type: dataTypes.STRING,
+            allowNull: true
+        },
     };
 
     const config = {
