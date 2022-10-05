@@ -1,3 +1,5 @@
+const db = require("../database/models");
+
 const path = require("path");
 const fs = require("fs");
 const user = require("../models/user");
@@ -13,7 +15,17 @@ const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const mainControllers = {
     home: (req, res) => {
+
         res.render("index", { products });
+
+        // db.Product.findAll()
+        // .then(products => {
+        //     res.render("index", { products });
+
+        // })
+        // .catch(err => {
+        //     res.send(err);
+        // });
     },
 
     list: (req, res) => {

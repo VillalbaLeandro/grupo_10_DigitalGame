@@ -1,6 +1,7 @@
 const db = require("../database/models");
 const path = require("path");
 const fs = require('fs');
+const { where } = require("sequelize");
 
 const productsFilePath = path.join(__dirname, '../data/products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
@@ -25,43 +26,14 @@ const productosController = {
     store: (req, res) => {
 
 
-        //prueba con JSON.stringify(req.body)
-        // const newProduct = {
-        //     name: req.body.name,
-        //     compatibilities: JSON.stringify(req.body.compatibilites, null, " I "),
-        //     gender: JSON.stringify(req.body.gender),
-        //     players: JSON.stringify(req.body.players),
-        //     price: req.body.price,
-        //     language: JSON.stringify(req.body.language),
-        //     releaseData: req.body.releaseData,
-        //     img: req.body.img,
-        //     fullName: req.body.fullName,
-        //     description: req.body.description,
-        //     capture1: req.body.capture1,
-        //     capture2: req.body.capture2,
-        //     capture3: req.body.capture3,
-        //     capture4: req.body.capture4,
-        //     video: req.body.video,
-        //     discount: req.body.discount,
-        //     freeShipping: req.body.freeShipping,
-        //     categori: "",
-        // }
-        // db.Product.create(newProduct)
-        //     .then(prductCreated => {
-        //         res.redirect("/");
-        //     })
-        //     .catch(error => {
-        //         console.log(error)
-        //     })
-
-        // Prueba con String()
-
+        // prueba con JSON.stringify(req.body)
         const newProduct = {
             name: req.body.name,
-            compatibilities: String(req.body.compatibilites),
-            gender: String(req.body.gender),
-            players: String(req.body.players),
-            price: String(req.body.comppriceatibilites),
+            compatibilities: JSON.stringify(req.body.compatibilities),
+            gender: JSON.stringify(req.body.gender),
+            players: JSON.stringify(req.body.players),
+            price: req.body.price,
+            language: JSON.stringify(req.body.language),
             releaseData: req.body.releaseData,
             img: req.body.img,
             fullName: req.body.fullName,
@@ -82,6 +54,35 @@ const productosController = {
             .catch(error => {
                 console.log(error)
             })
+
+        // Prueba con String()
+
+        // const newProduct = {
+        //     name: req.body.name,
+        //     compatibilities: String(req.body.compatibilities),
+        //     gender: String(req.body.gender),
+        //     players: String(req.body.players),
+        //     price: String(req.body.comppriceatibilites),
+        //     releaseData: req.body.releaseData,
+        //     img: req.body.img,
+        //     fullName: req.body.fullName,
+        //     description: req.body.description,
+        //     capture1: req.body.capture1,
+        //     capture2: req.body.capture2,
+        //     capture3: req.body.capture3,
+        //     capture4: req.body.capture4,
+        //     video: req.body.video,
+        //     discount: req.body.discount,
+        //     freeShipping: req.body.freeShipping,
+        //     categori: "",
+        // }
+        // db.Product.create(newProduct)
+        //     .then(prductCreated => {
+        //         res.redirect("/");
+        //     })
+        //     .catch(error => {
+        //         console.log(error)
+        //     })
 
 
 
@@ -104,25 +105,29 @@ const productosController = {
         // res.redirect("/");
     },
     editar: (req, res) => {
-        const product = products.find((product) => { return product.id === +req.params.id })
-        res.render("admin/editProduct.ejs", { product });
+
+        //busqueda en .JSON
+        // const product = products.find((product) => { return product.id === +req.params.id })
+        // res.render("admin/editProduct.ejs", { product });
+
+        db.Product.findByPk(req.params.id)
+            .then((product) => {
+                res.render("admin/createProduct", { product })
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
     },
     update: (req, res) => {
 
-        let id = req.params.id;
-        let productToEdit = products.find(product => {
-            return product.id === id;
-        });
-        let editProduct = {
-            // id: products[products.length - 1].id + 1,
-            // no se entiende la logica del id, el id deberia ser el mismo que recibimos como parametro
-            id: +req.params.id,
+        db.Product.update({
             name: req.body.name,
-            compatibilites: req.body.compatibilites,
-            gender: req.body.gender,
-            players: req.body.players,
+            compatibilities: JSON.stringify(req.body.compatibilities),
+            gender: JSON.stringify(req.body.gender),
+            players: JSON.stringify(req.body.players),
             price: req.body.price,
-            language: req.body.language,
+            language: JSON.stringify(req.body.language),
             releaseData: req.body.releaseData,
             img: req.body.img,
             fullName: req.body.fullName,
@@ -135,17 +140,60 @@ const productosController = {
             discount: req.body.discount,
             freeShipping: req.body.freeShipping,
             categori: "",
-        }
+        },
+            {
+                where: {
+                    id: req.params.id
+                }
+            })
 
-        products.forEach((product, index) => {
-            if (product.id == id) {
-                products[index] = editProduct;
-            }
-        });
+        res.redirect("/");
 
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
 
-        res.redirect("/")
+
+
+
+
+
+        //FORMATO JSON!
+
+        // let id = req.params.id;
+        // let productToEdit = products.find(product => {
+        //     return product.id === id;
+        // });
+        // let editProduct = {
+        //     // id: products[products.length - 1].id + 1,
+        //     // no se entiende la logica del id, el id deberia ser el mismo que recibimos como parametro
+        //     id: +req.params.id,
+        //     name: req.body.name,
+        //     compatibilities: req.body.compatibilities,
+        //     gender: req.body.gender,
+        //     players: req.body.players,
+        //     price: req.body.price,
+        //     language: req.body.language,
+        //     releaseData: req.body.releaseData,
+        //     img: req.body.img,
+        //     fullName: req.body.fullName,
+        //     description: req.body.description,
+        //     capture1: req.body.capture1,
+        //     capture2: req.body.capture2,
+        //     capture3: req.body.capture3,
+        //     capture4: req.body.capture4,
+        //     video: req.body.video,
+        //     discount: req.body.discount,
+        //     freeShipping: req.body.freeShipping,
+        //     categori: "",
+        // }
+
+        // products.forEach((product, index) => {
+        //     if (product.id == id) {
+        //         products[index] = editProduct;
+        //     }
+        // });
+
+        // fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
+
+        // res.redirect("/")
     },
     carrito: (req, res) => {
         res.render("products/productCart");

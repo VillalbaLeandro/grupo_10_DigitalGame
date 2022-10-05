@@ -23,21 +23,21 @@
                             <label class="Titulo-register">Agregar Producto</label><br>
                         </div>
                         <label class="titulos-boxs" for="name">Nombre del producto:</label><br>
-                        <input class="text-boxs" type="text" name="name" id="name" value=" <%= product.name %>  "><br>
+                        <input class="text-boxs" type="text" name="name" id="name" value="<%= product.name %>"><br>
                         <label class="titulos-boxs" for="compatibilidad">Compatibles con:</label><br>
 
                         <div class="columns">
                             <div>
-                                <input class="menu__link" type="checkbox" name="compatibilites" value="PS3">PS3<br>
-                                <input class="menu__link" type="checkbox" name="compatibilites" value="PS4">PS4<br>
-                                <input class="menu__link" type="checkbox" name="compatibilites" value="PS5">PS5<br>
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="PS3">PS3<br>
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="PS4">PS4<br>
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="PS5">PS5<br>
                             </div>
                             <div>
-                                <input class="menu__link" type="checkbox" name="compatibilites" value="XBOX ONE">XBOX
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="XBOX ONE">XBOX
                                 ONE<br>
-                                <input class="menu__link" type="checkbox" name="compatibilites" value="XBOX 360">XBOX
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="XBOX 360">XBOX
                                 360<br>
-                                <input class="menu__link" type="checkbox" name="compatibilites" value="NINTENDO">NINTENDO
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="NINTENDO">NINTENDO
                                 SWITCH<br>
                             </div>
                         </div>
@@ -68,7 +68,7 @@
                         <input class="menu__link" type="checkbox" name="players" value="Mundo Abierto">Mundo Abierto<br>
 
                         <label class="titulos-boxs" for="price">Precio:</label>
-                        <input class="text-boxs" type="text" name="price" placeholder="sin $ y sin puntos ni comas"><br>
+                        <input class="text-boxs" type="text" name="price" placeholder="sin $ y sin puntos ni comas" value="<%= product.price %>"><br>
 
                         <label class="titulos-boxs" for="language">Idioma</label><br>
                         <input class="menu__link" type="checkbox" name="language" value="Español">Español<br>
@@ -79,12 +79,12 @@
                         <br>
 
                         <label class="titulos-boxs" for="releaseData">Fecha de lanzamiento</label>
-                        <input type="date" name="releaseData" value="2022-07-22" min="2000-01-01" max="2022-12-31"><br>
+                        <input type="date" name="releaseData" value=value=" <%= product.releaseData %>  " min="2000-01-01" max="2022-12-31"><br>
                         <!-- cambie el min una fecha mas antigua tenia 2018-01-01 -->
 
                         <label class="titulos-boxs" for="img">Link imagen principal</label><br>
                         <input class="text-boxs" type="text" name="img"
-                            placeholder="Ej. http://www.googleimag=323234234324"><br>
+                            placeholder="Ej. http://www.googleimag=323234234324" " <%= product.img %>  "><br>
 
                         <label class="titulos-boxs" for="fullName">Nombre completo del Juego</label><br>
                         <input class="text-boxs" type="text" name="fullName"

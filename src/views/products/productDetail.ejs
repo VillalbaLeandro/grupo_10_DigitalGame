@@ -35,7 +35,7 @@
                             <div class="contenedor-caracteristicas">
                                 <h2>Tambien para:</h2>
                                 <p class="consolas">
-                                    <%= product.compatibilites %>
+                                    <%= product.compatibilities %>
                                 </p>
                                 <h2>Género:</h2>
                                 <p class="genero">
@@ -61,12 +61,14 @@
                         <!-- boton volver -->
 
                         <form action="/products/<%= product.id %>/delete?_method=DELETE" method="POST"><button
-                               class="button-deleted" type="submit">Eliminar</button></form>
+                                class="button-deleted" type="submit">Eliminar</button></form>
 
-                        <a class="seguir-comprando" href="/products/<%= product.id %>/editProduct"><button type="submit">Editar producto</button></a>
+                        <a class="seguir-comprando" href="/products/<%= product.id %>/editProduct"><button
+                                type="submit">Editar producto</button></a>
                         <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
                         <!-- boton agregar al carrito -->
-                        <a class="carrito" href="/products/productCart"><button type="submit">Agregar al carrito</button></a>
+                        <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
+                                carrito</button></a>
                     </div>
                     <div class="description-product-detal-container">
                         <!-- Descripcion -->
@@ -91,14 +93,15 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                
+
                     <!-- Botones -->
                     <div class="botones-product-detail">
                         <!-- boton volver -->
                         <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
                         <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
                         <!-- boton agregar al carrito -->
-                        <a class="carrito" href="/products/productCart"><button type="submit">Agregar al carrito</button></a>
+                        <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
+                                carrito</button></a>
                     </div>
                 </article>
 
