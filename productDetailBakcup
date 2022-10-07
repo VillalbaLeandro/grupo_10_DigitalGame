@@ -28,6 +28,7 @@
                         <div class="titulo-caracteristicas-conteiner">
                             <div class="titulo-detalle-product">
                                 <h3>
+
                                     <%= product.fullName %>
                                 </h3>
                             </div>
@@ -35,86 +36,58 @@
                             <div class="contenedor-caracteristicas">
 
                                 <h2>Tambien para:</h2>
-                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar con un IF para que no rompa -->
+                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
                                 <p class="consolas">
-                                    <% let compact; //isArray devuelve un booleano si el parametro ingresado es un array
-                                        if (Array.isArray(JSON.parse(product.compatibilities))){ 
-                                            //si es un array lo parsea y con el join cambiamos las "," por un "-" 
-                                            compact=JSON.parse(product.compatibilities).join(" - ") 
-                                            //si no simplemente lo parsea y lo guarda en la variable
-                                        } else {
-                                        
-                                            compact=JSON.parse(product.compatibilities) 
-                                        }  
-                                            
-                                        %> 
-                                        
-                                        <%= compact %>
-                                    
+                                <% if (Array.isArray(product.compatibilities)) { %>
+                                        <!-- //se parsea para volver al formato json y el .join para quitar las ,  -->
+                                        <% const compact=JSON.parse(product.compatibilities).join(" - ") %> 
+                                    <%= compact %>
                                     </p>
-                                
+                                <% } else{ %>
+                                    <%= product.compatibilities  %>
+                                    <% } %> 
                                 </p>
                                 
                                 <h2>Género:</h2>
                                 <p class=" genero">
-                                    <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
-                                    <% let gen; //isArray devuelve un booleano si el parametro ingresado es un array
-                                    if (Array.isArray(JSON.parse(product.gender))){ 
-                                        //si es un array lo parsea y con el join cambiamos las "," por un "-" 
-                                        gen=JSON.parse(product.gender).join(" - ") 
-                                        //si no simplemente lo parsea y lo guarda en la variable
-                                    } else {
-                                        gen=JSON.parse(product.gender) 
-                                    }  
-                                                
-                                    %> 
-                                        
+                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
+                                <% if (Array.isArray(product.gender)) { %>
+                                            <!-- //se parsea para volver al formato json y el .join para quitar las ,  -->
+                                            <% const gen=JSON.parse(product.gender).join(" - ") %> 
                                     <%= gen %>
                                 </p>
-                                
+                                <% } else{ %>
+                                    <%= product.gender  %>
+                                    <% } %> 
 
                                 <h2>Modo de juego:</h2>
                                 <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
                                 <p class=" jugadores">
-                                    <% let play; 
-                                    //isArray devuelve un booleano si el parametro ingresado es un array 
-                                    if (Array.isArray(JSON.parse(product.players))){ 
-                                        //si es un array lo parsea y con el join cambiamos las "," por un "-" 
-                                        play=JSON.parse(product.players).join(" - ") 
-                                        //si no simplemente lo parsea y lo guarda en la variable
-                                    } else{
-                                        play=JSON.parse(product.players) 
-
-                                    } 
-                                    %> 
-
-                                    <%= play %>
+                                <% if (isArray(product.players)) { %>
+                                                <!-- //se parsea para volver al formato json y el .join para quitar las ,  -->
+                                                <% const play=JSON.parse(product.players).join(" - ") %> 
+                                        <%= play %>
                                     </p>
-                                
+                                <% } else{ %>
+                                    <%= product.players  %>
+                                    <% } %> 
 
                                 <h2>Idioma:</h2>
-                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
                                 <p class=" idioma">
-                                    <% let lang; //isArray devuelve un booleano si el parametro ingresado es un array 
-                                    if (Array.isArray(JSON.parse(product.language))){ 
-                                        //si es un array lo parsea y con el join cambiamos las "," por un "-" 
-                                        lang=JSON.parse(product.language).join(" - ") 
-                                        //si no simplemente lo parsea y lo guarda en la variable
-                                        } else {
-                                        lang=JSON.parse(product.language) 
-
-                                        }  
-                                        %> 
-
-                                            
+                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
+                                <% if (isArray(product.language)) { %>
+                                                    <!-- //se parsea para volver al formato json y el .join para quitar las ,  -->
+                                                    <% const lang=JSON.parse(product.language).join(" - ") %> 
                                     <%= lang %>
                                 </p>
-                                
+                                <% } else{ %>
+                                    <%= product.language  %>
+                                    <% } %> 
 
                                 <h2>Lanzamiento:</h2>
                                 <p class=" lanzamiento">
-                                    <%= product.releaseData %>
-                                </p>
+                                                        <%= product.releaseData %>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -172,7 +145,6 @@
 
             <!-- FOOTER -->
             <%- include ("../partials/footer") %>
-
 
     </body>
 

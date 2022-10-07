@@ -49,6 +49,7 @@ const productosController = {
         }
         db.Product.create(newProduct)
             .then(prductCreated => {
+                
                 res.redirect("/");
             })
             .catch(error => {
@@ -198,14 +199,21 @@ const productosController = {
     carrito: (req, res) => {
         res.render("products/productCart");
     },
-    destroy: (req, res) => {
+    delete: (req, res) => {
         let id = req.params.id;
 
-        let finalProducts = products.filter(product => product.id != id);
+        db.Product.destroy({ where: {id: id}})
+            .then(()=>{
+                res.redirect("/")
+            })
 
-        fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, '  '));
 
-        res.redirect("/")
+            // destroy archivo Json
+        // let finalProducts = products.filter(product => product.id != id);
+
+        // fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, '  '));
+
+        // res.redirect("/")
     }
 
 
