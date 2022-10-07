@@ -49,7 +49,7 @@ const productosController = {
         }
         db.Product.create(newProduct)
             .then(prductCreated => {
-                
+
                 res.redirect("/");
             })
             .catch(error => {
@@ -113,7 +113,7 @@ const productosController = {
 
         db.Product.findByPk(req.params.id)
             .then((product) => {
-                res.render("admin/createProduct", { product })
+                res.render("admin/editProduct", { product })
             })
             .catch(error => {
                 console.log(error)
