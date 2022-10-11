@@ -30,9 +30,9 @@ const mainRoutes = require("./routes/main.js");
 const logMiddleware = require("./middleWares/logMiddleWare")
 
 /******************RUTAS********************/
-app.use("/", mainRoutes);
 app.use(logMiddleware)
 app.use("/products", rutasProductos);
+app.use("/", mainRoutes);
 
 /******************FIN RUTAS********************/
 

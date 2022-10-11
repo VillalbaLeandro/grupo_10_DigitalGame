@@ -18,14 +18,19 @@ const mainControllers = {
 
         // res.render("index", { products });
 
-        db.Product.findAll()
-        .then(products => {
-            res.render("index", { products });
-
+        db.Product.findAll({
+            include: [{
+                association: "gendres"
+            }]
         })
-        .catch(err => {
-            res.send(err);
-        });
+            .then(products => {
+                console.log(products)
+                res.render("index", { products });
+
+            })
+            .catch(err => {
+                res.send(err);
+            });
     },
 
     list: (req, res) => {

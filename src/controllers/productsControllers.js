@@ -21,19 +21,17 @@ const productosController = {
             });
     },
     crear: (req, res) => {
-        res.render("admin/createProduct.ejs");
+        res.render("admin/createProduct");
     },
     store: (req, res) => {
 
-
-        // prueba con JSON.stringify(req.body)
         const newProduct = {
             name: req.body.name,
-            compatibilities: JSON.stringify(req.body.compatibilities),
-            gender: JSON.stringify(req.body.gender),
-            players: JSON.stringify(req.body.players),
+            compatibilities: req.body.compatibilities,
+            gender: req.body.gender,
+            players: req.body.players,
             price: req.body.price,
-            language: JSON.stringify(req.body.language),
+            language: req.body.language,
             releaseData: req.body.releaseData,
             img: req.body.img,
             fullName: req.body.fullName,
@@ -47,6 +45,32 @@ const productosController = {
             freeShipping: req.body.freeShipping,
             categori: "",
         }
+
+        // prueba con JSON.stringify(req.body)
+
+        //Este metodo es para ingresar un array o un solo obejeto a la base de datos. Sirve si tenemos checkboxs con
+        // y queremos asignar muchos a 1 sin crear una tabla pivote
+
+        // const newProduct = {
+        //     name: req.body.name,
+        //     compatibilities: JSON.stringify(req.body.compatibilities),
+        //     gender: JSON.stringify(req.body.gender),
+        //     players: JSON.stringify(req.body.players),
+        //     price: req.body.price,
+        //     language: JSON.stringify(req.body.language),
+        //     releaseData: req.body.releaseData,
+        //     img: req.body.img,
+        //     fullName: req.body.fullName,
+        //     description: req.body.description,
+        //     capture1: req.body.capture1,
+        //     capture2: req.body.capture2,
+        //     capture3: req.body.capture3,
+        //     capture4: req.body.capture4,
+        //     video: req.body.video,
+        //     discount: req.body.discount,
+        //     freeShipping: req.body.freeShipping,
+        //     categori: "",
+        // }
         db.Product.create(newProduct)
             .then(prductCreated => {
 
