@@ -27,7 +27,9 @@ module.exports = (sequelize, dataTypes) => {
             as: "products", //como voy a llamar a esta relacion de este modelo
             through: "products_has_genders",  //nombre de la tabla pivote
             foreignKey: "genders_id", //la id del modelo
-            otherKey: "products_id"  //la otra id de la tabla pivote
+            otherKey: "products_id",  //la otra id de la tabla pivote
+            timestamps: false
+            
         })
     }
     return Gender;

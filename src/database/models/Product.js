@@ -66,7 +66,8 @@ module.exports = (sequelize, dataTypes) => {
 
     const config = {
         tableName: 'products',
-        timestamps: false
+        timestamps: false,
+        subQuery: false
     };
     const Product = sequelize.define(alias, cols, config);
     Product.associate = (models)=>{
@@ -75,21 +76,26 @@ module.exports = (sequelize, dataTypes) => {
             as: "genders",  //como voy a llamar a esta relacion de este modelo
             through: "products_has_genders",  //nombre de la tabla pivote
             foreignKey: "products_id", //la id del modelo
-            otherKey: "genders_id" //la otra id de la tabla pivote
+            otherKey: "genders_id", //la otra id de la tabla pivote
+            timestamps: false
+            
         })
 
         Product.belongsToMany(models.Compatibility, { // Relacion mucho a mucho || por mas que haya tabla intermedia se llama a la tabla final
             as: "compatibilities", //como voy a llamar a esta relacion de este modelo
             through: "compatibilities_has_products", //nombre de la tabla pivote
             foreignKey: "products_id", //la id del modelo
-            otherKey: "compatibilities_id" //la otra id de la tabla pivote
+            otherKey: "compatibilities_id", //la otra id de la tabla pivote
+            timestamps: false
         })
 
         Product.belongsToMany(models.Lenguage, { // Relacion mucho a mucho || por mas que haya tabla intermedia se llama a la tabla final
             as: "lenguages", //como voy a llamar a esta relacion de este modelo
             through: "products_has_lenguages", //nombre de la tabla pivote 
             foreignKey: "products_id", 
-            otherKey: "lenguages_id" //la otra id de la tabla pivote
+            otherKey: "lenguages_id", //la otra id de la tabla pivote
+            timestamps: false
+            
         })
 
 
@@ -97,7 +103,9 @@ module.exports = (sequelize, dataTypes) => {
             as: "players", //como voy a llamar a esta relacion de este modelo
             through: "products_has_players", //nombre de la tabla pivote 
             foreignKey: "products_id", //la id del modelo
-            otherKey: "players_id" //la otra id de la tabla pivote
+            otherKey: "players_id", //la otra id de la tabla pivote
+            timestamps: false
+            
         })
 
 

@@ -18,11 +18,8 @@ const mainControllers = {
 
         // res.render("index", { products });
 
-        db.Product.findAll({
-            include: [{
-                association: "gendres"
-            }]
-        })
+        db.Product.findAll(
+            { include: [ "compatibilities", "genders"]})
             .then(products => {
                 console.log(products)
                 res.render("index", { products });

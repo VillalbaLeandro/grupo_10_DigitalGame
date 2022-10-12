@@ -9,12 +9,14 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productosController = {
     list: (req, res) => {
 
-
     },
     detail: (req, res) => {
-        db.Product.findByPk(req.params.id)
-            .then(data => {
-                res.render("products/productDetail", { product: data })
+        db.Product.findByPk(req.params.id, {
+            include: ["genders", "compatibilities", "lenguages", "players"],
+
+        })
+            .then(product => {
+                res.render("products/productDetail", { product })
             })
             .catch(err => {
                 res.send(err);
@@ -46,95 +48,33 @@ const productosController = {
             categori: "",
         }
 
-        // prueba con JSON.stringify(req.body)
 
-        //Este metodo es para ingresar un array o un solo obejeto a la base de datos. Sirve si tenemos checkboxs con
-        // y queremos asignar muchos a 1 sin crear una tabla pivote
-
-        // const newProduct = {
-        //     name: req.body.name,
-        //     compatibilities: JSON.stringify(req.body.compatibilities),
-        //     gender: JSON.stringify(req.body.gender),
-        //     players: JSON.stringify(req.body.players),
-        //     price: req.body.price,
-        //     language: JSON.stringify(req.body.language),
-        //     releaseData: req.body.releaseData,
-        //     img: req.body.img,
-        //     fullName: req.body.fullName,
-        //     description: req.body.description,
-        //     capture1: req.body.capture1,
-        //     capture2: req.body.capture2,
-        //     capture3: req.body.capture3,
-        //     capture4: req.body.capture4,
-        //     video: req.body.video,
-        //     discount: req.body.discount,
-        //     freeShipping: req.body.freeShipping,
-        //     categori: "",
-        // }
         db.Product.create(newProduct)
             .then(prductCreated => {
-
-                res.redirect("/");
+                console.log("creado" + newProduct)
             })
             .catch(error => {
                 console.log(error)
             })
 
-        // Prueba con String()
+     
+        const tablaPivot = req.body.gender.map(genre => {
+            return  {
+                products_id: 1,
+                genders_id: req.body.gender
+            }
+        });
 
-        // const newProduct = {
-        //     name: req.body.name,
-        //     compatibilities: String(req.body.compatibilities),
-        //     gender: String(req.body.gender),
-        //     players: String(req.body.players),
-        //     price: String(req.body.comppriceatibilites),
-        //     releaseData: req.body.releaseData,
-        //     img: req.body.img,
-        //     fullName: req.body.fullName,
-        //     description: req.body.description,
-        //     capture1: req.body.capture1,
-        //     capture2: req.body.capture2,
-        //     capture3: req.body.capture3,
-        //     capture4: req.body.capture4,
-        //     video: req.body.video,
-        //     discount: req.body.discount,
-        //     freeShipping: req.body.freeShipping,
-        //     categori: "",
-        // }
-        // db.Product.create(newProduct)
-        //     .then(prductCreated => {
-        //         res.redirect("/");
-        //     })
-        //     .catch(error => {
-        //         console.log(error)
-        //     })
+        db.ProductGender.bulkCreate(tablaPivot)
+            .then(product =>{
+                res.redirect("/")
+            })
 
 
 
-        // productsClone.push(newProduct);
-        // fs.writeFileSync(productsFilePath, JSON.stringify(productsClone, null, " "));
-        // // GUARDARLA   
-        // // leer que cosas ya habia
-        // let archivoProduct = fs.readFileSync("products.json", { encoding: "utf-8" });
-        // let product;
-        // if (!archivoProduct) {
-        //     product = [];
-        // } else {
-        //     product = JSON.parse(archivoProduct);
-        // }
-        // product.push(newProduct);
 
-        // usuariosJson = JSON.stringify(product);
-        // fs.writeFileSync("products.json", usuariosJson);
-
-        // res.redirect("/");
     },
     editar: (req, res) => {
-
-        //busqueda en .JSON
-        // const product = products.find((product) => { return product.id === +req.params.id })
-        // res.render("admin/editProduct.ejs", { product });
-
         db.Product.findByPk(req.params.id)
             .then((product) => {
                 res.render("admin/editProduct", { product })
@@ -174,51 +114,6 @@ const productosController = {
 
         res.redirect("/");
 
-
-
-
-
-
-
-        //FORMATO JSON!
-
-        // let id = req.params.id;
-        // let productToEdit = products.find(product => {
-        //     return product.id === id;
-        // });
-        // let editProduct = {
-        //     // id: products[products.length - 1].id + 1,
-        //     // no se entiende la logica del id, el id deberia ser el mismo que recibimos como parametro
-        //     id: +req.params.id,
-        //     name: req.body.name,
-        //     compatibilities: req.body.compatibilities,
-        //     gender: req.body.gender,
-        //     players: req.body.players,
-        //     price: req.body.price,
-        //     language: req.body.language,
-        //     releaseData: req.body.releaseData,
-        //     img: req.body.img,
-        //     fullName: req.body.fullName,
-        //     description: req.body.description,
-        //     capture1: req.body.capture1,
-        //     capture2: req.body.capture2,
-        //     capture3: req.body.capture3,
-        //     capture4: req.body.capture4,
-        //     video: req.body.video,
-        //     discount: req.body.discount,
-        //     freeShipping: req.body.freeShipping,
-        //     categori: "",
-        // }
-
-        // products.forEach((product, index) => {
-        //     if (product.id == id) {
-        //         products[index] = editProduct;
-        //     }
-        // });
-
-        // fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
-
-        // res.redirect("/")
     },
     carrito: (req, res) => {
         res.render("products/productCart");
@@ -226,18 +121,12 @@ const productosController = {
     delete: (req, res) => {
         let id = req.params.id;
 
-        db.Product.destroy({ where: {id: id}})
-            .then(()=>{
+        db.Product.destroy({ where: { id: id } })
+            .then(() => {
                 res.redirect("/")
             })
 
 
-            // destroy archivo Json
-        // let finalProducts = products.filter(product => product.id != id);
-
-        // fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, '  '));
-
-        // res.redirect("/")
     }
 
 

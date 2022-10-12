@@ -37,37 +37,68 @@
                                 <h2>Tambien para:</h2>
                                 <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar con un IF para que no rompa -->
                                 <p class="consolas">
-                                    
-                                    
-
-                                        <% for (let i = 0; i < product.compatibilities.length; i++) { %>
-                                            <%= product.compatibilities[i].name %> -
-                                        <% } %>
-                                    
-                                    
+                                    <% let compact; //isArray devuelve un booleano si el parametro ingresado es un array
+                                        if (Array.isArray(JSON.parse(product.compatibilities))){ 
+                                            //si es un array lo parsea y con el join cambiamos las "," por un "-" 
+                                            compact=JSON.parse(product.compatibilities).join(" - ") 
+                                            //si no simplemente lo parsea y lo guarda en la variable
+                                        } else {
+                                        
+                                            compact=JSON.parse(product.compatibilities) 
+                                        }  
+                                        %> 
+                                        <%= compact %>
                                     </p>
                                 </p>
                                 <h2>Género:</h2>
                                 <p class=" genero">
-                                    <% for (let i = 0; i < product.genders.length; i++) { %>
-                                        <%= product.genders[i].name %> -
-                                    <% } %>
+                                    <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
+                                    <% let gen; //isArray devuelve un booleano si el parametro ingresado es un array
+                                    if (Array.isArray(JSON.parse(product.gender))){ 
+                                        //si es un array lo parsea y con el join cambiamos las "," por un "-" 
+                                        gen=JSON.parse(product.gender).join(" - ") 
+                                        //si no simplemente lo parsea y lo guarda en la variable
+                                    } else {
+                                        gen=JSON.parse(product.gender) 
+                                    }  
+                                    %> 
+                                    <%= gen %>
                                 </p>
                                 <h2>Modo de juego:</h2>
                                 <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
                                 <p class=" jugadores">
-                                    <% for (let i = 0; i < product.players.length; i++) { %>
-                                        <%= product.players[i].name %> -
-                                    <% } %>
+                                    <% let play; 
+                                    //isArray devuelve un booleano si el parametro ingresado es un array 
+                                    if (Array.isArray(JSON.parse(product.players))){ 
+                                        //si es un array lo parsea y con el join cambiamos las "," por un "-" 
+                                        play=JSON.parse(product.players).join(" - ") 
+                                        //si no simplemente lo parsea y lo guarda en la variable
+                                    } else{
+                                        play=JSON.parse(product.players) 
+
+                                    } 
+                                    %> 
+
+                                    <%= play %>
                                     </p>
                                 
 
                                 <h2>Idioma:</h2>
                                 <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
                                 <p class=" idioma">
-                                    <% for (let i = 0; i < product.lenguages.length; i++) { %>
-                                        <%= product.lenguages[i].name %> -
-                                    <% } %>
+                                    <% let lang; //isArray devuelve un booleano si el parametro ingresado es un array 
+                                    if (Array.isArray(JSON.parse(product.language))){ 
+                                        //si es un array lo parsea y con el join cambiamos las "," por un "-" 
+                                        lang=JSON.parse(product.language).join(" - ") 
+                                        //si no simplemente lo parsea y lo guarda en la variable
+                                        } else {
+                                        lang=JSON.parse(product.language) 
+
+                                        }  
+                                        %> 
+
+                                            
+                                    <%= lang %>
                                 </p>
                                 
 

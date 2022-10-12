@@ -64,17 +64,40 @@
                                         <div>
                                             <div>
                                                 <p class="consolas-compatibles">
-                                                    <% for (let i = 0; i < element.compatibilities.length; i++) { %>
-                                                        <%= element.compatibilities[i].name %> -
-                                                    <% } %>
+                                                    // <% for (let i = 0; i < element.compatibilities.length; i++) { %>
+                                                    //     <%= element.compatibilities[i].name %>
+                                                    // <% } %>
+                                                    // <% let compact ; 
+                                                    //isArray devuelve un booleano si el parametro ingresado es un array
+                                                    // if (Array.isArray(JSON.parse(element.compatibilities))){ 
+                                                    //     //si es un array lo parsea y con el join cambiamos las "," por un "-" 
+                                                    //     compact=JSON.parse(element.compatibilities).join(" - ") 
+                                                    //     //si no simplemente lo parsea y lo guarda en la variable
+                                                    // } else {
                                                     
+                                                    //     compact=JSON.parse(element.compatibilities) 
+                                                    // }  
+                                                        
+                                                    // %> 
+                                                    
+                                                    // <%= compact %>
                                                 </p>
                                             </div>
                                             <div>
+                                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
                                                 <p class="main-card-categoria">
-                                                    <% for (let i = 0; i < element.genders.length; i++) { %>
-                                                        <%= element.genders[i].name %> -
-                                                    <% } %>
+                                                    // <% let gen; //isArray devuelve un booleano si el parametro ingresado es un array
+                                                    // if (Array.isArray(JSON.parse(element.gender))){ 
+                                                    //     //si es un array lo parsea y con el join cambiamos las "," por un "-" 
+                                                    //     gen=JSON.parse(element.gender).join(" - ") 
+                                                    //     //si no simplemente lo parsea y lo guarda en la variable
+                                                    // } else {
+                                                    //     gen=JSON.parse(element.gender) 
+                                                    // }  
+                                                                
+                                                    // %> 
+                                                        
+                                                    // <%= gen %>
                                                 </p>
                                             </div>
                                         </div>
