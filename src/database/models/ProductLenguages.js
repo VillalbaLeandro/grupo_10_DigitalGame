@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    const alias = 'ProductGender';
+    const alias = 'ProductLenguages';
 
     const cols = {
         id: {
@@ -11,7 +11,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
         },
 
-        genders_id: {
+        lenguages_id: {
             type: dataTypes.INTEGER,
         }
 
@@ -19,11 +19,11 @@ module.exports = (sequelize, dataTypes) => {
     };
 
     const config = {
-        tableName: 'products_has_genders',
+        tableName: 'products_has_lenguages',
         timestamps: false
     };
-    const ProductGender = sequelize.define(alias, cols, config);
+    const ProductLenguages = sequelize.define(alias, cols, config);
 
 
-    return ProductGender;
+    return ProductLenguages;
 }

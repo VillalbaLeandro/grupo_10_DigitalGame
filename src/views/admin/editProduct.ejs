@@ -28,16 +28,17 @@
 
                         <div class="columns">
                             <div>
-                                <input class="menu__link" type="checkbox" name="compatibilities" value="PS3">PS3<br>
-                                <input class="menu__link" type="checkbox" name="compatibilities" value="PS4">PS4<br>
-                                <input class="menu__link" type="checkbox" name="compatibilities" value="PS5">PS5<br>
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="1" checked>PS3<br>
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="2">PS4<br>
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="3">PS5<br>
                             </div>
                             <div>
-                                <input class="menu__link" type="checkbox" name="compatibilities" value="XBOX ONE">XBOX
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="4">XBOX
                                 ONE<br>
-                                <input class="menu__link" type="checkbox" name="compatibilities" value="XBOX 360">XBOX
+                                <input class="menu__link" type="checkbox" name="compatibilities" value="5">XBOX
                                 360<br>
-                                <input class="menu__link" type="checkbox" name="compatibilities" value="NINTENDO">NINTENDO
+                                <input class="menu__link" type="checkbox" name="compatibilities"
+                                    value="6 ">NINTENDO
                                 SWITCH<br>
                             </div>
                         </div>
@@ -45,37 +46,38 @@
                         <div class="columns">
                             <div>
 
-                                <input class="menu__link" type="checkbox" name="gender" value="Accion">Accion<br>
-                                <input class="menu__link" type="checkbox" name="gender" value="Arcade">Arcade<br>
-                                <input class="menu__link" type="checkbox" name="gender" value="Carreras">Carreras<br>
-                                <input class="menu__link" type="checkbox" name="gender" value="Deportes">Deportes<br>
-                                <input class="menu__link" type="checkbox" name="gender" value="Disparos">Disparos<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="1">Accion<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="2">Arcade<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="3">Carreras<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="4">Deportes<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="5">Disparos<br>
                             </div>
                             <div>
-                                <input class="menu__link" type="checkbox" name="gender" value="Aventura">Aventura<br>
-                                <input class="menu__link" type="checkbox" name="gender" value="De Rol">De Rol<br>
-                                <input class="menu__link" type="checkbox" name="gender" value="MMORPG">MMORPG<br>
-                                <input class="menu__link" type="checkbox" name="gender" value="Terror">Terror<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="6">Aventura<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="7">De Rol<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="8">MMORPG<br>
+                                <input class="menu__link" type="checkbox" name="gender" value="9">Terror<br>
                                 <input class="menu__link" type="checkbox" name="gender"
-                                    value="Estrategia">Estrategia<br>
+                                    value="10">Estrategia<br>
                             </div>
                         </div>
                         <label class="titulos-boxs" for="players">Modos de Juego</label><br>
 
-                        <input class="menu__link" type="checkbox" name="players" value="1 Jugador">1 Jugador<br>
-                        <input class="menu__link" type="checkbox" name="players" value="Multijugador">Multijugador<br>
-                        <input class="menu__link" type="checkbox" name="players" value="Cooperativo">Cooperativo<br>
-                        <input class="menu__link" type="checkbox" name="players" value="Mundo Abierto">Mundo Abierto<br>
+                        <input class="menu__link" type="checkbox" name="players" value="1">1 Jugador<br>
+                        <input class="menu__link" type="checkbox" name="players" value="2">Multijugador<br>
+                        <input class="menu__link" type="checkbox" name="players" value="3">Cooperativo<br>
+                        <input class="menu__link" type="checkbox" name="players" value="4">Mundo
+                        Abierto<br>
 
                         <label class="titulos-boxs" for="price">Precio:</label>
                         <input class="text-boxs" type="text" name="price" placeholder="sin $ y sin puntos ni comas" value="<%= product.price %>"><br>
 
                         <label class="titulos-boxs" for="language">Idioma</label><br>
-                        <input class="menu__link" type="checkbox" name="language" value="Español">Español<br>
-                        <input class="menu__link" type="checkbox" name="language" value="Ingles">Ingles<br>
-                        <input class="menu__link" type="checkbox" name="language" value="Otro">Otro<br>
+                        <input class="menu__link" type="checkbox" name="language" value="1">Español<br>
+                        <input class="menu__link" type="checkbox" name="language" value="2">Ingles<br>
+                        <input class="menu__link" type="checkbox" name="language" value="3">Otro<br>
                         <input class="menu__link" type="checkbox" name="language"
-                            value="Multilenguaje">Multilenguaje<br>
+                            value="4">Multilenguaje<br>
                         <br>
 
                         <label class="titulos-boxs" for="releaseData">Fecha de lanzamiento</label>
@@ -114,7 +116,7 @@
 
                         <label class="titulos-boxs" for="discount">Descuento</label><br>
                         <input class="text-boxs" type="text" name="discount"
-                            placeholder="Ej. 40 (sin simbolo % ni puntos ni comas)"><br>
+                            placeholder="Ej. 40 (sin simbolo % ni puntos ni comas)" value="<%= product.discount %>"><br>
 
                         <label class="titulos-boxs" for="freeShipping">Envios gratis</label><br>
                         <input type="radio" name="freeShipping" value=true>Si

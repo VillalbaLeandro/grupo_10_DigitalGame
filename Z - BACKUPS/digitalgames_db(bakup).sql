@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2022 a las 16:55:33
+-- Tiempo de generación: 10-10-2022 a las 14:15:48
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `digitalgames_db`
 --
-CREATE DATABASE IF NOT EXISTS `digitalgames_db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `digitalgames_db`;
 
 -- --------------------------------------------------------
 
@@ -53,18 +51,9 @@ INSERT INTO `compatibilities` (`id`, `name`) VALUES
 --
 
 CREATE TABLE `compatibilities_has_products` (
-  `id` int(11) NOT NULL,
   `compatibilities_id` int(11) NOT NULL,
   `products_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `compatibilities_has_products`
---
-
-INSERT INTO `compatibilities_has_products` (`id`, `compatibilities_id`, `products_id`) VALUES
-(1, 1, 1),
-(2, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -158,13 +147,6 @@ CREATE TABLE `products` (
   `video` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Volcado de datos para la tabla `products`
---
-
-INSERT INTO `products` (`id`, `name`, `releasedata`, `img`, `fullname`, `description`, `discount`, `freeShipping`, `price`, `capture1`, `capture2`, `capture3`, `capture4`, `video`) VALUES
-(1, 'FAR CRY 6', '2021-07-10 00:00:00', 'https://dixgamer.com/wp-content/uploads/2021/07/far-cry-6.jpg', 'FAR CRY 6', 'Far Cry 6 es un videojuego de acción y disparos en mundo abierto protagonizado por Dani Rojas, un guerrillero local (a elegir entre hombre o mujer) de Yara que lucha por la liberación de su nación contra Antón Castillo —interpretado por Giancarlo Esposito, Gus Fring en la recordada Breaking Bad— y su hijo. Desarrollado por Ubisoft Toronto, Far Cry 6 ambienta su acción en Yara, un paraíso tropical detenido en el tiempo en el que el jugador ha de luchar contra las tropas de su tiránico gobernante a través a junglas, playas y Esperanza, la caótica capital de este ficticio país del Caribe, valiéndose para ello de armas improvisadas, vehículos y, una vez más, nuevos compañeros animales.  UbiSoft entrega al usuario un juego donde se mantiene parte de los pilares de la saga, invitando a recorrer una vasta y variada extensión de terreno con nuevas formas de transporte como caballos y tanques, sin olvidarnos de coches clásicos, deportivos, motos y quads, lanchas y embarcaciones, helicópteros y aviones, etc. La varieda', 20, 0, 9500, 'https://areajugones.sport.es/wp-content/uploads/2020/07/far-cry-6-screenshot-1.jpg', 'https://gamek.mediacdn.vn/133514250583805952/2021/10/7/photo-1-16336019135841694396223.jpeg', 'https://www.gamingcoffee.com/wp-content/uploads/2020/07/fc1.jpg', 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/10/far-cry-6-embargo-dia-6-octubre-2489267.jpg?itok=f9IvVSQR', 'https://www.youtube.com/embed/fE0cBXPshZo');
-
 -- --------------------------------------------------------
 
 --
@@ -172,19 +154,9 @@ INSERT INTO `products` (`id`, `name`, `releasedata`, `img`, `fullname`, `descrip
 --
 
 CREATE TABLE `products_has_genders` (
-  `id` int(11) NOT NULL,
   `products_id` int(11) NOT NULL,
   `genders_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `products_has_genders`
---
-
-INSERT INTO `products_has_genders` (`id`, `products_id`, `genders_id`) VALUES
-(1, 1, 1),
-(2, 1, 5),
-(3, 1, 6);
 
 -- --------------------------------------------------------
 
@@ -194,17 +166,8 @@ INSERT INTO `products_has_genders` (`id`, `products_id`, `genders_id`) VALUES
 
 CREATE TABLE `products_has_lenguages` (
   `products_id` int(11) NOT NULL,
-  `lenguages_id` int(11) NOT NULL,
-  `id` int(11) NOT NULL
+  `lenguages_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `products_has_lenguages`
---
-
-INSERT INTO `products_has_lenguages` (`products_id`, `lenguages_id`, `id`) VALUES
-(1, 1, 1),
-(1, 2, 2);
 
 -- --------------------------------------------------------
 
@@ -214,17 +177,8 @@ INSERT INTO `products_has_lenguages` (`products_id`, `lenguages_id`, `id`) VALUE
 
 CREATE TABLE `products_has_players` (
   `products_id` int(11) NOT NULL,
-  `players_id` int(11) NOT NULL,
-  `id` int(11) NOT NULL
+  `players_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `products_has_players`
---
-
-INSERT INTO `products_has_players` (`products_id`, `players_id`, `id`) VALUES
-(1, 1, 1),
-(1, 3, 2);
 
 --
 -- Índices para tablas volcadas
@@ -240,7 +194,7 @@ ALTER TABLE `compatibilities`
 -- Indices de la tabla `compatibilities_has_products`
 --
 ALTER TABLE `compatibilities_has_products`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`compatibilities_id`,`products_id`),
   ADD KEY `fk_compatibilities_has_products_products1_idx` (`products_id`),
   ADD KEY `fk_compatibilities_has_products_compatibilities_idx` (`compatibilities_id`);
 
@@ -272,7 +226,7 @@ ALTER TABLE `products`
 -- Indices de la tabla `products_has_genders`
 --
 ALTER TABLE `products_has_genders`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`products_id`,`genders_id`),
   ADD KEY `fk_products_has_genders_genders1_idx` (`genders_id`),
   ADD KEY `fk_products_has_genders_products1_idx` (`products_id`);
 
@@ -280,7 +234,7 @@ ALTER TABLE `products_has_genders`
 -- Indices de la tabla `products_has_lenguages`
 --
 ALTER TABLE `products_has_lenguages`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`products_id`,`lenguages_id`),
   ADD KEY `fk_products_has_lenguages_lenguages1_idx` (`lenguages_id`),
   ADD KEY `fk_products_has_lenguages_products1_idx` (`products_id`);
 
@@ -288,7 +242,7 @@ ALTER TABLE `products_has_lenguages`
 -- Indices de la tabla `products_has_players`
 --
 ALTER TABLE `products_has_players`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`products_id`,`players_id`),
   ADD KEY `fk_products_has_players_players1_idx` (`players_id`),
   ADD KEY `fk_products_has_players_products1_idx` (`products_id`);
 
@@ -301,12 +255,6 @@ ALTER TABLE `products_has_players`
 --
 ALTER TABLE `compatibilities`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `compatibilities_has_products`
---
-ALTER TABLE `compatibilities_has_products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `genders`
@@ -330,25 +278,7 @@ ALTER TABLE `players`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
---
--- AUTO_INCREMENT de la tabla `products_has_genders`
---
-ALTER TABLE `products_has_genders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT de la tabla `products_has_lenguages`
---
-ALTER TABLE `products_has_lenguages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
--- AUTO_INCREMENT de la tabla `products_has_players`
---
-ALTER TABLE `products_has_players`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
