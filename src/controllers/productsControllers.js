@@ -109,7 +109,7 @@ const productosController = {
 
                 let tablaPivotLenguages = "";
                 if (Array.isArray(req.body.language)) {
-                    tablaPitablaPivotLenguagesvotGenre = req.body.language.map(language => {
+                    tablaPivotLenguages = req.body.language.map(language => {
                         return {
                             products_id: data.id,
                             genders_id: Number(language)
