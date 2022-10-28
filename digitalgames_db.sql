@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2022 a las 16:55:33
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 8.1.6
+-- Tiempo de generación: 28-10-2022 a las 04:15:17
+-- Versión del servidor: 10.4.25-MariaDB
+-- Versión de PHP: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -64,7 +64,13 @@ CREATE TABLE `compatibilities_has_products` (
 
 INSERT INTO `compatibilities_has_products` (`id`, `compatibilities_id`, `products_id`) VALUES
 (1, 1, 1),
-(2, 3, 1);
+(2, 3, 1),
+(12, 1, 15),
+(13, 2, 15),
+(14, 3, 15),
+(15, 4, 15),
+(16, 5, 15),
+(17, 6, 15);
 
 -- --------------------------------------------------------
 
@@ -163,7 +169,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `releasedata`, `img`, `fullname`, `description`, `discount`, `freeShipping`, `price`, `capture1`, `capture2`, `capture3`, `capture4`, `video`) VALUES
-(1, 'FAR CRY 6', '2021-07-10 00:00:00', 'https://dixgamer.com/wp-content/uploads/2021/07/far-cry-6.jpg', 'FAR CRY 6', 'Far Cry 6 es un videojuego de acción y disparos en mundo abierto protagonizado por Dani Rojas, un guerrillero local (a elegir entre hombre o mujer) de Yara que lucha por la liberación de su nación contra Antón Castillo —interpretado por Giancarlo Esposito, Gus Fring en la recordada Breaking Bad— y su hijo. Desarrollado por Ubisoft Toronto, Far Cry 6 ambienta su acción en Yara, un paraíso tropical detenido en el tiempo en el que el jugador ha de luchar contra las tropas de su tiránico gobernante a través a junglas, playas y Esperanza, la caótica capital de este ficticio país del Caribe, valiéndose para ello de armas improvisadas, vehículos y, una vez más, nuevos compañeros animales.  UbiSoft entrega al usuario un juego donde se mantiene parte de los pilares de la saga, invitando a recorrer una vasta y variada extensión de terreno con nuevas formas de transporte como caballos y tanques, sin olvidarnos de coches clásicos, deportivos, motos y quads, lanchas y embarcaciones, helicópteros y aviones, etc. La varieda', 20, 0, 9500, 'https://areajugones.sport.es/wp-content/uploads/2020/07/far-cry-6-screenshot-1.jpg', 'https://gamek.mediacdn.vn/133514250583805952/2021/10/7/photo-1-16336019135841694396223.jpeg', 'https://www.gamingcoffee.com/wp-content/uploads/2020/07/fc1.jpg', 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/10/far-cry-6-embargo-dia-6-octubre-2489267.jpg?itok=f9IvVSQR', 'https://www.youtube.com/embed/fE0cBXPshZo');
+(1, 'FAR CRY 6', '2021-07-10 00:00:00', 'https://dixgamer.com/wp-content/uploads/2021/07/far-cry-6.jpg', 'FAR CRY 6', 'Far Cry 6 es un videojuego de acción y disparos en mundo abierto protagonizado por Dani Rojas, un guerrillero local (a elegir entre hombre o mujer) de Yara que lucha por la liberación de su nación contra Antón Castillo —interpretado por Giancarlo Esposito, Gus Fring en la recordada Breaking Bad— y su hijo. Desarrollado por Ubisoft Toronto, Far Cry 6 ambienta su acción en Yara, un paraíso tropical detenido en el tiempo en el que el jugador ha de luchar contra las tropas de su tiránico gobernante a través a junglas, playas y Esperanza, la caótica capital de este ficticio país del Caribe, valiéndose para ello de armas improvisadas, vehículos y, una vez más, nuevos compañeros animales.  UbiSoft entrega al usuario un juego donde se mantiene parte de los pilares de la saga, invitando a recorrer una vasta y variada extensión de terreno con nuevas formas de transporte como caballos y tanques, sin olvidarnos de coches clásicos, deportivos, motos y quads, lanchas y embarcaciones, helicópteros y aviones, etc. La varieda', 20, 0, 9500, 'https://areajugones.sport.es/wp-content/uploads/2020/07/far-cry-6-screenshot-1.jpg', 'https://gamek.mediacdn.vn/133514250583805952/2021/10/7/photo-1-16336019135841694396223.jpeg', 'https://www.gamingcoffee.com/wp-content/uploads/2020/07/fc1.jpg', 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/480/public/media/image/2021/10/far-cry-6-embargo-dia-6-octubre-2489267.jpg?itok=f9IvVSQR', 'https://www.youtube.com/embed/fE0cBXPshZo'),
+(15, 'FIFA 22', '2021-10-01 00:00:00', 'https://i.3djuegos.com/juegos/17805/fifa_22/fotos/ficha/fifa_22-5479209.webp  ', 'FIFA 22 ', 'FIFA 22 es un videojuego de simulación de fútbol aún por presentar de EA Sports que llegará a las tiendas a finales del 2021 para PC y consolas. Aunque las ediciones de las consolas de la octava generación y PC son bastante continuistas, esta nueva entrega tiene como abanderada la tecnología Hypermotion, que permite lograr un comportamiento más realista de los jugadores dentro del campo y que es exclusiva de las versiones de nueva generación. Además, se han realizado cambios significativos en modalidades ya presentes como VOLTA (que prescinde del aspecto narrativo para ofrecer un arcade puro) o el modo carrera que ahora nos permite crear un club desde cero.  De nuevo, nos encontramos ante una edición cargada de contenidos como viene siendo habitual en la serie. FIFA 22 cuenta con casi la totalidad de licencias de los principales campeonatos y equipos del mundo, y eso incluye la UEFA Champions League en exclusiva tras la renovación del acuerdo con la UEFA por parte de la compaía norteamericana. Por último, FIFA 22 sigue vinculado a Ultimate Team, su exitoso y lucrativo modo de juego con cartas donde poder formar el equipo de tus sueños. ', 50, 1, 10000, 'https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527550.webp ', 'https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527553.webp', 'https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527556.webp', 'https://i.3djuegos.com/juegos/17805/fifa_22/fotos/set/fifa_22-5527559.webp', 'https://www.youtube.com/embed/SYsi5QuOJNE');
 
 -- --------------------------------------------------------
 
@@ -224,7 +231,10 @@ CREATE TABLE `products_has_players` (
 
 INSERT INTO `products_has_players` (`products_id`, `players_id`, `id`) VALUES
 (1, 1, 1),
-(1, 3, 2);
+(1, 3, 2),
+(15, 1, 11),
+(15, 2, 12),
+(15, 3, 13);
 
 --
 -- Índices para tablas volcadas
@@ -306,7 +316,7 @@ ALTER TABLE `compatibilities`
 -- AUTO_INCREMENT de la tabla `compatibilities_has_products`
 --
 ALTER TABLE `compatibilities_has_products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `genders`
@@ -330,7 +340,7 @@ ALTER TABLE `players`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `products_has_genders`
@@ -348,7 +358,7 @@ ALTER TABLE `products_has_lenguages`
 -- AUTO_INCREMENT de la tabla `products_has_players`
 --
 ALTER TABLE `products_has_players`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Restricciones para tablas volcadas
