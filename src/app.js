@@ -28,7 +28,8 @@ const mainRoutes = require("./routes/main.js");
 
 /* MIDDLEWARE */
 const logMiddleware = require("./middleWares/logMiddleWare")
-
+app.use(userLoggedMiddleware);
+app.use(cookies);
 /******************RUTAS********************/
 app.use(logMiddleware)
 app.use("/products", rutasProductos);
