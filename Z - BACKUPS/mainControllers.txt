@@ -99,15 +99,15 @@ const mainControllers = {
         }
 
         let userToCreate = {
+            id: users[users.length - 1].id + 1,
             email: req.body.email,
-            full_name: req.body.fullName,
+            fullName: req.body.fullName,
             password: bcryptjs.hashSync(req.body.password, 10),
-            adress: req.body.domicilio,
-            img_profile: req.file.imgUser
+            domicilio: req.body.domicilio,
+            imgUser: req.file.filename
         }
 
-        db.User.create(userToCreate);
-        
+        let userCreated = user.create(userToCreate);
 
         res.redirect("/login");
     },

@@ -33,7 +33,7 @@ const productosController = {
             gender: req.body.gender,
             players: req.body.players,
             price: req.body.price,
-            language: req.body.language,
+            lenguage: req.body.language,
             releaseData: req.body.releaseData,
             img: req.body.img,
             fullName: req.body.fullName,
@@ -47,7 +47,8 @@ const productosController = {
             freeShipping: req.body.freeShipping,
             categori: "",
         }
-
+        console.log("NEW PRODUCT")
+        console.log(newProduct)
 
         db.Product.create(newProduct)
             .then((data) => {
@@ -62,9 +63,11 @@ const productosController = {
                         }
                     });
 
-                }  else tablaPivotGenre = {
-                    products_id: data.id,
-                    genders_id: Number(req.body.gender)
+                } else {
+                    tablaPivotGenre = [{
+                        products_id: data.id,
+                        genders_id: Number(req.body.gender)
+                    }]
                 }
                 db.ProductGender.bulkCreate(tablaPivotGenre)
 
@@ -79,9 +82,11 @@ const productosController = {
                         }
                     });
 
-                }  else tablaPivotPLayer = {
-                    products_id: data.id,
-                    players_id: Number(req.body.players)
+                } else {
+                    tablaPivotPLayer = [{
+                        products_id: data.id,
+                        players_id: Number(req.body.players)
+                    }]
                 }
 
                 db.ProductPlayer.bulkCreate(tablaPivotPLayer)
@@ -97,28 +102,32 @@ const productosController = {
                         }
                     });
 
-                }  else tablaPivotCompat = {
-                    products_id: data.id,
-                    compatibilities_id: Number(req.body.compatibilities)
+                } else {
+                    tablaPivotCompat = [{
+                        products_id: data.id,
+                        compatibilities_id: Number(req.body.compatibilities)
+                    }]
                 }
                 db.ProductCompatibility.bulkCreate(tablaPivotCompat)
 
-           
+
 
                 //lenguages
 
                 let tablaPivotLenguages = "";
                 if (Array.isArray(req.body.language)) {
-                    tablaPivotLenguages = req.body.language.map(language => {
+                    tablaPivotLenguages = req.body.language.map(lenguage => {
                         return {
                             products_id: data.id,
-                            genders_id: Number(language)
+                            lenguages_id: Number(lenguage)
                         }
                     });
 
-                }  else tablaPivotLenguages = {
-                    products_id: data.id,
-                    genders_id: Number(req.body.language)
+                } else {
+                    tablaPivotLenguages = [{
+                        products_id: data.id,
+                        lenguages_id: Number(req.body.language)
+                    }]
                 }
                 db.ProductLenguages.bulkCreate(tablaPivotLenguages)
                 res.redirect("/")
@@ -126,7 +135,7 @@ const productosController = {
 
             })
 
-            
+
 
             .catch(error => {
                 console.log(error)
