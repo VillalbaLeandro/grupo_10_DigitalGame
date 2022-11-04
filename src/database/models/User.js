@@ -6,9 +6,9 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
-            allowNull:true
+            allowNull: true
         },
-        name: {
+        full_name: {
             type: dataTypes.STRING,
             allowNull: true
         },
@@ -16,18 +16,19 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING,
             allowNull: true
         },
-        fullName: {
-            type: dataTypes.STRING,
-            allowNull: true
-        },
         password: {
             type: dataTypes.STRING,
             allowNull: true
         },
-        confirmPass: {
+        address: {
             type: dataTypes.STRING,
             allowNull: true
         },
+        img_profile: {
+            type: dataTypes.BLOB,
+            allowNull: true
+        },
+        
         
     };
 
@@ -36,5 +37,14 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: false
     };
     const User = sequelize.define(alias, cols, config);
+
+    User.associate = (models) => { //indicamos que este modelo va a tener una "asociacion" y recibe los "modelos"
+        // un usuario tiene un permiso(admin o vendedor o usuario) 
+        User.belongsTo(models.Permission, {
+            as: "users", //como llamo a la relacion
+            foreignKey: "permissions_id" //la columna en la base de datos que relaciona estas dos tablas
+        })
+
+    }
     return User;
 }
