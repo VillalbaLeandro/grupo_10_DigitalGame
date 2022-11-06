@@ -12,7 +12,7 @@ const validateRegister = [
 	body("domicilio").notEmpty().withMessage("Tienes que escribir tu domicilio"),
 	body("imgUser").custom((value, { req }) => {
 		let file = req.file;
-		let acceptedExtensions = [".jpg", ".png", ".jpeg"];
+		let acceptedExtensions = [".jpg", ".png", ".jpeg", "gif"];
 
 		if (!file) {
 			throw new Error("Tienes que subir una imagen");
