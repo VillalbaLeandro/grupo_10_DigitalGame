@@ -47,21 +47,29 @@ body {
     padding: 5px 25px;
     border-radius: 3px;
     color: white;
+    margin: 10px 20px;
 }
 .botones-product-detail {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+    justify-content: space-around;
 }
 
-.botones-product-detail .carrito button {
+.carrito button {
     background: #50B868;
     padding: 4px 6px;
     color: white;
     border-radius: 3px;
     font-size: 0.9rem;
     cursor: pointer;
-    margin-top: 10px;
-    box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
 
+
+}
+.price-detail{
+    margin: 0 20px;
+    font-size: 131%;
+    font-weight: 800;
 
 }
 
@@ -73,9 +81,16 @@ body {
     border-radius: 3px;
     font-size: 0.9rem;
     cursor: pointer;
-    box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
+    margin: 10px 0px;
 
 
+
+}
+.add-to-cart-price-container{
+    display: flex;
+    margin: 10px 20px;
+    text-align: center;
+    align-items: center;
 }
 
 .description-product-detal-container h2 {
@@ -135,6 +150,9 @@ body {
 
     .titulo-caracteristicas-conteiner {
         width: 100%;
+        display: flex !important;
+    flex-direction: column!important;
+    justify-content: space-between!important
     }
 
     .videoDetail-conteiner iframe {
@@ -146,5 +164,9 @@ body {
 @media (min-width:1024px) {
     .contenedor-imagen {
         width: 31%;
+    }
+    .contenedor-botones-precio{
+        display: flex;
+    justify-content: space-around;
     }
 }

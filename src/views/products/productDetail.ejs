@@ -26,71 +26,89 @@
                         </div>
                         <!-- Titulo -->
                         <div class="titulo-caracteristicas-conteiner">
-                            <div class="titulo-detalle-product">
-                                <h3>
-                                    <%= product.fullName %>
-                                </h3>
-                            </div>
-                            <!-- Caracteristicas -->
-                            <div class="contenedor-caracteristicas">
+                            <div>
 
-                                <h2>Tambien para:</h2>
-                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar con un IF para que no rompa -->
-                                <p class="consolas">
+                                <div class="titulo-detalle-product">
+                                    <h3>
+                                        <%= product.fullName %>
+                                    </h3>
+                                </div>
+                                <!-- Caracteristicas -->
+                                <div class="contenedor-caracteristicas">
                                     
-                                    
-
-                                        <% for (let i = 0; i < product.compatibilities.length; i++) { %>
-                                            <%= product.compatibilities[i].name %> -
+    
+                                    <h2>Tambien para:</h2>
+                                    <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar con un IF para que no rompa -->
+                                    <p class="consolas">
+                                        
+                                        
+    
+                                            <% for (let i = 0; i < product.compatibilities.length; i++) { %>
+                                                <%= product.compatibilities[i].name %> <% if(i < (product.compatibilities.length -1) ){%>  - <%  }  %> 
+                                            <% } %>
+                                        
+                                        
+                                        </p>
+                                    </p>
+                                    <h2>Género:</h2>
+                                    <p class=" genero">
+                                        <% for (let i = 0; i < product.genders.length; i++) { %>
+                                            <%= product.genders[i].name %> <% if(i < (product.genders.length -1) ){%>  - <%  }  %> 
                                         <% } %>
-                                    
-                                    
                                     </p>
-                                </p>
-                                <h2>Género:</h2>
-                                <p class=" genero">
-                                    <% for (let i = 0; i < product.genders.length; i++) { %>
-                                        <%= product.genders[i].name %> -
-                                    <% } %>
-                                </p>
-                                <h2>Modo de juego:</h2>
-                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
-                                <p class=" jugadores">
-                                    <% for (let i = 0; i < product.players.length; i++) { %>
-                                        <%= product.players[i].name %> -
-                                    <% } %>
+                                    <h2>Modo de juego:</h2>
+                                    <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
+                                    <p class=" jugadores">
+                                        <% for (let i = 0; i < product.players.length; i++) { %>
+                                            <%= product.players[i].name %><% if(i < (product.players.length -1) ){%>  - <%  }  %> 
+                                        <% } %>
+                                        </p>
+                                    
+    
+                                    <h2>Idioma:</h2>
+                                    <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
+                                    <p class=" idioma">
+                                        <% for (let i = 0; i < product.lenguages.length; i++) { %>
+                                            <%= product.lenguages[i].name %> <% if(i < (product.lenguages.length -1) ){%>  - <%  }  %> 
+                                        <% } %>
                                     </p>
-                                
+                                    
+    
+                                    <h2>Lanzamiento:</h2>
+                                    <p class=" lanzamiento">
+                                        <%= product.releaseData %>
+                                    </p>
+                                    
 
-                                <h2>Idioma:</h2>
-                                <!-- //hay veces que solamente vamos a seleccionar 1 opcion y entonces no vendra como array, hay que preguntar para que no rompa -->
-                                <p class=" idioma">
-                                    <% for (let i = 0; i < product.lenguages.length; i++) { %>
-                                        <%= product.lenguages[i].name %> -
-                                    <% } %>
-                                </p>
-                                
-
-                                <h2>Lanzamiento:</h2>
-                                <p class=" lanzamiento">
-                                    <%= product.releaseData %>
-                                </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Botones -->
-                    <div class="botones-product-detail">
-                        <!-- boton volver -->
-
-                        <form action="/products/<%= product.id %>/delete?_method=DELETE" method="POST"><button
-                                class="button-deleted" type="submit">Eliminar</button></form>
-
-                        <a class="seguir-comprando" href="/products/<%= product.id %>/editProduct"><button
-                                type="submit">Editar producto</button></a>
-                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
-                        <!-- boton agregar al carrito -->
-                        <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
-                                carrito</button></a>
+                            <!-- Botones -->
+                            <div class="contenedor-botones-precio">
+        
+                                <!-- boton volver -->
+                                <% if (locals.isLogged && locals.userLogged.roles_id == 1) { %>
+                                    <div class="botones-product-detail">
+                                        <form action="/products/<%= product.id %>/delete?_method=DELETE" method="POST"><button
+                                        class="button-deleted" type="submit">Eliminar</button></form>
+                                        <a class="seguir-comprando" href="/products/<%= product.id %>/editProduct"><button
+                                                type="submit">Editar producto</button></a>
+                                            </div>
+                                    <% } %>
+                                    <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
+                                    <!-- boton agregar al carrito -->
+                                    
+                                    <div class="add-to-cart-price-container">
+                                        <h5>
+                                            <%= product.name %>:
+                                            
+                                        </h5> 
+                                        <p class="price-detail">$<%= product.price  %> </p>
+                                        <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
+                                        carrito</button></a>
+                                </div>
+                                </div>
+                            </div>
+                           
                     </div>
                     <div class="description-product-detal-container">
                         <!-- Descripcion -->
@@ -119,11 +137,16 @@
                     <!-- Botones -->
                     <div class="botones-product-detail">
                         <!-- boton volver -->
-                        <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
-                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
-                        <!-- boton agregar al carrito -->
-                        <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
-                                carrito</button></a>
+                        <a class="seguir-comprando" href="/"><button type="submit">Continua viendo mas juegos!</button></a>
+                        <div class="add-to-cart-price-container">
+                            <h5>
+                                <%= product.name %> 
+                                
+                            </h5> 
+                            <p class="price-detail">$<%= product.price  %> </p>
+                            <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
+                            carrito</button></a>
+                    </div>
                     </div>
                 </article>
 

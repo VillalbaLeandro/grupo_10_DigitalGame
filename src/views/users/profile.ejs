@@ -15,15 +15,18 @@
             <main>
                 <div class="container-profile">
                     <div class="container-email">
-                        <h2>Hola <%= user.fullName %>
+                        <h2>Hola <%= locals.userLogged.full_name %>
                         </h2>
-                        <div class="img">
-                            <img src="/image/usersAvatar/<%= user.imgUser %>">
+                        <h2>Direccion: <%= locals.userLogged.address %>
+                        </h2>
+                        <div class="img-profile">
+                            Avatar: <img src="/image/usersAvatar/<%= locals.userLogged.img_profile %>">
                         </div>
                         <br>
-                        <br>
                         <div class="alert alert-success">
-                            <%= user.email %>
+                            <h2>
+                                email: <%= locals.userLogged.email %>
+                            </h2>
                         </div>
                     </div>
                     <a href="/logout"><button class="logout-button" type="submit">Cerrar Sesion</button></a>

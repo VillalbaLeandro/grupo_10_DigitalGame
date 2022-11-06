@@ -140,7 +140,7 @@
         <div class="cart-register-login-breackpoint isLogged" id="isLogged">
             <% if (locals.isLogged) { %>
                 <a href="/profile">
-                    <img class="img-profile" src="image/usersAvatar/<%= locals.userLogged.img_profile  %>" alt="img_profile">
+                    <img class="img-profile" src="/image/usersAvatar/<%= locals.userLogged.img_profile  %>" alt="img_profile">
                 </a>
                 <h2 class="saludo-y-nombre">Hola, <%= locals.userLogged.full_name.split(' ')[0]  %>! </h2>
                 <p class="">-</p>

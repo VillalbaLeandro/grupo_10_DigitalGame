@@ -64,7 +64,7 @@
                                             <div>
                                                 <p class="consolas-compatibles">
                                                     <% for (let i=0; i < element.compatibilities.length; i++) { %>
-                                                        <%= element.compatibilities[i].name %> -
+                                                        <%= element.compatibilities[i].name %> <% if(i < (element.compatibilities.length -1) ){%>  - <%  }  %> 
                                                             <% } %>
 
                                                 </p>
@@ -73,7 +73,7 @@
                                                 <p class="main-card-categoria">
                                                    
                                                         <% for (let i=0; i < element.genders.length; i++) { %>
-                                                            <%= element.genders[i].name %> -
+                                                            <%= element.genders[i].name %> <% if(i < (element.genders.length -1) ){%>  - <%  }  %>  
                                                                 <% } %>
 
                      
