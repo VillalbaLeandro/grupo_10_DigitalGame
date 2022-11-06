@@ -13,10 +13,12 @@
  },
  {
   "id": 3,
+
   "email": "exemprary@gmail.com",
   "fullName": "Leandro villalba2",
   "password": "123456",
-  "confirmPass": "123456"
+  "confirmPass": "123456",
+  "roles_id": "1"
  },
  {
   "id": 4,
@@ -32,6 +34,19 @@
   "fullName": "Leandro",
   "password": "$2b$10$wmCf1fkHw0aWuXY6jpqteubhJPFs1ZB/VIn5YBC8S/h2X2xMEPy8K",
   "domicilio": "kekekkekek",
-  "imgUser": "1662862244350_img_.png"
- }
+  "imgUser": "1662862244350_img_.png",
+  "roles_id": 1
+
+ },
+ {
+    "id": 5,
+    "email": "pruebadmin@gmail.com",
+    "fullName": "Leandro",
+    "password": "123456789",
+    "domicilio": "kekekkekek",
+    "imgUser": "1662862244350_img_.png",
+    "roles_id": 1
+  
+   }
+
 ]

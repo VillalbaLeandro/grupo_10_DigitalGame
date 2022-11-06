@@ -19,7 +19,12 @@ app.use(session({
 	resave: false,
 	saveUninitialized: false,
 }));
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
+
+
 app.use(cookies());
+
+app.use(userLoggedMiddleware);
 
 
 /****************REQUIRE MODULES************************** */

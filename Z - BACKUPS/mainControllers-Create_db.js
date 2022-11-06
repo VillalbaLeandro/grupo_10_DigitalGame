@@ -2,7 +2,7 @@ const db = require("../database/models");
 
 const path = require("path");
 const fs = require("fs");
-//const user = require("../models/user");
+const user = require("../models/user");
 const { validationResult } = require("express-validator");
 const bcryptjs = require("bcrypt");
 
@@ -39,74 +39,36 @@ const mainControllers = {
     },
 
     loginProcess: (req, res) => {
-        db.User.findOne(
-            {
-                where: {
-                    email: req.body.email,
+        let userToLogin = db.User.findOne({where: {email: req.body.email}});;
+
+        if (userToLogin) {
+            let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if (isOkThePassword) {
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+                if (req.body.remember_user) {
+                    res.cookie("userEmail", req.body.email, { maxAge: (1000 * 60) * 60 })
                 }
+
+                return res.redirect("/");
             }
-        )
-        .then(user => {
-           // let usuarioJson = JSON.parse(JSON.stringify(user))
-        //res.send(user);
-
-            userToLogin = user;
-        
-            if(userToLogin) {
-                //return res.send(userToLogin.password);
-
-                if(userToLogin.password.substr(0,7) == '$2b$10$'){
-
-                    let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-                    if(isOkThePassword) {
-                        delete userToLogin.password;
-                        req.session.userLogged = userToLogin;
-                        if(req.body.recordarme) {
-                            res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60  })
-                        }
-
-                        return res.redirect('/');
-                    }
-                    return res.render("../views/users/login.ejs", {
-                        errors: {
-                            email: {
-                                msg: "Las credenciales incorrectas"
-                            }
-                        }
-                    });
-                }
-
-                if(userToLogin.password == req.body.password){
-                    // Guarda todos los datos del usuario en una variable de session
-                    // primero quitar el atributo password del objeto
-                    delete userToLogin.password;
-                    req.session.userLogged = userToLogin;
-
-                    if(req.body.recordarme) {
-                        res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-                    }
-
-                    return res.redirect('/');
-                }
-                return res.render("../views/users/login.ejs", {
-                    errors: {
-                        email: {
-                            msg: "Las credenciales incorrectas"
-                        }
-                    }
-                });
-
-            }
-
-            return res.render("../views/users/register.ejs", {
+            return res.render("../views/users/login.ejs", {
                 errors: {
                     email: {
-                        msg: "No se encuentra este email en nuestra base de datos"
+                        msg: "Las credenciales son inválidas"
                     }
                 }
             });
+        }
 
-        })
+        return res.render("../views/users/register.ejs", {
+            errors: {
+                email: {
+                    msg: "No se encuentra este email en nuestra base de datos"
+                }
+            }
+        });
     },
 
     register: (req, res) => {
@@ -143,7 +105,7 @@ const mainControllers = {
             email: req.body.email,
             full_name: req.body.fullName,
             password: bcryptjs.hashSync(req.body.password, 10),
-            address: req.body.domicilio,
+            adress: req.body.domicilio,
             img_profile: req.file.imgUser
         }
 

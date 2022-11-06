@@ -126,25 +126,43 @@
                             </form>
                         </ul>
                     </li>
+                    <% if (locals.isLogged && locals.userLogged.roles_id == 1) { %>
                     <div class="button-create-product-container">
                         <a href="/products/createProduct"><button class=" "> CREAR PRODUCTO </button> </a> 
-                     </div>
+                    </div>
+                    <% } %> 
 
                 </ul>
             </nav>
             </span>
         </div>
         
-        <div class="cart-register-login-breackpoint">
+        <div class="cart-register-login-breackpoint isLogged" id="isLogged">
+            <% if (locals.isLogged) { %>
+                <a href="/profile">
+                    <img class="img-profile" src="image/usersAvatar/<%= locals.userLogged.img_profile  %>" alt="img_profile">
+                </a>
+                <h2 class="saludo-y-nombre">Hola, <%= locals.userLogged.full_name.split(' ')[0]  %>! </h2>
+                <p class="">-</p>
+                
+                <% } %>
             <a href="/products/productCart"><i class="fas fa-shopping-cart icon-cart-responsive"></i></a>
-            <p><br> </p>
-            <a class="links-breackpoint" href="/register">REGISTRATE</a>
-            <p class="guion">-</p>
-            <a class="links-breackpoint" href="/login">INICIA SESION</a>
+            <% if (locals.isLogged) { %>
+                <a href="/logout"> <i class="fas fa-sign-out-alt icon-cart-responsive logout"></i></a>
+             
+            <% } %>
+            
+            <% if (!locals.isLogged) { %>
+                <a class="links-breackpoint" href="/register">REGISTRATE</a>
+                <p class="guion">-</p>
+                <a class="links-breackpoint" href="/login">INICIA SESION</a>
+            
+            <% } %>
 
         </div>
     </div>
 
     <div class="barra-division-mobile"></div>
+    <script src="js/header.js"></script>
 
 </header>

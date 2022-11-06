@@ -25,7 +25,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: true
         },
         img_profile: {
-            type: dataTypes.BLOB,
+            type: dataTypes.STRING,
             allowNull: true
         },
         
@@ -40,9 +40,9 @@ module.exports = (sequelize, dataTypes) => {
 
     User.associate = (models) => { //indicamos que este modelo va a tener una "asociacion" y recibe los "modelos"
         // un usuario tiene un permiso(admin o vendedor o usuario) 
-        User.belongsTo(models.Permission, {
-            as: "users", //como llamo a la relacion
-            foreignKey: "permissions_id" //la columna en la base de datos que relaciona estas dos tablas
+        User.belongsTo(models.Roll, {
+            as: "roles", //como llamo a la relacion
+            foreignKey: "roles_id" //la columna en la base de datos que relaciona estas dos tablas
         })
 
     }
