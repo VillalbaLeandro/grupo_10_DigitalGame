@@ -104,6 +104,52 @@ ul li {
     justify-content: space-between;
 }
 
+/* ======= MENU HAMBURGUESA VERSION MOVILE =========== */
+.icono-menu{
+    position: relative;
+}
+
+.cont-menu{
+    background: rgb(31 29 29);
+    width: 300px;
+    height: 80vh;
+    position: absolute;
+    left: 0;
+    top: 69;
+    transition: all .5s;
+}
+
+/* ==== ESTILOS PARA JAVASCRIPT ====== */
+.active{
+    transform: translate(-600px);
+}
+
+
+.opacity{
+    background-color: rgba(0,0,0,0.5);
+    transition: all .5s;
+}
+
+.cont-menu ul{
+    padding: 75px 0 px 20px 0;
+    list-style: none;
+
+}
+
+.cont-menu ul li{
+    color: white;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+.cont-menu Ul li:hover{
+    background-color: rgb(57, 57, 57);
+    color: #5b9db9
+}
+/* ======= FIN """   MENU HAMBURGUESA VERSION MOVILE =========== */
+
 .burguer-logo-container {
     display: flex;
     align-items: center;
@@ -111,8 +157,6 @@ ul li {
 
 .burger-container {
     width: 21%;
-
-
 }
 
 .burger-container .icon {

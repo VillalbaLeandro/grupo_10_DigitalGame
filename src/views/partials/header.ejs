@@ -3,11 +3,10 @@
         <div class="header-conteiner">
             <div class="logo-burger-cartShop-loginButton-conainer-mobile">
 
-                <div class="burguer-logo-container">
+                <div class="burguer-logo-container  "id="icono-menu">
                     <!-- menu hamburguesa -->
-                    <div class="burger-container">
-                        <i class="fas fa-bars icon"></i>
-                    </div>
+                    <i class="fas fa-bars icon"></i>
+                    
 
 
                 </div>
@@ -38,16 +37,75 @@
                 </div>
             </div>
         </div>
+        <div class="cont-menu active" id="menu-burger">
+            <ul>
+                <li> <div class="cart-register-login-breackpoint isLogged" id="isLogged">
+                    <% if (locals.isLogged) { %>
+                        <a href="/profile">
+                            <img class="img-profile" src="/image/usersAvatar/<%= locals.userLogged.img_profile %>" alt="img_profile">
+                        </a>
+                        <h2 class="saludo-y-nombre">Hola, <%= locals.userLogged.full_name.split(' ')[0]  %>! </h2>
+                        
+                        <% } %>
+                    <% if (locals.isLogged) { %>
+                        <a href="/logout"><li class=" logout">Cerrar Sesión <i class="fas fa-sign-out-alt icon-cart-responsive"></i></a></li>
+                     
+                    <% } %>
+                    
+                    <% if (!locals.isLogged) { %>
+                        <a class="links-breackpoint" href="/register">REGISTRATE</a>
+                        <p class="guion">-</p>
+                        <a class="links-breackpoint" href="/login">INICIA SESION</a>
+                    
+                    <% } %>
+        </li>
+                <li><a href="#">
+                    CATEGORIAS
+                 
+                    <ul>
+                        <li >Acción</li>
+                        <li >Arcade</li>
+                        <li >Carreras</li>
+                        <li >Deportes</li>
+                        <li >Disparos</li>
+                        <li >Estrategia</li>
+                    </ul>
+                </li>
+                <li>COMPATIBLES CON
+                    <ul>
+                        <ul>
+                            <li>PS2</li>
+                            <li>PS4</li>
+                            <li>PS5</li>
+                            <li>XBOX 360</li>
+                            <li>XBOX ONE</li>
+                            <li>NINTENDO SWITCH</li>
+                        </ul>
+                    </ul>
+                </li>
+               
+                <li>NOVEDADES</li>
+                <LI>OFERTAS</LI>
+                <LI>ENVIOSA GRATIS</LI>
+                <LI>CONTACTO</LI>
+                <li> Cerrar Sesión <% if (locals.isLogged) { %>
+                    <a href="/logout"> <i class="fas fa-sign-out-alt icon-cart-responsive logout"></i></a>
+                 
+                <% } %></li>
+            </ul>
+    
+        </div>
     </div>
+    <div class="barra-division-mobile"></div>
 
+   
+    
+    <!-- fin header mobile -->
     <div class="header-conteiner-2">
         <div class="logo-burger-cartShop-loginButton-conainer">
 
             <div class="burguer-logo-container">
-                <!-- menu hamburguesa -->
-                <div class="burger-container">
-                    <i class="fas fa-bars icon"></i>
-                </div>
+                
                 <!-- logo con nombre  -->
                 <div class="logo-container">
                     <a href="/"> <img src="/image/logo-texto-oscuro.png" alt="logo digital games"></a>
@@ -162,7 +220,6 @@
         </div>
     </div>
 
-    <div class="barra-division-mobile"></div>
     <script src="js/header.js"></script>
 
 </header>
