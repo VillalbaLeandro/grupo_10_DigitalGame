@@ -91,7 +91,7 @@ const mainControllers = {
                 return res.render("../views/users/login.ejs", {
                     errors: {
                         email: {
-                            msg: "Las credenciales incorrectas"
+                            msg: "Las credenciales son incorrectas"
                         }
                     }
                 });
