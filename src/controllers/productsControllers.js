@@ -9,6 +9,18 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 const productosController = {
     list: (req, res) => {
 
+        // res.render("index", { products });
+
+        db.Product.findAll(
+            { include: [ "compatibilities", "genders"]})
+            .then(products => {
+                console.log(products)
+                res.render("productList", { products });
+
+            })
+            .catch(err => {
+                res.send(err);
+            });
     },
     detail: (req, res) => {
         db.Product.findByPk(req.params.id, {

@@ -247,6 +247,28 @@ button .icon {
 }
 /* INICIO MAIN .....................................................   */
 
+.ofertas{
+    margin: 25px;
+    padding: 7px 39px;
+    background: #323232;
+    border-radius: 4px;
+    color: #ebebebeb;
+    font-size: 122%;
+    box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
+
+}
+
+
+
+@keyframes logoOferta {
+    0%{
+        transform: scale(1.1);
+        
+    }
+    100%{
+
+    }
+}
 
 /* slider carrete de imagenes auto */
 .slider-frame {
@@ -374,8 +396,9 @@ button .icon {
     top: 7%;
     font-weight: 700;
     padding: 1px 7px;
-    transform: rotate(31deg);
+    transform: rotate(32deg);
     box-shadow: 0px 5px 8px 0px rgb(15 19 41 / 54%);
+    animation: logoOferta 1s infinite alternate
 
 }
 
@@ -707,7 +730,8 @@ footer {
     }
 
     .envios-gratis {
-        left: 53%;
+        left: 66%;
+        animation: logoOferta 1s infinite alternate
     }
 
     button .icon {
@@ -960,7 +984,7 @@ footer {
 
     .envios-gratis {
         font-size: 85%;
-        left: 59%;
+        left: 66%;
     }
 
     .etiqueta-off {
