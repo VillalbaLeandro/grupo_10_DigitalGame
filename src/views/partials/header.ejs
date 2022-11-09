@@ -3,10 +3,10 @@
         <div class="header-conteiner">
             <div class="logo-burger-cartShop-loginButton-conainer-mobile">
 
-                <div class="burguer-logo-container  "id="icono-menu">
+                <div class="burguer-logo-container  " id="icono-menu">
                     <!-- menu hamburguesa -->
                     <i class="fas fa-bars icon"></i>
-                    
+
 
 
                 </div>
@@ -39,12 +39,14 @@
         </div>
         <div class="cont-menu active" id="menu-burger">
             <ul>
-                <li> <div class="cart-register-login-breackpoint isLogged" id="isLogged">
-                    <% if (locals.isLogged) { %>
-                        <a href="/profile">
-                            <img class="img-profile" src="/image/usersAvatar/<%= locals.userLogged.img_profile %>" alt="img_profile">
-                        </a>
-                        <h2 class="saludo-y-nombre">Hola, <%= locals.userLogged.full_name.split(' ')[0]  %>! </h2>
+                <li>
+                    <div class="cart-register-login-breackpoint isLogged" id="isLogged">
+                        <% if (locals.isLogged) { %>
+                            <a href="/profile">
+                                <img class="img-profile" src="/image/usersAvatar/<%= locals.userLogged.img_profile %>"
+                                    alt="img_profile">
+                            </a>
+                            <h2 class="saludo-y-nombre">Hola, <%= locals.userLogged.full_name.split(' ')[0]  %>! </h2>
                         
                         <% } %>
                     <% if (locals.isLogged) { %>
@@ -186,6 +188,9 @@
                     </li>
                     <% if (locals.isLogged && locals.userLogged.roles_id == 1) { %>
                     <div class="button-create-product-container">
+                        <a href="http://localhost:3000/"><i class="fas fa-fw fa-tachometer-alt"></i> DASHBOARD</a> 
+                    </div>
+                    <div class="menu__link">
                         <a href="/products/createProduct"><button class=" "> CREAR PRODUCTO </button> </a> 
                     </div>
                     <% } %> 
