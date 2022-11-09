@@ -30,12 +30,14 @@ app.use(userLoggedMiddleware);
 /****************REQUIRE MODULES************************** */
 const rutasProductos = require("./routes/products.js");
 const mainRoutes = require("./routes/main.js");
+const filterRoutes = require("./routes/filter.js")
 
 /* MIDDLEWARE */
 const logMiddleware = require("./middleWares/logMiddleWare")
 /******************RUTAS********************/
 app.use(logMiddleware)
 app.use("/products", rutasProductos);
+// app.use("/filter", filterRoutes);
 app.use("/", mainRoutes);
 
 /******************FIN RUTAS********************/

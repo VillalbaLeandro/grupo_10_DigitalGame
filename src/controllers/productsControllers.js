@@ -240,6 +240,17 @@ const productosController = {
 
 
 
+    },
+    filter: (req, res) => {
+        db.Product.findAll( { include:  ["genders", "compatibilities", "lenguages", "players"]})
+        .then((products) => {
+                let filter = req.params.filter
+
+                res.render("filters/accionFilter", { products, filter })
+            })
+            .catch(error => {
+                console.log(error)
+            })
     }
 
 
