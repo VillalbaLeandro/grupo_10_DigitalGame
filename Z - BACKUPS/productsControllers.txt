@@ -86,7 +86,7 @@ const productosController = {
         db.Product.create(newProduct)
             .then(prductCreated => {
 
-                res.redirect("/");
+                res.redirect("/home");
             })
             .catch(error => {
                 console.log(error)
@@ -115,7 +115,7 @@ const productosController = {
         // }
         // db.Product.create(newProduct)
         //     .then(prductCreated => {
-        //         res.redirect("/");
+        //         res.redirect("/home");
         //     })
         //     .catch(error => {
         //         console.log(error)
@@ -139,7 +139,7 @@ const productosController = {
         // usuariosJson = JSON.stringify(product);
         // fs.writeFileSync("products.json", usuariosJson);
 
-        // res.redirect("/");
+        // res.redirect("/home");
     },
     editar: (req, res) => {
 
@@ -184,7 +184,7 @@ const productosController = {
                 }
             })
 
-        res.redirect("/");
+        res.redirect("/home");
 
 
 
@@ -230,7 +230,7 @@ const productosController = {
 
         // fs.writeFileSync(productsFilePath, JSON.stringify(products, null, " "));
 
-        // res.redirect("/")
+        // res.redirect("/home")
     },
     carrito: (req, res) => {
         res.render("products/productCart");
@@ -240,7 +240,7 @@ const productosController = {
 
         db.Product.destroy({ where: {id: id}})
             .then(()=>{
-                res.redirect("/")
+                res.redirect("/home")
             })
 
 
@@ -249,7 +249,7 @@ const productosController = {
 
         // fs.writeFileSync(productsFilePath, JSON.stringify(finalProducts, null, '  '));
 
-        // res.redirect("/")
+        // res.redirect("/home")
     }
 
 

@@ -51,7 +51,7 @@ const mainControllers = {
                     res.cookie("userEmail", req.body.email, { maxAge: (1000 * 60) * 60 })
                 }
 
-                return res.redirect("/");
+                return res.redirect("/home");
             }
             return res.render("../views/users/login.ejs", {
                 errors: {
@@ -127,7 +127,7 @@ const mainControllers = {
     logout: (req, res) => {
         res.clearCookie("userEmail");//DESTRUYE CUALQUIER TIPO DE COOKIE
         req.session.destroy();//DESTRUYE CUALQUIER TIPO DE SESSION
-        res.redirect("/");
+        res.redirect("/home");
     }
 }
 

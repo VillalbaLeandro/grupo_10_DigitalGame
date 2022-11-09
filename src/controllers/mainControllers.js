@@ -14,6 +14,9 @@ const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const mainControllers = {
+    loading: (req, res)=>{
+        res.render('loading')
+    },
     home: (req, res) => {
 
         // res.render("index", { products });
@@ -65,7 +68,7 @@ const mainControllers = {
                             res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60  })
                         }
 
-                        return res.redirect('/');
+                        return res.redirect("/home");
                     }
                     return res.render("../views/users/login.ejs", {
                         errors: {
@@ -86,7 +89,7 @@ const mainControllers = {
                         res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
                     }
 
-                    return res.redirect('/');
+                    return res.redirect("/home");
                 }
                 return res.render("../views/users/login.ejs", {
                     errors: {
@@ -168,7 +171,7 @@ const mainControllers = {
     logout: (req, res) => {
         res.clearCookie("userEmail");//DESTRUYE CUALQUIER TIPO DE COOKIE
         req.session.destroy();//DESTRUYE CUALQUIER TIPO DE SESSION
-        res.redirect("/");
+        res.redirect("/home");
     }
 }
 

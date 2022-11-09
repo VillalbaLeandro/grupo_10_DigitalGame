@@ -118,7 +118,7 @@
 
                         <a class="seguir-comprando" href="/products/<%= product.id %>/editProduct"><button
                                 type="submit">Editar producto</button></a>
-                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
+                        <!-- <a class="volver" href="/home"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
                         <!-- boton agregar al carrito -->
                         <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
                                 carrito</button></a>
@@ -150,8 +150,8 @@
                     <!-- Botones -->
                     <div class="botones-product-detail">
                         <!-- boton volver -->
-                        <a class="seguir-comprando" href="/"><button type="submit">Seguir comprando</button></a>
-                        <!-- <a class="volver" href="/"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
+                        <a class="seguir-comprando" href="/home"><button type="submit">Seguir comprando</button></a>
+                        <!-- <a class="volver" href="/home"><input class="boton-volver" type="reset" name="reset" id="reset"></a> -->
                         <!-- boton agregar al carrito -->
                         <a class="carrito" href="/products/productCart"><button type="submit">Agregar al
                                 carrito</button></a>

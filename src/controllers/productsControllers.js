@@ -142,7 +142,7 @@ const productosController = {
                     }]
                 }
                 db.ProductLenguages.bulkCreate(tablaPivotLenguages)
-                res.redirect("/")
+                res.redirect("/home")
 
 
             })
@@ -224,7 +224,7 @@ const productosController = {
                 }
             })
 
-        res.redirect("/");
+        res.redirect("/home");
 
     },
     carrito: (req, res) => {
@@ -235,7 +235,7 @@ const productosController = {
 
         db.Product.destroy({ where: { id: id } })
             .then((data) => {
-                res.redirect("/")
+                res.redirect("/home")
             })
 
 

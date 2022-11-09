@@ -32,7 +32,8 @@ const storage = multer.diskStorage({
 const uploadFile = multer({ storage });
 
 //RUTAS POR GET
-router.get("/", mainControllers.home); 
+router.get("/", mainControllers.loading); 
+router.get("/home", mainControllers.home); 
 router.get("/usersList", authMiddleware, mainControllers.list);//LISTA DE USUARIOS
 router.get("/login", guestMiddleware, mainControllers.login);//FORMULARIO DE LOGIN
 router.get("/register", guestMiddleware, mainControllers.register);//FORMULARIO DE REGISTRO

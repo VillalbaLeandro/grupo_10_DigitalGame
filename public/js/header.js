@@ -1,4 +1,5 @@
 window.onload= function(){
+    
     let isLogged = document.getElementById("isLogged") 
     let logout = document.querySelector(".logout")
 
