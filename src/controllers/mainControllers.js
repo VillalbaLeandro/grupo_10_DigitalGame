@@ -70,7 +70,7 @@ const mainControllers = {
                     return res.render("../views/users/login.ejs", {
                         errors: {
                             email: {
-                                msg: "Las credenciales incorrectas"
+                                msg: "Las credenciales son incorrectas"
                             }
                         }
                     });
@@ -98,7 +98,7 @@ const mainControllers = {
 
             }
 
-            return res.render("../views/users/register.ejs", {
+            return res.render("../views/users/login.ejs", {
                 errors: {
                     email: {
                         msg: "No se encuentra este email en nuestra base de datos"
