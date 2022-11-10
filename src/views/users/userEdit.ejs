@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include ("../partials/head") %>
+    <link rel="stylesheet" href="/css/register.css">
+    </head>
+
+    <body class="body-register">
+
+        <!-- HEADER -->
+        <%- include ("../partials/header") %>
+
+            <main class="main-register">
+                <!-- formulario register -->
+
+                <div class="formulario-container">
+                    <form action="/edit/<%=user.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
+
+                        <div class="titulo-register-conteiner">
+                            <label class="Titulo-register">Edita tu Perfil</label><br>
+                        </div>
+
+                        <div class="errors-email errors">
+                            <label class="titulos-boxs" for="email" class="text-boxs">Email</label><br>
+                            <input class="text-boxs" type="text" name="email"
+                                value="<%= user.email %>"><br>
+
+                            <% if (locals.errors && errors.email) { %>
+                                <div class="text-danger">
+                                    <%= errors.email.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-fullName errors">
+                            <label class="titulos-boxs" for="full_name">Nombre y apellido:</label><br>
+                            <input class="text-boxs" type="text" name="full_name" id="name"
+                                placeholder="Ej. Florencio Perez"
+                                value="<%= user.full_name %>"><br>
+
+                            <% if (locals.errors && errors.full_name) { %>
+                                <div class="text-danger">
+                                    <%= errors.full_namemsg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-password errors">
+                            <label class="titulos-boxs" for="password">Ingrese nueva contraseña:</label>
+                            <input class="text-boxs" type="password"  name="password" id="pass" >
+
+                            <% if (locals.errors && errors.password) { %>
+                                <div class="text-danger">
+                                    <%= errors.password.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-confirmPass errors">
+                            <label class="titulos-boxs" for="confirmPass">Confirme la contraseña:(SOLO SI DESEA CAMBIAR LA ACTUAL)</label>
+                            <input class="text-boxs" type="password" name="confirmPass" id="pass-repeat">
+
+                            <% if (locals.errors && errors.confirmPass) { %>
+                                <div class="text-danger">
+                                    <%= errors.confirmPass.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-domicilio errors">
+                            <label class="titulos-boxs" for="domicilio">Domicilio:</label>
+                            <input class="text-boxs" type="text" name="domicilio" id="domicilio"
+                                placeholder="Ej. Cabred 1900" value="<%= user.address %>"
+                                ><br>
+
+                            <% if (locals.errors && errors.domicilio) { %>
+                                <div class="text-danger">
+                                    <%= errors.domicilio.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-imgUser errors">
+                            <label class="titulos-boxs" for="imgUser">Imagen de perfil: (SOLO SI DESEA CAMBIAR LA ACTUAL)</label><br>
+                            <div class="file-select">
+                                <input class="file" type="file" value="<%= user.img_profile%>" name="imgUser" accept=".jpg, .png, .jpeg" >
+
+                                <% if (locals.errors && errors.imgUser) { %>
+                                    <div class="text-danger">
+                                        <%= errors.imgUser.msg %>
+                                    </div>
+                                    <% } %>
+
+                            </div>
+                        </div>
+
+                        <div class="buttons">
+
+                            <!-- button enviar -->
+                            <!-- <input class="button-submit" type="submit" name="submit" id="submit-and-go-to-home"> -->
+                            <button class="button-submit" type="submit">Confirmar</button>
+                        </div>
+
+                        <div class="redirec-login">
+                            <div>
+                                <label">No quieres realizar cambios??</label>
+                            </div>
+                            <a class="link-inicia-sesion" href="/login" onclick="toggleForm();">Vuelve al inicio</a>
+
+                        </div>
+                    </form>
+                </div>
+            </main>
+
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
+
+    </body>
+
+</html>

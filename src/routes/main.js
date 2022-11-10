@@ -39,6 +39,9 @@ router.get("/login", guestMiddleware, mainControllers.login);//FORMULARIO DE LOG
 router.get("/register", guestMiddleware, mainControllers.register);//FORMULARIO DE REGISTRO
 router.get("/ofertas", mainControllers.ofertas);
 router.get("/profile", authMiddleware, mainControllers.profile);
+router.get("/edit/:id", authMiddleware, mainControllers.edit);
+router.put("/edit/:id", uploadFile.single("imgUser"), authMiddleware, mainControllers.storeEdit);
+router.delete("/delete/user/:id", authMiddleware, mainControllers.delete);
 router.get("/logout", mainControllers.logout);
 
 //RUTAS POR POST

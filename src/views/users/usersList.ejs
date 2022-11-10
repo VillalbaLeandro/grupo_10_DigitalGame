@@ -11,52 +11,59 @@
         <!-- HEADER -->
         <%- include ("../partials/header") %>
             <main>
+
                 <% users.forEach(user=> { %>
-                    <div class="usersList-container not-fixed">
-                        <div class="container-profile">
-                            <div>
-                                <!-- CONTENEDOR EMAIL -->
-                                <div class="container-email">
-                                    <div>
+                    <a href="">
 
-                                        <h2>Nombre Completo: <%= user.full_name %>
-                                        </h2>
-                                        <h2>Direccion: <%= user.address %>
-                                        </h2>
+                        <div class="usersList-container not-fixed">
+                            <div class="container-profile">
+                                <div>
+                                    <!-- CONTENEDOR EMAIL -->
+                                    <div class="container-email">
+                                        <div>
 
-                                        <div class="alert alert-success">
-                                            <h2>
-                                                Email: <%= user.email %>
+                                            <h2>Nombre Completo: <%= user.full_name %>
                                             </h2>
-                                            <h2>Rol: <% if (user.roles_id==1) { %>
-                                                    Administador
-                                                    <% } else{ %>
-                                                        User
-                                                        <% } %>
+                                            <h2>Direccion: <%= user.address %>
                                             </h2>
+
+                                            <div class="alert alert-success">
+                                                <h2>
+                                                    Email: <%= user.email %>
+                                                </h2>
+                                                <h2>Rol: <% if (user.roles_id==1) { %>
+                                                        Administador
+                                                        <% } else{ %>
+                                                            User
+                                                            <% } %>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="img-profile-container">
+                                            <img class="img-profile-user"
+                                                src="/image/usersAvatar/<%= user.img_profile %>">
                                         </div>
                                     </div>
-                                    <div class="img-profile-container">
-                                        <img class="img-profile-user" src="/image/usersAvatar/<%= user.img_profile %>">
+                                </div>
+                                <div class="buttons-profile-container">
+                                    <div class="edit-perfil-container">
+                                        <a href="/edit/<%= user.id %> ">
+                                            <button class="logout-button" type="submit">Editar Perfil</button>
+
+                                        </a>
+                                            
+
                                     </div>
+                                    
+
                                 </div>
-                            </div>
-                            <div class="buttons-profile-container">
-                                <div class="edit-perfil-container">
-                                    <a href="/logout"><button class="logout-button" type="submit">Editar Perfil</button></a>
-    
-                                </div>
-                                <div class="logout-perfil-container">
-                                    <a href="/logout"><button class="logout-button" type="submit">Eliminar</button></a>
-    
-                                </div>
-    
+
                             </div>
 
                         </div>
-                        
-                        <% }) %>
-                    </div>
+
+                    </a>
+                    <% }) %>
             </main>
 
 

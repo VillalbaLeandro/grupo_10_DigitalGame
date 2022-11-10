@@ -633,7 +633,7 @@ main section h3 {
 }
 
 .card-container {
-    width: auto;
+    width: 90%;
     max-width: 300px;
     margin-bottom: 32px;
     box-shadow: 7px 7px 6px -5px rgba(0, 0, 0, 0.22);

@@ -5,6 +5,7 @@ const fs = require("fs");
 //const user = require("../models/user");
 const { validationResult } = require("express-validator");
 const bcryptjs = require("bcrypt");
+const { localsName } = require("ejs");
 
 //json products
 const productsFilePath = path.join(__dirname, "../data/products.json");
@@ -170,11 +171,51 @@ const mainControllers = {
             user: req.session.userLogged
         });
     },
+    edit: async (req,res) =>{
+        try {
+            let user = await db.User.findByPk(req.params.id);
+            return res.render('./users/userEdit', {user})
+        } catch (error) {
+            console.log("Falle en userController.edit: " + error); 
+            return res.json(error);   
+        }
+    },
+    storeEdit: (req,res)=>{
+
+        db.User.update({
+            email: req.body.email,
+            full_name: req.body.full_name,
+            password: bcryptjs.hashSync(req.body.password, 10),
+            address: req.body.domicilio,
+            img_profile: req.file ? req.file.filename : "default.jpg"
+        },{
+            where: {
+                id: req.params.id
+            }
+        })
+
+        res.clearCookie("userEmail");//DESTRUYE CUALQUIER TIPO DE COOKIE
+        req.session.destroy();//DESTRUYE CUALQUIER TIPO DE SESSION
+        res.redirect("/login");
+       
+            
+    },
 
     logout: (req, res) => {
         res.clearCookie("userEmail");//DESTRUYE CUALQUIER TIPO DE COOKIE
         req.session.destroy();//DESTRUYE CUALQUIER TIPO DE SESSION
         res.redirect("/home");
+    },
+    delete:  (req, res) => {
+        let id = req.params.id;
+
+        db.User.destroy({ where: { id: id } })
+            .then((data) => {
+                res.redirect("/home")
+            })
+
+
+
     }
 }
 
