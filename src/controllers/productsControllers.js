@@ -12,7 +12,7 @@ const productosController = {
         // res.render("index", { products });
 
         db.Product.findAll(
-            { include: [ "compatibilities", "genders"]})
+            { include: ["compatibilities", "genders"] })
             .then(products => {
                 console.log(products)
                 res.render("productList", { products });
@@ -242,9 +242,11 @@ const productosController = {
 
     },
     filter: (req, res) => {
-        db.Product.findAll( { include:  ["genders", "compatibilities", "lenguages", "players"]})
-        .then((products) => {
+        db.Product.findAll({ include: ["genders", "compatibilities", "lenguages", "players"] })
+            .then((products) => {
+                
                 let filter = req.params.filter
+                filter = filter[0].toUpperCase();
 
                 res.render("filters/accionFilter", { products, filter })
             })
