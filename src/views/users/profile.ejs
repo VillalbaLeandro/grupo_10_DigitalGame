@@ -15,7 +15,7 @@
                 <!-- formulario register -->
 
                 <div class="formulario-container">
-                    <form action="/register" method="POST" enctype="multipart/form-data">
+                    <form action="/edit/<%= user.id %>"></form>" method="POST" enctype="multipart/form-data">
 
                         <div class="titulo-register-conteiner">
                             <label class="Titulo-register">Mi perfil</label><br>
@@ -54,7 +54,7 @@
                             <img src="image/usersAvatar/<%= user.img_profile%>"  alt="">
                         </div>
                         <div class="buttons">
-                                <a href="/edit/<%= user.id %> ">
+                                <a href="/edit/<%= user.id %>">
     
                                     <button class="button-submit" type="submit">Editar Perfil</button>
     
