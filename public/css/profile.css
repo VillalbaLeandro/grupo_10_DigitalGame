@@ -1,126 +1,167 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
+}
+
+/* REGISTER----------------------------------- */
+.body-register {
+    margin-top: 40%;
+}
+
+.main-register {
+    height: 200%;
+}
+
+.formulario-container {
+    width: 90%;
+    background-color: #666;
+    padding: 26px;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 4px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    max-width: 400px;
+    box-shadow: 6px 5px 6px 0px rgb(0 0 0 / 37%)
+}
+
+main input {
+    background-color: #252324;
+    font-size: 12px;
+    color: white;
+    border: 2px solid #017bae;
+
 
 }
 
-.container-profile {
-    position: fixed;
-    top: 28%;
-    left: 14%;
-    width: 74%;
+header input:hover {
+    border: 2px solid rgb(233, 145, 51);
+
 }
 
-.container-email {
-    background: #2b4e7e;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 20px;
+main input:hover {
+    border: 2px solid black;
+
+}
+
+::placeholder {
+    color: rgb(183, 183, 183);
+    font-size: 11px;
+
+}
+
+.titulo-register-conteiner {
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    color: #ebebebeb;
+    border-bottom: 3px white solid;
+    margin-bottom: 14px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
 }
 
-.img-profile-user {
-    border-radius: 50%;
-    border: 4px solid #ebebeb;
+div .columns {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.img-profile-container {
-    position: fixed;
-    top: 11%;
-    left: 31%;
-    width: 38%;
+.titulos-boxs {
+    font-size: 11px;
+    color: #cfcbcb;
+    font-weight: 500;
+}
+
+.text-boxs {
+    width: 100%;
+    height: 29px;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 7px;
+    text-align: center;
+}
+
+.img-container {
+    margin: 19px;
+    border: 4px solid;
+    border-radius: 6px;
 }
 
 .data-user {
-    text-align: center;
+    color: white;
+    background: #323232;
+    padding: 6px 10px;
+    margin: 6px 0px;
+    border-radius: 4px;
 }
 
-.data-user h3 {
-    color: #ebebebeb;
-    font-weight: 400;
+.buttons a {
+    width: 30%;
+    font-size: 12px;
+
+    border-radius: 7px;
+    height: 22px;
+    background: #017bae;
 }
 
-.buttons-profile-container {
+.button-submit {
+    font-size: 12px;
+    color: white;
+    border-radius: 7px;
+    height: 22px;
+    background: #017bae;
+}
+
+.file-select .file {
+    width: 124px;
+}
+
+.redirec-login {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 13px;
+    border-top: 3px white solid;
+    margin-top: 14px;
+    padding-top: 5px;
+
 }
 
-.edit-perfil-container {
-    margin: 10px;
-    background: #0a9f0a;
-    font-size: 160%;
-    width: 39%;
-    padding: 5px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 4px;
+.redirec-login a {
+    color: #5b9db9;
 }
 
-.edit-perfil-container {
-    margin: 10px;
-    background: #0a9f0a;
-    font-size: 160%;
-    width: 39%;
-    padding: 5px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 4px;
-}
-
-.logout-perfil-container {
-    margin: 10px;
-    background: #960303;
-    font-size: 160%;
-    width: 39%;
-    padding: 5px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 4px;
-}
-
-.buttons-profile-container button {
+div a:hover {
     color: white;
-    font-weight: 800;
+
 }
 
-@media (min-width: 1024px) {
 
-    .container-profile {
-        top: 35%;
-        left: 37%;
-        width: 29%;
-        max-width: 380px;
+
+@media (min-width: 768px) {
+    .main-register {
+        margin-top: 122px;
+        margin-bottom: 50px;
     }
 
-    .container-email {
-        border-radius: 10px;
-        margin-bottom: 20px;
-        padding: 20px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: relative;
+    .body-register {
+        margin-top: 120px !important;
+    }
+}
+
+@media(min-width: 1024px) {
+    .body-register {
+        margin-top: 13%;
+
     }
 
-    .img-profile-user {
-        border-radius: 50%;
-        border: 4px solid #ebebeb;
+    .main-register {
+        height: 120vh;
     }
-
-    .img-profile-container {
-        top: 34.8%;
-        left: 32%;
-        width: 12.5rem;
-    }
-
-
-    @media (min-width: 1600px) {}
 
 
 }

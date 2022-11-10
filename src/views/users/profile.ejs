@@ -6,53 +6,74 @@
     <link rel="stylesheet" href="/css/profile.css">
     </head>
 
-    <body class="body-login">
+    <body class="body-register">
 
         <!-- HEADER -->
         <%- include ("../partials/header") %>
 
-            <main>
-                <div >
-                    <div class="container-profile">
-                        <!-- CONTENEDOR EMAIL -->
-                        <div class="container-email">
-                            <div class="img-profile-container">
-                                <img class="img-profile-user"
-                                    src="/image/usersAvatar/<%= locals.userLogged.img_profile %>">
-                            </div>
-                            <div class="data-user">
-                                <h3>Nombre Completo: </h3>
-                                <h2>
-                                    <%= locals.userLogged.full_name %>
-                                </h2>
-                                <h3>Direccion: </h3>
-                                <h2>
-                                    <%= locals.userLogged.address %>
-                                </h2>
-                                <h3>Email: </h3>
-                                <h2><%= locals.userLogged.email %></h2>
-                            </div>
-                            
-                        </div>
-                        <div class="buttons-profile-container">
-                            <div class="edit-perfil-container">
-                                <a href="/edit/<%= locals.userLogged.id %>"><button class="logout-button" type="submit">Editar Perfil</button></a>
-            
-                            </div>
-                            <div class="logout-perfil-container">
-                                <a href="/logout"><button class="logout-button" type="submit">Cerrar Sesion</button></a>
-            
-                            </div>
-                            
-                        </div>
-                    </div>
+            <main class="main-register">
+                <!-- formulario register -->
 
-                    <!-- BOTON LOGOUT -->
-                    
-                  
+                <div class="formulario-container">
+                    <form action="/register" method="POST" enctype="multipart/form-data">
+
+                        <div class="titulo-register-conteiner">
+                            <label class="Titulo-register">Mi perfil</label><br>
+                        </div>
+
+                        <div class="errors-email errors">
+                            <label class="titulos-boxs" for="email" class="text-boxs">Email</label><br>
+                            
+                            
+                            
+                        </div>
+                        <h3 class="data-user"><%= locals.userLogged.email %></h3>
+
+                        <div class="errors-fullName errors">
+                            <label class="titulos-boxs" for="fullName">Nombre y apellido:</label><br>
+                            <h3 class="data-user"><%= locals.userLogged.full_name %></h3>
+                            
+
+                          
+                        </div>
+
+                       
+
+                        <div class="errors-domicilio errors">
+                            <label class="titulos-boxs" for="domicilio">Domicilio:</label>
+                            <h3 class="data-user"><%= locals.userLogged.address %></h3>
+                            
+
+                         
+                        </div>
+
+                        
+                        
+                            
+                        <div class="img-container">
+                            <img src="image/usersAvatar/<%= user.img_profile%>"  alt="">
+                        </div>
+                        <div class="buttons">
+                                <a href="/edit/<%= user.id %> ">
+    
+                                    <button class="button-submit" type="submit">Editar Perfil</button>
+    
+                                </a>
+                                </div>
+    
+                        <div class="redirec-login">
+                            <div>
+                                No te preocupes!, tus datos estan seguros.
+                            </div>
+                            <a class="link-inicia-sesion" href="/home">DigitalGames</a>
+
+                        </div>
+                    </form>
                 </div>
             </main>
 
+            <!-- FOOTER -->
+            <%- include ("../partials/footer") %>
 
     </body>
 
