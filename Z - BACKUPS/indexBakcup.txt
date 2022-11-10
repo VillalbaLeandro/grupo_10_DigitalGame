@@ -28,7 +28,7 @@
                         <nav class="main-nav">
                             <ul class="menu">
                                 <li class=" button"><a href="/ofertas" class="menu__link">OFERTAS</a></li>
-                                <li class=" button"><a href="" class="menu__link">NUEVOS LANZAMIENTOS</a></li>
+                                <li class=" button"><a href="" class="menu__link">AGREGADOS RECIENTEMENTE</a></li>
                                 <li class=" button"><a href="" class="menu__link">MAS DESCARGADOS</a></li>
                             </ul>
                         </nav>

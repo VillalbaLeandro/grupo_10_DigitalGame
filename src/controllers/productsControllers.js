@@ -247,12 +247,26 @@ const productosController = {
                 
                 let filter = req.params.filter
                 filter = filter[0].toUpperCase();
-
+                
                 res.render("filters/accionFilter", { products, filter })
             })
             .catch(error => {
                 console.log(error)
             })
+    },
+    consolas: (req, res)=>{
+        db.Product.findAll({ include: ["genders", "compatibilities", "lenguages", "players"] })
+        .then((products) => {
+            
+            let filter = req.params.filter
+            filter = filter[0].toUpperCase();
+
+            res.render("filters/compatibilityFilter", { products, filter })
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
     },
     news: (req, res) =>{
         db.Product.findAll(

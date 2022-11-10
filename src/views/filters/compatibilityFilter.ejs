@@ -27,8 +27,8 @@
                     <div class="menu-atajos-ofertas">
                         <nav class="main-nav">
                             <ul class="menu">
-                                <li class=" button"><a href="/home" class="menu__link">OFERTAS</a></li>
-                                <li class=" button"><a href="/home" class="menu__link">NUEVOS LANZAMIENTOS</a></li>
+                                <li class=" button"><a href="/products/oferts" class="menu__link">OFERTAS</a></li>
+                                <li class=" button"><a href="/products/news" class="menu__link">AGREGADOS RECIENTEMENTE</a></li>
                                 <li class=" button"><a href="/products/all" class="menu__link">VER TODOS</a></li>
                             </ul>
                         </nav>
@@ -44,12 +44,12 @@
 
                                             <% products.forEach(element=> { %>
                                                 <% let i = 0  %> 
-                                                    <%  if((element.genders[i].name.includes(filter)) ){ %>
+                                                    <%  if((element.compatibilities[i].name.includes(filter)) ){ %>
                                                         
 
 
                                                     <article class="card-container"><a
-                                                            href="products/<%= element.id  %>/productDetail">
+                                                            href="<%= element.id  %>/productDetail">
 
                                                             <div class="img-product-container">
                                                                 <img src="<%= element.img %>"
@@ -108,7 +108,7 @@
                                                             </div>
                                                         </a>
                                                         <div class="button-add-cart-container">
-                                                            <!-- <a href="products/<EJS= element.id  %>/productDetail"><button class="ver-mas"
+                                                            <!-- <a href="<EJS= element.id  %>/productDetail"><button class="ver-mas"
                                                     type="submit"> Ver detalles del producto </button></a> -->
                                                             <a href="/products/productCart"><button class="add-to-car"
                                                                     type="submit">Agregar

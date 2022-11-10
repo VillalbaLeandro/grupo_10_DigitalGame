@@ -11,6 +11,7 @@ router.put("/createProduct", authMiddleware, productosController.store); //accio
 router.get("/productCart", productosController.carrito);
 router.get("/news", productosController.news);
 router.get("/oferts", productosController.oferts);
+router.get("/consolas/:filter", productosController.consolas);
 router.get("/filter/:filter", productosController.filter);
 router.get("/:id/editProduct", authMiddleware, productosController.editar); //Formulario de edición de productos
 router.put("/:id/editProduct", authMiddleware, productosController.update); //Acción de edición (a donde se envía el formulario):

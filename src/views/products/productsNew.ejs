@@ -14,10 +14,10 @@
             <section class="banner">
                 <div class="slider-frame">
                     <ul>
-                        <li><img src="image/sliders/slider1.jpg" alt="image need for speed"></li>
-                        <li><img src="image/sliders/slider2.jpg" alt="call of duty"></li>
-                        <li><img src="image/sliders/slider3.jpg" alt="fifa 22"></li>
-                        <li><img src="image/sliders/slider4.jpg" alt="super mario bross"></li>
+                        <li><img src="/image/sliders/slider1.jpg" alt="image need for speed"></li>
+                        <li><img src="/image/sliders/slider2.jpg" alt="call of duty"></li>
+                        <li><img src="/image/sliders/slider3.jpg" alt="fifa 22"></li>
+                        <li><img src="/image/sliders/slider4.jpg" alt="super mario bross"></li>
                     </ul>
                 </div>
             </section>
@@ -27,8 +27,8 @@
                     <div class="menu-atajos-ofertas">
                         <nav class="main-nav">
                             <ul class="menu">
-                                <li class=" button"><a href="#ofertas" class="menu__link">OFERTAS</a></li>
-                                <li class=" button"><a href="#recomendados" class="menu__link">NUEVOS LANZAMIENTOS</a></li>
+                                <li class=" button"><a href="/products/oferts" class="menu__link">OFERTAS</a></li>
+                                <li class=" button"><a href="/products/news" class="menu__link">AGREGADOS RECIENTEMENTE</a></li>
                                 <li class=" button"><a href="/products/all" class="menu__link">VER TODOS (<%= products.length %>)</a></li>
                             </ul>
                         </nav>
@@ -52,7 +52,7 @@
                                 <% if ( element.freeShipping==true ) { %>
 
 
-                                    <article class="card-container"><a href="products/<%= element.id  %>/productDetail">
+                                    <article class="card-container"><a href="<%= element.id  %>/productDetail">
 
                                             <div class="img-product-container">
                                                 <img src="<%= element.img %>" alt="img <%= element.name  %>"
@@ -106,9 +106,9 @@
                                             </div>
                                         </a>
                                         <div class="button-add-cart-container">
-                                            <!-- <a href="products/<EJS= element.id  %>/productDetail"><button class="ver-mas"
+                                            <!-- <a href="<EJS= element.id  %>/productDetail"><button class="ver-mas"
                                                     type="submit"> Ver detalles del producto </button></a> -->
-                                            <a href="/products/productCart"><button class="add-to-car"
+                                            <a href="/productCart"><button class="add-to-car"
                                                     type="submit">Agregar al
                                                     Carrito</button></a>
                                         </div>
