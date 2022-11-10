@@ -28,7 +28,7 @@ a {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #cccccc;
-    margin: 10px 0px 2px;
+    margin: 5px 5px 5px;
 }
 
 .main-carrito {
@@ -39,6 +39,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 75%;
+    margin-top: 50px;
 }
 
 .contenedor-precio {
@@ -64,6 +65,7 @@ a {
 
 .contenedor-descripcion {
     margin: 10px 0px;
+    font-size: 26px;
 }
 
 .total {
@@ -78,6 +80,7 @@ a {
     border-bottom: 1px solid #cccccc;
     background: white;
     padding: 8px;
+    margin: 5px 5px 5px;
 }
 
 .contenedor-total-pedido .total {
@@ -87,6 +90,7 @@ a {
 
 .tota-precio-final {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -98,7 +102,7 @@ a {
 
 .boton-pago {
     background: #0771b8;
-    width: 92%;
+    width: 30%;
     text-align: center;
     padding: 11px;
     color: white;
@@ -109,7 +113,7 @@ a {
 
 .ver-mas-produc {
     background: #07b830;
-    width: 60%;
+    width: 20%;
     text-align: center;
     padding: 7px;
     color: white;
