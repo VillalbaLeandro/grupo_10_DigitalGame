@@ -14,7 +14,7 @@ const usersFilePath = path.join(__dirname, "../data/users.json");
 const users = JSON.parse(fs.readFileSync(usersFilePath, "utf-8"));
 
 const mainControllers = {
-    loading: (req, res)=>{
+    loading: (req, res) => {
         res.render('loading')
     },
     home: (req, res) => {
@@ -22,9 +22,8 @@ const mainControllers = {
         // res.render("index", { products });
 
         db.Product.findAll(
-            { include: [ "compatibilities", "genders"]})
+            { include: ["compatibilities", "genders"] })
             .then(products => {
-                console.log(products)
                 res.render("index", { products });
 
             })
@@ -34,7 +33,11 @@ const mainControllers = {
     },
 
     list: (req, res) => {
-        res.render("./users/usersList", { users })
+        db.User.findAll()
+            .then(users =>{
+
+                res.render("../views/users/usersList.ejs", { users });
+            })
     },
 
     login: (req, res) => {
@@ -49,23 +52,44 @@ const mainControllers = {
                 }
             }
         )
-        .then(user => {
-           // let usuarioJson = JSON.parse(JSON.stringify(user))
-        //res.send(user);
+            .then(user => {
+                // let usuarioJson = JSON.parse(JSON.stringify(user))
+                //res.send(user);
 
-            userToLogin = user;
-        
-            if(userToLogin) {
-                //return res.send(userToLogin.password);
+                userToLogin = user;
 
-                if(userToLogin.password.substr(0,7) == '$2b$10$'){
+                if (userToLogin) {
+                    //return res.send(userToLogin.password);
 
-                    let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-                    if(isOkThePassword) {
+                    if (userToLogin.password.substr(0, 7) == '$2b$10$') {
+
+                        let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+                        if (isOkThePassword) {
+                            delete userToLogin.password;
+                            req.session.userLogged = userToLogin;
+                            if (req.body.recordarme) {
+                                res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+                            }
+
+                            return res.redirect("/home");
+                        }
+                        return res.render("../views/users/login.ejs", {
+                            errors: {
+                                email: {
+                                    msg: "Las credenciales son incorrectas"
+                                }
+                            }
+                        });
+                    }
+
+                    if (userToLogin.password == req.body.password) {
+                        // Guarda todos los datos del usuario en una variable de session
+                        // primero quitar el atributo password del objeto
                         delete userToLogin.password;
                         req.session.userLogged = userToLogin;
-                        if(req.body.recordarme) {
-                            res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60  })
+
+                        if (req.body.recordarme) {
+                            res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
                         }
 
                         return res.redirect("/home");
@@ -77,39 +101,18 @@ const mainControllers = {
                             }
                         }
                     });
+
                 }
 
-                if(userToLogin.password == req.body.password){
-                    // Guarda todos los datos del usuario en una variable de session
-                    // primero quitar el atributo password del objeto
-                    delete userToLogin.password;
-                    req.session.userLogged = userToLogin;
-
-                    if(req.body.recordarme) {
-                        res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
-                    }
-
-                    return res.redirect("/home");
-                }
                 return res.render("../views/users/login.ejs", {
                     errors: {
                         email: {
-                            msg: "Las credenciales son incorrectas"
+                            msg: "No se encuentra este email en nuestra base de datos"
                         }
                     }
                 });
 
-            }
-
-            return res.render("../views/users/login.ejs", {
-                errors: {
-                    email: {
-                        msg: "No se encuentra este email en nuestra base de datos"
-                    }
-                }
-            });
-
-        })
+            })
     },
 
     register: (req, res) => {
@@ -126,8 +129,8 @@ const mainControllers = {
             });
         }
 
-        db.User.findOne({where: {email: req.body.email}})
-            .then(mail =>{
+        db.User.findOne({ where: { email: req.body.email } })
+            .then(mail => {
                 let userInDB = JSON.parse(JSON.stringify(mail))
                 if (userInDB) {
                     return res.render("../views/users/register.ejs", {
@@ -139,19 +142,19 @@ const mainControllers = {
                         oldData: req.body
                     });
                 }
-        
+
             })
-        
+
         let userToCreate = {
             email: req.body.email,
             full_name: req.body.fullName,
             password: bcryptjs.hashSync(req.body.password, 10),
             address: req.body.domicilio,
-            img_profile: req.file.imgUser
+            img_profile: req.file ? req.file.filename : "default.jpg"
         }
 
         db.User.create(userToCreate);
-        
+
 
         res.redirect("/login");
     },

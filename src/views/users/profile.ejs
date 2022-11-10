@@ -3,7 +3,6 @@
 
 <!-- HEAD -->
 <%- include ("../partials/head") %>
-    <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/profile.css">
     </head>
 
@@ -13,35 +12,44 @@
         <%- include ("../partials/header") %>
 
             <main>
-                <div class="container-profile">
-                    <div>
+                <div >
+                    <div class="container-profile">
                         <!-- CONTENEDOR EMAIL -->
                         <div class="container-email">
-                            <div>
-
-                                <h2>Hola <%= locals.userLogged.full_name %>
-                                </h2>
-                                <h2>Direccion: <%= locals.userLogged.address %>
-                                </h2>
-
-                                <div class="alert alert-success">
-                                    <h2>
-                                        email: <%= locals.userLogged.email %>
-                                    </h2>
-                                </div>
-                            </div>
                             <div class="img-profile-container">
                                 <img class="img-profile-user"
                                     src="/image/usersAvatar/<%= locals.userLogged.img_profile %>">
                             </div>
+                            <div class="data-user">
+                                <h3>Nombre Completo: </h3>
+                                <h2>
+                                    <%= locals.userLogged.full_name %>
+                                </h2>
+                                <h3>Direccion: </h3>
+                                <h2>
+                                    <%= locals.userLogged.address %>
+                                </h2>
+                                <h3>Email: </h3>
+                                <h2><%= locals.userLogged.email %></h2>
+                            </div>
+                            
+                        </div>
+                        <div class="buttons-profile-container">
+                            <div class="edit-perfil-container">
+                                <a href="/logout"><button class="logout-button" type="submit">Editar Perfil</button></a>
+            
+                            </div>
+                            <div class="logout-perfil-container">
+                                <a href="/logout"><button class="logout-button" type="submit">Cerrar Sesion</button></a>
+            
+                            </div>
+                            
                         </div>
                     </div>
 
                     <!-- BOTON LOGOUT -->
-                    <div class="logout">
-                        <a href="/logout"><button class="logout-button" type="submit">Cerrar Sesion</button></a>
-
-                    </div>
+                    
+                  
                 </div>
             </main>
 

@@ -42,31 +42,44 @@ body {
     font-size: 13px;
     font-weight: 500;
 }
-.button-deleted{
+
+.button-deleted {
     background: red;
     padding: 5px 25px;
     border-radius: 3px;
     color: white;
     margin: 10px 20px;
 }
+
 .botones-product-detail {
     display: flex;
     flex-direction: row;
     margin: 0 20px;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.botones-product-detail button {
+    height: 4vh;
+    font-weight: 900;
+    margin: 37px;
 }
 
 .carrito button {
     background: #50B868;
-    padding: 4px 6px;
+    padding: 4px 27px;
     color: white;
-    border-radius: 3px;
+    border-radius: 8px;
     font-size: 0.9rem;
     cursor: pointer;
+    height: 6vh;
+    font-weight: 900;
 
 
 }
-.price-detail{
+
+.price-detail {
     margin: 0 20px;
     font-size: 131%;
     font-weight: 800;
@@ -79,14 +92,15 @@ body {
     padding: 4px 6px;
     color: white;
     border-radius: 3px;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     cursor: pointer;
     margin: 10px 0px;
 
 
 
 }
-.add-to-cart-price-container{
+
+.add-to-cart-price-container {
     display: flex;
     margin: 10px 20px;
     text-align: center;
@@ -95,7 +109,7 @@ body {
 
 .description-product-detal-container h2 {
     padding: 4px;
-    font-size: 90%;
+    font-size: 80%;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -151,8 +165,8 @@ body {
     .titulo-caracteristicas-conteiner {
         width: 100%;
         display: flex !important;
-    flex-direction: column!important;
-    justify-content: space-between!important
+        flex-direction: column !important;
+        justify-content: space-between !important
     }
 
     .videoDetail-conteiner iframe {
@@ -165,8 +179,9 @@ body {
     .contenedor-imagen {
         width: 31%;
     }
-    .contenedor-botones-precio{
+
+    .contenedor-botones-precio {
         display: flex;
-    justify-content: space-around;
+        justify-content: space-around;
     }
 }

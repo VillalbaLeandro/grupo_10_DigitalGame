@@ -3,39 +3,63 @@
 
 <!-- HEAD -->
 <%- include ("../partials/head") %>
-    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/usersList.css">
+
     </head>
 
     <body class="body-usersList">
         <!-- HEADER -->
         <%- include ("../partials/header") %>
             <main>
-                <h2>Users</h2>
-                <div class="usersList-container">
-                    <% users.forEach(user=> { %>
-                        <div class="usersList">
-                            <div class="card-user-container">
-                                <div class="img-user-container">
-                                    <img src="/image/usersAvatar/<%= user.imgUser ? user.imgUser : "default.jpg" %>"
-                                    alt="imagen-UserDe-fault">
-                                </div>
-                                <div class="main-users-container">
-                                    <label class="dataUser" for=""> id: <%= user.id%>
-                                            <p class="dataUser">
-                                                <%= user.email %>
-                                                    <p class="dataUser">
-                                                        <%= user.fullName %>
+                <% users.forEach(user=> { %>
+                    <div class="usersList-container not-fixed">
+                        <div class="container-profile">
+                            <div>
+                                <!-- CONTENEDOR EMAIL -->
+                                <div class="container-email">
+                                    <div>
 
+                                        <h2>Nombre Completo: <%= user.full_name %>
+                                        </h2>
+                                        <h2>Direccion: <%= user.address %>
+                                        </h2>
+
+                                        <div class="alert alert-success">
+                                            <h2>
+                                                Email: <%= user.email %>
+                                            </h2>
+                                            <h2>Rol: <% if (user.roles_id==1) { %>
+                                                    Administador
+                                                    <% } else{ %>
+                                                        User
+                                                        <% } %>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="img-profile-container">
+                                        <img class="img-profile-user" src="/image/usersAvatar/<%= user.img_profile %>">
+                                    </div>
                                 </div>
                             </div>
+                            <div class="buttons-profile-container">
+                                <div class="edit-perfil-container">
+                                    <a href="/logout"><button class="logout-button" type="submit">Editar Perfil</button></a>
+    
+                                </div>
+                                <div class="logout-perfil-container">
+                                    <a href="/logout"><button class="logout-button" type="submit">Eliminar</button></a>
+    
+                                </div>
+    
+                            </div>
+
                         </div>
+                        
                         <% }) %>
-                </div>
+                    </div>
             </main>
 
-            <!-- FOOTER -->
-            <%- include ("../partials/footer") %>
+
     </body>
 
 </html>

@@ -253,6 +253,30 @@ const productosController = {
             .catch(error => {
                 console.log(error)
             })
+    },
+    news: (req, res) =>{
+        db.Product.findAll(
+            { include: ["compatibilities", "genders"] })
+            .then(products => {
+                console.log(products)
+                res.render("products/productsNew", { products });
+
+            })
+            .catch(err => {
+                res.send(err);
+            });
+    },
+    oferts: (req, res) =>{
+        db.Product.findAll(
+            { include: ["compatibilities", "genders"] })
+            .then(products => {
+                console.log(products)
+                res.render("products/productsOferts", { products });
+
+            })
+            .catch(err => {
+                res.send(err);
+            });
     }
 
 

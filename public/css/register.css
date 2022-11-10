@@ -141,6 +141,10 @@ div a:hover {
 @media(min-width: 1024px) {
     .body-register {
         margin-top: 13%;
+        
+    }
+    .main-register{
+        height: 67vh;
     }
 
 

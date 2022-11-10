@@ -2,13 +2,13 @@
 <html lang="en">
 
 <!-- HEAD -->
-<%- include ("./partials/head") %>
+<%- include ("../partials/head") %>
     </head>
 
     <body>
 
         <!-- HEADER -->
-        <%- include ("./partials/header") %>
+        <%- include ("../partials/header") %>
 
             <!-- Banner -->
             <section class="banner">
@@ -28,8 +28,10 @@
                         <nav class="main-nav">
                             <ul class="menu">
                                 <li class=" button"><a href="#ofertas" class="menu__link">OFERTAS</a></li>
-                                <li class=" button"><a href="#recomendados" class="menu__link">NUEVOS LANZAMIENTOS</a></li>
-                                <li class=" button"><a href="/products/all" class="menu__link">VER TODOS (<%= products.length %>)</a></li>
+                                <li class=" button"><a href="#recomendados" class="menu__link">NUEVOS LANZAMIENTOS</a>
+                                </li>
+                                <li class=" button"><a href="/products/all" class="menu__link">VER TODOS (<%=
+                                            products.length %>)</a></li>
                             </ul>
                         </nav>
                         </span>
@@ -38,91 +40,12 @@
 
                 <!-- SECCION PRODUCTOS O CARDS -->
                 <div>
-                   
-                </div>
-                <div class="ofertas-container">
-                    <div class="ofertas-titulo-container">
-                       
-                        <h1 class="ofertas" id="#recomendados"> RECOMENDADOS PARA VOS </h1>
-                    </div>
-                    <section class="products-container">
-                        <div class="products">
-                            <!-- cards -->
-
-                            <%  products.forEach(element=> { %>
-                                <% if ( element.freeShipping==true ) { %>
-
-
-                                    <article class="card-container"><a href="products/<%= element.id  %>/productDetail">
-
-                                            <div class="img-product-container">
-                                                <img src="<%= element.img %>" alt="img <%= element.name  %>"
-                                                    class="product_img">
-                                                <% if (element.discount>0) { %>
-                                                    <h2 class="etiqueta-off">
-                                                        <%= element.discount %>% OFF
-                                                    </h2>
-                                                    <% } %>
-                                                        <% if (element.freeShipping==true ) { %>
-                                                            <h2 class="envios-gratis">NUEVO!</h2>
-                                                            <% } %>
-                                            </div>
-
-                                            <h2 class="name-game">
-                                                <%= element.name %>
-                                            </h2>
-                                            <div class="main-article">
-                                                <div>
-                                                    <div>
-                                                        <p class="consolas-compatibles">
-                                                            <% for (let i=0; i < element.compatibilities.length; i++) {
-                                                                %>
-                                                                <%= element.compatibilities[i].name %>
-                                                                    <% if(i < (element.compatibilities.length -1) ){%> -
-                                                                        <% } %>
-                                                                            <% } %>
-
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <p class="main-card-categoria">
-
-                                                            <% for (let i=0; i < element.genders.length; i++) { %>
-                                                                <%= element.genders[i].name %>
-                                                                    <% if(i < (element.genders.length -1) ){%> - <% } %>
-                                                                            <% } %>
-
-
-
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <p class="price">
-                                                        $<%= element.price %>
-                                                    </p>
-                                                </div>
-
-                                            </div>
-                                        </a>
-                                        <div class="button-add-cart-container">
-                                            <!-- <a href="products/<EJS= element.id  %>/productDetail"><button class="ver-mas"
-                                                    type="submit"> Ver detalles del producto </button></a> -->
-                                            <a href="/products/productCart"><button class="add-to-car"
-                                                    type="submit">Agregar al
-                                                    Carrito</button></a>
-                                        </div>
-                                    </article>
-                                    <% } %>
-                                        <% }) %>
-                        </div>
-                    </section>
 
                 </div>
+
                 <div class="ofertas-container">
                     <div class="ofertas-titulo-container">
-                       
+
                         <h1 class="ofertas" id="ofertas"> OFERTAS </h1>
                     </div>
                     <section class="products-container">
@@ -202,7 +125,7 @@
             </main>
 
             <!-- FOOTER -->
-            <%- include ("./partials/footer") %>
+            <%- include ("../partials/footer") %>
 
     </body>
 
