@@ -1,10 +1,5 @@
 const db = require("../database/models");
-const path = require("path");
-const fs = require('fs');
-const { where } = require("sequelize");
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const productosController = {
     list: (req, res) => {
@@ -15,7 +10,7 @@ const productosController = {
             { include: ["compatibilities", "genders"] })
             .then(products => {
                 console.log(products)
-                res.render("productList", { products });
+                res.json (products);
 
             })
             .catch(err => {
