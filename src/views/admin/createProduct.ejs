@@ -11,7 +11,7 @@
         <!-- HEADER -->
         <%- include ("../partials/header") %>
 
-            <main class="main-register">
+            <main class="main-createProduct">
                 <!-- formulario Create -->
 
                 <div class="formulario-container">
@@ -20,10 +20,25 @@
                         <div class="titulo-register-conteiner">
                             <label class="Titulo-register">Crear Producto</label><br>
                         </div>
-                        <label class="titulos-boxs" for="name">Nombre del producto:</label><br>
-                        <input class="text-boxs" type="text" name="name" id="name" placeholder="Ej. FIFA 22"><br>
-                        <label class="titulos-boxs" for="compatibilities">Compatibles con:</label><br>
 
+                        <div class="errors-name errors">
+                            <label class="titulos-boxs" for="name">Nombre del producto:</label><br>
+                            <input class="text-boxs" type="text" name="name" id="name" placeholder="Ej. FIFA 22"><br>
+                            <% if (locals.errors && errors.name) { %>
+                                <div class="text-danger">
+                                    <%= errors.name.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors-compatibilities errors">
+                            <label class="titulos-boxs" for="compatibilities">Compatibles con:</label><br>
+                            <% if (locals.errors && errors.compatibilities) { %>
+                                <div class="text-danger">
+                                    <%= errors.compatibilities.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                         <div class="columns">
                             <div>
                                 <input class="menu__link" type="checkbox" name="compatibilities" value="1">PS3<br>
@@ -39,7 +54,15 @@
                                 SWITCH<br>
                             </div>
                         </div>
-                        <label class="titulos-boxs" for="gender">Genero:</label><br>
+
+                        <div class="errors">
+                            <label class="titulos-boxs" for="gender">Genero:</label><br>
+                            <% if (locals.errors && errors.gender) { %>
+                                <div class="text-danger">
+                                    <%= errors.gender.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                         <div class="columns">
                             <div>
 
@@ -57,60 +80,156 @@
                                 <input class="menu__link" type="checkbox" name="gender" value="10">Estrategia<br>
                             </div>
                         </div>
-                        <label class="titulos-boxs" for="players">Modos de Juego</label><br>
 
+                        <div class="errors">
+                            <label class="titulos-boxs" for="players">Modos de Juego</label><br>
+                            <% if (locals.errors && errors.players) { %>
+                                <div class="text-danger">
+                                    <%= errors.players.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                         <input class="menu__link" type="checkbox" name="players" value="1">1 Jugador<br>
                         <input class="menu__link" type="checkbox" name="players" value="2">Multijugador<br>
                         <input class="menu__link" type="checkbox" name="players" value="3">Cooperativo<br>
                         <input class="menu__link" type="checkbox" name="players" value="4">Mundo
                         Abierto<br>
 
-                        <label class="titulos-boxs" for="price">Precio:</label>
-                        <input class="text-boxs" type="text" name="price" placeholder="sin $ y sin puntos ni comas"><br>
+                        <div class="errors">
+                            <label class="titulos-boxs" for="price">Precio:</label>
+                            <input class="text-boxs" type="text" name="price"
+                                placeholder="sin $ y sin puntos ni comas"><br>
+                            <% if (locals.errors && errors.price) { %>
+                                <div class="text-danger">
+                                    <%= errors.price.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
-                        <label class="titulos-boxs" for="language">Idioma</label><br>
+                        <div class="errors">
+                            <label class="titulos-boxs" for="language">Idioma</label><br>
+                            <% if (locals.errors && errors.language) { %>
+                                <div class="text-danger">
+                                    <%= errors.language.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                         <input class="menu__link" type="checkbox" name="language" value="1">Español<br>
                         <input class="menu__link" type="checkbox" name="language" value="2">Ingles<br>
                         <input class="menu__link" type="checkbox" name="language" value="3">Otro<br>
                         <input class="menu__link" type="checkbox" name="language" value="4">Multilenguaje<br>
                         <br>
 
-                        <label class="titulos-boxs" for="releaseData">Fecha de lanzamiento</label>
-                        <input type="date" name="releaseData" value="2022-07-22" min="2018-01-01" max="2022-12-31"><br>
+                        <div class="errors">
+                            <label class="titulos-boxs" for="releaseData">Fecha de lanzamiento</label>
+                            <input type="date" name="releaseData" value="2022-07-22" min="2018-01-01"
+                                max="2022-12-31"><br>
+                            <% if (locals.errors && errors.releaseData) { %>
+                                <div class="text-danger">
+                                    <%= errors.releaseData.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
+                        <div class="errors">
                         <label class="titulos-boxs" for="img">Link imagen principal</label><br>
                         <input class="text-boxs" type="text" name="img"
                             placeholder="Ej. http://www.googleimag=323234234324"><br>
+                            <% if (locals.errors && errors.img) { %>
+                                <div class="text-danger">
+                                    <%= errors.img.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
+                        <div class="errors">
                         <label class="titulos-boxs" for="fullName">Nombre completo del Juego</label><br>
                         <input class="text-boxs" type="text" name="fullName"
                             placeholder="Ej. Call of Duty Modern Warfare"><br>
+                            <% if (locals.errors && errors.fullName) { %>
+                                <div class="text-danger">
+                                    <%= errors.fullName.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
+                        <div class="errors">
                         <label class="titulos-boxs" for="description">Descripcion de producto</label><br>
                         <input class="text-boxs" type="text" name="description"
                             placeholder="Ej. FIFA 22 es un videojuego desarrollado por EA Vancouve..."><br>
+                            <% if (locals.errors && errors.description) { %>
+                                <div class="text-danger">
+                                    <%= errors.description.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
+                        <div class="errors">
                         <label class="titulos-boxs" for="capture1">capturas del juego 1/4</label><br>
                         <input class="text-boxs" type="text" name="capture1"
                             placeholder="Ej. http://www.googleimag=323234234324"><br>
+                            <% if (locals.errors && errors.capture1) { %>
+                                <div class="text-danger">
+                                    <%= errors.capture1.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors">
                         <label class="titulos-boxs" for="capture2">capturas del juego 2/4 </label><br>
                         <input class="text-boxs" type="text" name="capture2"
                             placeholder="Ej. http://www.googleimag=323234234324"><br>
+                            <% if (locals.errors && errors.capture2) { %>
+                                <div class="text-danger">
+                                    <%= errors.capture2.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors">
                         <label class="titulos-boxs" for="capture3">capturas del juego 3/4 </label><br>
                         <input class="text-boxs" type="text" name="capture3"
                             placeholder="Ej. http://www.googleimag=323234234324"><br>
+                            <% if (locals.errors && errors.capture3) { %>
+                                <div class="text-danger">
+                                    <%= errors.capture3.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div class="errors">
                         <label class="titulos-boxs" for="capture4">capturas del juego 4/4 </label><br>
                         <input class="text-boxs" type="text" name="capture4"
                             placeholder="Ej. http://www.googleimag=323234234324"><br>
+                            <% if (locals.errors && errors.capture4) { %>
+                                <div class="text-danger">
+                                    <%= errors.capture4.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
+                        <div class="errors">
                         <label class="titulos-boxs" for="video">video gameplay o trailer del juego (link codigo de
                             insercion)</label><br>
                         <input class="text-boxs" type="text" name="video"
                             placeholder="Ej. https://www.youtube.com/EMBED/vLj-27T-SEQ"><br>
+                            <% if (locals.errors && errors.video) { %>
+                                <div class="text-danger">
+                                    <%= errors.video.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
+                        <div class="errors">
                         <label class="titulos-boxs" for="discount">Descuento</label><br>
                         <input class="text-boxs" type="text" name="discount"
                             placeholder="Ej. 40 (sin simbolo % ni puntos ni comas)"><br>
+                            <% if (locals.errors && errors.discount) { %>
+                                <div class="text-danger">
+                                    <%= errors.discount.msg %>
+                                </div>
+                                <% } %>
+                        </div>
 
                         <label class="titulos-boxs" for="freeShipping">¿Es un producto nuevo?</label><br>
                         <input type="radio" name="freeShipping" value=true>Si

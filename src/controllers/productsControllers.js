@@ -1,5 +1,5 @@
 const db = require("../database/models");
-
+const { validationResult } = require("express-validator");
 
 const productosController = {
     list: (req, res) => {
@@ -33,6 +33,14 @@ const productosController = {
         res.render("admin/createProduct");
     },
     store: (req, res) => {
+        const resultValidation = validationResult(req);
+
+        if (resultValidation.errors.length > 0) {
+            return res.render("../views/admin/createProduct.ejs", {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            });
+        }
 
         const newProduct = {
             name: req.body.name,

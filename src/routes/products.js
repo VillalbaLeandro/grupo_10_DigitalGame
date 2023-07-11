@@ -4,10 +4,11 @@ const router = express.Router();
 
 //MIDDLEWARES
 const authMiddleware = require("../middlewares/authMiddleware");
+const createProductMiddleware = require("../middlewares/createProductMiddleware");
 
 router.get("/all", productosController.list); //listado de todos los productos
 router.get("/createProduct", authMiddleware, productosController.crear); //Formulario de creación de productos
-router.put("/createProduct", authMiddleware, productosController.store); //accion creación de productos
+router.put("/createProduct", authMiddleware, createProductMiddleware, productosController.store); //accion creación de productos
 router.get("/productCart", productosController.carrito);
 router.get("/news", productosController.news);
 router.get("/oferts", productosController.oferts);

@@ -12,7 +12,9 @@
 .main-register {
     height: 200%;
 }
-
+.main-createProduct{
+    height: 160vh;
+}
 .formulario-container {
     width: 90%;
     background-color: #666;
