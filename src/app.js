@@ -19,7 +19,7 @@ app.use(session({
 	resave: false,
 	saveUninitialized: false,
 }));
-const userLoggedMiddleware = require("./middlewares/userLoggedmiddleware");
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 
 
 app.use(cookies());
@@ -34,7 +34,7 @@ const apiProductsRoutes= require("./routes/api/apiProductsRoutes")
 const apiUsersRoutes= require("./routes/api/apiUsersRoutes")
 
 /* MIDDLEWARE */
-const logMiddleware = require("./middleWares/logMiddleWare")
+const logMiddleware = require("./middleWares/logMiddleware")
 /******************RUTAS********************/
 app.use(logMiddleware)
 app.use("/products", rutasProductos);
