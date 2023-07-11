@@ -1,24 +1,34 @@
-module.exports= {
+const {
+  DB_HOST,
+  DB_NAME,
+  DB_PASSWORD,
+  DB_USER,
+  DB_PORT
+} = require("../../controllers/config.js");
+
+module.exports = {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "users_dg_db",
-    "database": "digitalgames_db",
-    "host": "127.0.0.1",
+    "username": DB_USER,
+    "password": DB_PASSWORD,
+    "database": DB_NAME,
+    "host": DB_HOST,
+    "port": DB_PORT,
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
+    "username": DB_USER,
+    "password": DB_PASSWORD,
     "database": "database_test",
-    "host": "127.0.0.1",
+    "host": DB_HOST,
+    "port": DB_PORT,
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
+    "username": DB_USER,
+    "password": DB_PASSWORD,
     "database": "database_production",
-    "host": "127.0.0.1",
+    "host": DB_HOST,
+    "port": DB_PORT,
     "dialect": "mysql"
   }
-}
+};
