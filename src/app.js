@@ -34,9 +34,7 @@ const apiProductsRoutes= require("./routes/api/apiProductsRoutes")
 const apiUsersRoutes= require("./routes/api/apiUsersRoutes")
 
 /* MIDDLEWARE */
-const logMiddleware = require("./middleWares/logMiddleware")
 /******************RUTAS********************/
-app.use(logMiddleware)
 app.use("/products", rutasProductos);
 app.use("/api/products", apiProductsRoutes);
 app.use("/api/users", apiUsersRoutes);
